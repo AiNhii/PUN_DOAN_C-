@@ -1,0 +1,1060 @@
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.exe
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.deps.json
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.runtimeconfig.json
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.runtimeconfig.dev.json
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.pdb
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.CSharp.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Binder.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Json.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.JSInterop.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\mscorlib.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\netstandard.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.AppContext.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Buffers.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.Concurrent.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.Specialized.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Configuration.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Console.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Data.Common.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Data.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tools.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Drawing.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Drawing.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Dynamic.Runtime.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Globalization.Calendars.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Globalization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Globalization.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Pipelines.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Pipes.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.Expressions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.Parallel.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.Queryable.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Memory.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Http.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.HttpListener.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Mail.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.NameResolution.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.NetworkInformation.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Ping.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Requests.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Security.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.ServicePoint.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Sockets.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebClient.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebProxy.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Numerics.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Numerics.Vectors.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ObjectModel.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Metadata.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Resources.Reader.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Resources.Writer.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Handles.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Loader.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Numerics.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.AccessControl.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Claims.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Permissions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.SecureString.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ServiceModel.Web.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ServiceProcess.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Channels.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Overlapped.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Thread.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.ThreadPool.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Timer.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Transactions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Transactions.Local.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.ValueTuple.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Web.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Web.HttpUtility.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Windows.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Windows.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.Linq.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.Serialization.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XDocument.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlDocument.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.Views.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Web_db.Views.pdb
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.csproj.AssemblyReference.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.GeneratedMSBuildEditorConfig.editorconfig
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.AssemblyInfoInputs.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.AssemblyInfo.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.csproj.CoreCompileInputs.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.MvcApplicationPartsAssemblyInfo.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.MvcApplicationPartsAssemblyInfo.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorAssemblyInfo.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorAssemblyInfo.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\staticwebassets\Web_db.StaticWebAssets.Manifest.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\staticwebassets\Web_db.StaticWebAssets.xml
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\scopedcss\bundle\Web_db.styles.css
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.TagHelpers.input.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.TagHelpers.output.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorCoreGenerate.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorTargetAssemblyInfo.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorTargetAssemblyInfo.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.Views.pdb
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.csproj.CopyComplete
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.pdb
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Web_db.genruntimeconfig.cache
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ZstdNet.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\bin\Debug\netcoreapp3.1\MySql.EntityFrameworkCore.dll
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Index.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
+D:\Năm3_hk1\Xây dựng frame\MVC\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.exe
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.deps.json
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.runtimeconfig.json
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.runtimeconfig.dev.json
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.pdb
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.CSharp.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Binder.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Json.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.JSInterop.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\mscorlib.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\netstandard.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.AppContext.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Buffers.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.Concurrent.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Collections.Specialized.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Configuration.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Console.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Data.Common.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Data.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tools.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Drawing.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Drawing.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Dynamic.Runtime.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Globalization.Calendars.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Globalization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Globalization.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Pipelines.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.Pipes.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.Expressions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.Parallel.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Linq.Queryable.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Memory.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Http.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.HttpListener.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Mail.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.NameResolution.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.NetworkInformation.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Ping.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Requests.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Security.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.ServicePoint.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.Sockets.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebClient.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebProxy.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Numerics.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Numerics.Vectors.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ObjectModel.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Metadata.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Resources.Reader.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Resources.Writer.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Handles.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Loader.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Numerics.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.AccessControl.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Claims.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Permissions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.Principal.Windows.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Security.SecureString.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ServiceModel.Web.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ServiceProcess.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Text.RegularExpressions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Channels.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Overlapped.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Thread.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.ThreadPool.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Threading.Timer.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Transactions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Transactions.Local.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.ValueTuple.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Web.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Web.HttpUtility.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Windows.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Windows.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.Linq.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.Serialization.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XDocument.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlDocument.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.Views.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Web_db.Views.pdb
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ZstdNet.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\MySql.EntityFrameworkCore.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.GeneratedMSBuildEditorConfig.editorconfig
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.AssemblyInfoInputs.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.AssemblyInfo.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.csproj.CoreCompileInputs.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.MvcApplicationPartsAssemblyInfo.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.MvcApplicationPartsAssemblyInfo.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorAssemblyInfo.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorAssemblyInfo.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\staticwebassets\Web_db.StaticWebAssets.Manifest.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\staticwebassets\Web_db.StaticWebAssets.xml
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\scopedcss\bundle\Web_db.styles.css
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.TagHelpers.input.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.TagHelpers.output.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorCoreGenerate.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Banners\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Carts\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Coupons\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Messages\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Notifications\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcategories\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postcomments\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Postsandtags\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Posttag\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productattributes\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Productreviews\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Products\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_UserLayout.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Shippings\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Wishlists\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Wishlists\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Wishlists\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Wishlists\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\Wishlists\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorTargetAssemblyInfo.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.RazorTargetAssemblyInfo.cs
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.Views.pdb
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.csproj.CopyComplete
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.dll
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.pdb
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.genruntimeconfig.cache
+D:\Năm3_hk1\DoAn\C#\Web_db\obj\Debug\netcoreapp3.1\Web_db.csproj.AssemblyReference.cache
