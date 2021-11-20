@@ -1,3 +1,10 @@
+@using Microsoft.AspNetCore.Identity
+@using comestic_csharp.Areas.Identity.Data;
+
+@inject SignInManager<ShopUser> SignInManager
+@inject UserManager<ShopUser> UserManager
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -249,43 +256,34 @@
 					</li>
 				</ul>
 			</div>
-			<div class="ml-auto">
-				<ul class="list-unstyled">
-					<li class="dropdown pc-h-item">
-						<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-							<i class="material-icons-two-tone">search</i>
-						</a>
-						<div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
-							<form class="px-3">
-								<div class="form-group mb-0 d-flex align-items-center">
-									<i data-feather="search"></i>
-									<input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
-								</div>
-							</form>
-						</div>
-					</li>
-					<li class="dropdown pc-h-item">
-						<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-							<img src="~/admin/assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
-							<span>
-								<span class="user-name">Joseph William</span>
-								<span class="user-desc">Administrator</span>
-							</span>
-						</a>
-						<div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
-							<div class=" dropdown-header">
-								<h5 class="text-overflow m-0"><span class="badge bg-light-primary"><a href="https://gumroad.com/dashboardkit" target="_blank">Upgrade to Pro</a></span></h5>
-							</div>
-				
-							<a href="auth-signin.html" class="dropdown-item">
-								<i class="material-icons-two-tone">chrome_reader_mode</i>
-								<span>Logout</span>
-							</a>
-						</div>
-					</li>
-				</ul>
-			</div>
 
+			@if (SignInManager.IsSignedIn(User)){
+				<div class="ml-auto">
+					<ul class="list-unstyled">
+						<li class="dropdown pc-h-item">
+							<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
+								<i class="material-icons-two-tone">search</i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
+								<form class="px-3">
+									<div class="form-group mb-0 d-flex align-items-center">
+										<i data-feather="search"></i>
+										<input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+									</div>
+								</form>
+							</div>
+						</li>
+						<li class="dropdown-item">
+        					<a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+    					</li>
+						<li class="dropdown-item">
+							<form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+								<button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+			}
 		</div>
 	</header>
 	<!-- [ Header ] end -->
