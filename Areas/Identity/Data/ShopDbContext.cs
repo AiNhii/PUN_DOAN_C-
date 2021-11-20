@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace comestic_csharp.Areas.Identity.Data
 {
-    public class ShopDbContext : IdentityDbContext<IdentityUser>
+    public class ShopDbContext : IdentityDbContext<ShopUser>
     {
         public ShopDbContext(DbContextOptions<ShopDbContext> options)
             : base(options)

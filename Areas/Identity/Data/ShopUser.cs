@@ -11,7 +11,6 @@ namespace comestic_csharp.Areas.Identity.Data
 {
     public class ShopUser : IdentityUser
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        
     }
 }

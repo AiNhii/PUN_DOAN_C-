@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace comestic_csharp.Migrations.ShopDb
 {
-    public partial class Init : Migration
+    public partial class identity5 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
