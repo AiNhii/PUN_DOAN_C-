@@ -30,14 +30,14 @@ namespace comestic_csharp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                    .AddCookie( options => {
+            // services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            //         .AddCookie( options => {
 
-                        options.LoginPath = "/Admin/Login/index";
-                        options.LogoutPath = "/Admin/Login/signout";
-                        options.AccessDeniedPath = "/Admin/accessdenied";
+            //             options.LoginPath = "/Admin/Login/index";
+            //             options.LogoutPath = "/Admin/Login/signout";
+            //             options.AccessDeniedPath = "/Admin/accessdenied";
 
-                    });
+            //         });
             
             services.AddMvc();
 
@@ -84,8 +84,9 @@ namespace comestic_csharp
 
             app.UseRouting();
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
+            
 
             app.UseSession();
 
