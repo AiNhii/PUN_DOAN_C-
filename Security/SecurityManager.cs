@@ -26,13 +26,12 @@ namespace comestic_csharp.Security
 
         private IEnumerable<Claim> getUserClaims(User user){
             List<Claim> claims = new List<Claim>();
-            claims.Add(new Claim(ClaimTypes.Name, user.Email));
+            claims.Add(new Claim(ClaimTypes.Email, user.Email));
             user.Role.ToList().ForEach(u => {
                 claims.Add(new Claim(ClaimTypes.Role, user.Role));
             });
             return claims;
         }
-
 
     }
 }

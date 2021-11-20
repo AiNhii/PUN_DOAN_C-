@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using Microsoft.AspNetCore.Session;
 using Microsoft.AspNetCore.Http;
 
 namespace comestic_csharp
@@ -38,12 +40,29 @@ namespace comestic_csharp
                     });
             
             services.AddMvc();
-            services.AddSession();
+
+            services.AddRazorPages();
+
+            // services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                // options.IdleTimeout = TimeSpan.FromSeconds(10);
+                // options.Cookie.HttpOnly = true;
+                // options.Cookie.IsEssential = true;
+                options.Cookie = new CookieBuilder()
+                 {
+                     IsEssential = true,
+                     SameSite = SameSiteMode.Lax,
+                     SecurePolicy = CookieSecurePolicy.SameAsRequest,
+                     Name = ".AspNetCore.Session.comestic_csharp"
+                 };
+            });
+
             services.AddControllersWithViews();
 
             var serverVersion = new MySqlServerVersion(new Version(10, 4, 21)); // Get the value from SELECT VERSION()
             string connectionString = Configuration.GetConnectionString("server=localhost; username=root;password=01672362745Ngan;database=comestic;SslMode = none;");
-            services.AddDbContext<ShopContext>(c => c.UseLazyLoadingProxies().UseMySql("server=localhost; username=root;password=01672362745Ngan;database=comestic;SslMode = none;", serverVersion));
+            services.AddDbContext<ShopContext>(c => c.UseMySql("server=localhost; username=root;password=01672362745Ngan;database=comestic;SslMode = none;", serverVersion));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,24 +78,26 @@ namespace comestic_csharp
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseSession();
 
             app.UseCookiePolicy();
-
-            app.UseAuthentication();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapRazorPages();
             });
         }
     }

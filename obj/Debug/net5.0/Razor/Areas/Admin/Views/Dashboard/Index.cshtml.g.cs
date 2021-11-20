@@ -12,7 +12,29 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "N:\Framework\WEBAPP\comestic_csharp\Areas\Admin\Views\_ViewImports.cshtml"
+using comestic_csharp;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "N:\Framework\WEBAPP\comestic_csharp\Areas\Admin\Views\_ViewImports.cshtml"
+using comestic_csharp.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "N:\Framework\WEBAPP\comestic_csharp\Areas\Admin\Views\_ViewImports.cshtml"
+using comestic_csharp.Areas.Admin.Controllers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"766dae0fc43db5c67f5b1c798ec0df1e68924990", @"/Areas/Admin/Views/Dashboard/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98274e6ec761f60c0efa226c28371157596c351f", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Dashboard_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

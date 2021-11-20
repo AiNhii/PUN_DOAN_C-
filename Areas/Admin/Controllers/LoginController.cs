@@ -4,10 +4,12 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using BCryptNet = BCrypt.Net.BCrypt;
 using Microsoft.Extensions.Logging;
 using comestic_csharp.Models;
 using comestic_csharp.Security;
 using Org.BouncyCastle.Crypto.Generators;
+using Microsoft.AspNetCore.Http;
 
 namespace comestic_csharp.Areas.Admin.Controllers
 {
@@ -20,7 +22,7 @@ namespace comestic_csharp.Areas.Admin.Controllers
         private SecurityManager securityManager = new SecurityManager();
 
         public LoginController(ShopContext _db){
-            _db = db;
+            db= _db;
         }
 
         [Route("")]
@@ -32,7 +34,7 @@ namespace comestic_csharp.Areas.Admin.Controllers
         [HttpPost]
         [Route("process")]
         public IActionResult Process(string email, string password){
-            var user = processLogin (email,password);
+            var user = db.Users.SingleOrDefault( u => u.Email == email);
             if ( user != null){
                 securityManager.SignIn(this.HttpContext, user);
                 return RedirectToAction("index","Dashboard", new { area = "Admin"});
@@ -43,10 +45,33 @@ namespace comestic_csharp.Areas.Admin.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("login")]
+        public ActionResult Login(string email, string password)
+        {
+            var _admin = db.Users.Where(s => s.Email == email);
+            if(_admin.Any()){
+                if(_admin.Where(s => s.Password == password).Any()){
+
+                    HttpContext.Session.SetString("email", email);       
+                    return RedirectToAction("index","Dashboard", new { area = "Admin"}) ;
+                    
+                }
+                else
+                {
+                    return Json(new { status = false, message = "Invalid Password!"});
+                }
+            }
+            else
+            {
+                return Json(new { status = false, message = "Invalid Email!"});
+            }
+        }
+
         private User processLogin(string email, string password){
             var user = db.Users.SingleOrDefault( u => u.Email == email);
             if ( user != null){
-                if (password == user.Password){
+                if (BCrypt.Net.BCrypt.Verify(password, user.Password)){
                     return user;
                 }
             }
@@ -54,11 +79,11 @@ namespace comestic_csharp.Areas.Admin.Controllers
         }
 
 
-        [Route("signout")]
-        public IActionResult SignOut(){
-            securityManager.SignOut(this.HttpContext);
-            return RedirectToAction("index","Login", new { area = "admin"});
-        }
+        // [Route("signout")]
+        // public IActionResult SignOut(){
+        //     securityManager.SignOut(this.HttpContext);
+        //     return RedirectToAction("index","Login", new { area = "admin"});
+        // }
 
 
         [Route("accessdenied")]
