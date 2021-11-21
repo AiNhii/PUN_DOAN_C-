@@ -9,6 +9,8 @@ using comestic_csharp.Models;
 
 namespace comestic_csharp.Controllers
 {
+    [Area("admin")]
+    [Route("admin/brand")]
     public class BrandController : Controller
     {
         private readonly ShopContext _context;
@@ -18,7 +20,7 @@ namespace comestic_csharp.Controllers
             _context = context;
         }
 
-        // GET: Brand
+        [Route("index")]// GET: Brand
         public async Task<IActionResult> Index()
         {
             return View(await _context.Brands.ToListAsync());
@@ -43,6 +45,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Brand/Create
+        [Route("create")]// GE
         public IActionResult Create()
         {
             return View();
@@ -51,6 +54,8 @@ namespace comestic_csharp.Controllers
         // POST: Brand/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
+        [Route("save")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Slug,Status")] Brand brand)

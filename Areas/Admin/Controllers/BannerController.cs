@@ -9,6 +9,8 @@ using comestic_csharp.Models;
 
 namespace comestic_csharp.Controllers
 {
+    [Area("admin")]
+    [Route("admin/banner")]
     public class BannerController : Controller
     {
         private readonly ShopContext _context;
@@ -18,7 +20,7 @@ namespace comestic_csharp.Controllers
             _context = context;
         }
 
-        // GET: Banner
+        [Route("index")]// GET: Banner
         public async Task<IActionResult> Index()
         {
             return View(await _context.Banners.ToListAsync());
@@ -43,6 +45,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Banner/Create
+        [Route("create")]
         public IActionResult Create()
         {
             return View();
