@@ -351,7 +351,7 @@ header:after {
 }
 
 .test-indicators li.active {
-    background-color: #7267EF;
+    background-color: #46c590;
     box-shadow: 0 5px 25px rgba(114, 103, 239, 0.5);
     width: 35px;
 }
