@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4aBieFGbDACQgxAjYqNnXV6UZGjjotbDbvKkBRNf91g4Ah3dy0TvIGDCwyCgKvgDNFM+9w28jXheGAb+Pe5bBw==",
+  "dgSpecHash": "oKAKAIeRNAcUuQCuo3rjzoItF+oMGrJgUJlsBF6fpzox3VLh3xiKGnBqK93zoJDo7EcIupU6ZP7aiP1G+zjAyw==",
   "success": true,
-  "projectFilePath": "N:\\Framework\\DoAn\\PUN_DOAN_C-\\comestic_csharp.csproj",
+  "projectFilePath": "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kimngan\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\kimngan\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
