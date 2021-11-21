@@ -1,0 +1,300 @@
+ .contact-from {
+     background: #fadbd3;
+     padding: 130px 0 100px 0;
+ }
+ 
+ .contact-from .content-contact-from {
+     margin: 0 auto;
+     width: 100%;
+ }
+ 
+ .contact-from .content-contact-from input {
+     width: 100%;
+     padding: 10px 0;
+     text-indent: 20px;
+     background: #fce2de;
+     border: 1px solid white;
+     margin-bottom: 20px;
+ }
+ 
+ .contact-from .content-contact-from input:focus {
+     outline: none;
+ }
+ 
+ .contact-from .content-contact-from textarea {
+     width: 100%;
+     text-indent: 20px;
+     background: #fce2de;
+     height: 220px;
+     border: 1px solid white;
+ }
+ 
+ .contact-from .content-contact-from textarea:focus {
+     outline: none;
+ }
+ 
+ .contact-from .content-contact-from .title-contact {
+     width: 100%;
+     text-align: center;
+ }
+ 
+ .contact-from .content-contact-from .title-contact h2 {
+     font-family: 'El Messiri', sans-serif;
+     font-size: 60px;
+     line-height: 1;
+     margin-bottom: 80px;
+     position: relative;
+ }
+ 
+ .contact-from .content-contact-from .title-contact h2:before {
+     content: " ";
+     position: absolute;
+     height: 13px;
+     width: 190px;
+     display: block;
+     left: 50%;
+     margin-left: -95px;
+     bottom: -10px;
+     background: white;
+     -webkit-mask: url(imager/line-title2.svg) repeat left center;
+     mask: url(imager/line-title2.svg) repeat left center;
+ }
+ 
+ .contact-from .content-contact-from .submit-contact {
+     width: 100%;
+     text-align: center;
+     margin-top: 30px;
+     font-family: 'Raleway', sans-serif;
+ }
+ 
+ .contact-from .content-contact-from .submit-contact button {
+     background: white;
+     font-size: 15px;
+     padding: 15px 40px;
+     color: #3C7363;
+     line-height: 1;
+     border-radius: 0;
+ }
+ 
+ .contact-from .content-contact-from .submit-contact button:hover {
+     color: white;
+     background: #3C7363;
+ }
+ 
+ @media all and (max-width: 360px) {
+     .contact-from {
+         margin-top: 0 !important;
+     }
+     .contact-from .input-left {
+         padding-right: 0 !important;
+     }
+     .contact-from .input-right {
+         padding-left: 0 !important;
+     }
+     .contact-from textarea {
+         height: 100px !important;
+     }
+     .contact-from .title-contact h2 {
+         font-size: 45px !important;
+     }
+ }
+ 
+ @media all and (min-width: 361px) and (max-width: 767px) {
+     .contact-from {
+         margin-top: 0 !important;
+     }
+     .contact-from .input-left {
+         padding-right: 0 !important;
+     }
+     .contact-from .input-right {
+         padding-left: 0 !important;
+     }
+     .contact-from textarea {
+         height: 100px !important;
+     }
+ }
+ 
+ .content-follow-insta {
+     margin: 100px 0 60px 0 !important;
+     border-bottom: 1px solid #e6e6e6;
+     padding: 0 0 80px 0;
+ }
+ 
+ .content-follow-insta .title-follow-insta {
+     text-align: center;
+     width: 100%;
+ }
+ 
+ .content-follow-insta .title-follow-insta h2 {
+     font-family: 'El Messiri', sans-serif;
+     font-size: 40px;
+ }
+ 
+ .content-follow-insta .title-follow-insta p {
+     font-family: 'Raleway', sans-serif;
+     font-size: 18px;
+     line-height: 1;
+     margin-bottom: 50px;
+ }
+ 
+ .content-follow-insta .owl-dots {
+     display: none;
+ }
+ 
+ .content-follow-insta .owl-nav {
+     display: none !important;
+ }
+ 
+ .content-follow-insta .item {
+     position: relative;
+     z-index: 2;
+ }
+ 
+ .content-follow-insta .item:before {
+     content: "";
+     position: absolute;
+     z-index: 3;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     right: 0;
+     background: white;
+     opacity: 0.5;
+     display: none;
+ }
+ 
+ .content-follow-insta .item:hover:before {
+     display: block;
+     cursor: pointer;
+ }
+ 
+ .contact-us {
+     width: 100%;
+ }
+ 
+ .contact-us .iframe-responsive {
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .contact-us .iframe-responsive iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border: 0;
+ }
+ 
+ .contact-us .content-contact-us {
+     margin: 30px 0 18px 0;
+     padding-bottom: 100px;
+     border-bottom: 1px solid #e6e6e6;
+ }
+ 
+ .contact-us .content-contact-us h1 {
+     font-size: 60px;
+     font-family: 'El Messiri', sans-serif;
+     line-height: 1;
+     position: relative;
+     margin-bottom: 50px;
+ }
+ 
+ .contact-us .content-contact-us h1:before {
+     content: " ";
+     position: absolute;
+     height: 13px;
+     width: 110px;
+     display: block;
+     left: 0;
+     bottom: -10px;
+     background: #ffa6a8;
+     -webkit-mask: url(imager/line-title2.svg) repeat left center;
+     mask: url(imager/line-title2.svg) repeat left center;
+ }
+ 
+ .contact-us .content-contact-us ul {
+     margin-bottom: 10px;
+ }
+ 
+ .contact-us .content-contact-us ul p {
+     font-family: 'Raleway', sans-serif;
+     font-size: 20px;
+     font-weight: 600;
+ }
+ 
+ .contact-us .content-contact-us ul li {
+     font-family: 'Raleway', sans-serif;
+     font-size: 15px;
+     margin-bottom: 20px;
+     line-height: 1.5;
+     list-style: none;
+     padding-left: 50px;
+ }
+ 
+ .contact-us .content-contact-us a {
+     margin-right: 20px;
+ }
+ 
+ .contact-us .content-contact-us a i {
+     color: #cccccc;
+ }
+ 
+ .contact-us .content-contact-us i:hover {
+     text-decoration: none;
+     color: #3C7363;
+ }
+ 
+ .contact-us .content-contact-us textarea {
+     width: 100%;
+     height: 150px;
+     padding-top: 15px;
+     text-indent: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #cccccc;
+ }
+ 
+ .contact-us .content-contact-us input {
+     text-indent: 10px;
+     width: 100%;
+     height: 50px;
+     margin-bottom: 20px;
+     border: 1px solid #cccccc;
+ }
+ 
+ .contact-us .content-contact-us input:focus,
+ .contact-us .content-contact-us textarea:focus {
+     outline: none;
+ }
+ 
+ .contact-us .content-contact-us button {
+     background: #7AA472;
+     color: white;
+     font-family: 'Raleway', sans-serif;
+     font-size: 15px;
+     line-height: 1;
+     padding: 15px 30px;
+     border: none;
+     border-radius: 0;
+ }
+ 
+ .contact-us .content-contact-us button:hover {
+     background: #3C7363;
+ }
+ 
+ .contact-us .single-info i {
+     color: #fff;
+     font-size: 18px;
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     margin-right: 15px;
+     text-align: center;
+     border-radius: 3px;
+     line-height: 40px;
+     background: #7AA472;
+ }
+ 
+ .col-md-5 {
+     padding-left: 40px !important;
+ }

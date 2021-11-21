@@ -1,8 +1,7 @@
-#slider-title {
+.gioithieu-section {
     margin-top: 5px;
-    padding-top: 40%;
-    width: 100%;
-    background: url('/asset/img/ABOUT.jpg') top center/ cover no-repeat;
+    padding-top: 30%;
+    background: url('/asset/img/nenchinh2.jpg') top center/ cover no-repeat;
 }
 
 
@@ -18,8 +17,8 @@
 }
 
 .content-section {
-    margin-top: 5px;
-    background-color: #fff;
+    margin-top: 0px;
+    background: url('/asset/img/about6.jpg') top center/ cover no-repeat;
 }
 
 .about-content p {
@@ -35,4 +34,51 @@
 #img-about {
     padding-left: 170px;
     padding-right: 0 !important;
+}
+
+
+/*thanh vien*/
+
+.thanhvien {
+    background-color: #F6FEF5;
+}
+
+.tentv {
+    background-color: #7AA472;
+    padding: 5px;
+    color: #fff;
+}
+
+
+/*thanhpha*/
+
+.thanhphan {
+    background-color: #7AA472;
+}
+
+.cosmetic .thanhphan p {
+    color: #fff;
+    font-size: 25px;
+}
+
+.container .thanhphan p:before {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 70px;
+    display: block;
+    left: 0;
+    bottom: -20px;
+    font-size: 30px !important;
+    color: #fff;
+}
+
+.cosmetic .thanhphan h2 {
+    font-size: 30px;
+    line-height: 1;
+    color: #fff;
+}
+
+.cosmetic .inner-cosmetic h3 {
+    color: rgba(255, 255, 255, 0.877);
 }
