@@ -10042,11 +10042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj",
+      "projectUniqueName": "N:\\Framework\\DoAn\\PUN_DOAN_C-\\comestic_csharp.csproj",
       "projectName": "comestic_csharp",
-      "projectPath": "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj",
+      "projectPath": "N:\\Framework\\DoAn\\PUN_DOAN_C-\\comestic_csharp.csproj",
       "packagesPath": "C:\\Users\\kimngan\\.nuget\\packages\\",
-      "outputPath": "N:\\Framework\\WEBAPP\\comestic_csharp\\obj\\",
+      "outputPath": "N:\\Framework\\DoAn\\PUN_DOAN_C-\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kimngan\\AppData\\Roaming\\NuGet\\NuGet.Config"
