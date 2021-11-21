@@ -15849,6 +15849,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Login2.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productattribute\\Details.cshtml",
       "TargetPath": "Views\\Productattribute\\Details.cshtml",
       "FileKind": "mvc"

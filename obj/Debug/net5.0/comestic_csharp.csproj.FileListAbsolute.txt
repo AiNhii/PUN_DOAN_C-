@@ -566,3 +566,4 @@ D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\comestic_csharp.dll
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\ref\comestic_csharp.dll
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\comestic_csharp.pdb
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\comestic_csharp.genruntimeconfig.cache
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login2.cshtml.g.cs
