@@ -1,5 +1,8 @@
 @using comestic_csharp.Areas.Identity.Pages.Account.Manage
-@inject SignInManager<IdentityUser> SignInManager
+@using Microsoft.AspNetCore.Identity
+@using comestic_csharp.Areas.Identity.Data;
+
+@inject SignInManager<ShopUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }

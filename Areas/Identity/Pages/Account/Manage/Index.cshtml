@@ -1,4 +1,5 @@
 @page
+@using comestic_csharp.Areas.Identity.Pages.Account.Manage
 @model IndexModel
 @{
     ViewData["Title"] = "Profile";
@@ -20,7 +21,7 @@
                 <input asp-for="Input.PhoneNumber" class="form-control" />
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
             </div>
-            <button id="update-profile-button" type="submit" class="btn btn-primary">Save</button>
+            <button id="update-profile-button" type="submit" class="btn btn-primary bg-pink">Save</button>
         </form>
     </div>
 </div>
