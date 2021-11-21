@@ -14633,7 +14633,7 @@ pre[class*="language-"] > code {
 }
 
 .pc-sidebar .pc-caption {
-    color: #7267EF;
+    color: #46c590;
     display: block;
     padding: 15px 20px 10px;
     letter-spacing: 0.07em;
@@ -14857,7 +14857,7 @@ body:not(.minimenu) .pc-sidebar .pc-submenu .pc-submenu .pc-submenu > .pc-item:b
 }
 
 .minimenu .pc-sidebar .pc-submenu {
-    background: #1c232f;
+    background: #46c590;
     position: absolute;
     left: 100%;
     padding: 8px 0;
@@ -14896,7 +14896,7 @@ body:not(.minimenu) .pc-sidebar .pc-submenu .pc-submenu .pc-submenu > .pc-item:b
 
 .minimenu .pc-sidebar .pc-item .pc-item:hover > .pc-link {
     width: 200px;
-    background: #1c232f;
+    background: #46c590;
 }
 
 .minimenu .pc-sidebar .pc-item .pc-item:hover > .pc-submenu {
