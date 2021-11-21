@@ -15924,13 +15924,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Wishlist\\Edit.cshtml",
-      "TargetPath": "Views\\Wishlist\\Edit.cshtml",
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Login\\Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Login\\Index.cshtml",
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Wishlist\\Edit.cshtml",
+      "TargetPath": "Views\\Wishlist\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
