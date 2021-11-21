@@ -27,7 +27,10 @@ namespace comestic_csharp.Areas.Identity
             services.AddDbContext<ShopDbContext>(c => c.UseMySql("server=localhost; username=root;password=123456789;database=punbanhang3;SslMode = none;", serverVersion));
 
                 services.AddDefaultIdentity<ShopUser>(options => options.SignIn.RequireConfirmedAccount = false)
+                    .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<ShopDbContext>();
+
+
             });
         }
     }
