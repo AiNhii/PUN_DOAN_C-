@@ -175,7 +175,7 @@ a {
 }
 
 a:hover {
-    color: #a7d14c;
+    color: #336641;
     text-decoration: underline;
 }
 
@@ -2745,8 +2745,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #a7d14c;
-    border-color: #a7d14c;
+    background-color: #6ab5aa;
+    border-color: #6ab5aa;
 }
 
 .btn-primary:hover {
@@ -11185,8 +11185,8 @@ textarea.form-control {
 }
 
 .btn.btn-primary {
-    background: #a7d14c !important;
-    border: 1px solid #a7d14c !important;
+    background: #336641 !important;
+    border: 1px solid #336641 !important;
     color: #fff !important;
 }
 
