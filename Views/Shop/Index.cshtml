@@ -197,7 +197,7 @@
                                         <div class="col-lg-4 col-md-6 col-12">
                                             <div class="single-product">
                                                 <div class="product-img">
-                                                    <a asp-controller="Shop" asp-action="Details">
+                                                    <a asp-action="Details" asp-route-id="@item.Id">
                                                         <img class="default-img" src="@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
                                                         <img class="hover-img" src="/frontend/product_list/storage/photo/sanpham/sp9.jpg" alt="#">
                                                                     <span class="price-dec">10 % Off</span>
