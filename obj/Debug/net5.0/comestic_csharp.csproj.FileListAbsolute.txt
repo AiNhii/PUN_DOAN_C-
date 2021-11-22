@@ -598,3 +598,5 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Bra
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Brand\Details.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Brand\Edit.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Brand\Index.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\o-Login.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\o-Register.cshtml.g.cs

@@ -15714,11 +15714,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Brand\\Edit.cshtml",
-      "TargetPath": "Views\\Brand\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Order\\Delete.cshtml",
       "TargetPath": "Views\\Order\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15809,6 +15804,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Brand\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "FileKind": "mvc"
@@ -15854,11 +15854,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Brand\\Delete.cshtml",
-      "TargetPath": "Views\\Brand\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Category\\Delete.cshtml",
       "TargetPath": "Views\\Category\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15866,6 +15861,21 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\o-Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\o-Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Brand\\Details.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Brand\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Brand\\Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Brand\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15946,6 +15956,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Posttag\\Delete.cshtml",
       "TargetPath": "Views\\Posttag\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\o-Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\o-Register.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16039,6 +16054,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Message\\Index.cshtml",
       "TargetPath": "Views\\Message\\Index.cshtml",
       "FileKind": "mvc"
@@ -16124,6 +16144,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Brand\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "FileKind": "mvc"
@@ -16141,11 +16166,6 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shipping\\Create.cshtml",
       "TargetPath": "Views\\Shipping\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Brand\\Details.cshtml",
-      "TargetPath": "Views\\Brand\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16264,11 +16284,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Brand\\Index.cshtml",
-      "TargetPath": "Views\\Brand\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Post\\Delete.cshtml",
       "TargetPath": "Views\\Post\\Delete.cshtml",
       "FileKind": "mvc"
@@ -16306,11 +16321,6 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Brand\\Create.cshtml",
-      "TargetPath": "Views\\Brand\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
