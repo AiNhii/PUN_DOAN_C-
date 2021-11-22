@@ -1,6 +1,10 @@
+@model comestic_csharp.Models.Product
+
 @{
-    Layout =null;
+    ViewData["Title"] = "Details";
+    Layout = null;
 }
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -188,7 +192,7 @@
         id="intro-example"
         class="p-5 text-center bg-image"
         style="
-          background-image: url('/frontend/product_details/storage/photo/chitietsanpham/chitietsp2.jpg');
+          background-image: url('@Html.DisplayFor(model => model.Photo1)');
         "
       >
         <div class="mask">
@@ -262,7 +266,7 @@
                           rel="adjustX:10, adjustY:"
                         >
                           <img
-                            src="/frontend/product_details/storage/photo/chitietsanpham/chitietsp8.png"
+                            src=" @Html.DisplayFor(model => model.Photo1)"
                             alt=""
                             id="main_product_image"
                             width="150"
@@ -274,7 +278,7 @@
                           <li>
                             <img
                               onclick="changeImage(this)"
-                              src="/frontend/product_details/storage/photo/chitietsanpham/chitietsp8.png"
+                              src=" @Html.DisplayFor(model => model.Photo1)"
                               width="70"
                             />
                           </li>
@@ -288,7 +292,7 @@
                           <li>
                             <img
                               onclick="changeImage(this)"
-                              src="/frontend/product_details/storage/photo/chitietsanpham/chitietsp12.png"
+                              src="@Html.DisplayFor(model => model.Photo1)"
                               width="70"
                             />
                           </li>
@@ -311,7 +315,7 @@
                 <div class="product-des">
                   <!-- Description -->
                   <div class="short">
-                    <h4>COCOA COFFEE BODY SCRUB</h4>
+                    <h4>@Html.DisplayFor(model => model.Title)</h4>
                     <div class="rating-main text-left">
                       <ul class="rating">
                         <li><i class="fa fa-star"></i></li>
@@ -325,7 +329,7 @@
                       >
                     </div>
                     <p class="price">
-                      <span class="discount">750 000</span><s>900 000</s>
+                      <span class="discount">750 000</span><s> @Html.DisplayFor(model => model.Price)</s>
                     </p>
                     <p>
                       <span
@@ -335,7 +339,7 @@
                           font-size: 14px;
                           text-align: justify;
                         "
-                        >Mô tả ngắn gọn : summary</span
+                        >Mô tả ngắn gọn : @Html.DisplayFor(model => model.Summary)</span
                       ><br />
                     </p>
                   </div>
@@ -412,7 +416,7 @@
                       Sub Category :<a href="#">sub_category</a>
                     </p>
                     <p class="availability" style="font-weight: bold">
-                      Stock : <span class="badge badge-success">10</span>
+                      Stock : <span class="badge badge-success"> @Html.DisplayFor(model => model.Stock) </span>
                     </p>
                   </div>
                   <!--/ End Product Buy -->
