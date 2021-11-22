@@ -12,5 +12,10 @@ namespace comestic_csharp.Controllers
         {
             return View();
         }
+
+         public IActionResult Details()
+        {
+            return View();
+        }
     }
 }
