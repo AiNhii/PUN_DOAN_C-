@@ -602,3 +602,12 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\o-Register.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\Index.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\Details.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\System.Web.Mvc.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\System.Web.Razor.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\System.Web.Helpers.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\System.Web.WebPages.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\PagedList.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\PagedList.Mvc.dll
