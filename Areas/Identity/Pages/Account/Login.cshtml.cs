@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
-using comestic_csharp.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using comestic_csharp.Areas.Identity.Data;
+
 
 namespace comestic_csharp.Areas.Identity.Pages.Account
 {
-
     [AllowAnonymous]
     public class LoginModel : PageModel
     {

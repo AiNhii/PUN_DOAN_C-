@@ -15624,8 +15624,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ResetAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Coupon\\Details.cshtml",
       "TargetPath": "Views\\Coupon\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\GenerateRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\o-Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\o-Login.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15636,6 +15661,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\User\\Details.cshtml",
       "TargetPath": "Views\\User\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15654,8 +15684,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Delete.cshtml",
       "TargetPath": "Views\\Brand\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15666,6 +15711,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Edit.cshtml",
       "TargetPath": "Views\\Brand\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15681,6 +15731,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Postcomment\\Details.cshtml",
       "TargetPath": "Views\\Postcomment\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15701,6 +15756,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productattribute\\Index.cshtml",
       "TargetPath": "Views\\Productattribute\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPasswordConfirmation.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15746,6 +15806,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15799,6 +15864,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Posttag\\Index.cshtml",
       "TargetPath": "Views\\Posttag\\Index.cshtml",
       "FileKind": "mvc"
@@ -15814,6 +15884,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -15821,6 +15896,26 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\o-Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\o-Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15859,6 +15954,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Notification\\Details.cshtml",
       "TargetPath": "Views\\Notification\\Details.cshtml",
       "FileKind": "mvc"
@@ -15881,6 +15981,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15914,6 +16019,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\Login\\Index.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Login\\Index.cshtml",
       "FileKind": "mvc"
@@ -15924,6 +16034,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productattribute\\Delete.cshtml",
       "TargetPath": "Views\\Productattribute\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15931,6 +16046,21 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Notification\\Edit.cshtml",
       "TargetPath": "Views\\Notification\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15956,6 +16086,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Details.cshtml",
       "TargetPath": "Views\\Brand\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15994,8 +16129,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Posttag\\Details.cshtml",
       "TargetPath": "Views\\Posttag\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16006,6 +16151,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Wishlist\\Create.cshtml",
       "TargetPath": "Views\\Wishlist\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16031,6 +16181,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Coupon\\Delete.cshtml",
       "TargetPath": "Views\\Coupon\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPasswordConfirmation.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16069,8 +16224,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Wishlist\\Details.cshtml",
       "TargetPath": "Views\\Wishlist\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ShowRecoveryCodes.cshtml",
       "FileKind": "mvc"
     },
     {
