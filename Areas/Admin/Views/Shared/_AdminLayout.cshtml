@@ -271,6 +271,12 @@
 
 <!-- custom-chart js -->
     <script src="/backend/dashboard/asset/js/pages/dashboard-sale.js"></script>
+	<script>
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  		return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+	</script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
