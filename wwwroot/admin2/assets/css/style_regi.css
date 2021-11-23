@@ -186,6 +186,7 @@ button {
 }
 
 p {
+    text-decoration: none;
     border: none;
     width: 164px;
     height: 51px;
