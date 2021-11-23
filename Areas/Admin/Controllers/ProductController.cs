@@ -83,6 +83,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Product/Edit/5
+        [Route("edit")]
         public async Task<IActionResult> Edit(ulong? id)
         {
             if (id == null)
@@ -105,6 +106,7 @@ namespace comestic_csharp.Controllers
         // POST: Product/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Route("edit")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ulong id, [Bind("Id,Title,Slug,Summary,Description,Photo1,Photo2,Photo3,Photo4,Stock,Condition,Status,Price,CouponId,CatId,ChildCatId,BrandId")] Product product)
@@ -142,6 +144,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Product/Delete/5
+        [Route("delete")]
         public async Task<IActionResult> Delete(ulong? id)
         {
             if (id == null)
@@ -162,7 +165,7 @@ namespace comestic_csharp.Controllers
 
             return View(product);
         }
-
+        [Route("delete")]
         // POST: Product/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

@@ -197,8 +197,8 @@
                                             <div class="single-product">
                                                 <div class="product-img">
                                                     <a asp-action="Details" asp-route-id="@item.Id">
-                                                        <img class="default-img" src="@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
-                                                        <img class="hover-img" src="/frontend/product_list/storage/photo/sanpham/sp9.jpg" alt="#">
+                                                        <img class="default-img" src="/frontend/product_list/storage/photo/sanpham/@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
+                                                        <img class="hover-img" src="/frontend/product_list/storage/photo/sanpham/@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
                                                                     <span class="price-dec">10 % Off</span>
                                                     </a>
                                                     <div class="button-head">

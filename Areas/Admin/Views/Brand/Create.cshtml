@@ -1,16 +1,18 @@
-    <div class="pcoded-content">
+ @model comestic_csharp.Models.Brand
+ 
+<div class="pcoded-content">
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
             <div class="page-block">
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">BRAND</h5>
+                            <h5 class="m-b-10">PRODUCT</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#!">Form Components</a></li>
-                            <li class="breadcrumb-item">Input Groups</li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Product">Product</a></li>
+                            <li class="breadcrumb-item">Create Product</li>
                         </ul>
                     </div>
                 </div>
@@ -22,63 +24,24 @@
             <!-- [ form-element ] start -->
                 <div class="card">
                     <div class="card-header">
-                        <h5>Basic example</h5>
+                        <h5>Create NEW Product</h5>
                     </div>
                     <div class="card-body">
-                        <div class="alert alert-primary">
-                            <div class="media align-items-center">
-                                <i class="feather icon-alert-circle h2"></i>
-                                <div class="media-body ml-3">
-                                    Place one add-on or button on either side of an input. You may also place one on both sides of an input.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-text">@@</span>
-                                <input type="text" class="form-control" placeholder="Username">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Recipient's username">
-                                <span class="input-group-text">@@example.com</span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="basic-url">Your vanity URL</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-text">$</span>
-                                <input type="text" class="form-control" placeholder="Rate" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">.00</span>
-                            </div>
-                        </div>
                         <div class="form-group">
                             <label class="form-label" for="example=textarea">With textarea</label>
                             <div class="input-group">
-                                <span class="input-group-text">With textarea</span>
-                                <textarea class="form-control" aria-label="With textarea" id="example-textarea"></textarea>
+                                <span class="input-group-text">Title</span>
+                                <input type="text" class="form-control" aria-label="Title" id="example-textarea"></input>
                             </div>
                         </div>
                         <hr>
-                        <div class="form-group">
-                            <label for="multiple-addons">Multiple Addons</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">$</span>
-                                <span class="input-group-text">0.00</span>
-                                <input type="text" class="form-control" id="multiple-addons" aria-label="Amount (to the nearest dollar)">
-                            </div>
-                            <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">$</span>
-                                <span class="input-group-text">0.00</span>
-                            </div>
+                        <div class="form-file mb-3">
+                                <input type="file" class="form-file-input" id="validationFormFile" required>
+                                <label class="form-file-label" for="validationFormFile">
+                                    <span class="form-file-text">Choose file...</span>
+                                    <span class="form-file-button">Browse</span>
+                                </label>
+                                <div class="invalid-feedback">Example invalid form file feedback</div>
                         </div>
                         <div class="form-group mb-0">
                             <label for="multiple-inputs">Multiple Inputs</label>
@@ -90,13 +53,38 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-primary mr-2">SAVE</button>
                         <button class="btn btn-light">Reset</button>
+                        <div><a asp-action="Index">Back to List</a></div>
                     </div>
                 </div>
-            </div>
             <!-- [ form-element ] end -->
         </div>
-        <!-- [ Main Content ] end -->
 
-    </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create" asp-area="Admin" asp-controller="Brand">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Slug" class="control-label"></label>
+                        <input asp-for="Slug" class="form-control" />
+                        <span asp-validation-for="Slug" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- [ Main Content ] end -->
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
