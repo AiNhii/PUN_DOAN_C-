@@ -9,6 +9,8 @@ using comestic_csharp.Models;
 
 namespace comestic_csharp.Controllers
 {
+    [Area("admin")]
+    [Route("admin/product")]
     public class ProductController : Controller
     {
         private readonly ShopContext _context;
@@ -19,6 +21,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Product
+        [Route("index")]
         public async Task<IActionResult> Index()
         {
             var shopContext = _context.Products.Include(p => p.Brand).Include(p => p.Cat).Include(p => p.ChildCat).Include(p => p.Coupon);
@@ -48,6 +51,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Product/Create
+        [Route("create")]// 
         public IActionResult Create()
         {
             ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Slug");
@@ -60,6 +64,7 @@ namespace comestic_csharp.Controllers
         // POST: Product/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Route("create")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Slug,Summary,Description,Photo1,Photo2,Photo3,Photo4,Stock,Condition,Status,Price,CouponId,CatId,ChildCatId,BrandId")] Product product)

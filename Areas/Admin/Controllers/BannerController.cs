@@ -56,6 +56,7 @@ namespace comestic_csharp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("create")]
         public async Task<IActionResult> Create([Bind("Id,Title,Slug,Photo,Description,Condition")] Banner banner)
         {
             if (ModelState.IsValid)

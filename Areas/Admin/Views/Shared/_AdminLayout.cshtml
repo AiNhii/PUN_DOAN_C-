@@ -65,9 +65,9 @@
 	<nav class="pc-sidebar ">
 		<div class="navbar-wrapper">
 			<div class="m-header">
-				<a href=./Admin/Dashboard" class="b-brand">
+				<a href="/admin/dashboard" class="pc-link">
 					<!-- ========   change your logo hear   ============ -->
-					<img src="./backend/dashboard/asset/images/logo-sm.svg" alt="" class="logo logo-sm">
+					PUN_COMESTIC
 				</a>
 			</div>
 			<div class="navbar-content">
@@ -76,11 +76,7 @@
 						<label>NAVIGATION</label>
 					</li>
 					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Dashboard</span></a>
-					</li>
-					<li class="pc-item pc-caption">
-						<label>SHOP</label>
-						<span>things to manage</span>
+						<a href="/admin/dashboard" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Dashboard</span></a>
 					</li>
 					<li class="pc-item pc-hasmenu">
 						<a class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Banners</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
@@ -89,25 +85,29 @@
 							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Banner" >Banner</a></li>
 						</ul>
 					</li>
+					<li class="pc-item pc-caption">
+						<label>SHOP</label>
+						<span>things to manage</span>
+					</li>
 					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Category</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Brand</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
 						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="Brand">Add Category</a></li>
-							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Brand">Category</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="Brand">Add Brand</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Brand">Brand</a></li>
 						</ul>
 					</li>
 					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Brands</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Category</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
 						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" href="#!">Add brand</a></li>
-							<li class="pc-item"><a class="pc-link" href="#!">Brands</a></li>
+							<li class="pc-item"><a class="pc-link" href="#!">Add Category</a></li>
+							<li class="pc-item"><a class="pc-link" href="#!">Category</a></li>
 						</ul>
 					</li>
 					<li class="pc-item pc-hasmenu">
 						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Products</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
 						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" href="#!">Add product</a></li>
-							<li class="pc-item"><a class="pc-link" href="#!">Products</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="Product">Add Product</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Product">Product</a></li>
 						</ul>
 					</li>
 					<li class="pc-item pc-hasmenu">

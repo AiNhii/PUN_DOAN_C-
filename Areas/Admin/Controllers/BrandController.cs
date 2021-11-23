@@ -55,7 +55,7 @@ namespace comestic_csharp.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         
-        [Route("save")]
+        [Route("create")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Slug,Status")] Brand brand)
