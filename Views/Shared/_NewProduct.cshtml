@@ -1,0 +1,28 @@
+@model IEnumerable<comestic_csharp.Models.Product>
+<div class="container">
+    <div class="row mt-5">
+        <h3 class="list-product-title">New product</h3>
+        <div class="product-group">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="card card-product mb-3">
+                            <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title product-title">@item.Title</h5>
+                                <div class="card-text product-price">
+                                    <span class="del-price">@item.Price</span>
+                                    <span class="new-price">80.000 vnd</span>
+                                </div>
+                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

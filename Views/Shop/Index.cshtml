@@ -8,61 +8,61 @@
 <html lang="zxx">
 <head>
 	<title>PRODUCT LIST</title>
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/favicon.png">
-<!-- Web Font -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-<!-- StyleSheet -->
-<!-- <link rel="manifest" href="/manifest.json"> -->
-<!-- Bootstrap -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/bootstrap.css">
-<!-- Magnific Popup -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/magnific-popup.min.css">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/font-awesome.css">
-<!-- Fancybox -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/jquery.fancybox.min.css">
-<!-- Themify Icons -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/themify-icons.css">
-<!-- Nice Select CSS -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/niceselect.css">
-<!-- Animate CSS -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/animate.css">
-<!-- Flex Slider CSS -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/flex-slider.min.css">
-<!-- Owl Carousel -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/owl-carousel.css">
-<!-- Slicknav -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/slicknav.min.css">
-<!-- Jquery Ui -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/jquery-ui.css">
+    <!-- StyleSheet -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/magnific-popup.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/font-awesome.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/jquery.fancybox.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/themify-icons.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/niceselect.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/animate.css">
+    <!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/flex-slider.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/owl-carousel.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/slicknav.min.css">
+    <!-- Jquery Ui -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/jquery-ui.css">
 
-<!-- Custom StyleSheet -->
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/reset.css">
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/style.css">
-<link rel="stylesheet" href="/frontend/product_list/frontend/css/responsive.css">
-<style>
-    /* Multilevel dropdown */
-    .dropdown-submenu {
-    position: relative;
-    }
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/reset.css">
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/style.css">
+    <link rel="stylesheet" href="/frontend/product_list/frontend/css/responsive.css">
+    <style>
+        /* Multilevel dropdown */
+        .dropdown-submenu {
+        position: relative;
+        }
 
-    .dropdown-submenu>a:after {
-    content: "\f0da";
-    float: right;
-    border: none;
-    font-family: 'FontAwesome';
-    }
+        .dropdown-submenu>a:after {
+        content: "\f0da";
+        float: right;
+        border: none;
+        font-family: 'FontAwesome';
+        }
 
-    .dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
-    }
-    
-</style>
+        .dropdown-submenu>.dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        }
+        
+    </style>
 </head>
 <body class="js">
 	<!-- Breadcrumbs -->
@@ -72,7 +72,7 @@
                 <div class="col-12">
                     <div class="bread-inner">
                         <ul class="bread-list">
-                            <li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+                            <li><a href="/">Home<i class="ti-arrow-right"></i></a></li>
                             <li class="active"><a href="blog-single.html">Shop Grid</a></li>
                         </ul>
                     </div>
@@ -197,8 +197,8 @@
                                             <div class="single-product">
                                                 <div class="product-img">
                                                     <a asp-action="Details" asp-route-id="@item.Id">
-                                                        <img class="default-img" src="/frontend/product_list/storage/photo/sanpham/@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
-                                                        <img class="hover-img" src="/frontend/product_list/storage/photo/sanpham/@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
+                                                        <img class="default-img" src="/storage/@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
+                                                        <img class="hover-img" src="/storage/@Html.DisplayFor(modelItem => item.Photo1)" alt="#">
                                                                     <span class="price-dec">10 % Off</span>
                                                     </a>
                                                     <div class="button-head">
@@ -218,8 +218,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                }
-                                        
+                                }     
                             </div>
 
                             <div class="row text-center">

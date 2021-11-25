@@ -15694,6 +15694,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\CategoryA\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryA\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Category\\Edit.cshtml",
       "TargetPath": "Views\\Category\\Edit.cshtml",
       "FileKind": "mvc"
@@ -15904,6 +15909,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\CategoryA\\Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryA\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Notification\\Edit.cshtml",
       "TargetPath": "Views\\Notification\\Edit.cshtml",
       "FileKind": "mvc"
@@ -15989,6 +15999,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\CategoryA\\Details.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryA\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -16014,6 +16029,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\CategoryA\\Edit.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryA\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Wishlist\\Edit.cshtml",
       "TargetPath": "Views\\Wishlist\\Edit.cshtml",
       "FileKind": "mvc"
@@ -16026,6 +16046,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_Header.cshtml",
       "TargetPath": "Views\\Shared\\_Header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\CategoryA\\Create.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\CategoryA\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16076,6 +16101,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\Delete.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Product\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_TopReview.cshtml",
+      "TargetPath": "Views\\Shared\\_TopReview.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16266,6 +16296,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Brand\\o-Create.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Brand\\o-Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_NewProduct.cshtml",
+      "TargetPath": "Views\\Shared\\_NewProduct.cshtml",
       "FileKind": "mvc"
     },
     {
