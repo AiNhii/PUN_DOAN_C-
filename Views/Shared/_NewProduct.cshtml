@@ -1,14 +1,14 @@
 @model IEnumerable<comestic_csharp.Models.Product>
 <div class="container">
-    <div class="row mt-5">
+    <div class="row">
         <h3 class="list-product-title">New product</h3>
         <div class="product-group">
             <div class="row">
                 @foreach (var item in Model)
                 {
-                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="col-3">
                         <div class="card card-product mb-3">
-                            <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
+                            <img class="card-img-top" src="~/storage/@item.Photo1" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title product-title">@item.Title</h5>
                                 <div class="card-text product-price">

@@ -1,15 +1,33 @@
 @model IEnumerable<comestic_csharp.Models.Product>
 @{
-    Layout = "/Views/Shared/_MainLayout.cshtml";
+    Layout= "/Views/Shared/_MainLayout.cshtml";
 }
-
-                @* <div class="row">
+<div class="container">
+<div class="title-page" style="background-image: url('/storage/photo/banner/Shop_3Columns-title.jpg');background-position: center center;background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-6 inner-title-page">
+                <h1>Shop</h1>
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Make Up</li>
+                        </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container">EYES</div>
+<div class="container">
+                <div class="row">
                     @foreach (var item in Model)
                     {
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <div class="col-3">
                             <div class="card card-product mb-3">
                                 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
+                                <img class="card-img-top" src="~/storage/@item.Photo1" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title product-title">@item.Title</h5>
                                     <div class="card-text product-price">
@@ -22,4 +40,5 @@
                             </div>
                         </div>
                     }
-                </div> *@
+                </div>
+</div>

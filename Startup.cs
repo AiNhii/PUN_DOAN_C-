@@ -43,7 +43,7 @@ namespace comestic_csharp
 
             services.AddRazorPages();
 
-            // services.AddDistributedMemoryCache();
+            services.AddDistributedMemoryCache();
             services.AddSession(options =>
             {
                 // options.IdleTimeout = TimeSpan.FromSeconds(10);

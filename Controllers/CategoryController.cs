@@ -166,5 +166,6 @@ namespace comestic_csharp.Controllers
             var shopContext = _context.Products.Where(p => p.CatId == id);
             return View(await shopContext.ToListAsync());
         }
+
     }
 }
