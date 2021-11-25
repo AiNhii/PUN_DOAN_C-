@@ -241,7 +241,6 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shipping\Delete
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shipping\Details.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shipping\Edit.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shipping\Index.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_UserLayout.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Castle.Core.dll
@@ -606,3 +605,8 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Bra
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\o-Create.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\o-Edit.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\o-Index.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_Footer.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_MainLayout.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_Header.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_Category.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Category\ListSP.cshtml.g.cs

@@ -15694,11 +15694,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_UserLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_UserLayout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Category\\Edit.cshtml",
       "TargetPath": "Views\\Category\\Edit.cshtml",
       "FileKind": "mvc"
@@ -16029,6 +16024,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_Header.cshtml",
+      "TargetPath": "Views\\Shared\\_Header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -16056,6 +16056,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Cart\\Index.cshtml",
       "TargetPath": "Views\\Cart\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_MainLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_MainLayout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16124,6 +16129,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_Footer.cshtml",
+      "TargetPath": "Views\\Shared\\_Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -16169,6 +16179,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Category\\ListSP.cshtml",
+      "TargetPath": "Views\\Category\\ListSP.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
       "FileKind": "mvc"
@@ -16186,6 +16201,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shipping\\Create.cshtml",
       "TargetPath": "Views\\Shipping\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_Category.cshtml",
+      "TargetPath": "Views\\Shared\\_Category.cshtml",
       "FileKind": "mvc"
     },
     {
