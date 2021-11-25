@@ -245,7 +245,7 @@
     </div>
 </div> *@
 
-@await Html.PartialAsync("_NewProduct",_shopContext.Products.Take(4).ToList())
+@await Html.PartialAsync("_NewProduct",_shopContext.Products.Where( p => p.Condition=="new").Take(4).ToList())
 <!-- end list product -->
 
 <!--about gioithieu-->
@@ -292,7 +292,7 @@
     </div>
 </div>
 <!--about blog-->
-<div class="container">
+    <div class="container">
     <div class="row mt-5">
         <h3 class="list-product-title">From our bolg</h3>
         <div class="product-group">
@@ -347,3 +347,4 @@
 
     </div>
 </div>
+

@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace comestic_csharp.Controllers
 {
-
+    [Authorize(Roles ="admin")]
     [Area("admin")]
     [Route("admin/category")]
     public class CategoryAController : Controller
