@@ -1,0 +1,90 @@
+ @model comestic_csharp.Models.Brand
+ 
+<div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">PRODUCT</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Product">Product</a></li>
+                            <li class="breadcrumb-item">Create Product</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ form-element ] start -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Create NEW Product</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="form-label" for="example=textarea">With textarea</label>
+                            <div class="input-group">
+                                <span class="input-group-text">Title</span>
+                                <input type="text" class="form-control" aria-label="Title" id="example-textarea"></input>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-file mb-3">
+                                <input type="file" class="form-file-input" id="validationFormFile" required>
+                                <label class="form-file-label" for="validationFormFile">
+                                    <span class="form-file-text">Choose file...</span>
+                                    <span class="form-file-button">Browse</span>
+                                </label>
+                                <div class="invalid-feedback">Example invalid form file feedback</div>
+                        </div>
+                        <div class="form-group mb-0">
+                            <label for="multiple-inputs">Multiple Inputs</label>
+                            <div class="input-group">
+                                <span class="input-group-text">First and last name</span>
+                                <input type="text" id="multiple-inputs" aria-label="First name" class="form-control">
+                                <input type="text" aria-label="Last name" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary mr-2">SAVE</button>
+                        <button class="btn btn-light">Reset</button>
+                        <div><a asp-action="Index">Back to List</a></div>
+                    </div>
+                </div>
+            <!-- [ form-element ] end -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create" asp-area="Admin" asp-controller="Brand">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Slug" class="control-label"></label>
+                        <input asp-for="Slug" class="form-control" />
+                        <span asp-validation-for="Slug" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- [ Main Content ] end -->
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

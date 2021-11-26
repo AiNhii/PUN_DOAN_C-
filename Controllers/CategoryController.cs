@@ -161,5 +161,11 @@ namespace comestic_csharp.Controllers
         {
             return _context.Categories.Any(e => e.Id == id);
         }
+
+        public async Task<IActionResult> ListSP(ulong? id){
+            var shopContext = _context.Products.Where(p => p.CatId == id);
+            return View(await shopContext.ToListAsync());
+        }
+
     }
 }

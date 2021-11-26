@@ -12,9 +12,9 @@ using comestic_csharp.Models;
 
 namespace comestic_csharp.Areas.Admin.Controllers
 {
-    [Authorize (Roles = "admin")]
-    [Area("Admin")]
-    [Route("Admin/Dashboard")]
+    [Authorize(Roles ="admin")]
+    [Area("admin")]
+    [Route("admin/dashboard")]
     public class DashboardController : Controller
     {
         [Route("")]
