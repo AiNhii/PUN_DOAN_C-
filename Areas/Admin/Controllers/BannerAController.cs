@@ -13,11 +13,11 @@ namespace comestic_csharp.Controllers
     [Authorize(Roles ="admin")]
     [Area("admin")]
     [Route("admin/banner")]
-    public class BannerController : Controller
+    public class BannerAController : Controller
     {
         private readonly ShopContext _context;
 
-        public BannerController(ShopContext context)
+        public BannerAController(ShopContext context)
         {
             _context = context;
         }
@@ -29,6 +29,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Banner/Details/5
+         [Route("details")]
         public async Task<IActionResult> Details(ulong? id)
         {
             if (id == null)
@@ -71,6 +72,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Banner/Edit/5
+        [Route("edit")]
         public async Task<IActionResult> Edit(ulong? id)
         {
             if (id == null)
@@ -91,6 +93,7 @@ namespace comestic_csharp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("edit")]
         public async Task<IActionResult> Edit(ulong id, [Bind("Id,Title,Slug,Photo,Description,Condition")] Banner banner)
         {
             if (id != banner.Id)
@@ -122,6 +125,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Banner/Delete/5
+         [Route("delete")]
         public async Task<IActionResult> Delete(ulong? id)
         {
             if (id == null)
@@ -142,6 +146,7 @@ namespace comestic_csharp.Controllers
         // POST: Banner/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+         [Route("delete")]
         public async Task<IActionResult> DeleteConfirmed(ulong id)
         {
             var banner = await _context.Banners.FindAsync(id);

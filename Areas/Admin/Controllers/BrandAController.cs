@@ -13,11 +13,11 @@ namespace comestic_csharp.Controllers
     [Authorize(Roles ="admin")]
     [Area("admin")]
     [Route("admin/brand")]
-    public class BrandController : Controller
+    public class BrandAController : Controller
     {
         private readonly ShopContext _context;
 
-        public BrandController(ShopContext context)
+        public BrandAController(ShopContext context)
         {
             _context = context;
         }
@@ -72,6 +72,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Brand/Edit/5
+        [Route("edit")]
         public async Task<IActionResult> Edit(ulong? id)
         {
             if (id == null)
@@ -92,6 +93,7 @@ namespace comestic_csharp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("edit")]
         public async Task<IActionResult> Edit(ulong id, [Bind("Id,Title,Slug,Status")] Brand brand)
         {
             if (id != brand.Id)
@@ -123,6 +125,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Brand/Delete/5
+         [Route("delete")]
         public async Task<IActionResult> Delete(ulong? id)
         {
             if (id == null)
@@ -141,6 +144,7 @@ namespace comestic_csharp.Controllers
         }
 
         // POST: Brand/Delete/5
+         [Route("delete")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(ulong id)

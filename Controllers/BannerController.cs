@@ -10,27 +10,23 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace comestic_csharp.Controllers
 {
-    [Authorize(Roles ="admin")]
-    [Area("admin")]
-    [Route("admin/category")]
-    public class CategoryAController : Controller
+
+    public class BannerController : Controller
     {
         private readonly ShopContext _context;
 
-        public CategoryAController(ShopContext context)
+        public BannerController(ShopContext context)
         {
             _context = context;
         }
 
-        // GET: Category
-        [Route("index")]
+// GET: Banner
         public async Task<IActionResult> Index()
         {
-            var shopContext = _context.Categories.Include(c => c.AddedByNavigation).Include(c => c.Parent);
-            return View(await shopContext.ToListAsync());
+            return View(await _context.Banners.ToListAsync());
         }
 
-        // GET: Category/Details/5
+        // GET: Banner/Details/5
         public async Task<IActionResult> Details(ulong? id)
         {
             if (id == null)
@@ -38,48 +34,41 @@ namespace comestic_csharp.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories
-                .Include(c => c.AddedByNavigation)
-                .Include(c => c.Parent)
+            var banner = await _context.Banners
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (category == null)
+            if (banner == null)
             {
                 return NotFound();
             }
 
-            return View(category);
+            return View(banner);
         }
 
-        // GET: Category/Create
-         [Route("create")]// GE
+        // GET: Banner/Create
+
         public IActionResult Create()
         {
-            ViewData["AddedBy"] = new SelectList(_context.Users, "Id", "Fullname");
-            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Slug");
             return View();
         }
 
-        // POST: Category/Create
+        // POST: Banner/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Route("create")]
-        public async Task<IActionResult> Create([Bind("Id,Title,Slug,Summary,Photo,IsParent,ParentId,AddedBy,Status")] Category category)
+
+        public async Task<IActionResult> Create([Bind("Id,Title,Slug,Photo,Description,Condition")] Banner banner)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(category);
+                _context.Add(banner);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AddedBy"] = new SelectList(_context.Users, "Id", "Fullname", category.AddedBy);
-            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Slug", category.ParentId);
-            return View(category);
+            return View(banner);
         }
 
-        // GET: Category/Edit/5
-        [Route("edit")]
+        // GET: Banner/Edit/5
         public async Task<IActionResult> Edit(ulong? id)
         {
             if (id == null)
@@ -87,25 +76,22 @@ namespace comestic_csharp.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories.FindAsync(id);
-            if (category == null)
+            var banner = await _context.Banners.FindAsync(id);
+            if (banner == null)
             {
                 return NotFound();
             }
-            ViewData["AddedBy"] = new SelectList(_context.Users, "Id", "Fullname", category.AddedBy);
-            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Slug", category.ParentId);
-            return View(category);
+            return View(banner);
         }
 
-        // POST: Category/Edit/5
+        // POST: Banner/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Route("edit")]
-        public async Task<IActionResult> Edit(ulong id, [Bind("Id,Title,Slug,Summary,Photo,IsParent,ParentId,AddedBy,Status")] Category category)
+        public async Task<IActionResult> Edit(ulong id, [Bind("Id,Title,Slug,Photo,Description,Condition")] Banner banner)
         {
-            if (id != category.Id)
+            if (id != banner.Id)
             {
                 return NotFound();
             }
@@ -114,12 +100,12 @@ namespace comestic_csharp.Controllers
             {
                 try
                 {
-                    _context.Update(category);
+                    _context.Update(banner);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CategoryExists(category.Id))
+                    if (!BannerExists(banner.Id))
                     {
                         return NotFound();
                     }
@@ -130,13 +116,10 @@ namespace comestic_csharp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AddedBy"] = new SelectList(_context.Users, "Id", "Fullname", category.AddedBy);
-            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Slug", category.ParentId);
-            return View(category);
+            return View(banner);
         }
 
-        // GET: Category/Delete/5
-        [Route("delete")]
+        // GET: Banner/Delete/5
         public async Task<IActionResult> Delete(ulong? id)
         {
             if (id == null)
@@ -144,33 +127,30 @@ namespace comestic_csharp.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories
-                .Include(c => c.AddedByNavigation)
-                .Include(c => c.Parent)
+            var banner = await _context.Banners
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (category == null)
+            if (banner == null)
             {
                 return NotFound();
             }
 
-            return View(category);
+            return View(banner);
         }
 
-        // POST: Category/Delete/5
+        // POST: Banner/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-         [Route("delete")]
         public async Task<IActionResult> DeleteConfirmed(ulong id)
         {
-            var category = await _context.Categories.FindAsync(id);
-            _context.Categories.Remove(category);
+            var banner = await _context.Banners.FindAsync(id);
+            _context.Banners.Remove(banner);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CategoryExists(ulong id)
+        private bool BannerExists(ulong id)
         {
-            return _context.Categories.Any(e => e.Id == id);
+            return _context.Banners.Any(e => e.Id == id);
         }
     }
 }
