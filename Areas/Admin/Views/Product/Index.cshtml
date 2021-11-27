@@ -22,51 +22,56 @@
     <div class="row">
         <div class="card">
             <div class="card-header">
-                <h5>List Product</h5>
-                <p><a asp-action="Create">Create New</a></p>
+                <div class="flex-container">
+  <div><h3 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Product</h3></div>
+  <div></div>
+  <div><p>
+    <a asp-action="Create" class="add"><i data-feather ="plus"></i>  Add new</a>
+</p></div> 
+</div>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="padding-top: 0px;">
                 <div class="table-responsive">
                     <table class="table-hover">
                         <thead>
-                            <tr class="table-warning">
-                                <th class="table-warning">
+                            <tr class="table-warning" id="title_pro">
+                                <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Title)
                                 </th>
-                                <th class="table-warning">
+                                <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Summary)
                                 </th>
-                                <th class="table-warning">
+                                <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Description)
                                 </th>
-                                <th class="table-warning">
+                                <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Photo1)
                                 </th>
-                                <th class="table-warning">
+                                <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Photo2)
                                 </th>
-                                <th class="table-warning">
+                                <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Photo3)
                                 </th>
-                                    <th class="table-warning">
+                                    <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Photo4)
                                     </th>
-                                    <th class="table-warning">
+                                    <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Stock)
                                     </th>
-                                    <th class="table-warning">
+                                    <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Condition)
                                     </th>
-                                    <th class="table-warning">
+                                    <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Status)
                                     </th>
-                                    <th class="table-warning">
+                                    <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Price)
                                     </th>
-                                    <th class="table-warning">
+                                    <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Brand)
                                     </th>
-                                    <th class="table-warning">
+                                    <th class="table-warning" style="color: #ffffff;">
                                         @Html.DisplayNameFor(model => model.Cat)
                                     </th>
                                     <th class="table-warning"></th>

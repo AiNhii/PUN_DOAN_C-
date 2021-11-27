@@ -4,11 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="flex-container">
+  <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Category</h1></div>
+  <div></div>
+  <div><p>
+    <a asp-action="Create" class="add"><i data-feather ="plus"></i>  Add new</a>
+</p></div> 
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -67,9 +69,9 @@
                 @Html.DisplayFor(modelItem => item.Parent.Slug)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit"></i></a> 
+                <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
+                <a asp-action="Delete" asp-route-id="@item.Id"><i data-feather ="trash"></i></a>
             </td>
         </tr>
 }

@@ -1,84 +1,79 @@
-.gioithieu-section {
-    margin-top: 5px;
-    padding-top: 30%;
-    background: url('/main/asset/img/nenchinh2.jpg') top center/ cover no-repeat;
-}
-
-
-/*gioithieu-content*/
-
-.container .inner-blog {
-    padding-left: 60px;
-    padding-top: 68px;
-}
-
-.container .inner-blog h2 {
-    text-align: center;
-}
-
-.content-section {
-    margin-top: 0px;
-    background: url('/main/asset/img/about6.jpg') top center/ cover no-repeat;
-}
-
-.about-content p {
-    margin-top: 0;
-    margin: 5px 15px;
-    margin-bottom: 1rem;
-}
-
-.card-title {
-    text-align: center;
-}
-
-#img-about {
-    padding-left: 170px;
-    padding-right: 0 !important;
-}
-
-
-/*thanh vien*/
-
-.thanhvien {
-    background-color: #F6FEF5;
-}
-
-.tentv {
-    background-color: #7AA472;
-    padding: 5px;
-    color: #fff;
-}
-
-
-/*thanhpha*/
-
-.thanhphan {
-    background-color: #7AA472;
-}
-
-.cosmetic .thanhphan p {
-    color: #fff;
-    font-size: 25px;
-}
-
-.container .thanhphan p:before {
-    content: "";
-    position: absolute;
-    height: 13px;
-    width: 70px;
-    display: block;
-    left: 0;
-    bottom: -20px;
-    font-size: 30px !important;
-    color: #fff;
-}
-
-.cosmetic .thanhphan h2 {
-    font-size: 30px;
-    line-height: 1;
-    color: #fff;
-}
-
-.cosmetic .inner-cosmetic h3 {
-    color: rgba(255, 255, 255, 0.877);
-}
+    .gioithieu-section {
+        margin-top: 5px;
+        padding-top: 30%;
+        background: url('/main/asset/img/nenchinh2.jpg') top center/ cover no-repeat;
+    }
+    /*gioithieu-content*/
+    
+    .container .inner-blog {
+        padding-left: 60px;
+        padding-top: 68px;
+    }
+    
+    .container .inner-blog h2 {
+        text-align: center;
+    }
+    
+    .content-section {
+        margin-top: 0px;
+        background: url('/main/asset/img/about6.jpg') top center/ cover no-repeat;
+    }
+    
+    .about-content p {
+        margin-top: 0;
+        margin: 5px 15px;
+        margin-bottom: 1rem;
+    }
+    
+    .card-title {
+        text-align: center;
+    }
+    
+    #img-about {
+        padding-left: 170px;
+        padding-right: 0 !important;
+    }
+    /*thanh vien*/
+    
+    .thanhvien {
+        background-color: #F6FEF5;
+    }
+    
+    .tentv {
+        background-color: #7AA472;
+        padding: 5px;
+        color: #fff;
+    }
+    /*thanhpha*/
+    
+    .thanhphan {
+        background-color: #7AA472;
+    }
+    
+    .cosmetic .thanhphan p {
+        color: #fff;
+        font-size: 25px;
+    }
+    
+    .container .thanhphan p:before {
+        content: "";
+        position: absolute;
+        height: 13px;
+        width: 70px;
+        display: block;
+        left: 0;
+        bottom: -20px;
+        font-size: 30px !important;
+        color: #fff;
+    }
+    
+    .cosmetic .thanhphan h2 {
+        font-size: 40px;
+        line-height: 1;
+        color: #fff;
+        padding-bottom: 15px;
+    }
+    
+    .cosmetic .inner-cosmetic h3 {
+        color: rgba(255, 255, 255, 0.877);
+    }
