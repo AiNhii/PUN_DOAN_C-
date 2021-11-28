@@ -31,6 +31,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Category/Details/5
+           [Route("details")]
         public async Task<IActionResult> Details(ulong? id)
         {
             if (id == null)
@@ -79,6 +80,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Category/Edit/5
+           [Route("edit")]
         public async Task<IActionResult> Edit(ulong? id)
         {
             if (id == null)
@@ -134,6 +136,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Category/Delete/5
+           [Route("delete")]
         public async Task<IActionResult> Delete(ulong? id)
         {
             if (id == null)
