@@ -1,8 +1,6 @@
 @model comestic_csharp.Models.Product
 
-<div class="pcoded-content">
-
-        <div class="page-header">
+<div class="page-header">
             <div class="page-block">
                 <div class="row align-items-center">
                     <div class="col-md-12">
@@ -17,17 +15,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+</div>
 
-        <div class="row">
+<div class="pcoded-content">
             <div class="card">
                 <div class="col-md-4">
                     <form asp-action="Edit">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <input type="hidden" asp-for="Id" />
-                        <div class="card-header">
-                            <h5>EDIT Product</h5>
-                        </div>
+                        <h3 class="card-header">EDIT Product</h3>
                         <div class="card-body">
                             <div class="form-group">
                                 <label asp-for="Title" class="control-label"></label>
@@ -115,7 +111,6 @@
                     </form>
                 </div>
             </div>
-        </div>
 </div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

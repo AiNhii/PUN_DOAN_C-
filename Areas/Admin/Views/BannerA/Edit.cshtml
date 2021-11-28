@@ -1,11 +1,8 @@
-
 @model comestic_csharp.Models.Banner
 
 @{
     ViewData["Title"] = "Edit";
 }
-
-<div class="pcoded-content">
 
         <div class="page-header">
             <div class="page-block">
@@ -23,42 +20,39 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
+        
+<div class="pcoded-content">
             <div class="card">
-                <div class="col-md-4">
-                    <form asp-action="Edit">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <input type="hidden" asp-for="Id" />
-                        <div class="card-header">
-                            <h5>EDIT Banner</h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label asp-for="Title" class="control-label"></label>
-                                <input asp-for="Title" class="form-control" />
-                                <span asp-validation-for="Title" class="text-danger"></span>
+                    <div class="col-md-4">
+                        <form asp-action="Edit">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Id" />
+                            <h3 class="card-header">EDIT Banner</h3>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label asp-for="Title" class="control-label"></label>
+                                    <input asp-for="Title" class="form-control" />
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Slug" class="control-label"></label>
+                                    <input asp-for="Slug" class="form-control" />
+                                    <span asp-validation-for="Slug" class="text-danger"></span>
+                                </div>
+                                <div class="form-file mb-3">
+                                    <label asp-for="Photo" class="form-file-label"></label>
+                                    <input asp-for="Photo" type="file" class="form-file-input"  required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Save" class="btn btn-primary" />
+                                </div>
+                                <div>
+                                    <a asp-action="Index">Back to List</a>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label asp-for="Slug" class="control-label"></label>
-                                <input asp-for="Slug" class="form-control" />
-                                <span asp-validation-for="Slug" class="text-danger"></span>
-                            </div>
-                            <div class="form-file mb-3">
-                                <label asp-for="Photo" class="form-file-label"></label>
-                                <input asp-for="Photo" type="file" class="form-file-input"  required>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Save" class="btn btn-primary" />
-                            </div>
-                            <div>
-                                <a asp-action="Index">Back to List</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                        </form>
+                    </div>                
             </div>
-        </div>
 </div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

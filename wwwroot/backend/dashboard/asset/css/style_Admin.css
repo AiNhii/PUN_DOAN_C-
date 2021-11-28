@@ -2971,7 +2971,7 @@ fieldset:disabled .btn {
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(135, 126, 241, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(13, 189, 101, 0.5);
 }
 
 .btn-primary:disabled,
@@ -14411,9 +14411,9 @@ body:not(.minimenu) .pc-sidebar .pc-submenu .pc-submenu .pc-submenu>.pc-item:bef
 }
 
 .pc-container .pcoded-content {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .pc-container .page-header+.row {

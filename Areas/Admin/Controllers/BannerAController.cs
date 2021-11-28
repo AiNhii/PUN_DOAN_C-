@@ -144,9 +144,10 @@ namespace comestic_csharp.Controllers
         }
 
         // POST: Banner/Delete/5
+         [Route("delete")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-         [Route("delete")]
+       
         public async Task<IActionResult> DeleteConfirmed(ulong id)
         {
             var banner = await _context.Banners.FindAsync(id);

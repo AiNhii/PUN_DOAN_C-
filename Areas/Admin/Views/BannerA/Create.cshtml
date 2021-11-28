@@ -1,6 +1,6 @@
 @model comestic_csharp.Models.Banner
 
-<div class="pcoded-content">
+
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
             <div class="page-block">
@@ -19,15 +19,16 @@
             </div>
         </div>
         <!-- [ breadcrumb ] end -->
+
         <!-- [ Main Content ] start -->
-        <div class="row">
+    <div class="pcoded-content">
             <!-- [ form-element ] start -->
                 <div class="card">
                     <form asp-action="Create">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <div class="card-header">
-                            <h5>Create NEW Banner</h5>
-                        </div>
+                        <h3 class="card-header">
+                                <mark>Create NEW Banner</mark>
+                        </h3>
                         <div class="card-body">
                             <div class="form-group">
                                 <label asp-for="Title" class="control-label"></label>
@@ -55,7 +56,5 @@
                     </form>
                 </div>
             <!-- [ form-element ] end -->
-        </div>
-
-        <!-- [ Main Content ] end -->
-</div>
+        <!--- Main Content ] end -->
+    </div>

@@ -144,7 +144,7 @@ namespace comestic_csharp.Controllers
         }
 
         // POST: Brand/Delete/5
-         [Route("delete")]
+        [Route("delete")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(ulong id)
