@@ -40,15 +40,11 @@
                                     <input asp-for="Slug" class="form-control" />
                                     <span asp-validation-for="Slug" class="text-danger"></span>
                                 </div>
-                                <div class="form-group">
-                                    <input type="submit" value="Create" class="btn btn-primary" />
-                                </div>
                             </div>
-                            @* <div class="card-footer">
-                                <button class="btn btn-primary mr-2" type="submit">SAVE</button>
-                                <button class="btn btn-light">Reset</button>
-                                <a asp-action="Index">Back to List</a>
-                            </div> *@
+                            <div class="card-footer">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                                <a asp-action="Index" class="btn btn-primary">Back to List</a>
+                            </div>
                         </form>
                     </div>
                 <!-- [ form-element ] end -->
