@@ -2,15 +2,8 @@
 
 @{
     ViewData["Title"] = "Details";
-    Layout = null;
+    Layout = "/Views/Shared/_MainLayout.cshtml";
 }
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Detail</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -27,16 +20,6 @@
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!-- Web Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- StyleSheet -->
-    <!-- <link rel="manifest" href="/manifest.json"> -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/frontend/product_details/frontend/css/bootstrap.css" />
     <!-- Magnific Popup -->
@@ -166,30 +149,21 @@
               content: "\F005";
             }2
     </style>
-  </head>
-  <body>
  
    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="bread-inner">
-              <ul class="bread-list">
-                <li>
-                  <!--Route-->
-                  <a href="/">Home<i class="ti-arrow-right"></i></a>
-                </li>
-                <li>
-                  <a href="#">Type of product<i class="ti-arrow-right"></i></a>
-                </li>
-                <li class="active"><a href="">Product</a></li>
-              </ul>
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Home">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Shop">Type of Product</a></li>
+                            <li class="breadcrumb-item">Product</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
     <!-- End Breadcrumbs -->
 
     <!-- Shop Single -->
@@ -198,7 +172,7 @@
         <div class="row p-5">
           <div class="col-12">
             <div class="row">
-              <div class="col-lg-6 col-12 p-4">
+              <div class="col-lg-6 col-12">
                 <div class="d-flex flex-column justify-content-center">
                   <!-- Product Slider -->
                   <div class="product-gallery">
@@ -255,22 +229,21 @@
                   <!-- End Product slider -->
                 </div>
               </div>
+
               <div class="col-lg-6 col-12">
                 <div class="product-des">
                   <!-- Description -->
                   <div class="short">
                     <h4>@Html.DisplayFor(model => model.Title)</h4>
                     <div class="rating-main text-left">
-                      <ul class="rating">
+                      <div class="rating">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star-o"></i></li>
-                      </ul>
-                      <a href="#" class="total-review"
-                        >(<span>0 </span>) Review</a
-                      >
+                      </div>
+                      <a href="#" class="total-review">(<span> 0 </span>)Review</a>
                     </div>
                     <p class="price">
                       <span class="discount">750 000</span><s> @Html.DisplayFor(model => model.Price)</s>
@@ -298,6 +271,7 @@
                     </ul>
                   </div>
                   <!--/ End Size -->
+
                   <!-- Product Buy -->
                   <div class="product-buy">
                     <form
@@ -443,100 +417,13 @@
                                 qui officia deserunt mollit anim id est
                                 laborum."
                               </p>
-                              <h3
-                                style="
-                                  margin: 15px 0px;
-                                  padding: 0px;
-                                  font-weight: 700;
-                                  font-size: 14px;
-                                  font-family: 'Open Sans', Arial, sans-serif;
-                                "
-                              >
-                                Section 1.10.32 of "de Finibus Bonorum et
-                                Malorum", written by Cicero in 45 BC
-                              </h3>
-                              <p
-                                style="
-                                  margin-right: 0px;
-                                  margin-bottom: 15px;
-                                  margin-left: 0px;
-                                  padding: 0px;
-                                  text-align: justify;
-                                  font-family: 'Open Sans', Arial, sans-serif;
-                                  font-size: 14px;
-                                "
-                              >
-                                "Sed ut perspiciatis unde omnis iste natus error
-                                sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam, eaque ipsa quae
-                                ab illo inventore veritatis et quasi architecto
-                                beatae vitae dicta sunt explicabo. Nemo enim
-                                ipsam voluptatem quia voluptas sit aspernatur
-                                aut odit aut fugit, sed quia consequuntur magni
-                                dolores eos qui ratione voluptatem sequi
-                                nesciunt. Neque porro quisquam est, qui dolorem
-                                ipsum quia dolor sit amet, consectetur, adipisci
-                                velit, sed quia non numquam eius modi tempora
-                                incidunt ut labore et dolore magnam aliquam
-                                quaerat voluptatem. Ut enim ad minima veniam,
-                                quis nostrum exercitationem ullam corporis
-                                suscipit laboriosam, nisi ut aliquid ex ea
-                                commodi consequatur? Quis autem vel eum iure
-                                reprehenderit qui in ea voluptate velit esse
-                                quam nihil molestiae consequatur, vel illum qui
-                                dolorem eum fugiat quo voluptas nulla pariatur?"
-                              </p>
-                              <h3
-                                style="
-                                  margin: 15px 0px;
-                                  padding: 0px;
-                                  font-weight: 700;
-                                  font-size: 14px;
-                                  font-family: 'Open Sans', Arial, sans-serif;
-                                "
-                              >
-                                1914 translation by H. Rackham
-                              </h3>
-                              <p
-                                style="
-                                  margin-right: 0px;
-                                  margin-bottom: 15px;
-                                  margin-left: 0px;
-                                  padding: 0px;
-                                  text-align: justify;
-                                  font-family: 'Open Sans', Arial, sans-serif;
-                                  font-size: 14px;
-                                "
-                              >
-                                "But I must explain to you how all this mistaken
-                                idea of denouncing pleasure and praising pain
-                                was born and I will give you a complete account
-                                of the system, and expound the actual teachings
-                                of the great explorer of the truth, the
-                                master-builder of human happiness. No one
-                                rejects, dislikes, or avoids pleasure itself,
-                                because it is pleasure, but because those who do
-                                not know how to pursue pleasure rationally
-                                encounter consequences that are extremely
-                                painful. Nor again is there anyone who loves or
-                                pursues or desires to obtain pain of itself,
-                                because it is pain, but because occasionally
-                                circumstances occur in which toil and pain can
-                                procure him some great pleasure. To take a
-                                trivial example, which of us ever undertakes
-                                laborious physical exercise, except to obtain
-                                some advantage from it? But who has any right to
-                                find fault with a man who chooses to enjoy a
-                                pleasure that has no annoying consequences, or
-                                one who avoids a pain that produces no resultant
-                                pleasure?"
-                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <!--/ End Description Tab -->
+
                     <!-- Reviews Tab -->
                     <div class="tab-pane fade" id="reviews" role="tabpanel">
                       <div class="tab-single review-panel">
@@ -806,7 +693,7 @@
       </div>
     </div>
     <!-- End Most Popular Area -->
-  </body>
+
   <!-- Show Product Image Detail -->
   <script type="text/javascript"></script>
   <script>
@@ -815,4 +702,3 @@
       main_prodcut_image.src = element.src;
     }
   </script>
-</html>
