@@ -1,8 +1,24 @@
 @model IEnumerable<comestic_csharp.Models.Brand>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Brand";
 }
+<div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">BRAND</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Brand">Brand</a></li>
+                            <li class="breadcrumb-item">Index</li>
+                    </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
 <div class="flex-container">
   <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Brand</h1></div>
   <div></div>
