@@ -11,7 +11,7 @@
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
-                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Banner">Banner</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="BannerA">Banner</a></li>
                             <li class="breadcrumb-item">Create BANNER</li>
                         </ul>
                     </div>
@@ -38,6 +38,10 @@
                                 <label asp-for="Slug" class="control-label"></label>
                                 <input asp-for="Slug" class="form-control" />
                                 <span asp-validation-for="Slug" class="text-danger"></span>
+                            </div>
+                            <div class="form-file mb-3">
+                                <label asp-for="Photo" class="form-file-label"></label>
+                                <input asp-for="Photo" type="file" class="form-file-input"  required>
                             </div>
                             <div class="form-group">
                                 <input type="submit" value="Create" class="btn btn-primary" />
