@@ -1,8 +1,8 @@
 @{
   Layout = "/Views/Shared/_MainLayout.cshtml";
 }
-		
-	<!-- Shopping Cart -->
+
+	@* <!-- Shopping Cart -->
 	<div class="shopping-cart section">
 		<div class="container">
 			<div class="row">
@@ -92,5 +92,418 @@
 	</div>
 	<!--/ End Shopping Cart -->
 		
+	<!-- Jquery --> *@
+	
+	<!-- StyleSheet -->
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="~/frontend/cart/css/bootstrap.css">
+	<!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/frontend/cart/css/magnific-popup.min.css">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="~/frontend/cart/css/font-awesome.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="~/frontend/cart/css/jquery.fancybox.min.css">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="~/frontend/cart/css/themify-icons.css">
+	<!-- Nice Select CSS -->
+    <link rel="stylesheet" href="~/frontend/cart/css/niceselect.css">
+	<!-- Animate CSS -->
+    <link rel="stylesheet" href="~/frontend/cart/css/animate.css">
+	<!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="~/frontend/cart/css/flex-slider.min.css">
+	<!-- Owl Carousel -->
+    <link rel="stylesheet" href="~/frontend/cart/css/owl-carousel.css">
+	<!-- Slicknav -->
+    <link rel="stylesheet" href="~/frontend/cart/css/slicknav.min.css">
+	
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="~/frontend/cart/css/reset.css">
+	@* <link rel="stylesheet" href="~/frontend/cart/style.css"> *@
+    @* <link rel="stylesheet" href="~/frontend/cart/css/responsive.css"> *@
+<style>
+	.header .shopping {
+	display: inline-block;
+	z-index: 9999;
+}
+.header .shopping .icon {
+	position: relative;
+	cursor:pointer;
+	color:#222;
+}
+.header .shopping .shopping-item {
+	position: absolute;
+	top: 68px;
+	right: 0;
+	width: 300px;
+	background: #fff;
+	padding: 20px 25px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	opacity:0;
+	visibility:hidden;
+	z-index:99;
+}
+.header .shopping:hover .shopping-item{
+	transform: translateY(0px);
+	opacity:1;
+	visibility:visible;
+}
+.header .shopping .dropdown-cart-header{
+	padding-bottom: 10px;
+    margin-bottom: 15px;
+	border-bottom:1px solid #e6e6e6;
+}
+.header .shopping .dropdown-cart-header span {
+	text-transform: uppercase;
+	color: #222;
+	font-size: 13px;
+	font-weight: 600;
+}
+.header .shopping .dropdown-cart-header a {
+	float: right;
+	text-transform: uppercase;
+	color: #222;
+	font-size: 13px;
+	font-weight: 600;
+}
+.header .shopping .dropdown-cart-header a:hover{
+	color:#F7941D;
+}
+.header .shopping-list li {
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	position:relative;
+}
+.header .shopping-list li .remove {
+	position: absolute;
+	left: 0;
+	bottom: 16px;
+	margin-top: -20px;
+	height: 20px;
+	width: 20px;
+	line-height: 18px;
+	text-align: center;
+	background: #fff;
+	color: #222;
+	border-radius: 0;
+	font-size: 11px;
+	border: 1px solid #ededed;
+}
+.header .shopping-list li .remove:hover{
+	background:#222;
+	color:#fff !important;
+	border-color:transparent;
+}
+.header .shopping-list .cart-img {
+	float: right;
+	border: 1px solid #ededed;
+	overflow:hidden;
+}
+.header .shopping-list .cart-img img {
+	width: 70px;
+	height: 70px;
+	border-radius:0;
+	
+}
+.header .shopping-list .cart-img:hover img{
+	transform:scale(1.09);
+}
+.header .shopping-list .quantity{
+	line-height: 22px;
+    font-size: 13px;
+	padding-bottom: 30px;
+}
+.header .shopping-list h4 {
+	font-size: 14px;
+}
+.header .shopping-list h4 a {
+	font-weight: 600;
+	font-size: 13px;
+	color: #333;
+}
+.header .shopping-list h4 a:hover{
+	color:#F7941D;
+}
+.header .shopping-item .bottom {
+	text-align: center;
+}
+.header .shopping-item .total {
+	overflow:hidden;
+	display: block;
+    padding-bottom: 10px;
+}
+.header .shopping-item .total span {
+	text-transform:uppercase;
+	color:#222;
+	font-size:13px;
+	font-weight:600;
+	float:left;
+}
+.header .shopping-item .total .total-amount {
+	float:right;
+	font-size:14px;
+}
+.header .shopping-item .bottom .btn {
+	background: #222;
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500;
+}
+.header .shopping-item .bottom .btn:hover{
+	background:#F7941D;
+	color:#fff;
+}
+.header.shop{
+	background:#fff;
+}
+.header.shop .nav-inner {
+	margin: 0;
+	float: left;
+}
+.header.shop .topbar {
+	background-color: #fff;
+	border: none;
+}
+.header.shop.v3 .topbar{
+	padding:0;
+}
+.header.shop.v3 .topbar .inner-content{
+	border-bottom:1px solid #eee;
+	padding: 12px 0px;
+}
+.header.shop .right-nav li a {
+	color: #333;
+}
+.header.shop .logo {
+	float: left;
+	margin: 19px 0 0;
+}
+.header.shop .top-contact {
+	margin-top:0px;
+}
+.shop.single .add-to-cart {
+	display:inline-block;
+}
+.shop.single .add-to-cart .btn {
+	height: 45px;
+	width: auto;
+	padding: 0 42px;
+	line-height: 45px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-right: 5px;
+	border-radius: 0px;
+	background: #333;
+	color: #fff;
+	display: inline-block;
+	font-weight: 500;
+}
+.shop.single .add-to-cart .btn:hover{
+	color:#fff;
+	background:#F7941D;
+}
+.shop.single .add-to-cart .btn.min {
+	padding: 0 20px;
+	font-size: 17px;
+	position: relative;
+	top: 1px;
+	line-height: 45px;
+}
+</style>
+<div class="js">
+	<!-- Shopping Cart -->
+	<div class="shopping-cart section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Shopping Summery -->
+					<table class="table shopping-summery">
+						<thead>
+							<tr class="main-hading">
+								<th>PRODUCT</th>
+								<th>NAME</th>
+								<th class="text-center">UNIT PRICE</th>
+								<th class="text-center">QUANTITY</th>
+								<th class="text-center">TOTAL</th> 
+								<th class="text-center"><i class="ti-trash remove-icon"></i></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="product-des" data-title="Description">
+									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
+								</td>
+								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="qty" data-title="Qty"><!-- Input Order -->
+									<div class="input-group">
+										<div class="button minus">
+											<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+												<i class="ti-minus"></i>
+											</button>
+										</div>
+										<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="100" value="1">
+										<div class="button plus">
+											<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+												<i class="ti-plus"></i>
+											</button>
+										</div>
+									</div>
+									<!--/ End Input Order -->
+								</td>
+								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
+							</tr>
+							<tr>
+								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="product-des" data-title="Description">
+									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
+								</td>
+								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="qty" data-title="Qty"><!-- Input Order -->
+									<div class="input-group">
+										<div class="button minus">
+											<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+												<i class="ti-minus"></i>
+											</button>
+										</div>
+										<input type="text" name="quant[2]" class="input-number"  data-min="1" data-max="100" value="2">
+										<div class="button plus">
+											<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[2]">
+												<i class="ti-plus"></i>
+											</button>
+										</div>
+									</div>
+									<!--/ End Input Order -->
+								</td>
+								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
+							</tr>
+							<tr>
+								<td class="image" data-title="No"><img src="https://via.placeholder.com/100x100" alt="#"></td>
+								<td class="product-des" data-title="Description">
+									<p class="product-name"><a href="#">Women Dress</a></p>
+									<p class="product-des">Maboriosam in a tonto nesciung eget  distingy magndapibus.</p>
+								</td>
+								<td class="price" data-title="Price"><span>$110.00 </span></td>
+								<td class="qty" data-title="Qty"><!-- Input Order -->
+									<div class="input-group">
+										<div class="button minus">
+											<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+												<i class="ti-minus"></i>
+											</button>
+										</div>
+										<input type="text" name="quant[3]" class="input-number"  data-min="1" data-max="100" value="3">
+										<div class="button plus">
+											<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[3]">
+												<i class="ti-plus"></i>
+											</button>
+										</div>
+									</div>
+									<!--/ End Input Order -->
+								</td>
+								<td class="total-amount" data-title="Total"><span>$220.88</span></td>
+								<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
+							</tr>
+						</tbody>
+					</table>
+					<!--/ End Shopping Summery -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<!-- Total Amount -->
+					<div class="total-amount">
+						<div class="row">
+							<div class="col-lg-8 col-md-5 col-12">
+								<div class="left">
+									<div class="coupon">
+										<form action="#" target="_blank">
+											<input name="Coupon" placeholder="Enter Your Coupon">
+											<button class="btn">Apply</button>
+										</form>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10$)</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-7 col-12">
+								<div class="right">
+									<ul>
+										<li>Cart Subtotal<span>$330.00</span></li>
+										<li>Shipping<span>Free</span></li>
+										<li>You Save<span>$20.00</span></li>
+										<li class="last">You Pay<span>$310.00</span></li>
+									</ul>
+									<div class="button5">
+										<a href="#" class="btn">Checkout</a>
+										<a href="#" class="btn">Continue shopping</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/ End Total Amount -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Shopping Cart -->
+</div>
+			
 	<!-- Jquery -->
+    <script src="~/frontend/cart/js/jquery.min.js"></script>
+    <script src="~/frontend/cart/js/jquery-migrate-3.0.0.js"></script>
+	<script src="~/frontend/cart/js/jquery-ui.min.js"></script>
+	<!-- Popper JS -->
+	<script src="~/frontend/cart/js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="~/frontend/cart/js/bootstrap.min.js"></script>
+	<!-- Color JS -->
+	<script src="~/frontend/cart/js/colors.js"></script>
+	<!-- Slicknav JS -->
+	<script src="~/frontend/cart/js/slicknav.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="~/frontend/cart/js/owl-carousel.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="~/frontend/cart/js/magnific-popup.js"></script>
+	<!-- Fancybox JS -->
+	<script src="~/frontend/cart/js/facnybox.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="~/frontend/cart/js/waypoints.min.js"></script>
+	<!-- Countdown JS -->
+	<script src="~/frontend/cart/js/finalcountdown.min.js"></script>
+	<!-- Nice Select JS -->
+	<script src="~/frontend/cart/js/nicesellect.js"></script>
+	<!-- Ytplayer JS -->
+	<script src="~/frontend/cart/js/ytplayer.min.js"></script>
+	<!-- Flex Slider JS -->
+	<script src="~/frontend/cart/js/flex-slider.js"></script>
+	<!-- ScrollUp JS -->
+	<script src="~/frontend/cart/js/scrollup.js"></script>
+	<!-- Onepage Nav JS -->
+	<script src="~/frontend/cart/js/onepage-nav.min.js"></script>
+	<!-- Easing JS -->
+	<script src="~/frontend/cart/js/easing.js"></script>
+	<!-- Active JS -->
+	<script src="~/frontend/cart/js/active.js"></script>
+
     

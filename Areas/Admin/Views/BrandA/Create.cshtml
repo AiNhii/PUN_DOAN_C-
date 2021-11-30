@@ -1,0 +1,56 @@
+@model comestic_csharp.Models.Brand
+
+
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">BRAND</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="BrandA">Brand</a></li>
+                            <li class="breadcrumb-item">Create BRAND</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="pcoded-content">
+
+                <!-- [ form-element ] start -->
+                    <div class="card">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="card-header">
+                                <h3><mark>Create NEW Brand</mark></h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label asp-for="Title" class="control-label"></label>
+                                    <input asp-for="Title" class="form-control" />
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Slug" class="control-label"></label>
+                                    <input asp-for="Slug" class="form-control" />
+                                    <span asp-validation-for="Slug" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                                <a asp-action="Index" class="btn btn-primary">Back to List</a>
+                            </div>
+                        </form>
+                    </div>
+                <!-- [ form-element ] end -->
+            <!-- [ Main Content ] end -->
+        </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

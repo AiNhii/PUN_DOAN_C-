@@ -1,6 +1,6 @@
  @model comestic_csharp.Models.Product
 
-<div class="pcoded-content">
+
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
             <div class="page-block">
@@ -20,13 +20,13 @@
         </div>
         <!-- [ breadcrumb ] end -->
         <!-- [ Main Content ] start -->
-        <div class="row">
+    <div class="pcoded-content">
             <!-- [ form-element ] start -->
                 <div class="card">
                     <form asp-action="Create">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="card-header">
-                            <h5>Create NEW Product</h5>
+                            <h3><mark>Create NEW Product</mark></h3>
                         </div>
                         <div class="card-body">
                             <div class="form-group">
@@ -81,24 +81,17 @@
                                 <label asp-for="BrandId" class="control-label"></label>
                                 <select asp-for="BrandId" class ="form-control" asp-items="ViewBag.BrandId"></select>
                             </div>
-                            <div class="form-group">
-                                <input type="submit" value="Create" class="btn btn-primary" />
-                            </div>
                         </div>
-                        @* <div class="card-footer">
-                            <button class="btn btn-primary mr-2" type="submit">SAVE</button>
-                            <button class="btn btn-light">Reset</button>
-                            <a asp-action="Index">Back to List</a>
-                        </div> *@
+                        <div class="card-footer">
+                            <input type="submit" value="Create" class="btn btn-primary" />
+                            <a asp-action="Index" class="btn btn-primary">Back to List</a>
+                        </div>
                     </form>
                 </div>
             <!-- [ form-element ] end -->
-        </div>
 
         <!-- [ Main Content ] end -->
-</div>
-
-
+    </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

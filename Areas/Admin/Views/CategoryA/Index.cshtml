@@ -18,77 +18,83 @@
                     </div>
                 </div>
         </div>
-    </div>
-<div class="flex-container">
-  <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Category</h1></div>
-  <div></div>
-  <div><p>
-    <a asp-action="Create" class="add"><i data-feather ="plus"></i>  Add new</a>
-</p></div> 
 </div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Slug)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Summary)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Photo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsParent)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AddedByNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Parent)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Slug)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Summary)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Photo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsParent)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AddedByNavigation.Fullname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Parent.Slug)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit"></i></a> 
-                <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
-                <a asp-action="Delete" asp-route-id="@item.Id"><i data-feather ="trash"></i></a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+
+<div class="pcoded-content">
+    <div class="card">
+    <div class="flex-container">
+            <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Category</h1></div>
+            <div></div>
+            <div><p>
+                <a asp-action="Create" class="add"><i data-feather ="plus"></i>  Add new</a>
+            </p></div> 
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Title)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Slug)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Summary)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Photo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IsParent)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Status)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.AddedByNavigation)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Parent)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Slug)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Summary)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Photo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IsParent)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AddedByNavigation.Fullname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Parent.Slug)
+                        </td>
+                        <td>
+                           <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit" style="color: #3EC9E6;"></i></a> 
+                        <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
+                        <a asp-action="Delete" asp-route-id="@item.Id"><i data-feather="trash" style="color: red;"></i></a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+    </div>    
+</div>

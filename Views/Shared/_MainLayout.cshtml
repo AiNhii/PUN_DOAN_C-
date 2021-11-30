@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="~/main/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="~/main/font-awesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 
 <body>
@@ -33,8 +33,8 @@
 
     
     <!-- Load jquery trước khi load bootstrap js -->
-    <script src="~/main/asset/js/jquery-3.3.1.min.js"></script>
-    <script src="~/main/bootstrap/js/bootstrap.min.js"></script>
+      <script src="~/main/asset/js/jquery-3.3.1.min.js"></script>
+    <script src="~/main/bootstrap/js/bootstrap.min.js"></script>  
 
     <script>
         $(document).ready(function() {
@@ -42,8 +42,8 @@
                 $(this).toggleClass("fa-heart fa-heart-o");
             });
         });
-    </script>
-    <script>
+    </script> 
+     <script>
         var countDownDate = new Date(Date.parse(new Date()) + 6 * 24 * 60 * 60 * 1000);
 
         // Update the count down every 1 second
@@ -78,7 +78,7 @@
                 }
             }
         }, 1000);
-    </script>
+    </script> 
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
