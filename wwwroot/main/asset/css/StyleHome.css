@@ -227,11 +227,11 @@
 }
 
 .carousel-indicators .active {
-    background-color: #bac0c5 !important;
+    background-color: #cdd2d6 !important;
 }
 
 .carousel-indicators li {
-    background-color: #312d2d !important;
+    background-color: #837575 !important;
 }
 
 .fa-heart {
@@ -1017,4 +1017,11 @@ footer .copy {
     line-height: 18px;
     font-size: 13px;
     color: #fff;
+}
+
+
+/*list sp*/
+
+.carousel-indicators sp {
+    bottom: -35px !important;
 }

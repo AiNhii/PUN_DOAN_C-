@@ -1,0 +1,660 @@
+@{
+  ViewData["Title"] = "ABOUT";
+  Layout = "/Views/Shared/_MainLayout.cshtml";
+
+
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>BLOG</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <!-- Web Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet" />
+
+  @* <!-- StyleSheet -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/frontend/blog/css/bootstrap.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/frontend/blog/css/magnific-popup.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/frontend/blog/css/font-awesome.css" />
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="~/frontend/blog/css/jquery.fancybox.min.css" />
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="~/frontend/blog/css/themify-icons.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="~/frontend/blog/css/niceselect.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/frontend/blog/css/animate.css" />
+    <!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="~/frontend/blog/css/flex-slider.min.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="~/frontend/blog/css/owl-carousel.css" />
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="~/frontend/blog/css/slicknav.min.css" />
+    <!-- Jquery Ui -->
+    <link rel="stylesheet" href="~/frontend/blog/css/jquery-ui.css" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="~/frontend/blog/css/reset.css" />
+    <link rel="stylesheet" href="~/frontend/blog/css/style.css" />
+    <link rel="stylesheet" href="~/frontend/blog/css/responsive.css" />
+    <!--Carousel-->
+    <link
+    href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    /> *@
+  <link rel="stylesheet" href="~/frontend/blog/css/style.css" />
+  <style>
+    /* Multilevel dropdown */
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>a:after {
+      content: "\f0da";
+      float: right;
+      border: none;
+      font-family: "FontAwesome";
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    ul,ol{
+      list-style: none;
+      text-align: left;
+      color: #3c7363;
+    }
+    .col-lg-6{
+      padding-top: 12px;
+    }
+    .post-description{
+      text-align: left;
+    }
+    .card-title{
+      color: #427768;
+    }
+    div.title-w {
+      border-radius: 5px !important;
+    }
+    
+  </style>
+</head>
+
+<body class="js">
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="bread-inner">
+            <ul class="bread-list">
+              <li>
+                <a href="#">Home<i class="ti-arrow-right"></i></a>
+              </li>
+              <li class="active">
+                <a href="javascript:void(0);">Blog Grid Sidebar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
+
+  <!-- Start Blog Single -->
+  <!-- Start Blog Single -->
+  <section class="blog-single shop-blog grid section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div style="
+                background-image: url(https://i.pinimg.com/564x/e2/67/b2/e267b262a8b61c0f50cea542dda0a431.jpg);
+              ">
+            <div class="heading">
+              <h1 class="h1-1">PUN'S COMESTIC BEAUTY BLOG</h1>
+              <p class="sub-h1">
+                Những bài viết thú vị, hấp dẫn và hữu ích về các phương pháp
+                chăm sóc da, mẹo làm đẹp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-12">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Start Single Blog  -->
+              <div class="demo">
+                <div class="container">
+                  <div class="title-wrap" style="border-radius: 5px">
+                    <h4 id="makeup" class="h4">MAKEUP</h4>
+                  </div>
+                 
+                  <div class="container">
+                    <div class="product-out">
+
+                      <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators" style="bottom: -25px;">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+
+                        </ul>
+                        <!-- The slideshow -->
+
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row product">
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail" asp-action="BlogDetails" asp-controller="Shop">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail" asp-action="BlogDetails" asp-controller="Shop">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row product">
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+
+
+                            </div>
+                          </div>
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Single Blog  -->
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Start Single Blog  -->
+              <div class="demo">
+                <div class="container">
+                  <div class="title-wrap" style="border-radius: 5px;">
+                    <h4 id="skincare" class="h4">SKINCARE</h4>
+                  </div>
+                  <div class="container">
+                    <div class="product-out">
+
+                      <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators" style="bottom: -25px !important">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+
+                        </ul>
+                        <!-- The slideshow -->
+
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row product">
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row product">
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+
+
+                            </div>
+                          </div>
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Single Blog  -->
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Start Single Blog  -->
+              <div class="demo">
+                <div class="container">
+                  <div class="title-wrap" style="border-radius: 5px;">
+                    <h4 id="suckhoe" class="h4">SỨC KHỎE</h4>
+                  </div>
+
+                  <div class="row">
+                    <div class="container">
+                    <div class="product-out">
+
+                      <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators" style="bottom: -25px;">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+
+                        </ul>
+                        <!-- The slideshow -->
+
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row product">
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row product">
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+                                <div class="card card-product mb-3">
+                                  <img class="card-img-top" src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg"
+                                    alt="Card image cap">
+                                  <div class="card-body" id="blog-card">
+                                    <h5 class="card-title product-title">Quy trình SKINCARE</h5>
+
+                                    <ul class="post-bar">
+                                      <li>
+                                        <i class="fa fa-calendar"></i> June 5, 2016
+                                      </li>
+                                    </ul>
+                                    <p class="post-description">
+                                      Cách đánh son kem lì như thế nào để mịn mượt,
+                                      cách phối màu kết hợp ra sao để thêm nổi bật?
+                                      Mời bạn cùng tìm hiểu!
+                                    </p>
+
+                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                  </div>
+                                </div>
+
+                              </div>
+
+
+                            </div>
+                          </div>
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <!-- End Single Blog  -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="main-sidebar">
+            <!-- Single Widget -->
+            <div class="single-widget category">
+              <h3 class="title">Blog Categories</h3>
+              <ul class="categor-list">
+                <form action="#" method="POST">
+                  <li>
+                    <a href="#makeup"> MAKEUP </a>
+                  </li>
+                  <li>
+                    <a href="#skincare"> SKINCARE</a>
+                  </li>
+                  <li>
+                    <a href="#suckhoe"> SỨC KHỎE</a>
+                  </li>
+                </form>
+              </ul>
+            </div>
+            <!--/ End Single Widget -->
+            <!-- Single Widget -->
+            <div class="single-widget recent-post">
+              <h3 class="title">Recent post</h3>
+              <!-- Single Post -->
+              <div class="single-post">
+                <div class="image">
+                  <img src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h5><a href="#">Đây là blog ví dụ 1</a></h5>
+                  <ul class="comment" style="color: #427768;">
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i>1.11.2021
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="single-post">
+                <div class="image">
+                  <img src="~/frontend/blog\img\istockphoto-1289362630-170667a.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h5><a href="#">Đây là blog ví dụ 1</a></h5>
+                  <ul class="comment" style="color: #427768;">
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i>1.11.2021
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Single Post -->
+            </div>
+            <!--/ End Single Widget -->
+            <!-- Single Widget -->
+            <!--/ End Single Widget -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--/ End Blog Single -->
+  <style>
+    .pagination {
+      display: inline-flex;
+    }
+  </style>
+  <script src="~/frontend/blog/js/carousel.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+</body>
+
+</html>

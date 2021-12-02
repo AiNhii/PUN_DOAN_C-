@@ -88,9 +88,9 @@
                             @Html.DisplayFor(modelItem => item.Parent.Slug)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit"></i></a> 
-                            <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
-                            <a asp-action="Delete" asp-route-id="@item.Id"><i class="feather icon-trash-2 text-danger"></i></a>
+                           <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit" style="color: #3EC9E6;"></i></a> 
+                        <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
+                        <a asp-action="Delete" asp-route-id="@item.Id"><i data-feather="trash" style="color: red;"></i></a>
                         </td>
                     </tr>
                 }

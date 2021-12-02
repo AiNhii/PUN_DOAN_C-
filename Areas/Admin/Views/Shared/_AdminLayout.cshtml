@@ -31,7 +31,7 @@
 
 <body class="">
 	<!-- [ Pre-loader ] start -->
-	<div class="loader-bg">
+	@* <div class="loader-bg">
 		<div class="loader-track">
 			<div class="loader-fill"></div>
 		</div>
@@ -254,7 +254,10 @@
 				</div>
 			}
 		</div>
-	</header>
+	</header> *@
+
+	<partial name ="_NavLayout.cshtml" />
+	
 	<!-- [ Header ] end -->
     <div class="pc-container">
         <main role="main" class="pb-3">
@@ -262,11 +265,11 @@
         </main>
     </div>
 
-    <script src="/backend/dashboard/asset/js/vendor-all.min.js"></script>
+    @* <script src="/backend/dashboard/asset/js/vendor-all.min.js"></script>
     <script src="/backend/dashboard/asset/js/plugins/bootstrap.min.js"></script>
     <script src="/backend/dashboard/asset/js/plugins/feather.min.js"></script>
     <script src="/backend/dashboard/asset/js/pcoded.min.js"></script>
-    <script src="/backend/dashboard/asset/js/plugins/apexcharts.min.js"></script>
+    <script src="/backend/dashboard/asset/js/plugins/apexcharts.min.js"></script> *@
 
 <!-- custom-chart js -->
     <script src="/backend/dashboard/asset/js/pages/dashboard-sale.js"></script>
@@ -274,7 +277,7 @@
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   		return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+		})
 	</script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

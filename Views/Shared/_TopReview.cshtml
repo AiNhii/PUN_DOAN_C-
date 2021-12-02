@@ -1,7 +1,10 @@
 @model IEnumerable<comestic_csharp.Models.Product>
+@{
+        ShopContext context = new ShopContext();
+        var pro = context.Products.Take(8).ToArray();
+}
 
-<div class="container">
-    <div class="row mt-5">
+@* <div class="container">
         <h3 class="list-product-title">TOP REVIEWED</h3>
         <div class="product-group">
             <div class="row">
@@ -25,6 +28,94 @@
                 }
             </div>
         </div>
+</div> *@
 
+<div class="container">
+     <h3 class="list-product-title">TOP REVIEWED</h3>
+        <div class="product-out">
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators sp" style="bottom: -40px;">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row product">
+                            @for (var i = 0; i< 4; i++)
+                            {  
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+
+                                <div class="card card-product mb-3">
+                                    <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">@pro[i].Title</h5>
+                                        <div class="card-text product-price">
+                                            <span class="del-price">@pro[i].Price</span>
+                                            <span class="new-price">80.000 vnd</span>
+                                        </div>
+                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row product">
+                            @for (var i = 4; i< 8; i++)
+                            {  
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+
+                                <div class="card card-product mb-3">
+                                    <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">@pro[i].Title</h5>
+                                        <div class="card-text product-price">
+                                            <span class="del-price">@pro[i].Price</span>
+                                            <span class="new-price">80.000 vnd</span>
+                                        </div>
+                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+
+                   @* <div class="carousel-item">
+                        <div class="row product">
+                            @for (var i = 8; i < 12; i++)
+                            {  
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+
+                                <div class="card card-product mb-3">
+                                    <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">@pro[i].Title</h5>
+                                        <div class="card-text product-price">
+                                            <span class="del-price">@pro[i].Price</span>
+                                            <span class="new-price">80.000 vnd</span>
+                                        </div>
+                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div> *@
+                </div>
+            </div>
+        </div>
     </div>
-</div>
