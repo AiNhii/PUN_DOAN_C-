@@ -2,8 +2,6 @@
   ViewData["Title"] = "ABOUT";
   Layout = "/Views/Shared/_MainLayout.cshtml";
 
-  @* Layout = "/Views/Shared/_Header.cshtml";
-    Layout = "/Views/Shared/_Footer.cshtml"; *@
 
 }
 
@@ -107,6 +105,7 @@
     div.title-w {
       border-radius: 5px !important;
     }
+    
   </style>
 </head>
 
@@ -194,7 +193,7 @@
                                       Mời bạn cùng tìm hiểu!
                                     </p>
 
-                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <a class="btn btn-outline-success btn-detail" asp-action="BlogDetail" asp-controller="Shop">Xem chi tiết</a>
                                     <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                   </div>
                                 </div>
@@ -218,7 +217,7 @@
                                       Mời bạn cùng tìm hiểu!
                                     </p>
 
-                                    <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                    <a class="btn btn-outline-success btn-detail" asp-action="BlogDetail" asp-controller="Shop">Xem chi tiết</a>
                                     <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                   </div>
                                 </div>
