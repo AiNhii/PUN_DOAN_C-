@@ -59,7 +59,7 @@
                                             <span class="new-price">80.000 vnd</span>
                                         </div>
                                         <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                        <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                         <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                     </div>
                                 </div>
@@ -118,4 +118,4 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>

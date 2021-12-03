@@ -1,0 +1,9 @@
+@model IEnumerable<comestic_csharp.Models.Category>
+<li><a href="#">Make up<i class="ti-angle-down"></i><span class="new">New</span></a>
+    <ul class="dropdown">
+        @foreach (var item in Model)
+        {
+            <li><a class="dropdown-item" asp-action="ListSP" asp-controller="Category" asp-route-id="@item.Id">@item.Title</a></li>
+        }
+    </ul>
+</li>

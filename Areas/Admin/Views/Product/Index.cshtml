@@ -27,30 +27,30 @@
         <div></div>
         <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>Add new</a></p></div> 
     </div>
-    <table class="table" id="exapmle1">
+    <table class="table" id="example1">
                             <thead>
                                 <tr>
-                                    <th>
-                                            @Html.DisplayNameFor(model => model.Title)
-                                    </th>
-                                    <th>
-                                            @Html.DisplayNameFor(model => model.Summary)
-                                    </th>
-                                    <th>
-                                            @Html.DisplayNameFor(model => model.Description)
-                                    </th>
-                                    <th>
-                                            @Html.DisplayNameFor(model => model.Photo1)
-                                    </th>
-                                    <th>
-                                            @Html.DisplayNameFor(model => model.Photo2)
-                                    </th>
-                                    <th>
-                                            @Html.DisplayNameFor(model => model.Photo3)
-                                    </th>
+                                        <th>
+                                                @Html.DisplayNameFor(model => model.Title)
+                                        </th>
+                                        @* <th>
+                                                @Html.DisplayNameFor(model => model.Summary)
+                                        </th>
+                                        <th>
+                                                @Html.DisplayNameFor(model => model.Description)
+                                        </th> *@
+                                        <th>
+                                                @Html.DisplayNameFor(model => model.Photo1)
+                                        </th>
+                                        @* <th>
+                                                @Html.DisplayNameFor(model => model.Photo2)
+                                        </th>
+                                        <th>
+                                                @Html.DisplayNameFor(model => model.Photo3)
+                                        </th>
                                         <th>
                                             @Html.DisplayNameFor(model => model.Photo4)
-                                        </th>
+                                        </th> *@
                                         <th>
                                             @Html.DisplayNameFor(model => model.Stock)
                                         </th>
@@ -79,16 +79,16 @@
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.Title)
                                             </td>
-                                            <td>
+                                            @* <td>
                                                 @Html.DisplayFor(modelItem => item.Summary)
                                             </td>
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.Description)
-                                            </td>
+                                            </td> *@
                                             <td>
                                                 <image src="/storage/@item.Photo1"></image>
                                             </td>
-                                            <td>
+                                            @* <td>
                                                 <image src="/storage/@item.Photo2"></image>
                                             </td>
                                             <td>
@@ -96,7 +96,7 @@
                                             </td>
                                             <td>
                                                 <image src="/storage/@item.Photo4"></image>
-                                            </td>
+                                            </td> *@
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.Stock)
                                             </td>

@@ -15844,6 +15844,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_HeaderTest.cshtml",
+      "TargetPath": "Views\\Shared\\_HeaderTest.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Postcomment\\Delete.cshtml",
       "TargetPath": "Views\\Postcomment\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15916,6 +15921,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\User\\Edit.cshtml",
       "TargetPath": "Views\\User\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_Makeup.cshtml",
+      "TargetPath": "Views\\Shared\\_Makeup.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16276,6 +16286,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shared\\_Login.cshtml",
+      "TargetPath": "Views\\Shared\\_Login.cshtml",
       "FileKind": "mvc"
     },
     {
