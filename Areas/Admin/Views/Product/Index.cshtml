@@ -1,5 +1,7 @@
 @model IEnumerable<comestic_csharp.Models.Product>
 
+@await Html.PartialAsync("_StyleLayout")
+
 <div class="page-header">
         <div class="page-block">
             <div class="row align-items-center">
@@ -25,7 +27,7 @@
         <div></div>
         <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>Add new</a></p></div> 
     </div>
-    <table class="table">
+    <table class="table" id="exapmle1">
                             <thead>
                                 <tr>
                                     <th>
@@ -124,3 +126,5 @@
     </table>
     </div>
 </div>
+
+@await Html.PartialAsync("_ScriptsLayout")
