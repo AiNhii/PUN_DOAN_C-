@@ -20,7 +20,7 @@
 	box-shadow: 0px 4px 19px #00000038;
 }
 #scrollUp i:hover{
-	background:#34a87c;
+	background:#70B19F;
 	color:#fff;
 }
 
@@ -108,7 +108,7 @@
 }
 .header .nav li .dropdown li:hover a{
 	color:#fff;
-	background:#34a87c;
+	background:#70B19F;
 }
 .header .nav li .dropdown li a:hover{
 	border-color:transparent;
@@ -157,7 +157,7 @@
 }
 .header .nav li .dropdown li .dropdown.sub-dropdown li a:hover{
 	color:#fff;
-	background:#34a87c;
+	background:#70B19F;
 }
 .header .nav li .dropdown.sub-dropdown li:last-child a{
 	border-bottom:0px solid;
@@ -183,7 +183,7 @@
 	color: #ccc;
 }
 .header.shop .topbar .login a {
-	color: #34a87c;
+	color: #70B19F;
 }
 
 
@@ -197,7 +197,7 @@
 	display: inline-block;
 	margin-right: 4px;
 	font-size: 15px;
-	color: #34a87c;
+	color: #70B19F;
 	position: relative;
 	top: 3px;
 }
@@ -216,7 +216,7 @@
 	display: inline-block;
 	margin-right: 4px;
 	font-size: 15px;
-	color: #34a87c;
+	color: #70B19F;
 	position: relative;
 	top: 1px;
 }
@@ -228,7 +228,7 @@
 	color:#333;
 }
 .header.shop .list-main li a:hover{
-	color:#34a87c;
+	color:#70B19F;
 }
 .header.shop .nav li {
 	margin-right: 40px;
@@ -243,7 +243,7 @@
 	margin: 0 !important;
 }
 .header.shop .nav li .new {
-	background: #34a87c;
+	background: #70B19F;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 10px;
@@ -258,7 +258,7 @@
 	content: "";
 	left: 4px;
 	bottom: -8px;
-	border: 4px solid #34a87c;
+	border: 4px solid #70B19F;
 	border-bottom-color: transparent;
 	border-left-color: transparent;
 	border-right-color: transparent;
@@ -319,7 +319,7 @@
 	font-weight: 600;
 }
 .header .shopping .dropdown-cart-header a:hover{
-	color:#34a87c;
+	color:#70B19F;
 }
 .header .shopping-list li {
 	overflow: hidden;
@@ -376,7 +376,7 @@
 	color: #333;
 }
 .header .shopping-list h4 a:hover{
-	color:#34a87c;
+	color:#70B19F;
 }
 .header .shopping-item .bottom {
 	text-align: center;
@@ -409,7 +409,7 @@
 	font-weight: 500;
 }
 .header .shopping-item .bottom .btn:hover{
-	background:#34a87c;
+	background:#70B19F;
 	color:#fff;
 }
 .header.shop{
@@ -499,7 +499,7 @@
 	font-weight: 400;
 }
 .header.shop .nice-select .list li:hover{
-	background:#34a87c;
+	background:#70B19F;
 	color:#fff;
 }
 .header.shop .search-bar form {
@@ -537,7 +537,7 @@
 }
 .header.shop .search-bar .btnn:hover{
 	color:#fff;
-	background:#34a87c;
+	background:#70B19F;
 }
 
 /* Search Form */
@@ -560,7 +560,7 @@
 	border:none;
 }
 .header.shop .header-inner {
-	background: #4a947f;
+	background: #70B19F;
 }
 .header.shop.v3 .header-inner {
 	background: transparent;
@@ -576,7 +576,7 @@
 	color: #fff;
 	background: transparent;
 	position: relative;
-	background: #34a87c;
+	background: #70B19F;
 }
 .header.shop .all-category h3{
 	padding: 20px 25px;
@@ -634,7 +634,7 @@
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	border-left: 3px solid #34a87c;
+	border-left: 3px solid #70B19F;
 	-webkit-box-shadow: 0px 5px 15px #0000000a;
 	-moz-box-shadow: 0px 5px 15px #0000000a;
 	box-shadow: 0px 5px 15px #0000000a;
@@ -648,7 +648,7 @@
 	font-weight:400;
 }
 .header.shop .main-category li a:hover{
-	color:#34a87c;
+	color:#70B19F;
 }
 .header.shop .main-category .main-mega{
 	position:relative;
@@ -664,7 +664,7 @@
 	background: #fff;
 	border: none;
 	padding: 30px;
-	border-left: 3px solid #34a87c;
+	border-left: 3px solid #70B19F;
 	opacity:0;
 	visibility:hidden;
 	-webkit-transition:all 0.4s ease;
@@ -699,7 +699,7 @@
 }
 .header.shop .main-category li .mega-menu .single-menu .title-link {
 	margin-bottom: 20px;
-	background: #34a87c;
+	background: #70B19F;
 	color: #fff;
 	padding: 2px 13px;
 	border-radius: 3px;
@@ -717,7 +717,7 @@
 	margin-bottom:10px;
 }
 .header.shop .main-category li .mega-menu .single-menu .inner-link a:hover{
-	color:#34a87c;
+	color:#70B19F;
 	background:transparent;
 }
 .header.shop .main-category li .mega-menu .single-menu .inner-link a:last-child{
@@ -742,7 +742,7 @@
 	margin-right:0;
 }
 .header.shop .nav li .new {
-	background: #34a87c;
+	background: #70B19F;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 9px;
@@ -772,41 +772,41 @@
 }
 .header.shop .nav li:hover a{
 	color:#fff;
-	background:#34a87c;
+	background:#70B19F;
 }
 .header.shop.v2 .nav li:hover a{
-	color:#34a87c;
+	color:#70B19F;
 	background:transparent;
 }
 .header.shop .nav li.active a{
 	color:#fff;
-	background:#34a87c;
+	background:#70B19F;
 }
 .header.shop.v2 .nav li.active a{
 	color:#333 !important;
 	background:transparent !important;
 }
 .header.shop.v2 .nav li.active a{
-	color:#34a87c !important;
+	color:#70B19F !important;
 }
 .header.shop .nav .dropdown li{
 	margin:0;
 }
 .header.shop .nav li .dropdown li:hover a{
-	background:#34a87c;
+	background:#70B19F;
 }
 .header.shop.v2 .nav li.active .dropdown li a{
 	color:#333 !important;
 }
 .header.shop.v2 .nav li.active .dropdown li a:hover{
 	color:#fff !important;
-	background:#34a87c!important;
+	background:#70B19F!important;
 }
 .header.shop.v2 .nav li.active .dropdown li a:hover{
 	color:#fff !important;
 }
 .header.shop.v2 .nav li .dropdown li:hover a{
-	color:#34a87c;
+	color:#70B19F;
 }
 .header.shop .nav li .dropdown li a {
 	color: #333;
@@ -827,10 +827,10 @@
 }
 .header.shop.v2 .nav li .dropdown li a:hover{
 	color:#fff !important;
-	background:#34a87c;
+	background:#70B19F;
 }
 .header.shop .nav li .dropdown li .dropdown.sub-dropdown li a:hover{
-	background:#34a87c;
+	background:#70B19F;
 }
 .header.shop .right-bar {
 	display: inline-block;
@@ -844,7 +844,7 @@
 	transform: translateY(3px);
 }
 .header.shop .right-bar .sinlge-bar.top-search a:hover {
-	color:#34a87c;
+	color:#70B19F;
 }
 .header.shop .right-bar .sinlge-bar .single-icon{
 	color:#333;
@@ -852,13 +852,13 @@
 	position:relative;
 }
 .header.shop .right-bar .sinlge-bar .single-icon:hover{
-	color:#34a87c;
+	color:#70B19F;
 }
 .header.shop .right-bar .sinlge-bar .single-icon .total-count {
 	position: absolute;
 	top: -7px;
 	right: -8px;
-	background: #34a87c;
+	background: #70B19F;
 	width: 18px;
 	height: 18px;
 	line-height: 18px;
@@ -875,7 +875,7 @@
 	margin-right:0px;
 }
 .header.shop .right-bar .sinlge-bar li a:hover{
-	color:#34a87c;
+	color:#70B19F;
 }
 
 
@@ -910,7 +910,7 @@
 	color:#fff;
 }
 .header.sticky.v2 .header-inner .nav li:hover a{
-	color:#34a87c;
+	color:#70B19F;
 }
 .header.sticky .header-inner .nav li .dropdown li a{
 	color:#333;
