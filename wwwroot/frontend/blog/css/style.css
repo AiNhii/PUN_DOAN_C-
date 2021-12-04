@@ -43,6 +43,12 @@ Version:1.0
    Start Shop Blog CSS
 ========================================*/
 
+.fa-calendar:before,
+.fa-comments:before,
+.fa-quote-left:before {
+    color: #508173;
+}
+
 
 /*Carousel*/
 
@@ -294,7 +300,7 @@ hr.solid {
 
 .main-sidebar .single-widget .title {
     position: relative;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 15px;
@@ -495,16 +501,16 @@ hr.solid {
 .main-sidebar .side-tags .tag li a {
     background: #fff;
     color: #333;
-    padding: 8px 14px;
+    padding: 8px 4px;
     text-transform: capitalize;
     border-radius: 0;
-    font-size: 13px;
+    font-size: 18px;
     background: #f6f7fb;
 }
 
 .main-sidebar .side-tags .tag a:hover {
     color: #fff;
-    background: #f7941d;
+    background: #457a6a;
     border-color: transparent;
 }
 
@@ -666,7 +672,7 @@ hr.solid {
     color: #555;
     border: none;
     margin-bottom: 25px;
-    border-left: 3px solid #f7941d;
+    border-left: 3px solid #1c4d3f;
 }
 
 .blog-single blockquote i {
@@ -711,7 +717,7 @@ hr.solid {
 }
 
 .blog-single .share-social .content-tags .tag-inner li a {
-    border-radius: 30px;
+    border-radius: 30px !important;
     padding: 5px 15px;
     background: #f4f7fc;
     font-size: 13px;
