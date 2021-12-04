@@ -52,7 +52,7 @@
 						<div class="col-lg-2 col-md-2 col-12">
 							<!-- Logo -->
 							<div class="logo">
-								Pun Shop
+								<a><img src="/header.svg" /></a>
 							</div>
 							<!--/ End Search Form -->
 							<div class="mobile-nav"></div>
@@ -125,7 +125,7 @@
 										<div class="navbar-collapse">	
 											<div class="nav-inner">	
 												<ul class="nav main-menu menu navbar-nav">
-													<li class="active"><a href="/">Home</a></li>
+													<li><a href="/">Home</a></li>
 													<li><a asp-controller="Shop" asp-action="Index">Product</a></li>												
 													<li><a href="#">Best Seller</a></li>
 													@* <li><a href="#">Make up<i class="ti-angle-down"></i><span class="new">New</span></a>
@@ -136,7 +136,7 @@
 													</li> *@
                                                      @await Html.PartialAsync("_Makeup",_shopContext.Categories.ToList())
 													<li><a href="#">Skin Care</a></li>									
-													<li><a asp-controller="Shop" asp-action="Blog">Blog<i class="ti-angle-down"></i></a>
+													<li><a asp-controller="Shop" asp-action="Blog">Blog</a>
 													</li>
 													<li><a asp-controller="Shop" asp-action="About">About Us</a></li>
 												</ul>
@@ -157,7 +157,7 @@
 	<!-- Jquery -->
    <partial name="_ScriptsLayout.cshtml"/>
 
-    <script src="~/main/asset/js/jquery-3.3.1.min.js"></script>
+   <script src="~/main/asset/js/jquery-3.3.1.min.js"></script>
     <script src="~/main/bootstrap/js/bootstrap.min.js"></script>  
     <script>
         $(document).ready(function() {
@@ -166,3 +166,5 @@
             });
         });
     </script>
+
+    
