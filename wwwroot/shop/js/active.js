@@ -2,7 +2,19 @@
 (function($) {
     "use strict";
      $(document).on('ready', function() {	
-		
+
+
+		/*====================================
+		03. Sticky Header JS
+		======================================*/ 
+		jQuery(window).on('scroll', function() {
+			if ($(this).scrollTop() > 200) {
+				$('.header').addClass("sticky");
+			} else {
+				$('.header').removeClass("sticky");
+			}
+		});
+
 		/*====================================
 		  Cart Plus Minus Button
 		======================================*/
