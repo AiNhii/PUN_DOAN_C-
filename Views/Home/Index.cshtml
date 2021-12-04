@@ -35,7 +35,6 @@
 </div>
 
 @await Html.PartialAsync("_TabProduct");
-
 <!--gioithieu-section-->
 <div class="gioithieu-section">
         <div class="content-section">
@@ -129,9 +128,9 @@
     </div>
 </div>
 <!-- end list product -->
-@await Html.PartialAsync("_NewProduct",_shopContext.Products.Where( p => p.Condition=="new").Take(4).ToList())
+@await Html.PartialAsync("_HotProduct",_shopContext.Products.Take(8).ToList());
 <!-- end list product -->
-
+@await Html.PartialAsync("_ListProduct",_shopContext.Products.Take(3).ToList());
 <!--about gioithieu-->
 <div class="container">
     <div class="row cosmetic">
