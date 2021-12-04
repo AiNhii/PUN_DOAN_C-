@@ -1,8 +1,6 @@
 @{
   ViewData["Title"] = "ABOUT";
   Layout = "/Views/Shared/_MainLayout.cshtml";
-
-
 }
 
 <!DOCTYPE html>
@@ -68,1030 +66,218 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
     /> *@
-  @* <link rel="stylesheet" href="~/frontend/blog/css/style.css" /> *@
-  <style>
-      /* =====================================
-Template Name: Eshop
-Author Name: Naimur Rahman
-Author URI: http://www.wpthemesgrid.com/
-Description: Eshop - eCommerce HTML5 Template.
-Version:1.0
-========================================*/
-/*======================================
-[ CSS Table of contents ]
-01. Preloader CSS
-02. Header CSS
-	+ Logo
-	+ Category Menu
-	+ Main Menu
-03. Hero Area CSS
-04. Small Banner CSS
-05. Medium Banner CSS
-06. Single Product CSS
-07. Shop Sidebar CSS
-08. Shop Single CSS
-09. Shop Home List CSS
-10. Cart CSS
-11. Checkout CSS
-12. Login & Register CSS
-13. Cowndown CSS
-14. Shop Services CSS
-15. Newslatter CSS
-16. About Us CSS
-17. Team CSS
-18. Blog CSS	
-	+ Blog Archive
-	+ Blog Sidebar
-	+ Blog Single
-19. Contact CSS
-20. 404 Error CSS
-21. Footer CSS
-========================================*/
-
-/*======================================
-   Start Shop Blog CSS
-========================================*/
-/*Carousel*/
-
-.h4 {
-  color: #ffffff !important;
-  
-
+  <link rel="stylesheet" href="~/frontend/blog/css/style.css" />
  
-}
-div.title-wrap{
-  word-wrap: normal;
-  border: 0.5px solid #3c7363;
-  padding-left: 15px;
-  padding-top: 5px;
-  background-color: #3c7363;
-  text-align: center;
-
-}
-
-.h3 {
-  color: #2c2d3f !important;
-}
-
-/* .demo{background:linear-gradient(to right,#3c7363,#74c69d)} */
-.post-slide2 {
-  margin: 0 10px;
-  margin-bottom: 0em;
-}
-.post-slide2 .post-img {
-  overflow: hidden;
-}
-.post-slide2 .post-img img {
-  transform: scale(1);
-  transition: all 1s ease-in-out 0s;
-  width: aut0;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-}
-.post-slide2:hover .post-img img {
-  transform: scale(1.08);
-}
-.post-slide2 .post-content {
-  background: #fff;
-  padding: 10px;
-}
-.post-slide2 .post-title {
-  font-size: 20px;
-  font-weight: 1000;
-  margin-top: 0;
-}
-.post-slide2 .post-title a {
-  display: inline-block;
-  color: #2c2d3f;
-  transition: all 0.3s ease 0s;
-  text-align: center;
-}
-.post-slide2 .post-title a:hover {
-  color: #5ccaab;
-  text-decoration: none;
-}
-.post-slide2 .post-description {
-  overflow: hidden;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  text-align: justify;
-  font-size: 15px;
-  color: #676767;
-  line-height: 20px;
-  margin-bottom: 14px;
-}
-.post-slide2 .post-bar {
-  padding: 0;
-  margin-bottom: 15px;
-  list-style: none;
-}
-.post-slide2 .post-bar li {
-  color: #676767;
-  padding: 2px 0;
-}
-.post-slide2 .post-bar li i {
-  margin-right: 5px;
-  font-size: 10px;
-}
-.post-slide2 .post-bar li a {
-  display: inline-block;
-  font-size: 12px;
-  color: grey;
-  transition: all 0.3s ease 0s;
-}
-.post-slide2 .post-bar li a:after {
-  content: ",";
-}
-.post-slide2 .post-bar li a:last-child:after {
-  content: "";
-}
-.post-slide2 .post-bar li a:hover {
-  color: #3c7363;
-  text-decoration: none;
-}
-.post-slide2 .read-more {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 15px;
-  font-weight: 100;
-  color: #fff;
-  background: #3c7363;
-  border-bottom-right-radius: 10px;
-  text-transform: capitalize;
-  transition: all 0.3s linear;
-}
-.post-slide2 .read-more:hover {
-  background: #5cd6b4;
-  text-decoration: solid;
-}
-
-hr.solid {
-  border-top: 1px solid #114436;
-  opacity: 40% ;
-}
-
-.h1-1,
-.sub-h1 {
-  color: #ffffff;
-  text-align: center;
-}
-.h1-1 {
-  padding-bottom: 10px;
-  padding-top: 15px;
-}
-.sub-h1 {
-  font-size: medium;
-  font-style: italic;
-  padding-bottom: 10px;
-}
-.shop-blog.grid .shop-single-blog {
-  margin-top: 30px;
-}
-.shop-blog .shop-single-blog {
-  text-align: center;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.shop-blog .shop-single-blog:hover {
-  box-shadow: 0px 10px 10px #0000000a;
-}
-.shop-blog .shop-single-blog img {
-  height: 100%;
-  width: 100%;
-}
-.shop-blog .shop-single-blog .content {
-  padding: 40px;
-}
-.shop-blog .shop-single-blog .content .title {
-  font-size: 25px;
-  font-weight: 700;
-  color: #3c7363;
-  text-align: left;
-}
-.shop-blog .shop-single-blog .content .title:hover {
-  color: #3c7363;
-}
-.shop-blog .shop-single-blog .content .date {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 5px;
-  color: #b7b7b7;
-}
-.shop-blog .shop-single-blog .content .more-btn {
-  font-size: 14px;
-  font-weight: 400;
-  color: #3c3c3c;
-  margin-top: 10px;
-  display: block;
-}
-.shop-blog .shop-single-blog .content .more-btn:hover {
-  color: #f7941d;
-}
-/* Related Product */
-.related-product {
-  padding-top: 0;
-}
-.related-product .section-title {
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 0;
-}
-.related-product .section-title h2 {
-  font-size: 25px;
-  margin-bottom: 0;
-  text-transform: capitalize;
-  position: relative;
-  color: #2c2d3f;
-  font-weight: 700;
-  padding-bottom: 15px;
-}
-/* Blog Sidebar */
-.main-sidebar {
-  background: #fff;
-  margin-top: 15px;
-  margin-right: 0px;
-  padding: 50px;
-  /* background: transparent; */
-  border: 1px solid #eeeeeec2;
-}
-.main-sidebar .single-widget {
-  margin-bottom: 50px;
-}
-.main-sidebar .single-widget .title {
-  position: relative;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 15px;
-  display: block;
-  background: #fff;
-  padding-left: 12px;
-}
-.main-sidebar .single-widget .title::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -5px;
-  height: 150%;
-  width: 4px;
-  background: #3c7363;
-}
-.main-sidebar .single-widget:last-child {
-  margin: 0;
-}
-.main-sidebar .search {
-  position: relative;
-}
-.main-sidebar .search input {
-  width: 100%;
-  height: 45px;
-  box-shadow: none;
-  text-shadow: none;
-  font-size: 14px;
-  border: none;
-  color: rgb(36, 34, 34);
-  background: transparent;
-  padding: 0 70px 0 20px;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  border-radius: 3px;
-  border: 1.5px solid #bbb9b9;
-}
-.main-sidebar .search .button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 44px;
-  width: 50px;
-  line-height: 45px;
-  box-shadow: none;
-  text-shadow: none;
-  text-align: center;
-  border: none;
-  font-size: 14px;
-  color: #fff;
-  background: #3c7363;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.main-sidebar .search .button:hover {
-  background: #7bb8a6;
-  color: #fff;
-}
-/* Category List */
-.main-sidebar .categor-list {
-  margin-top: 15px;
-}
-.main-sidebar .categor-list li {
-}
-.main-sidebar .categor-list li {
-  margin-bottom: 10px;
-}
-.main-sidebar .categor-list li:last-child {
-  margin-bottom: 0px;
-}
-.main-sidebar .categor-list li a {
-  display: inline-block;
-  color: rgb(60, 68, 59);
-  font-weight: 300;
-  font-size: 16px;
-}
-.main-sidebar .categor-list li a:hover {
-  color: #114436;
-  padding-left: 7px;
-}
-.main-sidebar .categor-list li a i {
-  display: inline-block;
-  margin-right: 0px;
-  font-size: 9px;
-  transform: translateY(-1px);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.main-sidebar .categor-list li a:hover i {
-  margin-right: 6px;
-  opacity: 1;
-  visibility: visible;
-}
-/* Recent Post */
-.main-sidebar .recent-post {
-}
-.main-sidebar .single-post {
-  position: relative;
-  border-bottom: 1px solid #ddd;
-  display: inline-block;
-  padding: 17px 0;
-}
-.main-sidebar .single-post:last-child {
-  padding-bottom: 0px;
-  border: none;
-}
-.main-sidebar .single-post .image {
-}
-.main-sidebar .single-post .image img {
-  float: left;
-  width: 80px;
-  height: 80px;
-  margin-right: 20px;
-}
-.main-sidebar .single-post .content {
-  padding-left: 100px;
-}
-.main-sidebar .single-post .content h5 {
-  line-height: 18px;
-}
-.main-sidebar .single-post .content h5 a {
-  color: #2c2d3f;
-  font-weight: 500;
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 10px;
-  display: block;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-.main-sidebar .single-post .content h5 a:hover {
-  color: #f7941d;
-}
-.main-sidebar .single-post .content .comment {
-}
-.main-sidebar .single-post .content .comment li {
-  color: #888;
-  display: inline-block;
-  margin-right: 15px;
-  font-weight: 400;
-  font-size: 14px;
-}
-.main-sidebar .single-post .content .comment li:last-child {
-  margin-right: 0;
-}
-.main-sidebar .single-post .content .comment li i {
-  display: inline-block;
-  margin-right: 5px;
-}
-/* Blog Tags */
-.main-sidebar .side-tags {
-}
-.main-sidebar .side-tags .tag {
-  margin-top: 40px;
-}
-.main-sidebar .side-tags .tag li {
-  display: inline-block;
-  margin-right: 7px;
-  margin-bottom: 20px;
-}
-.main-sidebar .side-tags .tag li a {
-  background: #fff;
-  color: #333;
-  padding: 8px 14px;
-  text-transform: capitalize;
-  border-radius: 0;
-  font-size: 13px;
-  background: #f6f7fb;
-}
-.main-sidebar .side-tags .tag a:hover {
-  color: #fff;
-  background: #f7941d;
-  border-color: transparent;
-}
-/* Blog Newslatter CSS */
-.main-sidebar .newsletter {
-}
-.main-sidebar .newsletter .letter-inner {
-  position: relative;
-  padding: 35px 30px;
-  box-shadow: 0px 0px 12px #00000014;
-  z-index: 2;
-  overflow: hidden;
-}
-.main-sidebar .newsletter .letter-inner h4 {
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-}
-.main-sidebar .newsletter .letter-inner p {
-  margin-bottom: 20px;
-}
-.main-sidebar .newsletter .letter-inner .form-inner {
-  position: relative;
-}
-.main-sidebar .newsletter .letter-inner input {
-  width: 100%;
-  height: 45px;
-  background: #fff;
-  border: none;
-  border: 1px solid #ddd;
-  padding: 0px 60px 0px 20px;
-  box-shadow: none;
-  text-shadow: none;
-  border-radius: 0;
-}
-.main-sidebar .newsletter .letter-inner .form-inner a {
-  height: 42px;
-  width: 100%;
-  background: #f7941d;
-  color: #fff;
-  font-size: 14px;
-  display: block;
-  text-align: center;
-  line-height: 42px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.main-sidebar .newsletter .letter-inner .form-inner a:hover {
-  background: #333;
-  color: #fff;
-}
-/* Blog Single CSS */
-.blog-single {
-  background: #fff;
-  padding: 70px 0 100px;
-}
-.blog-single .blog-single-main {
-  margin-top: 30px;
-  background: #fff;
-}
-.blog-single .blog-detail {
-  background: #fff;
-}
-.blog-single .image {
-  position: relative;
-}
-.blog-single .image img {
-  width: 100%;
-  height: 100%;
-}
-.blog-single .blog-title {
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin: 40px 0 15px 0;
-}
-.blog-single .blog-meta {
-  margin-bottom: 0;
-  overflow: hidden;
-  border-bottom: 1px solid #dddddd6e;
-  padding-bottom: 20px;
-  margin-bottom: 25px;
-}
-.blog-single .blog-meta .author i {
-  color: #508173;
-  margin-right: 10px;
-  font-size: 13px;
-}
-.blog-single .blog-meta .author a {
-  font-size: 13px;
-  border-right: 1px solid #ddd;
-  padding: 0px 15px;
-}
-.blog-single .blog-meta .author a:first-child {
-  padding-left: 0;
-}
-.blog-single .blog-meta .author a:last-child {
-  padding-right: 0;
-  border: none;
-}
-.blog-single .blog-meta span {
-  display: inline-block;
-  font-size: 14px;
-  color: #666;
-}
-.blog-single .blog-meta span a i {
-  margin-right: 10px;
-  color: #f7941d;
-}
-.blog-single .blog-meta span a:hover {
-  color: #f7941d;
-}
-.blog-single .content p {
-  margin-bottom: 25px;
-  line-height: 26px;
-  text-align: justify;
-}
-.blog-single .content p:last-child {
-  margin: 0;
-}
-.blog-single blockquote {
-  position: relative;
-  font-size: 13px;
-  font-weight: 400;
-  padding-left: 20px;
-  padding: 10px 20px;
-  background: #f6f6f6;
-  padding: 30px 40px 30px 70px;
-  color: #555;
-  border: none;
-  margin-bottom: 25px;
-  border-left: 3px solid #f7941d;
-}
-.blog-single blockquote i {
-  font-size: 30px;
-  color: #f7941d;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-.blog-single .content .img-post {
-  margin-bottom: 25px;
-}
-.blog-single .share-social .content-tags {
-  position: relative;
-  margin-top: 25px;
-}
-.blog-single .share-social .content-tags h4 {
-  position: absolute;
-  left: 0;
-  top: 7px;
-  font-size: 15px;
-  font-weight: 500;
-}
-.blog-single .share-social .content-tags .tag-inner {
-  padding-left: 60px;
-}
-.blog-single .share-social .content-tags .tag-inner li {
-  display: inline-block;
-  margin-right: 7px;
-  margin-bottom: 10px;
-  margin-top: 4px;
-}
-.blog-single .share-social .content-tags .tag-inner li:last-child {
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-.blog-single .share-social .content-tags .tag-inner li a {
-  border-radius: 30px;
-  padding: 5px 15px;
-  background: #f4f7fc;
-  font-size: 13px;
-}
-.blog-single .share-social .content-tags .tag-inner li a:hover {
-  color: #fff;
-  background: #114436;
-}
-/* Comments */
-.blog-single .comments {
-  margin-top: 40px;
-}
-.blog-single .comments .comment-title {
-  position: relative;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  display: block;
-  background: #fff;
-  padding-left: 12px;
-}
-.blog-single .comments .comment-title:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -1px;
-  height: 100%;
-  width: 3px;
-  background: #2b6353;
-}
-.blog-single .comments {
-}
-.blog-single .comments .single-comment {
-  position: relative;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  padding-left: 95px;
-}
-.blog-single .comments .single-comment.left {
-  margin-left: 110px;
-}
-.blog-single .comments .single-comment img {
-  height: 70px;
-  width: 70px;
-  border-radius: 100%;
-  position: absolute;
-  left: 0;
-}
-.blog-single .single-comment .content {
-}
-.blog-single .single-comment .content h4 {
-  color: #333;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  display: inline-block;
-  margin-bottom: 18px;
-  text-transform: capitalize;
-}
-.blog-single .single-comment .content h4 span {
-  display: inline-block;
-  font-size: 13px;
-  color: #8d8d8d;
-  margin: 0;
-  font-weight: 400;
-  text-transform: capitalize;
-  display: block;
-  margin-top: 5px;
-}
-.blog-single .single-comment .content p {
-  color: #666;
-  font-weight: 400;
-  display: block;
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 22px;
-}
-.blog-single .single-comment .content .button {
-}
-.blog-single .single-comment .content .btn {
-  display: inline-block;
-  color: #666;
-  font-weight: 400;
-  color: #6a6a6a;
-  border-radius: 4px;
-  text-transform: capitalize;
-  font-size: 14px;
-  background: transparent;
-  padding: 0;
-}
-.blog-single .single-comment .content a i {
-  display: inline-block;
-  margin-right: 5px;
-}
-.blog-single .single-comment .content a:hover {
-  color: #f7941d;
-}
-/* Comment Form */
-.blog-single .reply form {
-  padding: 40px;
-  border: 1px solid #eee;
-}
-.blog-single .reply .reply-title {
-  position: relative;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  display: block;
-  background: #fff;
-  padding-left: 12px;
-}
-.blog-single .reply .reply-title:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -1px;
-  height: 100%;
-  width: 3px;
-  background: #114436;
-}
-.blog-single .reply .form-group {
-  margin-bottom: 20px;
-}
-.blog-single .reply .form-group input {
-  width: 100%;
-  height: 45px;
-  line-height: 50px;
-  padding: 0 20px;
-  border-radius: 0px;
-  color: #333 !important;
-  border: none;
-  border: 1px solid #eee;
-}
-.blog-single .reply .form-group textarea {
-  width: 100%;
-  height: 200px;
-  line-height: 50px;
-  padding: 0 20px;
-  border-radius: 0px;
-  color: #333 !important;
-  border: none;
-  border: 1px solid #eee;
-}
-.blog-single .reply .form-group label {
-  color: #333;
-  position: relative;
-}
-.blog-single .reply .form-group label span {
-  color: #ff2c18;
-  display: inline-block;
-  position: absolute;
-  right: -12px;
-  top: 4px;
-  font-size: 16px;
-}
-.blog-single .reply .button {
-  text-align: left;
-  margin-bottom: 0px;
-}
-.blog-single .reply .button .btn {
-  height: 50px;
-  width: 150px;
-  border: none;
-  background-color: #59ad96;
-  color: white;
-}
-
-/*======================================
-   End Shop Blog CSS
-========================================*/
-
-    /* Multilevel dropdown */
-    .dropdown-submenu {
-      position: relative;
-    }
-
-    .dropdown-submenu>a:after {
-      content: "\f0da";
-      float: right;
-      border: none;
-      font-family: "FontAwesome";
-    }
-
-    .dropdown-submenu>.dropdown-menu {
-      top: 0;
-      left: 100%;
-      margin-top: 0px;
-      margin-left: 0px;
-    }
-    ul,ol{
-      list-style: none;
-      text-align: left;
-      color: #3c7363;
-    }
-    .col-lg-6{
-      padding-top: 12px;
-    }
-    .post-description{
-      text-align: left;
-    }
-    .card-title{
-      color: #427768;
-    }
-    div.title-w {
-      border-radius: 5px !important;
-    }
-    
-  </style>
 </head>
 
 <body class="js">
   <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="bread-inner">
-              <ul class="bread-list">
-                <li>
-                  <a href="#">Home<i class="ti-arrow-right"></i></a>
-                </li>
-                <li class="active">
-                  <a href="javascript:void(0);">Blog Single Sidebar</a>
-                </li>
-              </ul>
-            </div>
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="bread-inner">
+            <ul class="bread-list">
+              <li>
+                <a href="#">Home<i class="ti-arrow-right"></i></a>
+              </li>
+              <li class="active">
+                <a href="javascript:void(0);">Blog Single Sidebar</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Breadcrumbs -->
+  </div>
+  <!-- End Breadcrumbs -->
 
-    <!-- Start Blog Single -->
-    <section class="blog-single section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-12">
-            <div class="blog-single-main">
-              <div class="row">
-                <div class="col-12">
-                  <div class="blog-detail">
-                    <h2 class="blog-title">TIÊU ĐỀ BLOG 1</h2>
-                    <div class="blog-meta">
-                      <span class="author"
-                        ><a href="#"><i class="fa fa-calendar"></i>1.11.2021</a
-                        ><a href="#"
-                          ><i class="fa fa-comments"></i>Comment (0)</a
-                        ></span
-                      >
-                    </div>
+  <!-- Start Blog Single -->
+  <section class="blog-single section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="blog-single-main">
+            <div class="row">
+              <div class="col-12">
+                <div class="blog-detail">
+                  <h2 class="blog-title">TIÊU ĐỀ BLOG 1</h2>
+                  <div class="blog-meta">
+                    <span class="author"><a href="#"><i class="fa fa-calendar"></i>1.11.2021</a><a href="#"><i
+                          class="fa fa-comments"></i>Comment (0)</a></span>
+                  </div>
+                  <p>
+                    Rụng tóc là tình trạng nhiều người hiện nay đang gặp phải.
+                    Rụng tóc quá nhiều sẽ khiến tóc mỏng đi, bạn không thể tạo
+                    được nhiều kiểu tóc như ý muốn vì lộ da đầu. Nguyên nhân
+                    dẫn đến tình trạng này là do chế độ ăn uống, sử dụng chất
+                    hóa học nhiều. Vậy để có một mái tóc dài mềm mượt và dày
+                    dặn, hãy cùng The Face Shop tham khảo những cách trị rụng
+                    tóc tại nhà dưới đây!
+                  </p>
+                  <div class="image">
+                    <img src="https://i.pinimg.com/564x/35/f2/8e/35f28edacb8439cdc6eddf810f3116fe.jpg" alt="" />
+                  </div>
+                  <div class="sharethis-inline-reaction-buttons"></div>
+                  <div class="content">
                     <p>
-                      Rụng tóc là tình trạng nhiều người hiện nay đang gặp phải.
-                      Rụng tóc quá nhiều sẽ khiến tóc mỏng đi, bạn không thể tạo
-                      được nhiều kiểu tóc như ý muốn vì lộ da đầu. Nguyên nhân
-                      dẫn đến tình trạng này là do chế độ ăn uống, sử dụng chất
-                      hóa học nhiều. Vậy để có một mái tóc dài mềm mượt và dày
-                      dặn, hãy cùng The Face Shop tham khảo những cách trị rụng
-                      tóc tại nhà dưới đây!
+                      What Are Humectants? The most straightforward and
+                      easiest explanation is that humectants are hydrators,
+                      which bind water to the skin. They work by attracting
+                      water molecules from the air, and pulling them into the
+                      skin’s surface. This match made in hydration heaven
+                      leaves your skin plump and supple. Humectants work best
+                      in humid climates, since there’s plenty of moisture to
+                      pull from the air into the skin. But if you’re in drier
+                      environments or heading into colder temperatures, you
+                      may find humectants can’t do the job alone. The most
+                      common humectants are hyaluronic acid, glycerin, and any
+                      type of water of hydrosol. Other star humectant
+                      ingredients you may see are amino acids (urea), sugar
+                      alcohols (sorbitol), honey, aloe vera gel, ceramides,
+                      and alpha-hydroxy acids (lactic acid).
                     </p>
-                    <div class="image">
-                      <img
-                        src="https://i.pinimg.com/564x/35/f2/8e/35f28edacb8439cdc6eddf810f3116fe.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="sharethis-inline-reaction-buttons"></div>
-                    <div class="content">
-                      <p>
-                        What Are Humectants? The most straightforward and
-                        easiest explanation is that humectants are hydrators,
-                        which bind water to the skin. They work by attracting
-                        water molecules from the air, and pulling them into the
-                        skin’s surface. This match made in hydration heaven
-                        leaves your skin plump and supple. Humectants work best
-                        in humid climates, since there’s plenty of moisture to
-                        pull from the air into the skin. But if you’re in drier
-                        environments or heading into colder temperatures, you
-                        may find humectants can’t do the job alone. The most
-                        common humectants are hyaluronic acid, glycerin, and any
-                        type of water of hydrosol. Other star humectant
-                        ingredients you may see are amino acids (urea), sugar
-                        alcohols (sorbitol), honey, aloe vera gel, ceramides,
-                        and alpha-hydroxy acids (lactic acid).
-                      </p>
+                    <blockquote> <i class="fa fa-quote-left"></i> Do what you love to do and give it your very best.
+                      Whether it's business or baseball, or the theater, or any field. If you don't love what you're
+                      doing and you can't give it your
+                      best, get out of it. Life is too short. You'll be an old man before you know it. risus. Ut
+                      tincidunt, erat eget feugiat eleifend, eros magna dapibus diam.</blockquote>
+                  </div>
+                </div>
+                <div class="share-social">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="content-tags">
+                        <h4>Tags:</h4>
+                        <ul class="tag-inner">
+                          <li><a href="#">Glass</a></li>
+                          <li><a href="#">Pant</a></li>
+                          <li><a href="#">t-shirt</a></li>
+                          <li><a href="#">swater</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 mt-4">
-                  <div class="reply">
-                    <div
-                      class="reply-head comment-form"
-                      id="commentFormContainer"
-                    >
-                      <h2 class="reply-title">Leave a Comment</h2>
-                      <!-- Comment Form -->
-                      <form
-                        class="form comment_form"
-                        id="commentForm"
-                        action="#"
-                        method="POST"
-                      >
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="form-group comment_form_body">
-                              <label>Your Message<span>*</span></label>
-                              <textarea
-                                name="comment"
-                                id="comment"
-                                rows="10"
-                                placeholder=""
-                              ></textarea>
-                              <input type="hidden" name="post_id" value="0" />
-                              <input
-                                type="hidden"
-                                name="parent_id"
-                                id="parent_id"
-                                value=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="form-group button">
-                              <button type="submit" class="btn">
-                                <span class="comment_btn comment"
-                                  >Post Comment</span
-                                ><span
-                                  class="comment_btn reply"
-                                  style="display: none"
-                                  >Reply Comment</span
-                                >
-                              </button>
-                            </div>
+              </div>
+              <div class="col-12 mt-4">
+                <div class="reply">
+                  <div class="reply-head comment-form" id="commentFormContainer">
+                    <h2 class="reply-title">Leave a Comment</h2>
+                    <!-- Comment Form -->
+                    <form class="form comment_form" id="commentForm" action="#" method="POST">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group comment_form_body">
+                            <label>Your Message<span>*</span></label>
+                            <textarea name="comment" id="comment" rows="10" placeholder=""></textarea>
+                            <input type="hidden" name="post_id" value="0" />
+                            <input type="hidden" name="parent_id" id="parent_id" value="" />
                           </div>
                         </div>
-                      </form>
-                      <!-- End Comment Form -->
-                    </div>
+                        <div class="col-12">
+                          <div class="form-group button">
+                            <button type="submit" class="btn">
+                              <span class="comment_btn comment">Post Comment</span><span class="comment_btn reply"
+                                style="display: none">Reply Comment</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- End Comment Form -->
                   </div>
                 </div>
-                <p class="text-center p-5">
-                  You need to <a href="#" style="color: #44c5a1">Login</a> OR
-                  <a style="color: #44c5a1" href="#">Register</a> for comment.
-                </p>
+              </div>
+              <p class="text-center p-5">
+                You need to <a href="#" style="color: #44c5a1">Login</a> OR
+                <a style="color: #44c5a1" href="#">Register</a> for comment.
+              </p>
 
-                <!--/ End Form -->
-                <div class="col-12">
-                  <div class="comments">
-                    <h3 class="comment-title">Comments (0)</h3>
-                    <!-- Single Comment -->
+              <!--/ End Form -->
+              <div class="col-12">
+                <div class="comments">
+                  <h3 class="comment-title">Comments (0)</h3>
+                  <!-- Single Comment -->
 
-                    <!-- End Single Comment -->
-                  </div>
+                  <!-- End Single Comment -->
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="main-sidebar">
-              <!-- Single Widget -->
-              <div class="single-widget category">
-                <h3 class="title">Blog Categories</h3>
-                <ul class="categor-list">
-                  <form action="#" method="POST">
-                    <li>
-                      <a href="#makeup"> MAKEUP </a>
-                    </li>
-                    <li>
-                      <a href="#skincare"> SKINCARE</a>
-                    </li>
-                    <li>
-                      <a href="#suckhoe"> SỨC KHỎE</a>
-                    </li>
-                  </form>
-                </ul>
-              </div>
-              <!--/ End Single Widget -->
-              <!-- Single Widget -->
-              <div class="single-widget recent-post">
-                <h3 class="title">Recent post</h3>
-                <!-- Single Post -->
-                <div class="single-post">
-                  <div class="image">
-                    <img src="https://i.pinimg.com/564x/d3/49/a9/d349a915dce2ab257087d3e7a9d4b590.jpg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h5><a href="#">Đây là blog ví dụ 1</a></h5>
-                    <ul class="comment">
-                      <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i
-                        >1.11.2021
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="single-post">
-                  <div class="image">
-                    <img src="https://i.pinimg.com/564x/b7/18/c0/b718c0b4fae2c492e6ab4b9d94771eac.jpg" alt="" />
-                  </div>
-                  <div class="content">
-                    <h5><a href="#">Đây là blog ví dụ 1</a></h5>
-                    <ul class="comment">
-                      <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i
-                        >1.11.2021
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- End Single Post -->
-              </div>
-              <!--/ End Single Widget -->
-              <!-- Single Widget -->
-              <!--/ End Single Widget -->
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-12">
+          <div class="main-sidebar">
+            <!-- Single Widget -->
+            <div class="single-widget category">
+              <h3 class="title">Blog Categories</h3>
+              <ul class="categor-list">
+                <form action="#" method="POST">
+                  <li>
+                    <a href="#makeup"> MAKEUP </a>
+                  </li>
+                  <li>
+                    <a href="#skincare"> SKINCARE</a>
+                  </li>
+                  <li>
+                    <a href="#suckhoe"> SỨC KHỎE</a>
+                  </li>
+                </form>
+              </ul>
+            </div>
+            <!--/ End Single Widget -->
+            <!-- Single Widget -->
+            <div class="single-widget recent-post">
+              <h3 class="title">Recent post</h3>
+              <!-- Single Post -->
+              <div class="single-post">
+                <div class="image">
+                  <img src="https://i.pinimg.com/564x/d3/49/a9/d349a915dce2ab257087d3e7a9d4b590.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h5><a href="#">Đây là blog ví dụ 1</a></h5>
+                  <ul class="comment">
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i>1.11.2021
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="single-post">
+                <div class="image">
+                  <img src="https://i.pinimg.com/564x/b7/18/c0/b718c0b4fae2c492e6ab4b9d94771eac.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h5><a href="#">Đây là blog ví dụ 1</a></h5>
+                  <ul class="comment">
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i>1.11.2021
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Single Post -->
+            </div>
+            <!--/ End Single Widget -->
+            <div class="single-widget side-tags">
+              <h3 class="title">Tags</h3>
+              <ul class="tag">
+                <li><a href="#">business</a></li>
+                <li><a href="#">wordpress</a></li>
+                <li><a href="#">html</a></li>
+                <li><a href="#">multipurpose</a></li>
+                <li><a href="#">education</a></li>
+                <li><a href="#">template</a></li>
+                <li><a href="#">Ecommerce</a></li>
+              </ul>
+            </div>
+            <!-- Single Widget -->
+            <!--/ End Single Widget -->
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 

@@ -552,7 +552,7 @@
 	top: 0;
 }
 .header.shop .middle-inner {
-	padding: 20px 0;
+	/* padding: 20px 0; */
 	background: #fff;
 	border-top: 1px solid #eee;
 }
