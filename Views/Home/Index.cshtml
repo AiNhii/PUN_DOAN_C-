@@ -5,8 +5,8 @@
  <!-- slide -->
 <div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
@@ -32,16 +32,12 @@
         <a href="#" id="btn-shop">SHOP NOW</a>
 
     </div>
-    @* <div class="icon-contrainer">
-        <a href=""><i class="fas fa-camera"></i></a>
-        <a href=""><i class="fas fa-camera"></i></a>
-        <a href=""><i class="fas fa-camera" aria-hidden="true"></i></a>
-    </div> *@
-
 </div>
 
+@await Html.PartialAsync("_TabProduct");
+
 <!--gioithieu-section-->
- <div class="gioithieu-section">
+<div class="gioithieu-section">
         <div class="content-section">
 
             <div class="about-img">
@@ -93,7 +89,7 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
 <!-- list product -->
 @await Html.PartialAsync("_TopReview",_shopContext.Products.Take(8).OrderByDescending(s => s.Price).ToList())
 
