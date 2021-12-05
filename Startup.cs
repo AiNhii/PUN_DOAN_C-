@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
 using Microsoft.AspNetCore.Session;
 using Microsoft.AspNetCore.Http;
+using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp
 {
@@ -61,8 +62,8 @@ namespace comestic_csharp
             services.AddControllersWithViews();
 
             var serverVersion = new MySqlServerVersion(new Version(10, 4, 21)); // Get the value from SELECT VERSION()
-            string connectionString = Configuration.GetConnectionString("server=localhost; username=root;password=01672362745Ngan;database=comestic;SslMode = none;");
-            services.AddDbContext<ShopContext>(c => c.UseMySql("server=localhost; username=root;password=01672362745Ngan;database=comestic;SslMode = none;", serverVersion));
+            string connectionString = Configuration.GetConnectionString("server=localhost; username=root;password=01672362745Ngan;database=comestic_test4;SslMode = none;");
+            services.AddDbContext<ShopDbContext>(c => c.UseMySql("server=localhost; username=root;password=01672362745Ngan;database=comestic_test4;SslMode = none;", serverVersion));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

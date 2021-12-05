@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using comestic_csharp.Areas.Identity.Data;
 
 #nullable disable
 
@@ -21,10 +22,10 @@ namespace comestic_csharp.Models
         public string Photo { get; set; }
         public bool? IsParent { get; set; }
         public ulong? ParentId { get; set; }
-        public ulong? AddedBy { get; set; }
+        public string AddedBy { get; set; }
         public string Status { get; set; }
 
-        public virtual User AddedByNavigation { get; set; }
+        public virtual ShopUser AddedByNavigation { get; set; }
         public virtual Category Parent { get; set; }
         public virtual ICollection<Category> InverseParent { get; set; }
         public virtual ICollection<Product> ProductCats { get; set; }

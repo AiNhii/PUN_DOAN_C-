@@ -1,6 +1,7 @@
+@using comestic_csharp.Areas.Identity.Data
 @model IEnumerable<comestic_csharp.Models.Product>
 @{
-        ShopContext context = new ShopContext();
+        ShopDbContext context = new ShopDbContext();
         var pro = context.Products.Take(8).ToArray();
 }
 
