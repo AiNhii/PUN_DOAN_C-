@@ -1,0 +1,55 @@
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+
+    var session = HttpContextAccessor.HttpContext.Session;
+    string jsoncart = session.GetString (comestic_csharp.Controllers.ShoppingCartController.CARTKEY);
+		if (jsoncart != null) {
+			var cart = JsonConvert.DeserializeObject<List<CartItem>> (jsoncart);
+			<a asp-action="Index" asp-controller="ShoppingCart" class="single-icon"><i class="ti-bag"></i> <span class="total-count">@cart.Count</span></a>
+			<div class="shopping-item">
+				<div class="dropdown-cart-header">
+					<span>@cart.Count Items</span>
+					<a asp-action="Index" asp-controller="ShoppingCart">View Cart</a>
+				</div>
+				@if (@cart.Count > 0)
+				{
+					decimal total = 0;
+					@foreach (var cartitem in @cart)
+					{
+						var thanhtien = cartitem.Quantity * cartitem.Product.Price;
+        				total += thanhtien;
+							<ul class="shopping-list">
+								<li>
+									<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+									<a class="cart-img" href="#"><img src="/storage/@cartitem.Product.Photo1" alt="#"></a>
+									<h4><a href="#">@cartitem.Product.Title</a></h4>
+									<p class="quantity">@cartitem.Quantity x - <span class="amount">$@cartitem.Product.Price</span></p>
+								</li>
+							</ul>
+					}
+							<div class="bottom">
+								<div class="total">
+									<span>Total</span>
+									<span class="total-amount">@(total.ToString("n0"))</span>
+								</div>
+								<a href="#" class="btn animate">Checkout</a>
+							</div>
+				}
+				else{
+					<div class="dropdown-cart-header">
+						<span>Giỏ hàng trống</span>
+					</div>
+				}		
+			</div>			
+		}
+		else{
+			<a asp-action="Index" asp-controller="ShoppingCart" class="single-icon"><i class="ti-bag"></i> <span class="total-count">0</span></a>
+			<div class="shopping-item">
+				<div class="dropdown-cart-header">
+					<span>Giỏ hàng trống</span>
+				</div>
+			</div>
+		}
+}

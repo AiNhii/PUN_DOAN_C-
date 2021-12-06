@@ -47,7 +47,7 @@ namespace comestic_csharp
             services.AddDistributedMemoryCache();
             services.AddSession(options =>
             {
-                // options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.IdleTimeout = new TimeSpan(0,30, 0);
                 // options.Cookie.HttpOnly = true;
                 // options.Cookie.IsEssential = true;
                 options.Cookie = new CookieBuilder()

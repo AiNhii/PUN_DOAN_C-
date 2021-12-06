@@ -6,14 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp.Controllers
 {
     public class CartController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public CartController(ShopContext context)
+        public CartController(ShopDbContext context)
         {
             _context = context;
         }

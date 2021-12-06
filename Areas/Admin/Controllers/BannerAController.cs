@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using comestic_csharp.Areas.Identity.Data;
 using Microsoft.AspNetCore.Authorization;
 
 namespace comestic_csharp.Controllers
@@ -15,9 +16,9 @@ namespace comestic_csharp.Controllers
     [Route("admin/banner")]
     public class BannerAController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public BannerAController(ShopContext context)
+        public BannerAController(ShopDbContext context)
         {
             _context = context;
         }

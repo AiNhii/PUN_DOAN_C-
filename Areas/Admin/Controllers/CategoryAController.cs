@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
 using Microsoft.AspNetCore.Authorization;
+using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp.Controllers
 {
@@ -15,9 +16,9 @@ namespace comestic_csharp.Controllers
     [Route("admin/category")]
     public class CategoryAController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public CategoryAController(ShopContext context)
+        public CategoryAController(ShopDbContext context)
         {
             _context = context;
         }
@@ -26,8 +27,8 @@ namespace comestic_csharp.Controllers
         [Route("index")]
         public async Task<IActionResult> Index()
         {
-            var shopContext = _context.Categories.Include(c => c.AddedByNavigation).Include(c => c.Parent);
-            return View(await shopContext.ToListAsync());
+            var ShopDbContext = _context.Categories.Include(c => c.AddedByNavigation).Include(c => c.Parent);
+            return View(await ShopDbContext.ToListAsync());
         }
 
         // GET: Category/Details/5

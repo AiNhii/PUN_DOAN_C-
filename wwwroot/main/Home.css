@@ -18,10 +18,10 @@
 
 /*xử lý menu*/
 
-.nav-link:hover {
+/* .nav-link:hover {
     font-weight: bold;
     color: #3C7363 !important;
-}
+} */
 
 .dropdown {
     position: relative;
@@ -186,7 +186,7 @@
 
 .sale-sticky {
     color: white;
-    background-color: #f90;
+    background-color: #70b19f;
     display: block;
     text-align: center;
     width: 120px;

@@ -6,14 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public CategoryController(ShopContext context)
+        public CategoryController(ShopDbContext context)
         {
             _context = context;
         }
@@ -21,8 +22,8 @@ namespace comestic_csharp.Controllers
         // GET: Category
         public async Task<IActionResult> Index()
         {
-            var shopContext = _context.Categories.Include(c => c.AddedByNavigation).Include(c => c.Parent);
-            return View(await shopContext.ToListAsync());
+            var ShopDbContext = _context.Categories.Include(c => c.AddedByNavigation).Include(c => c.Parent);
+            return View(await ShopDbContext.ToListAsync());
         }
 
         // GET: Category/Details/5
@@ -163,8 +164,8 @@ namespace comestic_csharp.Controllers
         }
 
         public async Task<IActionResult> ListSP(ulong? id){
-            var shopContext = _context.Products.Where(p => p.CatId == id);
-            return View(await shopContext.ToListAsync());
+            var ShopDbContext = _context.Products.Where(p => p.CatId == id);
+            return View(await ShopDbContext.ToListAsync());
         }
 
     }
