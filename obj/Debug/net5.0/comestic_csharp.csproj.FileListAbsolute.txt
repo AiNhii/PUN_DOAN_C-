@@ -619,9 +619,6 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\About.csht
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\Blog.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\BlogDetails.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\BrandA\Index_goc.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\o-Create.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\o-Edit.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\o-Index.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_NavLayout.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ScriptsLayout.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_StyleLayout.cshtml.g.cs
@@ -642,3 +639,8 @@ N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Microsoft.Extensions.Option
 N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_Cart.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\ShoppingCart\Cart.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_SideNav.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_TopNav.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\_Layout.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Product\_SideBar.cshtml.g.cs

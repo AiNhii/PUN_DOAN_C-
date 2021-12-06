@@ -28,6 +28,12 @@ namespace comestic_csharp.Controllers
             return View (GetCartItems());
         }
 
+        public IActionResult Cart()
+        {
+            // var shopContext = _context.Carts.Include(c => c.Order).Include(c => c.Product).Include(c => c.User);
+            return View (GetCartItems());
+        }
+
         public const string CARTKEY = "cart";
 
     // Lấy cart từ Session (danh sách CartItem)
@@ -77,7 +83,7 @@ namespace comestic_csharp.Controllers
             // Lưu cart vào Session
             SaveCartSession (cart);
             // Chuyển đến trang hiện thị Cart
-            return RedirectToAction ("Index");
+            return RedirectToAction ("Cart");
         }
 
 
@@ -106,65 +112,7 @@ namespace comestic_csharp.Controllers
                 }
 
                 SaveCartSession (cart);
-                return RedirectToAction ("Index");
+                return RedirectToAction ("Cart");
             }
-
-
-                
-
-        // public List<Cart> GioHang {
-        //     get 
-        //     {
-        //         var gh = HttpContext.Session.Get<List<Cart>>("GioHang");
-        //         if(gh == default(List<Cart>))
-        //         {
-        //             gh = new List<Cart>();
-        //         }
-            
-        //     return gh;
-        //     }
-        // }
-
-        // public IActionResult AddToCart(ulong id, int? quantity)
-        // {
-        //     List<Cart> giohang = GioHang;
-        //     try {
-        //             Cart item = GioHang.SingleOrDefault(p=> p.Product.Id == id);
-        //             if( item != null)
-        //             {   
-        //                 if (quantity.HasValue)
-        //                 {
-        //                     item.Quantity = quantity.Value;
-        //                 }
-        //                 else
-        //                 {
-        //                     quantity ++;
-        //                 }
-        //             }
-        //             else
-        //             {
-        //                 Product pro = _context.Products.SingleOrDefault(p=> p.Id == id);
-        //                 item = new Cart
-        //                 {
-        //                     Quantity = quantity.HasValue ? quantity.Value : 1,
-        //                     Product = pro
-        //                 };
-        //                 giohang.Add(item);
-        //             }
-
-        //             HttpContext.Session.Set<List<Cart>>("GioHang",giohang);
-        //             return Json( new {success = true});
-
-        //     }
-        //     catch
-        //     {
-        //         return Json( new {success = false});
-        //     }
-        // }
-
-
-
-
-
     }
 }

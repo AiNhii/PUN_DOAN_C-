@@ -1,23 +1,4 @@
-@using comestic_csharp.Areas.Identity.Pages.Account.Manage
-@using Microsoft.AspNetCore.Identity
-@using comestic_csharp.Areas.Identity.Data;
-
-@inject SignInManager<ShopUser> SignInManager
-@{
-    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
-}
-@* <ul class="nav nav-pills flex-column">
-    <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
-    <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
-    <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
-    @if (hasExternalLogins)
-    {
-        <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>
-    }
-    <li class="nav-item"><a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a></li>
-    <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a></li>
-</ul> *@
-
+  
     <nav class="pc-sidebar ">
 		<div class="navbar-wrapper">
 			<div class="m-header">
@@ -27,7 +8,7 @@
 				</a>
 			</div>
 			<div class="navbar-content">
-				< class="pc-navbar">
+				<div class="pc-navbar">
 					<li class="pc-item pc-caption">
 						<label>NAVIGATION</label>
 					</li>
@@ -62,8 +43,8 @@
 					<li class="pc-item pc-hasmenu">
 						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Products</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
 						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="Product" asp-area="admin">Add Product</a></li>
-							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Product" asp-area="admin">Product</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="Product">Add Product</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Product">Product</a></li>
 						</ul>
 					</li>
 					<li class="pc-item pc-hasmenu">
@@ -107,17 +88,6 @@
 					</li>
 					<li class="pc-item pc-hasmenu">
 						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Users</span></a>
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
-                            @if (hasExternalLogins)
-                            {
-                                <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>
-                            }
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a></li>
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a></li>
-                        </ul>
 					</li>
 					<li class="pc-item pc-hasmenu">
 						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Settings</span></a>

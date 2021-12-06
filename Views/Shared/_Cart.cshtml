@@ -11,7 +11,7 @@
 			<div class="shopping-item">
 				<div class="dropdown-cart-header">
 					<span>@cart.Count Items</span>
-					<a asp-action="Index" asp-controller="ShoppingCart">View Cart</a>
+					<a asp-action="Cart" asp-controller="ShoppingCart">View Cart</a>
 				</div>
 				@if (@cart.Count > 0)
 				{
@@ -39,7 +39,7 @@
 				}
 				else{
 					<div class="dropdown-cart-header">
-						<span>Giỏ hàng trống</span>
+						<span>EMPTY CART</span>
 					</div>
 				}		
 			</div>			
@@ -47,9 +47,7 @@
 		else{
 			<a asp-action="Index" asp-controller="ShoppingCart" class="single-icon"><i class="ti-bag"></i> <span class="total-count">0</span></a>
 			<div class="shopping-item">
-				<div class="dropdown-cart-header">
-					<span>Giỏ hàng trống</span>
-				</div>
+					<span>EMPTY CART</span>
 			</div>
 		}
 }

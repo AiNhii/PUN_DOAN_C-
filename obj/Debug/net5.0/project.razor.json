@@ -15654,11 +15654,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\o-Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\o-Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\BrandA\\Delete.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\BrandA\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15749,6 +15744,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Shared\\_SideNav.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_SideNav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
       "FileKind": "mvc"
@@ -15771,6 +15771,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\_SideBar.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Product\\_SideBar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15821,6 +15826,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Cart\\Edit.cshtml",
       "TargetPath": "Views\\Cart\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Shared\\_TopNav.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_TopNav.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15876,11 +15886,6 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\o-Edit.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\o-Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16026,11 +16031,6 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\ShoppingCart\\Index.cshtml",
       "TargetPath": "Views\\ShoppingCart\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\o-Create.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\o-Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16469,6 +16469,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\_Layout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Product\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Postcategory\\Details.cshtml",
       "TargetPath": "Views\\Postcategory\\Details.cshtml",
       "FileKind": "mvc"
@@ -16541,6 +16546,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Product\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\ShoppingCart\\Cart.cshtml",
+      "TargetPath": "Views\\ShoppingCart\\Cart.cshtml",
       "FileKind": "mvc"
     }
   ],
