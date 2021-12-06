@@ -1,7 +1,10 @@
 @model IEnumerable<comestic_csharp.Models.Product>
+@{
+        ShopContext context = new ShopContext();
+        var pro = context.Products.Take(8).ToArray();
+}
 
 @* <div class="container">
-    
         <h3 class="list-product-title">TOP REVIEWED</h3>
         <div class="product-group">
             <div class="row">
@@ -17,7 +20,7 @@
                                     <span class="del-price">@item.Price</span>
                                     <span class="new-price">80.000 vnd</span>
                                 </div>
-                                <a class="btn btn-info btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="btn btn-info btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
                             </div>
                         </div>
@@ -25,300 +28,102 @@
                 }
             </div>
         </div>
-
-  
 </div> *@
+
 <div class="container">
-     <h3 class="list-product-title">TOP REVIEWED</h3>
+    <div class="row">
+            <div class="col-12">
+                <div class="section-title" style="padding-top: 25px;">
+                    <h2>Top Review</h2>
+                </div>
+            </div>
+        </div>
         <div class="product-out">
 
             <div id="demo" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ul class="carousel-indicators sp" style="bottom: -40px;">
+                <ul class="carousel-indicators sp" style="bottom: -15px;">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
+                    @* <li data-target="#demo" data-slide-to="2"></li> *@
                 </ul>
                 <!-- The slideshow -->
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row product">
+                            @for (var i = 0; i< 4; i++)
+                            {  
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
 
                                 <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
+                                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                    <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
+                                        <h5 class="card-title product-title">@pro[i].Title</h5>
                                         <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
+                                            <span class="del-price">@pro[i].Price</span>
                                             <span class="new-price">80.000 vnd</span>
                                         </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh2.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                        <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                         <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh3.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh4.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
-                            </div>
-
+                            }
                         </div>
                     </div>
+
                     <div class="carousel-item">
                         <div class="row product">
+                            @for (var i = 4; i< 8; i++)
+                            {  
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
 
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
                                 <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
+                                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                    <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
+                                        <h5 class="card-title product-title">@pro[i].Title</h5>
                                         <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
+                                            <span class="del-price">@pro[i].Price</span>
                                             <span class="new-price">80.000 vnd</span>
                                         </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
+                                        <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                         <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
-                            </div>
-
+                            }
                         </div>
                     </div>
-                    <div class="carousel-item">
+
+                   @* <div class="carousel-item">
                         <div class="row product">
+                            @for (var i = 8; i < 12; i++)
+                            {  
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
 
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
                                 <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
+                                        <h5 class="card-title product-title">@pro[i].Title</h5>
                                         <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
+                                            <span class="del-price">@pro[i].Price</span>
                                             <span class="new-price">80.000 vnd</span>
                                         </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                        <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                                         <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
                                         <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
-                                <div class="card card-product mb-3">
-                                    <img class="card-img-top" src="./storage/anh1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title product-title">Product</h5>
-                                        <div class="card-text product-price">
-                                            <span class="del-price">100.000 vnd</span>
-                                            <span class="new-price">80.000 vnd</span>
-                                        </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                        <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                        <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                    </div>
-                                </div>
-                            </div>
-
+                            }
                         </div>
-                    </div>
-                </div>
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content container">
-                            <div class="product-single-quick-view">
-                                <div class="row product_detail">
-                                    <div class="col-md-6 col-sm-12 col-12">
-                                        <div class="flex-quick-view">
-                                            <div id="flex-slider" class="flexslider">
-                                                <ul class="slides">
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail.jpg" alt="">
-                                                    </li>
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail.jpg" alt="">
-                                                    </li>
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail.jpg" alt="">
-                                                    </li>
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail.jpg" alt="">
-                                                    </li>
-                                                    <!-- items mirrored twice, total of 12 -->
-                                                </ul>
-                                            </div>
-                                            <div id="flex-carousel" class="flexslider">
-                                                <ul class="slides">
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail1.jpg" alt="">
-                                                    </li>
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail2.jpg" alt="">
-                                                    </li>
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail3.jpg" alt="">
-                                                    </li>
-                                                    <li>
-                                                        <img src="imager/product-detail/product_detail4.jpg" alt="">
-                                                    </li>
-                                                    <!-- items mirrored twice, total of 12 -->
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 col-12 content-product">
-                                        <h2>Whitening cream | $65</h2>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> &nbsp; (2 customer review)
-                                        </p>
-                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                                            but also the leap into electronic </p>
-                                        <div class="infor-product">
-                                            <p><span>Sku: </span>22</p>
-                                            <p><span>Category: </span>Cosmetic</p>
-                                            <p><span>Tag: </span>Trendy</p>
-                                            <p><span>Share: </span>
-                                                <a href=""><i class="fab fa-facebook"></i></a>
-                                                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                                <a href=""><i class="fab fa-instagram"></i></a></p>
-                                        </div>
-                                        <div>
-                                            <div class="btn-group">
-                                                <button type="button" class="prev btn ">-</button>
-                                                <button type="button" class="show-number btn ">1</button>
-                                                <button type="button" class="next btn ">+</button>
-                                            </div>
-                                            <div class="btn-group">
-                                                <a href="#" class="btn add-to-cart">ADD TO CART<p><i
-                                                        class="fas fa-cart-plus"></i></p> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="lnr lnr-cross close-quick-view" data-dismiss="modal"></span>
-                            </div>
-                        </div>
-                    </div>
+                    </div> *@
                 </div>
             </div>
         </div>
-    </div>
+</div>

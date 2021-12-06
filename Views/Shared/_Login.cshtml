@@ -1,0 +1,19 @@
+@using Microsoft.AspNetCore.Identity
+@using comestic_csharp.Areas.Identity.Data;
+
+@inject SignInManager<ShopUser> SignInManager
+@inject UserManager<ShopUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <li><i class="ti-user"></i><a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a></li>
+	<li><form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button type="submit">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <li><i class="ti-user"></i> <a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+	<li><i class="ti-power-off"></i><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+}

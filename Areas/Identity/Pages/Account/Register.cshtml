@@ -17,6 +17,30 @@
 
 	<!-- STYLE CSS -->
 	<link rel="stylesheet" href="/admin2/assets/css/style_regi.css">
+	<style>
+		a{
+			text-decoration: blink;
+			 border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #336641;
+    font-size: 25px;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 15px !important;
+		}
+	</style>
 </head>
 
 <body>
@@ -49,7 +73,11 @@
 					<span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
 				</div>
 				<button type="submit" class="btn btn-primary">Register</button>
-				<button><a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Log in</a></button>
+			
+
+				<a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Log in</a>
+				
+
 
 
 			</form>

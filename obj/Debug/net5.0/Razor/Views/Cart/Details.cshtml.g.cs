@@ -34,7 +34,7 @@ using comestic_csharp.Areas.Admin.Controllers;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b5414388ad787862e4be8870519861e3380e587f", @"/Views/Cart/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"abd5cb7bc7ce15d2b4856635cf2b5637ffd3a535", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"98274e6ec761f60c0efa226c28371157596c351f", @"/Views/_ViewImports.cshtml")]
     public class Views_Cart_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<comestic_csharp.Models.Cart>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

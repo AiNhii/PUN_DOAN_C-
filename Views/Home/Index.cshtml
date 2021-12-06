@@ -1,67 +1,20 @@
 ﻿@{
         ShopContext _shopContext = new ShopContext();
 }
-<style>
-    .product-area .nav-tabs {
-        text-align: center;
-        display: inline-block;
-        width: 100%;
-        border: none;
-        padding-bottom: 35px;
-    }
-    
-    .product-area .nav-tabs .nav-item {
-        margin-bottom: -1px;
-        display: inline-block;
-    }
-    
-    .product-area .nav-tabs li a {
-        color: #333;
-        text-transform: uppercase;
-        display: inline-block;
-        position: relative;
-        margin-right: 5px;
-        font-weight: 500;
-        background: #fff;
-        color: #333;
-        padding: 3px 14px;
-        border-radius: 3px;
-        font-size: 13px;
-    }
-    
-    .nav-tabs li a :hover {
-        color: white !important;
-    }
-    
-    .product-area .nav-tabs li:last-child a {
-        border-color: transparent;
-    }
-    
-    .product-area .nav-tabs li a i {
-        margin-right: 10px;
-    }
-    
-    .product-area .nav-tabs li a.active,
-    .product-area .nav-tabs li:hover a {
-        background: #F7941D;
-        color: #fff;
-        border-color: transparent;
-        border-radius: 5px !important;
-    }
-</style>
+
  <!-- slide -->
 <div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="~/main/asset/img/Untitled3.jpg" alt="First slide">
+            <img class="d-block w-100" src="~/main/asset/img/Untitled6.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="~/main/asset/img/Untitled6.jpg" alt="Second slide">
+            <img class="d-block w-100" src="~/main/asset/img/Untitled3.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="~/main/asset/img/Untitled7.jpg" alt="Third slide">
@@ -79,465 +32,11 @@
         <a href="#" id="btn-shop">SHOP NOW</a>
 
     </div>
-    @* <div class="icon-contrainer">
-        <a href=""><i class="fas fa-camera"></i></a>
-        <a href=""><i class="fas fa-camera"></i></a>
-        <a href=""><i class="fas fa-camera" aria-hidden="true"></i></a>
-    </div> *@
-
 </div>
 
-<!-- end slide -->
-<!---list--->
-<div class="product-area section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title">
-                    <h2>Trending Item</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="product-info">
-                    <div class="nav-main">
-                        <!-- Tab Nav -->
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#man" role="tab">Man</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#women" role="tab">Woman</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#kids" role="tab">Kids</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#accessories" role="tab">Accessories</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#essential" role="tab">Essential</a></li>
-                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#prices" role="tab">Prices</a></li>
-                        </ul>
-                        <!--/ End Tab Nav -->
-                    </div>
-                    <div class="tab-content" id="myTabContent">
-                        <!-- Start Single Tab -->
-                        <div class="tab-pane fade show active" id="man" role="tabpanel">
-                            <div class="tab-single">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp5.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp8.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp7.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp6.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                                <a class="heart"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Single Tab -->
-                        <!-- Start Single Tab -->
-                        <div class="tab-pane fade" id="women" role="tabpanel">
-                            <div class="tab-single">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp8.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp5.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp7.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp6.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                                <a class="heart"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Single Tab -->
-                        <!-- Start Single Tab -->
-                        <div class="tab-pane fade" id="kids" role="tabpanel">
-                            <div class="tab-single">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp5.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp8.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp7.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp6.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                                <a class="heart"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Single Tab -->
-                        <!-- Start Single Tab -->
-                        <div class="tab-pane fade" id="accessories" role="tabpanel">
-                            <div class="tab-single">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp5.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp8.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp7.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp6.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                                <a class="heart"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Single Tab -->
-                        <!-- Start Single Tab -->
-                        <div class="tab-pane fade" id="essential" role="tabpanel">
-                            <div class="tab-single">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp5.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp8.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp7.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp6.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                                <a class="heart"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Single Tab -->
-                        <!-- Start Single Tab -->
-                        <div class="tab-pane fade" id="prices" role="tabpanel">
-                            <div class="tab-single">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp5.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp8.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp7.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-12">
-                                        <div class="card card-product mb-3">
-                                            <img class="card-img-top" src="./asset/img/sanpham/sp6.jpg" alt="Card image cap">
-                                            <div class="card-body">
-                                                <h5 class="card-title product-title">Product</h5>
-                                                <div class="card-text product-price">
-                                                    <span class="del-price">100.000 vnd</span>
-                                                    <span class="new-price">80.000 vnd</span>
-                                                </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                                                <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                                                <a class="heart"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ End Single Tab -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--deal day-->
-<!-- list product -->
+@await Html.PartialAsync("_TabProduct");
 <!--gioithieu-section-->
- <div class="gioithieu-section">
+<div class="gioithieu-section">
         <div class="content-section">
 
             <div class="about-img">
@@ -551,7 +50,7 @@
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                     <div class="list-box d-flex align-items-center">
                                         <div class="list-icon">
-                                            <i class="fas fa-shipping-fast"></i>
+                                            <i class="fa fa-truck"></i>
                                         </div>
                                         <div class="content">
                                             <h3>Free Shipping</h3>
@@ -562,7 +61,7 @@
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                     <div class="list-box d-flex align-items-center">
                                         <div class="list-icon">
-                                            <i class="fas fa-phone-volume"></i>
+                                            <i class="fa fa-phone-volume"></i>
                                         </div>
                                         <div class="content">
                                             <h3>24/7 Support</h3>
@@ -573,7 +72,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="list-box d-flex justify-content-start align-items-center">
                                         <div class="list-icon">
-                                            <i class="fas fa-sync"></i>
+                                            <i class="fa fa-sync"></i>
                                         </div>
                                         <div class="content">
                                             <h3>Refund</h3>
@@ -589,91 +88,22 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
 <!-- list product -->
-@* <div class="container">
-    <div class="row mt-5">
-        <h3 class="list-product-title">TOP REVIEWED</h3>
-        <div class="product-group">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-info btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                            <h3 class="sale-sticky">Sale</h3>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div> *@
-
-@await Html.PartialAsync("_TopReview",_shopContext.Products.Take(4).OrderByDescending(s => s.Price).ToList())
+@await Html.PartialAsync("_TopReview",_shopContext.Products.Take(8).OrderByDescending(s => s.Price).ToList())
 
 <div class="sale-section">
     <div class="content-section">
         <div class="container-fluid">
             <div class="row deal-day">
                 <div class="content-deal-day">
-                    <div class="title">
-                        <h3 class="list-product-title">DEAL OF THE DAY </h3>
-                    </div>
+                    <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>Deal of the day</h2>
+                </div>
+            </div>
+        </div>
                     <ul class="list-inline" id="dealday">
                         <li>
                             <h2 id="dealdays">05</h2>
@@ -702,82 +132,9 @@
     </div>
 </div>
 <!-- end list product -->
-
-<!--new product-->
-@* <div class="container">
-    @* <div class="row mt-5">
-        <h3 class="list-product-title">New product</h3>
-        <div class="product-group">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp5.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                            <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp8.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                            <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp7.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                            <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                    <div class="card card-product mb-3">
-                        <img class="card-img-top" src="~/main/asset/img/sanpham/sp6.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title product-title">Product</h5>
-                            <div class="card-text product-price">
-                                <span class="del-price">100.000 vnd</span>
-                                <span class="new-price">80.000 vnd</span>
-                            </div>
-                            <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-                            <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
-                            <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
-                          
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> *@
-
-@await Html.PartialAsync("_NewProduct",_shopContext.Products.Where( p => p.Condition=="new").Take(4).ToList())
+@await Html.PartialAsync("_HotProduct",_shopContext.Products.Take(8).ToList());
 <!-- end list product -->
-
+@await Html.PartialAsync("_ListProduct",_shopContext.Products.Take(3).ToList());
 <!--about gioithieu-->
 <div class="container">
     <div class="row cosmetic">
@@ -822,9 +179,15 @@
     </div>
 </div>
 <!--about blog-->
-    <div class="container">
+<div class="container">
     
-        <h3 class="list-product-title">From our bolg</h3>
+       <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>Our Blog</h2>
+                </div>
+            </div>
+        </div>
         <div class="product-group">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-12">
@@ -877,6 +240,43 @@
 
     
 </div>
+
+     <script>
+        var countDownDate = new Date(Date.parse(new Date()) + 6 * 24 * 60 * 60 * 1000);
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+            // Display the result in the element with id="demo"
+
+
+            var dealday = document.getElementById('dealday');
+            if (dealday != null) {
+                document.getElementById("dealdays").innerHTML = days;
+                document.getElementById("dealhours").innerHTML = hours;
+                document.getElementById("dealminutes").innerHTML = minutes;
+                document.getElementById("dealseconds").innerHTML = seconds;
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("dealday").innerHTML = "EXPIRED";
+                }
+            }
+        }, 1000);
+    </script> 
 
 
  

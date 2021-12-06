@@ -15699,8 +15699,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Delete.cshtml",
-      "TargetPath": "Views\\Brand\\Delete.cshtml",
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_ListProduct.cshtml",
+      "TargetPath": "Views\\Shared\\_ListProduct.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15726,11 +15726,6 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Edit.cshtml",
-      "TargetPath": "Views\\Brand\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15769,11 +15764,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Banner\\Edit.cshtml",
-      "TargetPath": "Views\\Banner\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Order\\Edit.cshtml",
       "TargetPath": "Views\\Order\\Edit.cshtml",
       "FileKind": "mvc"
@@ -15784,8 +15774,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Product\\Details.cshtml",
-      "TargetPath": "Views\\Product\\Details.cshtml",
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Banner.cshtml",
+      "TargetPath": "Views\\Shared\\_Banner.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15804,13 +15794,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Setting\\Create.cshtml",
-      "TargetPath": "Views\\Setting\\Create.cshtml",
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Makeup.cshtml",
+      "TargetPath": "Views\\Shared\\_Makeup.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Banner\\Delete.cshtml",
-      "TargetPath": "Views\\Banner\\Delete.cshtml",
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Setting\\Create.cshtml",
+      "TargetPath": "Views\\Setting\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15821,11 +15811,6 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Coupon\\Edit.cshtml",
       "TargetPath": "Views\\Coupon\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Banner\\Index.cshtml",
-      "TargetPath": "Views\\Banner\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15959,6 +15944,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Login.cshtml",
+      "TargetPath": "Views\\Shared\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Product\\Edit.cshtml",
       "FileKind": "mvc"
@@ -16024,6 +16014,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\Shared\\_StyleLayout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_StyleLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Setting\\Delete.cshtml",
       "TargetPath": "Views\\Setting\\Delete.cshtml",
       "FileKind": "mvc"
@@ -16059,6 +16054,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\BlogDetails.cshtml",
+      "TargetPath": "Views\\Shop\\BlogDetails.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Coupon\\Create.cshtml",
       "TargetPath": "Views\\Coupon\\Create.cshtml",
       "FileKind": "mvc"
@@ -16071,6 +16071,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productreview\\Create.cshtml",
       "TargetPath": "Views\\Productreview\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_HeaderTest.cshtml",
+      "TargetPath": "Views\\Shared\\_HeaderTest.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16089,18 +16094,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Banner\\Create.cshtml",
-      "TargetPath": "Views\\Banner\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Postcomment\\Create.cshtml",
       "TargetPath": "Views\\Postcomment\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Banner\\Details.cshtml",
-      "TargetPath": "Views\\Banner\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16149,11 +16144,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\Details_goc.cshtml",
-      "TargetPath": "Views\\Shop\\Details_goc.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
       "FileKind": "mvc"
@@ -16161,11 +16151,6 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Product\\Index.cshtml",
-      "TargetPath": "Views\\Product\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16189,13 +16174,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Details.cshtml",
-      "TargetPath": "Views\\Brand\\Details.cshtml",
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_HotProduct.cshtml",
+      "TargetPath": "Views\\Shared\\_HotProduct.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16219,11 +16204,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Product\\Edit.cshtml",
-      "TargetPath": "Views\\Product\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\BrandA\\Edit.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\BrandA\\Edit.cshtml",
       "FileKind": "mvc"
@@ -16239,8 +16219,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Product\\Delete.cshtml",
-      "TargetPath": "Views\\Product\\Delete.cshtml",
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_ScriptsLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_ScriptsLayout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16309,8 +16289,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_TabProduct.cshtml",
+      "TargetPath": "Views\\Shared\\_TabProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Footer.cshtml",
       "TargetPath": "Views\\Shared\\_Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\BrandA\\Index_goc.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\BrandA\\Index_goc.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16326,6 +16316,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Category\\Details.cshtml",
       "TargetPath": "Views\\Category\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\Shared\\_NavLayout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_NavLayout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16351,6 +16346,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\Shared\\_ScriptsLayout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_ScriptsLayout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16429,18 +16429,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Index.cshtml",
-      "TargetPath": "Views\\Brand\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Postcomment\\Edit.cshtml",
       "TargetPath": "Views\\Postcomment\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Product\\Create.cshtml",
-      "TargetPath": "Views\\Product\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16481,11 +16471,6 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productattribute\\Create.cshtml",
       "TargetPath": "Views\\Productattribute\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Brand\\Create.cshtml",
-      "TargetPath": "Views\\Brand\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

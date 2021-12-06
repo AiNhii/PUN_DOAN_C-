@@ -4,81 +4,30 @@
     <title>PUN COMESTIC</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-@* 
-   <link rel="stylesheet" type="text/css" href="~/main/asset/css/style-contact.css"> *@
-     <link rel="stylesheet" type="text/css" href="~/main/asset/css/StyleHome.css">
-     @* /*<link rel="stylesheet" type="text/css" href="~/main/asset/css/style_about.css">*/ *@
-    <link rel="stylesheet" type="text/css" href="~/main/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="~/main/font-awesome/css/fontawesome-all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+    <link rel="stylesheet" type="text/css" href="~/main/Home.css">
+    <link rel="stylesheet" type="text/css" href="~/main/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/main/fontawesome-all.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- menu -->
   
-    <partial name ="_Header.cshtml" />
+    <partial name ="_HeaderTest.cshtml" />
+    @* <partial name ="_Header.cshtml" /> *@
+    
 
-    <!-- end menu -->
-     <div class="container">
+
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <partial name ="_Footer.cshtml" />
-
-    <!--FOOTER-->
-    <!-- Footer -->
-
     
-    <!-- Load jquery trước khi load bootstrap js -->
-      <script src="~/main/asset/js/jquery-3.3.1.min.js"></script>
-    <script src="~/main/bootstrap/js/bootstrap.min.js"></script>  
-
-    <script>
-        $(document).ready(function() {
-            $(".wish-icon i").click(function() {
-                $(this).toggleClass("fa-heart fa-heart-o");
-            });
-        });
-    </script> 
-     <script>
-        var countDownDate = new Date(Date.parse(new Date()) + 6 * 24 * 60 * 60 * 1000);
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-            // Get todays date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-            // Display the result in the element with id="demo"
-
-
-            var dealday = document.getElementById('dealday');
-            if (dealday != null) {
-                document.getElementById("dealdays").innerHTML = days;
-                document.getElementById("dealhours").innerHTML = hours;
-                document.getElementById("dealminutes").innerHTML = minutes;
-                document.getElementById("dealseconds").innerHTML = seconds;
-                // If the count down is finished, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("dealday").innerHTML = "EXPIRED";
-                }
-            }
-        }, 1000);
-    </script> 
+    <partial name ="_Footer.cshtml" />
+    
+    
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -4,6 +4,8 @@
     ViewData["Title"] = "Banner";
 }
 
+@await Html.PartialAsync("_StyleLayout")
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
@@ -26,12 +28,12 @@
 
 <div class="pcoded-content">
     <div class="card">
-             <div class="flex-container">
+            <div class="flex-container">
                 <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Banner</h1></div>
                 <div></div>
                 <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>  Add new</a></p></div> 
             </div>
-            <table class="table" id="banner">
+            <table class="table" id="example1">
                 <thead>
                     <tr>
                         <th>
@@ -119,55 +121,4 @@
 
 </div>
 
-<script>
-@* var exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.bs.modal', function (event) {
-  // Button that triggered the modal
-  var button = event.relatedTarget
-  // Extract info from data-bs-* attributes
-  var recipient = button.getAttribute('data-bs-whatever')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
-  var modalTitle = exampleModal.querySelector('.modal-title')
-  var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-  modalTitle.textContent = 'New message to ' + recipient
-  modalBodyInput.value = recipient
-}) *@
-
-$(function () {
-        $('#banner').DataTable();
-    });
-    
-    function Delete(id){
-        var txt;
-        var r = confirm("Are you sure you want to Delete?");
-        if (r == true) {
-            
-            $.ajax(
-            {
-                type: "POST",
-                url: '/admin/banner/delete/'+ id,
-                data: {
-                    id: id
-                },
-                error: function (result) {
-                    alert("error");
-                },
-                success: function (result) {
-                    if (result == true) {
-                        var baseUrl="/admin/banner";
-                        window.location.reload();
-                    }
-                    else {
-                        alert("There is a problem, Try Later!");
-                    }
-                }
-            });
-        } 
-    }
-
-</script>
-
+@await Html.PartialAsync("_ScriptsLayout")

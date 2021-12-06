@@ -3,9 +3,8 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+@await Html.PartialAsync("_StyleLayout")
 <div class="page-header">
-
         <div class="page-block">
             <div class="row align-items-center">
                 <div class="col-md-12">
@@ -14,7 +13,7 @@
                     </div>
                     <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
-                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="BrandA">Brand</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="BRANDA">Brand</a></li>
                             <li class="breadcrumb-item">Index</li>
                     </ul>
                     </div>
@@ -23,186 +22,70 @@
 </div>
 
 <div class="pcoded-content">
-    <div class="card">
-            <div class="flex-container">
-    <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Brand</h1></div>
-    <div></div>
-    <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>  Add new</a></p></div> </div>
- <div class="row">
-                        <div class="col-md-12 col-sm-12 ">
-                            <div class="x_panel">
-
-                                <div class="x_content">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="card-box table-responsive">
-
-        <table id="datatable" class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Title)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Slug)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Status)
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-            @foreach (var item in Model) {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Slug)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Status)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit" style="color: #3EC9E6;"></i></a> 
-                        <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
-                        <a asp-action="Delete" asp-route-id="@item.Id"><i data-feather="trash" style="color: red;"></i></a>
-                    </td>
-                </tr>
-            }   
-            </tbody>
-        </table>
-             </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+   <section class="content">
+      <div class="container-fluid">        
+        <div class="row">
+          <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-9">
+                                <h3 class="card-header">BRAND</h3>       
+                            </div>
+                            <div class="col-3">
+                                <p class="card-header" style="margin-top: 11px !important"><a asp-action="Create" class="add"><i data-feather ="plus"></i> Add new</a></p>
                             </div>
                         </div>
-    </div>
-</div>
-  <div class="container body">
-        <div class="main_container">
-
-
-            <!-- top navigation -->
-
-            <!-- /top navigation -->
-
-            <!-- page content -->
-            <div class="right_col" role="main">
-                <div class="">
-
-
-
-
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 ">
-                            <div class="x_panel">
-
-                                <div class="x_content">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="card-box table-responsive">
-
-                                                <table id="datatable" class="table table-striped table-bordered" style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Name</th>
-                                                            <th>Position</th>
-                                                            <th>Office</th>
-                                                            <th>Age</th>
-                                                            <th>Start date</th>
-                                                            <th>Salary</th>
-                                                        </tr>
-                                                    </thead>
-
-
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Tiger Nixon</td>
-                                                            <td>System Architect</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>61</td>
-                                                            <td>2011/04/25</td>
-                                                            <td>$320,800</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Garrett Winters</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>63</td>
-                                                            <td>2011/07/25</td>
-                                                            <td>$170,750</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Ashton Cox</td>
-                                                            <td>Junior Technical Author</td>
-                                                            <td>San Francisco</td>
-                                                            <td>66</td>
-                                                            <td>2009/01/12</td>
-                                                            <td>$86,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cedric Kelly</td>
-                                                            <td>Senior Javascript Developer</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>$433,060</td>
-                                                        </tr>
-
-
-                                                        <tr>
-                                                            <td>Michael Bruce</td>
-                                                            <td>Javascript Developer</td>
-                                                            <td>Singapore</td>
-                                                            <td>29</td>
-                                                            <td>2011/06/27</td>
-                                                            <td>$183,000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Donna Snider</td>
-                                                            <td>Customer Support</td>
-                                                            <td>New York</td>
-                                                            <td>27</td>
-                                                            <td>2011/01/25</td>
-                                                            <td>$112,000</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
                     </div>
+                <!-- /.card-header -->
+                    <div class="card-body">
+                        <table class="table" id="example1" >
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Title)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Slug)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Status)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                @foreach (var item in Model) {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Title)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Slug)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Status)
+                                        </td>
+                                        <td>
+                                            <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit" style="color: #3EC9E6;"></i></a> 
+                                            <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
+                                            <a asp-action="Delete" asp-route-id="@item.Id"><i data-feather="trash" style="color: red;"></i></a>
+                                        </td>
+                                    </tr>
+                                }   
+                                </tbody>
+                        </table>
+                    </div>
+                <!-- /.card-body -->
                 </div>
-            </div>
-            <!-- /page content -->
-
-            <!-- footer content -->
-            <footer>
-                <div class="pull-right">
-                    Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
-                </div>
-                <div class="clearfix"></div>
-            </footer>
-            <!-- /footer content -->
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
         </div>
-    </div>
-   <script src="/backend/dashboard/asset/js/jquery.min.js"></script>
-    <script src="/backend/dashboard/asset/js/bootstrap.bundle.min.js"></script>
-      <script src="/backend/dashboard/asset/js/jquery.dataTables.min.js"></script>
-      <script src="/backend/dashboard/asset/js/custom.min.js"></script>
-      
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+</div>
+  
+@await Html.PartialAsync("_ScriptsLayout")
