@@ -445,3 +445,12 @@
         border-radius: 5px !important;
         margin-left: 60px;
     }
+    
+    .section {
+        padding-top: 0px !important;
+    }
+    
+    .dropdown-item:hover {
+        color: #70b19f !important;
+        background-color: #fff !important;
+    }

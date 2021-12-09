@@ -1,11 +1,11 @@
+
 @model IEnumerable<comestic_csharp.Models.Category>
-<li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown">MAKE UP</a>
-                    <div class="dropdown-content">
+<li style="list-style: none;">
+                
+                    <div class="categor-list">
                         @foreach (var item in Model)
                         {
                             <a class="dropdown-item" asp-action="ListSP" asp-controller="Category" asp-route-id="@item.Id">@item.Title</a>
                         }
                     </div>
 </li>
-

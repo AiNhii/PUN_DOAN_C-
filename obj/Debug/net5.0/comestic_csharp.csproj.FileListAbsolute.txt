@@ -633,3 +633,5 @@ D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\BlogDet
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_NavLayout.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ScriptsLayout.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_StyleLayout.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\Chuyen.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shared\_LOAD.cshtml.g.cs

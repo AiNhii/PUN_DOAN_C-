@@ -63,6 +63,10 @@ namespace comestic_csharp.Controllers
         {
             return View();
         }
+        public IActionResult Chuyen()
+        {
+            return View();
+        }
 
 
     }

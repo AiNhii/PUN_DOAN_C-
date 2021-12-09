@@ -1,7 +1,7 @@
 @model IEnumerable<comestic_csharp.Models.Product>
 
 @{
-    ViewData["Title"] = "PRODUCT";
+    ViewData["Title"] = "PRODUCT_2";
     Layout = "/Views/Shared/_MainLayout.cshtml";
 }
 
@@ -136,7 +136,7 @@
                                 <!-- Single Widget -->
                                 <div class="single-widget category">
                                     <h3 class="title">Categories</h3>
-                                    @* <ul class="categor-list">
+                                    <ul class="categor-list">
                                         <li>
                                             <li><a href="http://127.0.0.1:8000/product-cat/eyes">EYES</a></li>
                                             <li><a href="http://127.0.0.1:8000/product-cat/face">FACE</a></li>
@@ -144,12 +144,7 @@
                                             <li><a href="http://127.0.0.1:8000/product-cat/skincare">SKINCARE</a></li>
                                         </li>
 
-                                    </ul> *@
-                                     @{
-                    ShopContext  _shopContext = new ShopContext();
-                }
-                @await Html.PartialAsync("_LOAD",_shopContext.Categories.ToList())
-                                       
+                                    </ul>
                                 </div>
                                 <!--/ End Single Widget -->
                                 <!-- Shop By Price -->
@@ -217,8 +212,8 @@
                                             </div>
                                         </div>
                                         <ul class="view-mode">
-                                            <li class="active"><a href="javascript:void(0)"><i class="fa fa-th-large"></i></a></li>
-                                            <li><a href="/Shop/Chuyen"><i class="fa fa-th-list"></i></a></li>
+                                            <li><a href="/Shop/Index"><i class="fa fa-th-large"></i></a></li>
+                                            <li class="active"><a href="javascript:void(0)"><i class="fa fa-th-list"></i></a></li>
                                         </ul>
                                     </div>
                                     <!--/ End Shop Top -->
@@ -236,7 +231,7 @@
                 </div>
 
                 <div class="row">
-                    @foreach (var item in Model)
+                    @* @foreach (var item in Model)
                     {
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="card card-product mb-3">
@@ -253,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                    }
+                    } *@
                 </div>
             </div>
         </div>
