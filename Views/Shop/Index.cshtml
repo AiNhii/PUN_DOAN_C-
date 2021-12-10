@@ -17,8 +17,6 @@
             </nav>
         </div>
     </div>
-
-
     <h3 class="list-product-title">ALL PRODUCT</h3>
     <div class="row">
         <div class="col-lg-3 col-md-4 col-12">
@@ -30,7 +28,6 @@
                     <div class="col-12">
                     </div>
                 </div>
-
                 <div class="row">
                     @foreach (var item in Model)
                     {
@@ -66,26 +63,6 @@
     <title> PRODUCT PAGE</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <!-- Web Font -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"> -->
-
-    <!-- StyleSheet -->
-
-    <!-- Bootstrap -->
-
-    <!-- Magnific Popup -->
-
-    <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="http://127.0.0.1:8000/frontend/css/font-awesome.css"> -->
-    <!-- Fancybox -->
-
-    <!-- Themify Icons -->
-
-    <!-- Nice Select CSS -->
-    <!-- Flex Slider CSS -->
-    <!-- Slicknav -->
-
-    <!-- Jquery Ui -->
 
 
     <!-- Eshop StyleSheet -->
@@ -94,23 +71,9 @@
     <link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-
-
-   
-
 </head>
 
 <body class="js">
-
-    <!-- Preloader -->
-
-    <!-- End Preloader -->
-
-    <!-- Header -->
-
-    <!--/ End Header -->
 
     <!-- Breadcrumbs -->
     <div class="breadcrumbs">
@@ -143,7 +106,6 @@
                                             <li><a href="http://127.0.0.1:8000/product-cat/lips">LIPS</a></li>
                                             <li><a href="http://127.0.0.1:8000/product-cat/skincare">SKINCARE</a></li>
                                         </li>
-
                                     </ul> *@
                                      @{
                     ShopContext  _shopContext = new ShopContext();
@@ -158,7 +120,7 @@
                                     <div class="price-filter">
                                         <div class="price-filter-inner">
 
-                                            <div id="slider-range" data-min="0" data-max="50000"></div>
+                                            <div id="slider-range" data-min="0" data-max="2000000"></div>
                                             <div class="product_filter">
                                                 <button type="submit" class="filter_button">Filter</button>
                                                 <div class="label-input">
@@ -226,46 +188,38 @@
                             </div>
                             <div class="row">
                               
-    <div class="row">
-     
-        <div class="col-lg-12 col-md-8 col-12">
-            <div class="product-group">
-                <div class="row" style="margin-top: 10px;">
-                    <div class="col-12">
-                    </div>
-                </div>
+                            <div class="row">
+                            
+                                <div class="col-lg-12 col-md-8 col-12">
+                                    <div class="product-group">
+                                        <div class="row" style="margin-top: 10px;">
+                                            <div class="col-12">
+                                            </div>
+                                        </div>
 
-                <div class="row">
-                    @foreach (var item in Model)
-                    {
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card card-product mb-3">
-                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title product-title">@item.Title</h5>
-                                    <div class="card-text product-price">
-                                        <span class="del-price">@item.Price</span>
-                                        <span class="new-price">80.000 vnd</span>
+                                        <div class="row">
+                                            @foreach (var item in Model)
+                                            {
+                                                <div class="col-lg-4 col-md-6 col-12">
+                                                    <div class="card card-product mb-3">
+                                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                                        <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title product-title">@item.Title</h5>
+                                                            <div class="card-text product-price">
+                                                                <span class="del-price">@item.Price</span>
+                                                                <span class="new-price">80.000 vnd</span>
+                                                            </div>
+                                                            <a class="btn btn-info btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                                            <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
                                     </div>
-                                    <a class="btn btn-info btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
                                 </div>
                             </div>
-                        </div>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-                                <!-- Start Single List -->
-
-                                <!-- End Single List -->
-
-                                <!-- Start Single List -->
-
-                                <!-- End Single List -->
-
                                 <!-- Start Single List -->
 
                                 <!-- End Single List -->
@@ -281,292 +235,8 @@
             </section>
             <!--/ End Product Style 1  -->
         </form>
-        <!-- Modal -->
-        <div class="modal fade" id="3" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true"></span></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row no-gutters">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <!-- Product Slider -->
-                                <div class="product-gallery">
-                                    <div class="quickview-slider-active">
-                                        <div class="single-slider">
-                                            <img src="/storage/photo/sanpham/sp7.jpg" alt="/storage/photo/sanpham/sp7.jpg">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Product slider -->
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="quickview-content">
-                                    <h2>PRODUCT 3</h2>
-                                    <div class="quickview-ratting-review">
-                                        <div class="quickview-ratting-wrap">
-                                            <div class="quickview-ratting">
-
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <a href="#"> (0 customer review)</a>
-                                        </div>
-                                        <div class="quickview-stock">
-                                            <span><i class="fa fa-check-circle-o"></i> 6 in stock</span>
-                                        </div>
-                                    </div>
-                                    <h3><small><del class="text-muted">$3,000.00</del></small> $2,850.00 </h3>
-                                    <div class="quickview-peragraph">
-                                        <p>
-                                            <p><span style=" font-size: 14px; text-align: justify;">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</span><br></p>
-                                        </p>
-                                    </div>
-                                    <div class="size">
-                                        <h4>Size</h4>
-                                        <ul>
-                                            <li><a href="#" class="one">S</a></li>
-                                            <li><a href="#" class="one">M</a></li>
-                                        </ul>
-                                    </div>
-                                    <form action="http://127.0.0.1:8000/add-to-cart" method="POST">
-                                        <input type="hidden" name="_token" value="o7TodAZ6Cy1kZbiU2MrxyjKfunrr1kJwpwnB38lM">
-                                        <div class="quantity">
-                                            <!-- Input Order -->
-                                            <div class="input-group">
-                                                <div class="button minus">
-                                                    <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-																	<i class="ti-minus"></i>
-																</button>
-                                                </div>
-                                                <input type="hidden" name="slug" value="pd3">
-                                                <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
-                                                <div class="button plus">
-                                                    <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
-																	<i class="ti-plus"></i>
-																</button>
-                                                </div>
-                                            </div>
-                                            <!--/ End Input Order -->
-                                        </div>
-                                        <div class="add-to-cart">
-                                            <button type="submit" class="btn">Add to cart</button>
-                                            <a href="http://127.0.0.1:8000/wishlist/pd3" class="btn min"><i class="ti-heart"></i></a>
-                                        </div>
-                                    </form>
-                                    <div class="default-social">
-                                        <!-- ShareThis BEGIN -->
-                                        <div class="sharethis-inline-share-buttons"></div>
-                                        <!-- ShareThis END -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="4" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true"></span></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row no-gutters">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <!-- Product Slider -->
-                                <div class="product-gallery">
-                                    <div class="quickview-slider-active">
-                                        <div class="single-slider">
-                                            <img src="/storage/photo/sanpham/sp8.jpg" alt="/storage/photo/sanpham/sp8.jpg">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Product slider -->
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="quickview-content">
-                                    <h2>PRODUCT 4</h2>
-                                    <div class="quickview-ratting-review">
-                                        <div class="quickview-ratting-wrap">
-                                            <div class="quickview-ratting">
-
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <a href="#"> (0 customer review)</a>
-                                        </div>
-                                        <div class="quickview-stock">
-                                            <span><i class="fa fa-check-circle-o"></i> 5 in stock</span>
-                                        </div>
-                                    </div>
-                                    <h3><small><del class="text-muted">$4,000.00</del></small> $2,000.00 </h3>
-                                    <div class="quickview-peragraph">
-                                        <p>
-                                            <p><span style=" font-size: 14px; text-align: justify;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,</span><br></p>
-                                        </p>
-                                    </div>
-                                    <div class="size">
-                                        <h4>Size</h4>
-                                        <ul>
-                                            <li><a href="#" class="one">XL</a></li>
-                                        </ul>
-                                    </div>
-                                    <form action="http://127.0.0.1:8000/add-to-cart" method="POST">
-                                        <input type="hidden" name="_token" value="o7TodAZ6Cy1kZbiU2MrxyjKfunrr1kJwpwnB38lM">
-                                        <div class="quantity">
-                                            <!-- Input Order -->
-                                            <div class="input-group">
-                                                <div class="button minus">
-                                                    <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-																	<i class="ti-minus"></i>
-																</button>
-                                                </div>
-                                                <input type="hidden" name="slug" value="pd4">
-                                                <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
-                                                <div class="button plus">
-                                                    <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
-																	<i class="ti-plus"></i>
-																</button>
-                                                </div>
-                                            </div>
-                                            <!--/ End Input Order -->
-                                        </div>
-                                        <div class="add-to-cart">
-                                            <button type="submit" class="btn">Add to cart</button>
-                                            <a href="http://127.0.0.1:8000/wishlist/pd4" class="btn min"><i class="ti-heart"></i></a>
-                                        </div>
-                                    </form>
-                                    <div class="default-social">
-                                        <!-- ShareThis BEGIN -->
-                                        <div class="sharethis-inline-share-buttons"></div>
-                                        <!-- ShareThis END -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="9" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true"></span></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row no-gutters">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <!-- Product Slider -->
-                                <div class="product-gallery">
-                                    <div class="quickview-slider-active">
-                                        <div class="single-slider">
-                                            <img src="/storage/photo/sanpham/sp2.jpg" alt="/storage/photo/sanpham/sp2.jpg">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Product slider -->
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <div class="quickview-content">
-                                    <h2>PRODUCT 8</h2>
-                                    <div class="quickview-ratting-review">
-                                        <div class="quickview-ratting-wrap">
-                                            <div class="quickview-ratting">
-
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                            <a href="#"> (0 customer review)</a>
-                                        </div>
-                                        <div class="quickview-stock">
-                                            <span><i class="fa fa-check-circle-o"></i> 4 in stock</span>
-                                        </div>
-                                    </div>
-                                    <h3><small><del class="text-muted">$200.00</del></small> $190.00 </h3>
-                                    <div class="quickview-peragraph">
-                                        <p>
-                                            <p><strong style="margin: 0px; padding: 0px; font-size: 14px; text-align: justify;">Lorem Ipsum</strong><span style="font-size: 14px; text-align: justify;"> is simply dummy text of the printing and typesetting industry.</span><br></p>
-                                        </p>
-                                    </div>
-                                    <div class="size">
-                                        <h4>Size</h4>
-                                        <ul>
-                                            <li><a href="#" class="one">S</a></li>
-                                            <li><a href="#" class="one">M</a></li>
-                                            <li><a href="#" class="one">XL</a></li>
-                                        </ul>
-                                    </div>
-                                    <form action="http://127.0.0.1:8000/add-to-cart" method="POST">
-                                        <input type="hidden" name="_token" value="o7TodAZ6Cy1kZbiU2MrxyjKfunrr1kJwpwnB38lM">
-                                        <div class="quantity">
-                                            <!-- Input Order -->
-                                            <div class="input-group">
-                                                <div class="button minus">
-                                                    <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-																	<i class="ti-minus"></i>
-																</button>
-                                                </div>
-                                                <input type="hidden" name="slug" value="pd8">
-                                                <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
-                                                <div class="button plus">
-                                                    <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
-																	<i class="ti-plus"></i>
-																</button>
-                                                </div>
-                                            </div>
-                                            <!--/ End Input Order -->
-                                        </div>
-                                        <div class="add-to-cart">
-                                            <button type="submit" class="btn">Add to cart</button>
-                                            <a href="http://127.0.0.1:8000/wishlist/pd8" class="btn min"><i class="ti-heart"></i></a>
-                                        </div>
-                                    </form>
-                                    <div class="default-social">
-                                        <!-- ShareThis BEGIN -->
-                                        <div class="sharethis-inline-share-buttons"></div>
-                                        <!-- ShareThis END -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal end -->
-
-        <!-- Start Footer Area -->
-
-
-        <!-- /End Footer Area -->
+       
+        
 
         <!-- Jquery -->
         <script src="./asset/js/jquery-3.3.1.min.js"></script>
@@ -584,7 +254,6 @@
                     if ($("#price_range").length > 0 && $("#price_range").val()) {
                         price_range = $("#price_range").val().trim();
                     }
-
                     let price = price_range.split('-');
                     $("#slider-range").slider({
                         range: true,
@@ -616,25 +285,21 @@
                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
                     event.preventDefault();
                     event.stopPropagation();
-
                     $(this).siblings().toggleClass("show");
-
-
                     if (!$(this).next().hasClass('show')) {
                         $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
                     }
                     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
                         $('.dropdown-submenu .show').removeClass("show");
                     });
-
                 });
             });
         </script>
+   
 
-
-        <script src="http://127.0.0.1:8000/frontend/js/jquery.min.js"></script>
-        <script src="http://127.0.0.1:8000/frontend/js/jquery-migrate-3.0.0.js"></script>
-        <script src="http://127.0.0.1:8000/frontend/js/jquery-ui.min.js"></script>
+        <script src="/Shop/jquery.min.js"></script>
+        <script src="/Shop/js/jquery-migrate-3.0.0.js"></script>
+        <script src="/Shop/js/jquery-ui.min.js"></script>
         <!-- Popper JS -->
 
 
