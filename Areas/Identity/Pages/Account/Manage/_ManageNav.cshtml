@@ -6,7 +6,7 @@
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }
-@* <ul class="nav nav-pills flex-column">
+<ul class="nav nav-pills flex-column">
     <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
     <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
     <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
@@ -16,118 +16,4 @@
     }
     <li class="nav-item"><a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a></li>
     <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a></li>
-</ul> *@
-
-    <nav class="pc-sidebar ">
-		<div class="navbar-wrapper">
-			<div class="m-header">
-				<a href="/admin/dashboard" class="pc-link">
-					<!-- ========   change your logo hear   ============ -->
-					PUN_COMESTIC
-				</a>
-			</div>
-			<div class="navbar-content">
-				< class="pc-navbar">
-					<li class="pc-item pc-caption">
-						<label>NAVIGATION</label>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="/admin/dashboard" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Dashboard</span></a>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Banners</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="BannerA" >Add banner</a></li>
-							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="BannerA" >Banner</a></li>
-						</ul>
-					</li>
-					<li class="pc-item pc-caption">
-						<label>SHOP</label>
-						<span>things to manage</span>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Brand</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="BrandA">Add Brand</a></li>
-							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="BrandA">Brand</a></li>
-						</ul>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Category</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="CategoryA">Add Category</a></li>
-							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="CategoryA">Category</a></li>
-						</ul>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Products</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="Product" asp-area="admin">Add Product</a></li>
-							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Product" asp-area="admin">Product</a></li>
-						</ul>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Orders</span></a>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Reviews</span></a>
-					</li>
-					<li class="pc-item pc-caption">
-						<label>BLOG</label>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Posts</span></a>
-						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" href="#!">Add post</a></li>
-							<li class="pc-item"><a class="pc-link" href="#!">Posts</a></li>
-						</ul>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Category</span></a>
-						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" href="#!">Add Category</a></li>
-							<li class="pc-item"><a class="pc-link" href="#!">Category</a></li>
-						</ul>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Tags</span></a>
-						<ul class="pc-submenu">
-							<li class="pc-item"><a class="pc-link" href="#!">Add tags</a></li>
-							<li class="pc-item"><a class="pc-link" href="#!">Tags</a></li>
-						</ul>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Comments</span></a>
-					</li>
-					<li class="pc-item pc-caption">
-						<label>GENERAL SETTINGS</label>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Coupon</span></a>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Users</span></a>
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
-                            @if (hasExternalLogins)
-                            {
-                                <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>
-                            }
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor" asp-page="./TwoFactorAuthentication">Two-factor authentication</a></li>
-                            <li class="nav-item"><a class="nav-link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data" asp-page="./PersonalData">Personal data</a></li>
-                        </ul>
-					</li>
-					<li class="pc-item pc-hasmenu">
-						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Settings</span></a>
-					</li>
-			</div>
-		</div>
-	</nav>
-
-	<script src="/backend/dashboard/asset/js/vendor-all.min.js"></script>
-    <script src="/backend/dashboard/asset/js/plugins/bootstrap.min.js"></script>
-    <script src="/backend/dashboard/asset/js/plugins/feather.min.js"></script>
-    <script src="/backend/dashboard/asset/js/pcoded.min.js"></script>
-    <script src="/backend/dashboard/asset/js/plugins/apexcharts.min.js"></script>
+</ul>

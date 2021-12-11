@@ -177,11 +177,11 @@ namespace comestic_csharp.Models
                     .HasColumnType("bigint(20) unsigned")
                     .HasColumnName("user_id");
 
-                entity.HasOne(d => d.Order)
-                    .WithMany(p => p.Carts)
-                    .HasForeignKey(d => d.OrderId)
-                    .OnDelete(DeleteBehavior.SetNull)
-                    .HasConstraintName("Carts_order_id_foreign");
+                // entity.HasOne(d => d.Order)
+                //     .WithMany(p => p.Carts)
+                //     .HasForeignKey(d => d.OrderId)
+                //     .OnDelete(DeleteBehavior.SetNull)
+                //     .HasConstraintName("Carts_order_id_foreign");
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.Carts)
@@ -427,8 +427,6 @@ namespace comestic_csharp.Models
                 entity.HasIndex(e => e.OrderNumber, "Orders_order_number_unique")
                     .IsUnique();
 
-                entity.HasIndex(e => e.ProductId, "Orders_product_id_foreign");
-
                 entity.HasIndex(e => e.ShippingId, "Orders_shipping_id_foreign");
 
                 entity.HasIndex(e => e.UserId, "Orders_user_id_foreign");
@@ -499,13 +497,6 @@ namespace comestic_csharp.Models
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_unicode_ci");
 
-                entity.Property(e => e.ProductId)
-                    .HasColumnType("bigint(20) unsigned")
-                    .HasColumnName("product_id");
-
-                entity.Property(e => e.Quantity)
-                    .HasColumnType("int(11)")
-                    .HasColumnName("quantity");
 
                 entity.Property(e => e.ShippingId)
                     .HasColumnType("bigint(20) unsigned")
@@ -536,12 +527,6 @@ namespace comestic_csharp.Models
                     .HasForeignKey(d => d.CouponId)
                     .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("Orders_coupon_id_foreign");
-
-                entity.HasOne(d => d.Product)
-                    .WithMany(p => p.Orders)
-                    .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.SetNull)
-                    .HasConstraintName("Orders_product_id_foreign");
 
                 entity.HasOne(d => d.Shipping)
                     .WithMany(p => p.Orders)

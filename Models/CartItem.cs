@@ -17,6 +17,8 @@ namespace comestic_csharp.Models
         public decimal Price { get; set; }
         public int Quantity { get; set; }
 
+        public ShopUser User { get; set;}
+
         public virtual Product Product { get; set; }
         public virtual ICollection<Wishlist> Wishlists { get; set; }
     }

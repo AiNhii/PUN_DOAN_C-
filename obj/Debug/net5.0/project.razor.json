@@ -15839,11 +15839,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\Checkout.cshtml",
-      "TargetPath": "Views\\Shop\\Checkout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
       "FileKind": "mvc"
@@ -15946,6 +15941,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\CategoryA\\Delete.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\CategoryA\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\ShoppingCart\\Checkout.cshtml",
+      "TargetPath": "Views\\ShoppingCart\\Checkout.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,10 +1,12 @@
 @{
   Layout = "/Views/Shared/_MainLayout.cshtml";
 }
+
 @model List<comestic_csharp.Models.CartItem>
 
 <link rel="stylesheet" href="~/shop/cart.css">
 
+	<h1></h1>
 
 <div class="container">
 
@@ -36,6 +38,7 @@
                         total += thanhtien;
 						stt++;
 
+
 							<tr>
 								<td class="image" data-title="No"><img src="/storage/@cartitem.Product.Photo1" alt="#"></td>
 								<td class="product-des" data-title="Description">
@@ -45,7 +48,7 @@
 								<td class="qty" data-title="Qty"><!-- quantity -->
 									<div class="input-group">
 										<div class="button minus">
-											<button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+											<button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[@stt]">
 												<i class="ti-minus"></i>
 											</button>
 										</div>
@@ -97,7 +100,7 @@
 										<li class="last">You Pay<h4>@(total.ToString("n0"))</h4></li>
 									</ul>
 									<div class="button5">
-										<a asp-controller="Shop" asp-action="Checkout" class="btn">Checkout</a>
+										<a asp-controller="ShoppingCart" asp-action="Checkout" class="btn">Checkout</a>
 										<a href="/" class="btn">Continue shopping</a>
 									</div>
 								</div>

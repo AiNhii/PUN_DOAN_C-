@@ -7,7 +7,7 @@
     string jsoncart = session.GetString (comestic_csharp.Controllers.ShoppingCartController.CARTKEY);
 		if (jsoncart != null) {
 			var cart = JsonConvert.DeserializeObject<List<CartItem>> (jsoncart);
-			<a asp-action="Index" asp-controller="ShoppingCart" class="single-icon"><i class="ti-bag"></i> <span class="total-count">@cart.Count</span></a>
+			<a asp-action="Cart" asp-controller="ShoppingCart" class="single-icon"><i class="ti-bag"></i> <span class="total-count">@cart.Count</span></a>
 			<div class="shopping-item">
 				<div class="dropdown-cart-header">
 					<span>@cart.Count Items</span>

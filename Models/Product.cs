@@ -43,5 +43,6 @@ namespace comestic_csharp.Models
         public virtual ICollection<Productattribute> Productattributes { get; set; }
         public virtual ICollection<Productreview> Productreviews { get; set; }
         public virtual ICollection<Wishlist> Wishlists { get; set; }
+        public virtual ICollection<Orderdetail> Orderdetail { get; set; }
     }
 }

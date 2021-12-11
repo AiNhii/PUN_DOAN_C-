@@ -35,7 +35,13 @@
 										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
 									</div>
 									<div class="product-action-2">
-										<a title="Add to cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id">Add to cart</a>
+										@if(User.Identity.IsAuthenticated){
+                                        	<a title="Add to cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id">Add to cart</a>
+										}
+										else{
+											<a title="Add to cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-shopping-cart"></i></a>
+										}
+										@* <a title="Add to cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id">Add to cart</a> *@
 									</div>
 								</div>
 							</div>

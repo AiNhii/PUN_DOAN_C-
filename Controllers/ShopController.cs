@@ -42,16 +42,6 @@ namespace comestic_csharp.Controllers
             return View(product);
         }
 
-        public IActionResult Cart()
-        {
-            return View();
-        }
-
-        public IActionResult Checkout()
-        {
-            return View();
-        }
-
         public IActionResult About()
         {
             return View();

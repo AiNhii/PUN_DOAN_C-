@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp.Migrations.ShopDb
 {
     [DbContext(typeof(ShopDbContext))]
-    partial class ShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211211165103_pun")]
+    partial class pun
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1411,10 +1413,6 @@ namespace comestic_csharp.Migrations.ShopDb
                         .HasForeignKey("CouponId")
                         .HasConstraintName("Orders_coupon_id_foreign")
                         .OnDelete(DeleteBehavior.SetNull);
-
-                    b.HasOne("comestic_csharp.Models.Product", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("ProductId");
 
                     b.HasOne("comestic_csharp.Models.Shipping", "Shipping")
                         .WithMany("Orders")

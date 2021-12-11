@@ -135,8 +135,6 @@ namespace comestic_csharp.Areas.Identity.Data
 
                 entity.HasIndex(e => e.OrderId, "Carts_order_id_foreign");
 
-                entity.HasIndex(e => e.ProductId, "Carts_product_id_foreign");
-
                 entity.HasIndex(e => e.UserId, "Carts_user_id_foreign");
 
                 entity.Property(e => e.Id)
@@ -155,10 +153,6 @@ namespace comestic_csharp.Areas.Identity.Data
                     .HasPrecision(10)
                     .HasColumnName("price");
 
-                entity.Property(e => e.ProductId)
-                    .HasColumnType("bigint(20) unsigned")
-                    .HasColumnName("product_id");
-
                 entity.Property(e => e.Quantity)
                     .HasColumnType("int(11)")
                     .HasColumnName("quantity");
@@ -175,16 +169,6 @@ namespace comestic_csharp.Areas.Identity.Data
                     .HasColumnType("varchar(255)")
                     .HasColumnName("user_id");
 
-                entity.HasOne(d => d.Order)
-                    .WithMany(p => p.Carts)
-                    .HasForeignKey(d => d.OrderId)
-                    .OnDelete(DeleteBehavior.SetNull)
-                    .HasConstraintName("Carts_order_id_foreign");
-
-                entity.HasOne(d => d.Product)
-                    .WithMany(p => p.Carts)
-                    .HasForeignKey(d => d.ProductId)
-                    .HasConstraintName("Carts_product_id_foreign");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Carts)
@@ -425,8 +409,6 @@ namespace comestic_csharp.Areas.Identity.Data
                 entity.HasIndex(e => e.OrderNumber, "Orders_order_number_unique")
                     .IsUnique();
 
-                entity.HasIndex(e => e.ProductId, "Orders_product_id_foreign");
-
                 entity.HasIndex(e => e.ShippingId, "Orders_shipping_id_foreign");
 
                 entity.HasIndex(e => e.UserId, "Orders_user_id_foreign");
@@ -441,6 +423,10 @@ namespace comestic_csharp.Areas.Identity.Data
                     .HasColumnName("address")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_unicode_ci");
+
+                entity.Property(e => e.ProductId)
+                    .HasColumnType("bigint(20) unsigned")
+                    .HasColumnName("product_id");
 
                 entity.Property(e => e.CouponId)
                     .HasColumnType("bigint(20) unsigned")
@@ -497,14 +483,6 @@ namespace comestic_csharp.Areas.Identity.Data
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_unicode_ci");
 
-                entity.Property(e => e.ProductId)
-                    .HasColumnType("bigint(20) unsigned")
-                    .HasColumnName("product_id");
-
-                entity.Property(e => e.Quantity)
-                    .HasColumnType("int(11)")
-                    .HasColumnName("quantity");
-
                 entity.Property(e => e.ShippingId)
                     .HasColumnType("bigint(20) unsigned")
                     .HasColumnName("shipping_id");
@@ -534,12 +512,6 @@ namespace comestic_csharp.Areas.Identity.Data
                     .HasForeignKey(d => d.CouponId)
                     .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("Orders_coupon_id_foreign");
-
-                entity.HasOne(d => d.Product)
-                    .WithMany(p => p.Orders)
-                    .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.SetNull)
-                    .HasConstraintName("Orders_product_id_foreign");
 
                 entity.HasOne(d => d.Shipping)
                     .WithMany(p => p.Orders)
@@ -1166,6 +1138,40 @@ namespace comestic_csharp.Areas.Identity.Data
                     .OnDelete(DeleteBehavior.SetNull)
                     .HasConstraintName("Wishlists_user_id_foreign");
             });
+
+            builder.Entity<Orderdetail>(entity =>
+            {
+                entity.ToTable("orderdetails");
+
+                entity.HasIndex(e => e.OrderId, "Orderdetail_order_id_foreign");
+
+                entity.HasIndex(e => e.ProductId, "Orderdetail_product_id_foreign");
+
+                entity.Property(e => e.Id)
+                    .HasColumnType("bigint(20) unsigned")
+                    .HasColumnName("id");
+
+                entity.Property(e => e.OrderId)
+                    .HasColumnType("bigint(20) unsigned")
+                    .HasColumnName("order_id");
+
+                entity.Property(e => e.ProductId)
+                    .HasColumnType("bigint(20) unsigned")
+                    .HasColumnName("product_id");
+
+                
+
+                entity.HasOne(d => d.Order)
+                    .WithMany(p => p.Orderdetail)
+                    .HasForeignKey(d => d.OrderId)
+                    .HasConstraintName("Orderdetail_post_id_foreign");
+
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.Orderdetail)
+                    .HasForeignKey(d => d.ProductId)
+                    .HasConstraintName("Orderdetail_product_id_foreign");
+            });
+                
     }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -1173,7 +1179,7 @@ namespace comestic_csharp.Areas.Identity.Data
             if (!optionsBuilder.IsConfigured)
             {
 // #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseMySql("server=localhost;username=root;password=01672362745Ngan;database=comestic_test4;sslmode=none", Microsoft.EntityFrameworkCore.ServerVersion.FromString("10.4.21-mariadb"));
+                optionsBuilder.UseMySql("server=localhost;username=root;password=01672362745Ngan;database=comestic_pun;sslmode=none", Microsoft.EntityFrameworkCore.ServerVersion.FromString("10.4.21-mariadb"));
             }
         }
 
@@ -1197,6 +1203,8 @@ namespace comestic_csharp.Areas.Identity.Data
         public virtual DbSet<Setting> Settings { get; set; }
         public virtual DbSet<Shipping> Shippings { get; set; }
         public virtual DbSet<Wishlist> Wishlists { get; set; }
+        
+        public virtual DbSet<Orderdetail> Orderdetail { get; set; }
 
     }
 }
