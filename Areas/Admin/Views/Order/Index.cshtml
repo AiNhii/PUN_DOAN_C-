@@ -1,0 +1,97 @@
+@model IEnumerable<comestic_csharp.Models.Order>
+@* @{
+        Layout ="_Layout";
+} *@
+
+@await Html.PartialAsync("_StyleLayout")
+
+<div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">PRODUCT</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Product">Product</a></li>
+                            <li class="breadcrumb-item">Index</li>
+                    </ul>
+                    </div>
+                </div>
+        </div>
+</div>
+
+<div class="pcoded-content">
+    <div class="card" style="width: fit-content;">
+    <div class="flex-container">
+        <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">PRODUCT</h1>
+        </div>
+        <div></div>
+        <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>Add new</a></p></div> 
+    </div>
+    <table class="table" id="example1">
+                            <thead>
+                                <tr>
+                                        <th>
+                                                @Html.DisplayNameFor(model => model.OrderNumber)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.LastName)
+                                        </th>
+                                        <th >
+                                            @Html.DisplayNameFor(model => model.FirstName)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Email)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Address)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Phone)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.TotalAmount)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.OrderNumber)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.LastName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FirstName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Email)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Address)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Phone)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TotalAmount)
+                                            </td>
+                                            <td>
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn  btn-info btn-sm"><i data-feather="edit"></i></a>
+                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn  btn-success btn-sm"><i data-feather="eye"></i></a>
+                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn  btn-danger btn-sm"><i data-feather="trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                            </tbody>
+    </table>
+    </div>
+</div>
+
+@await Html.PartialAsync("_ScriptsLayout")

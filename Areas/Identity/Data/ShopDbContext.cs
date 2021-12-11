@@ -507,6 +507,10 @@ namespace comestic_csharp.Areas.Identity.Data
                     .HasColumnType("varchar(255)")
                     .HasColumnName("user_id");
 
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp")
+                    .HasColumnName("created_at");
+
                 entity.HasOne(d => d.Coupon)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.CouponId)

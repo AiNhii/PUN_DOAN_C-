@@ -6,19 +6,25 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using comestic_csharp.Areas.Identity.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace comestic_csharp.Controllers
 {
+    [Authorize(Roles ="admin")]
+    [Area("admin")]
+    [Route("admin/coupon")]
     public class CouponController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public CouponController(ShopContext context)
+        public CouponController(ShopDbContext context)
         {
             _context = context;
         }
 
         // GET: Coupon
+        [Route("index")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Coupons.ToListAsync());
@@ -43,6 +49,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Coupon/Create
+         [Route("create")]// 
         public IActionResult Create()
         {
             return View();
@@ -53,6 +60,7 @@ namespace comestic_csharp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+         [Route("create")]// 
         public async Task<IActionResult> Create([Bind("Id,Code,Type,Value,Status,IsVoucher,Quantity,StartedAt,EndedAt")] Coupon coupon)
         {
             if (ModelState.IsValid)
@@ -65,6 +73,8 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Coupon/Edit/5
+         [Route("edit")]
+
         public async Task<IActionResult> Edit(ulong? id)
         {
             if (id == null)
@@ -85,6 +95,8 @@ namespace comestic_csharp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+         [Route("edit")]
+
         public async Task<IActionResult> Edit(ulong id, [Bind("Id,Code,Type,Value,Status,IsVoucher,Quantity,StartedAt,EndedAt")] Coupon coupon)
         {
             if (id != coupon.Id)
@@ -116,6 +128,7 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Coupon/Delete/5
+         [Route("delete")]
         public async Task<IActionResult> Delete(ulong? id)
         {
             if (id == null)
@@ -136,6 +149,7 @@ namespace comestic_csharp.Controllers
         // POST: Coupon/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+         [Route("delete")]
         public async Task<IActionResult> DeleteConfirmed(ulong id)
         {
             var coupon = await _context.Coupons.FindAsync(id);

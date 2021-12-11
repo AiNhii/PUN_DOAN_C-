@@ -10,6 +10,7 @@ using comestic_csharp.Areas.Identity.Data;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Identity;
+using System.Text;
 
 namespace comestic_csharp.Controllers
 {
@@ -122,6 +123,18 @@ namespace comestic_csharp.Controllers
         }
 
 
+        public string RandomString()  
+        {  
+            int Numrd;
+            string Numrd_str;
+            Random rd = new Random();
+            Numrd = rd.Next(1, 100);//biến Numrd sẽ nhận có giá trị ngẫu nhiên trong khoảng 1 đến 100
+            Numrd_str = rd.Next(1, 100).ToString();//Chuyển giá trị ramdon về kiểu string
+            
+            return  Numrd_str;
+        }  
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult testCheckout(string FirstName, string LastName, string Address, string Email, string Phone)
@@ -147,8 +160,8 @@ namespace comestic_csharp.Controllers
 
             if (ModelState.IsValid)
             {
-
                 Order donhang = new Order();
+                donhang.OrderNumber= "ORDER"+ RandomString();
                 donhang.UserId = userID;
                 donhang.FirstName = FirstName;
                 donhang.LastName = LastName;
@@ -157,10 +170,10 @@ namespace comestic_csharp.Controllers
                 donhang.Phone = Phone;
                 donhang.TotalAmount = total ;
                 donhang.SubTotal = subtotal;
-                donhang.PaymentMethod ="pay";
+                donhang.PaymentMethod ="cod";
                 donhang.PaymentStatus ="paid";
                 donhang.Status ="new";
-                
+
                 _context.Add(donhang);
                 _context.SaveChanges();
 
