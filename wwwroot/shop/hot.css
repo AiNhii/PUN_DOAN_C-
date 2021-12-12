@@ -196,7 +196,7 @@
     border: none;
 }
 
-.owl-theme .owl-nav {
+.owl-theme .owl-nav [class*='owl-'] {
     padding: 7px 7px !important;
 }
 

@@ -1015,5 +1015,5 @@ D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\comestic_csharp.genrunti
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shared\_Footer - Copy.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shared\_TabProduct - Copy.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shared\_TopReview - Copy.cshtml.g.cs
-D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\Index_goc.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\o-Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\Index.cshtml.g.cs
