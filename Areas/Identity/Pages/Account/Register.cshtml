@@ -1,56 +1,89 @@
 @page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Register";
-    Layout=null;
+	ViewData["Title"] = "Register";
+	Layout = null;
 }
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>RegistrationForm_v1 by Colorlib</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="/admin2/assets/css/material-design-iconic-font.min.css">
 
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="/admin2/assets/css/style_re.css">
-	</head>
+<head>
+	<meta charset="utf-8">
+	<title>RegistrationForm_v1 by Colorlib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<body>
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="/admin2/assets/css/material-design-iconic-font.min.css">
 
-		<div class="wrapper" style="background-image: url('/admin2/assets/images/nen2.png');">
-			<div class="inner">
-				<div class="image-holder">
-					<img src="https://i.pinimg.com/564x/8e/55/dd/8e55dd7136f5edf8dd0fd2730d7ffa5a.jpg" alt="">
-				</div>
-			   <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-          <h3>Registration</h3>
-        
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-wrapper">
-               
-                <input asp-for="Input.Email" placeholder="Email Address" class="form-control" />
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="/admin2/assets/css/style_regi.css">
+	<style>
+		a{
+			text-decoration: blink;
+			 border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #336641;
+    font-size: 25px;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 15px !important;
+		}
+	</style>
+</head>
 
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-wrapper">
-       
-                <input asp-for="Input.Password"  placeholder="Password" class="form-control" />
-			
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-wrapper">
-  
-                <input asp-for="Input.ConfirmPassword"  placeholder="Confirm Password" class="form-control" />
-              
-				<span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-primary">Register</button>
-        </form>
+<body>
+
+	<div class="wrapper" style="background-image: url('/admin2/assets/images/anhnen.png');">
+		<div class="inner">
+			<div class="image-holder">
+				<img src="https://i.pinimg.com/736x/e3/e2/e8/e3e2e84e2e14b1322e612aaa210fcf2b.jpg" alt="">
 			</div>
+			<form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+				<h3>Registration</h3>
+
+				<div asp-validation-summary="All" class="text-danger"></div>
+				<div class="form-wrapper">
+
+					<input asp-for="Input.Email" placeholder="Email Address" class="form-control" />
+
+					<span asp-validation-for="Input.Email" class="text-danger"></span>
+				</div>
+				<div class="form-wrapper">
+
+					<input asp-for="Input.Password" placeholder="Password" class="form-control" />
+
+					<span asp-validation-for="Input.Password" class="text-danger"></span>
+				</div>
+				<div class="form-wrapper">
+
+					<input asp-for="Input.ConfirmPassword" placeholder="Confirm Password" class="form-control" />
+
+					<span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+				</div>
+				<button type="submit" class="btn btn-primary">Register</button>
+			
+
+				<a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Log in</a>
+				
+
+
+
+			</form>
 		</div>
-		
-	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	</div>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
 </html>

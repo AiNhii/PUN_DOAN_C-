@@ -188,10 +188,10 @@
                                                 <span class="new-price">80.000 vnd</span>
                                             </div>
                                             @if(User.Identity.IsAuthenticated){
-                                                <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fas fa-shopping-cart"></i></a>
+                                                <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                             }
                                             else{
-                                                <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-shopping-cart"></i></a>
+                                                <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
                                             }
                                             <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
                                         </div>

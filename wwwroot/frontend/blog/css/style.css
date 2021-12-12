@@ -63,8 +63,11 @@ div.title-wrap {
     padding-top: 5px;
     background-color: #3c7363;
     text-align: center;
+    margin-top: 5px;
 }
-
+.fa{
+    margin-right: 5px;
+}
 .h3 {
     color: #2c2d3f !important;
 }
