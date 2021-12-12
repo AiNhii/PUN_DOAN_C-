@@ -25,6 +25,18 @@ namespace comestic_csharp.Controllers
             return View(await _context.Products.ToListAsync());
         }
 
+        public async Task<IActionResult> list()
+        {
+            return View(await _context.Products.ToListAsync());
+        }
+
+        public async Task<IActionResult> grid()
+        {
+            return View(await _context.Products.ToListAsync());
+        }
+
+
+
         public async Task<IActionResult> Details(ulong? id)
         {
             if (id == null)
