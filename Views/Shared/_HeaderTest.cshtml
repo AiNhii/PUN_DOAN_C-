@@ -1,5 +1,10 @@
+@using comestic_csharp.Areas.Identity.Data
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject IHttpContextAccessor HttpContextAccessor
+
 @{
-    ShopContext  _shopContext = new ShopContext();
+    ShopDbContext  _shopContext = new ShopDbContext();
 }	
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="~/shop/css/bootstrap.css">
@@ -13,6 +18,17 @@
 	<link rel="stylesheet" href="~/shop/css/reset.css">
 	<link rel="stylesheet" href="~/shop/header.css">
     <link rel="stylesheet" href="~/shop/css/responsive.css"> 
+
+
+
+	<link rel="stylesheet" href="~/shop/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/shop/css/jquery-ui.css">
+	@* <link rel="stylesheet" href="~/_test/style.css"> *@
+    
+	
+
+
+
 
 		
 		<!-- Header -->
@@ -77,9 +93,11 @@
 									<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 								</div>
 								<div class="sinlge-bar shopping">
-									<a asp-action="Cart" asp-controller="Shop" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+
+									@await Html.PartialAsync("_Cart.cshtml")
+									@* <a asp-action="Index" asp-controller="ShoppingCart" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a> *@
 									<!-- Shopping Item -->
-									<div class="shopping-item">
+									@* <div class="shopping-item">
 										<div class="dropdown-cart-header">
 											<span>2 Items</span>
 											<a asp-action="Cart" asp-controller="Shop">View Cart</a>
@@ -105,7 +123,7 @@
 											</div>
 											<a href="checkout.html" class="btn animate">Checkout</a>
 										</div>
-									</div>
+									</div>  *@
 									<!--/ End Shopping Item -->
 								</div>
 							</div>
@@ -115,6 +133,7 @@
 			</div>
 			<!-- Header Inner -->
 			<div class="header-inner">
+				<div class="container">
 					<div class="cat-nav-head">
 						<div class="row">
 							<div class="col-12">
@@ -147,6 +166,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 			</div>
 			<!--/ End Header Inner -->
 		</header>

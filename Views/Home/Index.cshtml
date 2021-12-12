@@ -1,5 +1,6 @@
-﻿@{
-        ShopContext _shopContext = new ShopContext();
+﻿@using comestic_csharp.Areas.Identity.Data
+@{
+        ShopDbContext _shopContext = new ShopDbContext();
 }
 
  <!-- slide -->
@@ -11,10 +12,10 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="~/main/asset/img/Untitled6.jpg" alt="First slide">
+            <img class="d-block w-100" src="~/main/asset/img/Untitled3.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="~/main/asset/img/Untitled3.jpg" alt="Second slide">
+            <img class="d-block w-100" src="~/main/asset/img/Untitled6.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="~/main/asset/img/Untitled7.jpg" alt="Third slide">
@@ -50,7 +51,7 @@
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                     <div class="list-box d-flex align-items-center">
                                         <div class="list-icon">
-                                            <i class="fa fa-truck"></i>
+                                            <i class="fas fa-shipping-fast"></i>
                                         </div>
                                         <div class="content">
                                             <h3>Free Shipping</h3>
@@ -61,7 +62,7 @@
                                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                     <div class="list-box d-flex align-items-center">
                                         <div class="list-icon">
-                                            <i class="fa fa-phone-volume"></i>
+                                            <i class="fas fa-phone-volume"></i>
                                         </div>
                                         <div class="content">
                                             <h3>24/7 Support</h3>
@@ -72,7 +73,7 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class="list-box d-flex justify-content-start align-items-center">
                                         <div class="list-icon">
-                                            <i class="fa fa-sync"></i>
+                                            <i class="fas fa-sync"></i>
                                         </div>
                                         <div class="content">
                                             <h3>Refund</h3>
@@ -97,13 +98,9 @@
         <div class="container-fluid">
             <div class="row deal-day">
                 <div class="content-deal-day">
-                    <div class="row">
-            <div class="col-12">
-                <div class="section-title">
-                    <h2>Deal of the day</h2>
-                </div>
-            </div>
-        </div>
+                    <div class="title">
+                        <h3 class="list-product-title">DEAL OF THE DAY </h3>
+                    </div>
                     <ul class="list-inline" id="dealday">
                         <li>
                             <h2 id="dealdays">05</h2>
@@ -181,13 +178,7 @@
 <!--about blog-->
 <div class="container">
     
-       <div class="row">
-            <div class="col-12">
-                <div class="section-title">
-                    <h2>Our Blog</h2>
-                </div>
-            </div>
-        </div>
+        <h3 class="list-product-title">From our bolg</h3>
         <div class="product-group">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-12">

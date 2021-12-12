@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
 using Microsoft.AspNetCore.Authorization;
+using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp.Controllers
 {
@@ -15,9 +16,9 @@ namespace comestic_csharp.Controllers
     [Route("admin/product")]
     public class ProductController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public ProductController(ShopContext context)
+        public ProductController(ShopDbContext context)
         {
             _context = context;
         }
@@ -26,8 +27,8 @@ namespace comestic_csharp.Controllers
         [Route("index")]
         public async Task<IActionResult> Index()
         {
-            var shopContext = _context.Products.Include(p => p.Brand).Include(p => p.Cat).Include(p => p.ChildCat).Include(p => p.Coupon);
-            return View(await shopContext.ToListAsync());
+            var ShopDbContext = _context.Products.Include(p => p.Brand).Include(p => p.Cat).Include(p => p.ChildCat).Include(p => p.Coupon);
+            return View(await ShopDbContext.ToListAsync());
         }
 
         // GET: Product/Details/5
@@ -56,6 +57,29 @@ namespace comestic_csharp.Controllers
         [Route("create")]// 
         public IActionResult Create()
         {
+
+
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text"
+            );
+
+            ViewData["Condition"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "default", Value = "default"},
+                    new SelectListItem { Text = "hot", Value = "hot"},
+                    new SelectListItem { Text = "new", Value = "new"},
+
+                }, "Value" , "Text"
+
+            );
+
             ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Slug");
             ViewData["CatId"] = new SelectList(_context.Categories, "Id", "Slug");
             ViewData["ChildCatId"] = new SelectList(_context.Categories, "Id", "Slug");
@@ -77,6 +101,31 @@ namespace comestic_csharp.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",product.Status
+
+            );
+
+            ViewData["Condition"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "default", Value = "default"},
+                    new SelectListItem { Text = "hot", Value = "hot"},
+                    new SelectListItem { Text = "new", Value = "new"},
+
+                }, "Value" , "Text",product.Condition
+
+            );
+
+
+
             ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Slug", product.BrandId);
             ViewData["CatId"] = new SelectList(_context.Categories, "Id", "Slug", product.CatId);
             ViewData["ChildCatId"] = new SelectList(_context.Categories, "Id", "Slug", product.ChildCatId);
@@ -98,6 +147,29 @@ namespace comestic_csharp.Controllers
             {
                 return NotFound();
             }
+
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",product.Status
+
+            );
+
+            ViewData["Condition"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "default", Value = "default"},
+                    new SelectListItem { Text = "hot", Value = "hot"},
+                    new SelectListItem { Text = "new", Value = "new"},
+
+                }, "Value" , "Text",product.Condition
+
+            );
+
             ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Slug", product.BrandId);
             ViewData["CatId"] = new SelectList(_context.Categories, "Id", "Slug", product.CatId);
             ViewData["ChildCatId"] = new SelectList(_context.Categories, "Id", "Slug", product.ChildCatId);
@@ -138,6 +210,27 @@ namespace comestic_csharp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",product.Status
+
+            );
+
+            ViewData["Condition"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "default", Value = "default"},
+                    new SelectListItem { Text = "hot", Value = "hot"},
+                    new SelectListItem { Text = "new", Value = "new"},
+
+                }, "Value" , "Text",product.Condition
+
+            );
             ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Slug", product.BrandId);
             ViewData["CatId"] = new SelectList(_context.Categories, "Id", "Slug", product.CatId);
             ViewData["ChildCatId"] = new SelectList(_context.Categories, "Id", "Slug", product.ChildCatId);

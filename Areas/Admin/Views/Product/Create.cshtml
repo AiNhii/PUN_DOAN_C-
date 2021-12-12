@@ -1,3 +1,7 @@
+@* @{
+        Layout ="_Layout";
+} *@
+
  @model comestic_csharp.Models.Product
 
 
@@ -64,6 +68,14 @@
                                 <label asp-for="Price" class="control-label"></label>
                                 <input asp-for="Price" class="form-control" />
                                 <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Condition" class="control-label"></label>
+                                <select asp-for="Condition" class ="form-control" asp-items="ViewBag.Condition"></select>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Status" class="control-label"></label>
+                                <select asp-for="Status" class ="form-control" asp-items="ViewBag.Status"></select>
                             </div>
                             <div class="form-group">
                                 <label asp-for="CouponId" class="control-label"></label>

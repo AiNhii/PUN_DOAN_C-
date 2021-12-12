@@ -1,6 +1,7 @@
+@using comestic_csharp.Areas.Identity.Data
 @model IEnumerable<comestic_csharp.Models.Product>
 @{
-        ShopContext context = new ShopContext();
+        ShopDbContext context = new ShopDbContext();
         var pro = context.Products.Take(8).ToArray();
 }
 
@@ -20,7 +21,7 @@
                                     <span class="del-price">@item.Price</span>
                                     <span class="new-price">80.000 vnd</span>
                                 </div>
-                                <a class="btn btn-info btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                <a class="btn btn-info btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
                             </div>
                         </div>
@@ -31,18 +32,12 @@
 </div> *@
 
 <div class="container">
-    <div class="row">
-            <div class="col-12">
-                <div class="section-title" style="padding-top: 25px;">
-                    <h2>Top Review</h2>
-                </div>
-            </div>
-        </div>
+     <h3 class="list-product-title">TOP REVIEWED</h3>
         <div class="product-out">
 
             <div id="demo" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ul class="carousel-indicators sp" style="bottom: -15px;">
+                <ul class="carousel-indicators sp" style="bottom: -40px;">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
                     @* <li data-target="#demo" data-slide-to="2"></li> *@
@@ -65,7 +60,7 @@
                                             <span class="del-price">@pro[i].Price</span>
                                             <span class="new-price">80.000 vnd</span>
                                         </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a>
                                         <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                         <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                     </div>
@@ -90,7 +85,7 @@
                                             <span class="del-price">@pro[i].Price</span>
                                             <span class="new-price">80.000 vnd</span>
                                         </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a>
                                         <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                         <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                     </div>
@@ -114,7 +109,7 @@
                                             <span class="del-price">@pro[i].Price</span>
                                             <span class="new-price">80.000 vnd</span>
                                         </div>
-                                        <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="btn btn-success btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
                                         <a class="btn btn-outline-success btn-detail">Xem chi tiết</a>
                                         <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                     </div>

@@ -28,6 +28,7 @@
         <div class="row p-5">
           <div class="col-12">
             <div class="row">
+              
               <div class="col-lg-6 col-12">
                 <div class="d-flex flex-column justify-content-center">
                   <!-- Product Slider -->
@@ -179,7 +180,7 @@
                         <!--/ End Input Order -->
                       </div>
                       <div class="add-to-cart d-flex flex-row">
-                        <button type="submit" class="btn">Add to cart</button>
+                        <button type="submit" class="btn" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@Model.Id">Add to cart</button>
                         <a href="#" class="btn min"><i class="ti-heart"></i></a>
                       </div>
                     </form>
@@ -478,6 +479,7 @@
                 </div>
               </div>
             </div>
+          
           </div>
         </div>
       </div>

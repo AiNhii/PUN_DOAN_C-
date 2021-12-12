@@ -1,0 +1,122 @@
+@{
+  	Layout = "/Views/Shared/_MainLayout.cshtml";
+  	decimal total = 0;
+}
+
+@model List<comestic_csharp.Models.CartItem>
+
+<link rel="stylesheet" href="~/shop/checkout.css">
+
+
+        <section class="shop checkout section">
+			<div class="container">
+			<form asp-action="testCheckout" asp-controller="ShoppingCart">
+					<div class="row"> 
+					<div class="col-lg-8 col-12">
+						<div class="checkout-form">
+							<h2>Make Your Checkout Here</h2>
+							<p>Please register in order to checkout more quickly</p>
+							<!-- Form -->
+							<form class="form" asp-action="testCheckout" asp-controller="ShoppingCart">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>First Name<span>*</span></label>
+											<input type="text" name="FirstName" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Last Name<span>*</span></label>
+											<input type="text" name="LastName" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Email<span>*</span></label>
+											<input type="email" name="Email" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Phonespan*</span></label>
+											<input type="number" name="Phone" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<div class="form-group">
+											<label>Address Line 1<span>*</span></label>
+											<input type="text" name="Address" placeholder="" required="required">
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group create-account">
+											<input id="cbox" type="checkbox">
+											<label>Create an account?</label>
+										</div>
+									</div>
+								</div>
+							</form>
+							<!--/ End Form -->
+						</div>
+					</div>
+					<div class="col-lg-4 col-12">
+						<div class="order-details">
+							<!-- Order Widget -->
+							<div class="single-widget">
+								<h2>CART  TOTALS</h2>
+								<div class="content">					
+									<ul>
+										@foreach (var cartitem in Model)
+										{
+											var thanhtien = cartitem.Quantity * cartitem.Product.Price;
+											total += thanhtien;	
+												<li>@cartitem.Product.Title x @cartitem.Quantity<span>@(thanhtien.ToString("n0")) </li>
+										}
+									</ul>
+								</div>
+								<div class="content">
+									<ul>
+										<li class="last" name="SubTotal">Sub Total<span>@(total.ToString("n0"))</span></li>
+										<li>(+) Shipping<span>$10.00</span></li>
+										<li class="last" name="Total">Total<span>@(total.ToString("n0"))</span></li>
+									</ul>
+								</div>
+							</div>					
+							<!--/ End Order Widget -->
+							<!-- Order Widget -->
+							<div class="single-widget">
+								<h2>Payments</h2>
+								<div class="content">
+									<div class="checkbox">
+										<label class="checkbox-inline" for="1"><input name="news" id="2" type="checkbox"> Cash On Delivery</label>
+										<label class="checkbox-inline" for="2"><input name="news" id="3" type="checkbox"> MOMO</label>
+									</div>
+								</div>
+							</div>
+							<!--/ End Order Widget -->
+							<!-- Payment Method Widget -->
+							<div class="single-widget payement">
+								<div class="content">
+									<img src="/storage/payment-method.png" alt="#">
+								</div>
+							</div>
+							<!--/ End Payment Method Widget -->
+							<!-- Button Widget -->
+							<div class="single-widget get-button">
+								<div class="content">
+										<div class="button">
+											<button class="btn" type="submit">proceed to checkout</button>
+										</div>
+								</div>
+							</div>
+						
+							<!--/ End Button Widget -->
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+		</section>
+
+<partial name="/Views/Shared/_ScriptsLayout.cshtml"/>

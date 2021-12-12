@@ -6,14 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using Microsoft.AspNetCore.Authorization;
+using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp.Controllers
 {
+
     public class ShopController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public ShopController(ShopContext context)
+        public ShopController(ShopDbContext context)
         {
             _context = context;
         }
@@ -21,6 +24,18 @@ namespace comestic_csharp.Controllers
         {
             return View(await _context.Products.ToListAsync());
         }
+
+        public async Task<IActionResult> list()
+        {
+            return View(await _context.Products.ToListAsync());
+        }
+
+        public async Task<IActionResult> grid()
+        {
+            return View(await _context.Products.ToListAsync());
+        }
+
+
 
         public async Task<IActionResult> Details(ulong? id)
         {
@@ -39,16 +54,6 @@ namespace comestic_csharp.Controllers
             return View(product);
         }
 
-        public IActionResult Cart()
-        {
-            return View();
-        }
-
-        public IActionResult Checkout()
-        {
-            return View();
-        }
-
         public IActionResult About()
         {
             return View();
@@ -60,10 +65,6 @@ namespace comestic_csharp.Controllers
         }
 
         public IActionResult BlogDetails()
-        {
-            return View();
-        }
-        public IActionResult Chuyen()
         {
             return View();
         }

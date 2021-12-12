@@ -1,0 +1,272 @@
+@using Microsoft.AspNetCore.Identity
+@using comestic_csharp.Areas.Identity.Data;
+
+@inject SignInManager<ShopUser> SignInManager
+@inject UserManager<ShopUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="DashboardKit is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
+    <meta name="keywords" content="DashboardKit, Dashboard Kit, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Free Bootstrap Admin Template">
+    <meta name="author" content="DashboardKit ">
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="./backend/dashboard/asset/asset/images/favicon.svg" type="image/x-icon">
+
+    <!-- font css -->
+    <link rel="stylesheet" href="/backend/dashboard/asset/fonts/feather.css">
+    <link rel="stylesheet" href="/backend/dashboard/asset/fonts/fontawesome.css">
+    <link rel="stylesheet" href="/backend/dashboard/asset/fonts/material.css">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="/backend/dashboard/asset/css/style_Admin.css" id="main-style-link">
+</head>
+
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ Mobile header ] start -->
+	<div class="pc-mob-header pc-header">
+		<div class="pcm-logo">
+			<img src="assets/images/logo.svg" alt="" class="logo logo-lg">
+		</div>
+		<div class="pcm-toolbar">
+			<a href="#!" class="pc-head-link" id="mobile-collapse">
+				<div class="hamburger hamburger--arrowturn">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<a href="#!" class="pc-head-link" id="headerdrp-collapse">
+				<i data-feather="align-right"></i>
+			</a>
+			<a href="#!" class="pc-head-link" id="header-collapse">
+				<i data-feather="more-vertical"></i>
+			</a>
+		</div>
+	</div>
+	<!-- [ Mobile header ] End -->
+
+	<!-- [ navigation menu ] start -->
+	<nav class="pc-sidebar ">
+		<div class="navbar-wrapper">
+			<div class="m-header">
+				<a href="/admin/dashboard" class="pc-link">
+					<!-- ========   change your logo hear   ============ -->
+					PUN_COMESTIC
+				</a>
+			</div>
+			<div class="navbar-content">
+				<div class="pc-navbar">
+					<li class="pc-item pc-caption">
+						<label>NAVIGATION</label>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="/admin/dashboard" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Dashboard</span></a>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Banners</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="BannerA" >Add banner</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="BannerA" >Banner</a></li>
+						</ul>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>SHOP</label>
+						<span>things to manage</span>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Brand</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="BrandA">Add Brand</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="BrandA">Brand</a></li>
+						</ul>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Category</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="CategoryA">Add Category</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="CategoryA">Category</a></li>
+						</ul>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Products</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" asp-action="create" asp-controller="Product">Add Product</a></li>
+							<li class="pc-item"><a class="pc-link" asp-action="index" asp-controller="Product">Product</a></li>
+						</ul>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Orders</span></a>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Reviews</span></a>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>BLOG</label>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Posts</span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="#!">Add post</a></li>
+							<li class="pc-item"><a class="pc-link" href="#!">Posts</a></li>
+						</ul>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Category</span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="#!">Add Category</a></li>
+							<li class="pc-item"><a class="pc-link" href="#!">Category</a></li>
+						</ul>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Tags</span></a>
+						<ul class="pc-submenu">
+							<li class="pc-item"><a class="pc-link" href="#!">Add tags</a></li>
+							<li class="pc-item"><a class="pc-link" href="#!">Tags</a></li>
+						</ul>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Comments</span></a>
+					</li>
+					<li class="pc-item pc-caption">
+						<label>GENERAL SETTINGS</label>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Coupon</span></a>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Users</span></a>
+					</li>
+					<li class="pc-item pc-hasmenu">
+						<a href="#!" class="pc-link"><span class="pc-micon"><i class="material-icons-two-tone">list_alt</i></span><span class="pc-mtext">Settings</span></a>
+					</li>
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="pc-header ">
+		<div class="header-wrapper">
+			@* <div class="mr-auto pc-mob-drp">
+				<ul class="list-unstyled">
+					<li class="dropdown pc-h-item">
+						<a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+							Level
+						</a>
+						<div class="dropdown-menu pc-h-dropdown">
+							<a href="#!" class="dropdown-item">
+								<i class="material-icons-two-tone">account_circle</i>
+								<span>My Account</span>
+							</a>
+							<div class="pc-level-menu">
+								<a href="#!" class="dropdown-item">
+									<i class="material-icons-two-tone">list_alt</i>
+									<span class="float-right"><i data-feather="chevron-right" class="mr-0"></i></span>
+									<span>Level2.1</span>
+								</a>
+								<div class="dropdown-menu pc-h-dropdown">
+									<a href="#!" class="dropdown-item">
+										<i class="fas fa-circle"></i>
+										<span>My Account</span>
+									</a>
+									<a href="#!" class="dropdown-item">
+										<i class="fas fa-circle"></i>
+										<span>Settings</span>
+									</a>
+									<a href="#!" class="dropdown-item">
+										<i class="fas fa-circle"></i>
+										<span>Support</span>
+									</a>
+									<a href="#!" class="dropdown-item">
+										<i class="fas fa-circle"></i>
+										<span>Lock Screen</span>
+									</a>
+									<a href="#!" class="dropdown-item">
+										<i class="fas fa-circle"></i>
+										<span>Logout</span>
+									</a>
+								</div>
+							</div>
+							<a href="#!" class="dropdown-item">
+								<i class="material-icons-two-tone">settings</i>
+								<span>Settings</span>
+							</a>
+							<a href="#!" class="dropdown-item">
+								<i class="material-icons-two-tone">support</i>
+								<span>Support</span>
+							</a>
+							<a href="#!" class="dropdown-item">
+								<i class="material-icons-two-tone">https</i>
+								<span>Lock Screen</span>
+							</a>
+							<a href="#!" class="dropdown-item">
+								<i class="material-icons-two-tone">chrome_reader_mode</i>
+								<span>Logout</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div> *@
+
+			@if (SignInManager.IsSignedIn(User)){
+				<div class="ml-auto">
+					<ul class="list-unstyled">
+						<li class="dropdown pc-h-item">
+							<a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
+								<i class="material-icons-two-tone">search</i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right pc-h-dropdown drp-search">
+								<form class="px-3">
+									<div class="form-group mb-0 d-flex align-items-center">
+										<i data-feather="search"></i>
+										<input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+									</div>
+								</form>
+							</div>
+						</li>
+						<li class="dropdown-item">
+        					<a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+							<span>
+								
+							</span>
+    					</li>
+						<li class="dropdown-item">
+							<form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+								<button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+			}
+		</div>
+	</header>
+	<!-- [ Header ] end -->
+    <div class="pc-container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="/backend/dashboard/asset/js/vendor-all.min.js"></script>
+    <script src="/backend/dashboard/asset/js/plugins/bootstrap.min.js"></script>
+    <script src="/backend/dashboard/asset/js/plugins/feather.min.js"></script>
+    <script src="/backend/dashboard/asset/js/pcoded.min.js"></script>
+    <script src="/backend/dashboard/asset/js/plugins/apexcharts.min.js"></script>
+
+</body>
+
+</html>

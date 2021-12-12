@@ -18,19 +18,15 @@ namespace comestic_csharp.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
-                // services.AddDbContext<ShopDbContext>(options =>
-                //     options.UseMySQL(
-                //         context.Configuration.GetConnectionString("ShopContextConnection")));
-
+                
             var serverVersion = new MySqlServerVersion(new Version(10, 4, 21)); // Get the value from SELECT VERSION()
-            string connectionString = Configuration.GetConnectionString("server=localhost; username=root;password=123456789;database=punbanhang3;SslMode = none;");
-            services.AddDbContext<ShopDbContext>(c => c.UseMySql("server=localhost; username=root;password=123456789;database=punbanhang3;SslMode = none;", serverVersion));
+            string connectionString = Configuration.GetConnectionString("server=localhost; username=root;password=01672362745Ngan;database=comestic_pun;SslMode = none;");
+            services.AddDbContext<ShopDbContext>(c => c.UseMySql("server=localhost; username=root;password=01672362745Ngan;database=comestic_pun;SslMode = none;", serverVersion));
 
                 services.AddDefaultIdentity<ShopUser>(options => options.SignIn.RequireConfirmedAccount = false)
                     .AddRoles<IdentityRole>()
+                    // .AddClaimsPrincipalFactory<ShopUser>()
                     .AddEntityFrameworkStores<ShopDbContext>();
-
-
             });
         }
     }

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\comestic_csharp.csproj": {}
+    "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj": {}
   },
   "projects": {
-    "D:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\comestic_csharp.csproj": {
+    "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\comestic_csharp.csproj",
+        "projectUniqueName": "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj",
         "projectName": "comestic_csharp",
-        "projectPath": "D:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\comestic_csharp.csproj",
-        "packagesPath": "C:\\Users\\Le Nhi\\.nuget\\packages\\",
-        "outputPath": "D:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\obj\\",
+        "projectPath": "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj",
+        "packagesPath": "C:\\Users\\kimngan\\.nuget\\packages\\",
+        "outputPath": "N:\\Framework\\WEBAPP\\comestic_csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Le Nhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kimngan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,10 +38,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "BCrypt.Net-Next": {
-              "target": "Package",
-              "version": "[4.0.2, )"
-            },
             "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -55,6 +49,10 @@
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -88,6 +86,10 @@
               "target": "Package",
               "version": "[5.0.11, )"
             },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -107,6 +109,10 @@
             "MySqlConnector": {
               "target": "Package",
               "version": "[1.3.14, )"
+            },
+            "Pagination.EntityFrameworkCore.Extensions": {
+              "target": "Package",
+              "version": "[2.1.7, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -131,7 +137,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.209\\RuntimeIdentifierGraph.json"
         }
       }
     }

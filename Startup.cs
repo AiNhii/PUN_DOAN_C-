@@ -15,6 +15,8 @@ using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
 using Microsoft.AspNetCore.Session;
 using Microsoft.AspNetCore.Http;
+using comestic_csharp.Areas.Identity.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace comestic_csharp
 {
@@ -30,39 +32,51 @@ namespace comestic_csharp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-            //         .AddCookie( options => {
+            services.ConfigureApplicationCookie (options => {
+                // options.Cookie.HttpOnly = true;  
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(30);  
+                options.LoginPath = $"/login/";                                 // Url đến trang đăng nhập
+                options.LogoutPath = $"/logout/";   
+                options.AccessDeniedPath = $"/Identity/Account/AccessDenied";   // Trang khi User bị cấm truy cập
+            });
 
-            //             options.LoginPath = "/Admin/Login/index";
-            //             options.LogoutPath = "/Admin/Login/signout";
-            //             options.AccessDeniedPath = "/Admin/accessdenied";
-
-            //         });
-            
+            services.Configure<SecurityStampValidatorOptions>(options =>
+            {
+                // Trên 5 giây truy cập lại sẽ nạp lại thông tin User (Role)
+                // SecurityStamp trong bảng User đổi -> nạp lại thông tinn Security
+                options.ValidationInterval = TimeSpan.FromSeconds(5); 
+            });
+                        
             services.AddMvc();
 
             services.AddRazorPages();
 
             // services.AddDistributedMemoryCache();
-            services.AddSession(options =>
-            {
-                // options.IdleTimeout = TimeSpan.FromSeconds(10);
-                // options.Cookie.HttpOnly = true;
-                // options.Cookie.IsEssential = true;
-                options.Cookie = new CookieBuilder()
-                 {
-                     IsEssential = true,
-                     SameSite = SameSiteMode.Lax,
-                     SecurePolicy = CookieSecurePolicy.SameAsRequest,
-                     Name = ".AspNetCore.Session.comestic_csharp"
-                 };
+            // services.AddSession(options =>
+            // {
+            //     options.IdleTimeout = new TimeSpan(0,30, 0);
+            //     // options.Cookie.HttpOnly = true;
+            //     // options.Cookie.IsEssential = true;
+            //     options.Cookie = new CookieBuilder()
+            //      {
+            //          IsEssential = true,
+            //          SameSite = SameSiteMode.Lax,
+            //          SecurePolicy = CookieSecurePolicy.SameAsRequest,
+            //          Name = "comestic_csharp"
+            //      };
+            // });
+
+            services.AddDistributedMemoryCache();           // Đăng ký dịch vụ lưu cache trong bộ nhớ (Session sẽ sử dụng nó)
+            services.AddSession(cfg => {                    // Đăng ký dịch vụ Session
+                    cfg.Cookie.Name = "PUN";             // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
+                    cfg.IdleTimeout = new TimeSpan(0,30, 0);    // Thời gian tồn tại của Session
             });
 
             services.AddControllersWithViews();
 
             var serverVersion = new MySqlServerVersion(new Version(10, 4, 21)); // Get the value from SELECT VERSION()
-            string connectionString = Configuration.GetConnectionString("server=localhost;port=3306; username=root;password=123456789;database=punbanhang3");
-            services.AddDbContext<ShopContext>(c => c.UseMySql("server=localhost;port=3306; username=root;password=123456789;database=punbanhang3", serverVersion));
+            string connectionString = Configuration.GetConnectionString("server=localhost; username=root;password=01672362745Ngan;database=comestic_test4;SslMode = none;");
+            services.AddDbContext<ShopDbContext>(c => c.UseMySql("server=localhost; username=root;password=01672362745Ngan;database=comestic_pun;SslMode = none;", serverVersion));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

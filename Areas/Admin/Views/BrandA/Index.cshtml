@@ -3,26 +3,10 @@
 @{
     ViewData["Title"] = "Index";
 }
-@await Html.PartialAsync("_StyleLayout")
-<div class="page-header">
-        <div class="page-block">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <div class="page-header-title">
-                        <h5 class="m-b-10">BRAND</h5>
-                    </div>
-                    <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
-                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="BRANDA">Brand</a></li>
-                            <li class="breadcrumb-item">Index</li>
-                    </ul>
-                    </div>
-                </div>
-        </div>
-</div>
 
-<div class="pcoded-content">
-   <section class="content">
+@await Html.PartialAsync("_StyleLayout")
+
+    <section class="content">
       <div class="container-fluid">        
         <div class="row">
           <div class="col-12">
@@ -33,7 +17,7 @@
                                 <h3 class="card-header">BRAND</h3>       
                             </div>
                             <div class="col-3">
-                                <p class="card-header" style="margin-top: 11px !important"><a asp-action="Create" class="add"><i data-feather ="plus"></i> Add new</a></p>
+                                <p class="card-header"><a asp-action="Create" class="add"><i data-feather ="plus"></i> Add new</a></p>
                             </div>
                         </div>
                     </div>
@@ -86,6 +70,5 @@
       </div>
       <!-- /.container-fluid -->
     </section>
-</div>
-  
+
 @await Html.PartialAsync("_ScriptsLayout")

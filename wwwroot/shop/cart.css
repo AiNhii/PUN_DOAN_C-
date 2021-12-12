@@ -261,3 +261,6 @@
 	font-size: 13px;
 	color: #fff;
 }
+a:hover{
+cursor: pointer;
+}

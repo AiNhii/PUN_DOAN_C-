@@ -2,6 +2,7 @@
 @{
     Layout= "/Views/Shared/_MainLayout.cshtml";
 }
+
 <div class="container">
 <div class="title-page" style="background-image: url('/storage/photo/banner/Shop_3Columns-title.jpg');background-position: center center;background-size: cover;">
     <div class="container">
@@ -33,7 +34,7 @@
                                         <span class="del-price">@item.Price</span>
                                         <span class="new-price">80.000 vnd</span>
                                     </div>
-                                    <a class="btn btn-info btn-add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fas fa-shopping-cart"></i></a>
                                     <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
                                 </div>
                             </div>

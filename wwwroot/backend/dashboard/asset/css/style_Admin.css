@@ -17,7 +17,7 @@ File: style.css
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- :root {
+:root {
     --bs-blue: #45c090;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -54,34 +54,6 @@ File: style.css
      :root {
         scroll-behavior: smooth;
     }
-}
-
-mark,
-.mark {
-    background-color: #ffffff !important;
-    color: #45c090;
-}
-
-.page-item.active .page-link {
-    background-color: #3fab83 !important;
-    border-color: #3fab83 !important;
-}
-
-div.dataTables_wrapper div.dataTables_paginate {
-    margin-top: 15px !important;
-    margin-bottom: 12px !important;
-}
-
-.page-item.active .page-link {
-    color: #ffffff !important;
-}
-
-.dataTables_info {
-    margin-top: 15px;
-}
-
-.page-link {
-    color: #3fab83 !important;
 }
 
 body {
@@ -183,12 +155,8 @@ h6,
     font-size: 0.9375rem;
 }
 
-div.dataTables_wrapper div.dataTables_filter label {
-    margin-right: 10px
-}
-
 p {
-    margin-top: 35px !important;
+    margin-top: 46px;
     margin-bottom: 1rem;
     margin-right: 40px !important;
 }
@@ -275,18 +243,9 @@ sup {
 
 .add {
     background: #3fab83;
-    padding: 12px 12px !important;
+    /* padding: 14px 16px; */
     border-radius: 3px;
     color: #ffffff !important;
-}
-
-div.dataTables_wrapper div.dataTables_info {
-    padding-left: 20px;
-}
-
-table.dataTable>thead>tr>th:not(.sorting_disabled),
-table.dataTable>thead>tr>td:not(.sorting_disabled) {
-    padding-right: 4px !important;
 }
 
 .flex-container {
@@ -452,7 +411,7 @@ button:not(:disabled),
     cursor: pointer;
 }
 
- ::-moz-focus-inner {
+::-moz-focus-inner {
     padding: 0;
     border-style: none;
 }
@@ -487,17 +446,17 @@ legend+* {
     clear: left;
 }
 
- ::-webkit-datetime-edit-fields-wrapper,
- ::-webkit-datetime-edit-text,
- ::-webkit-datetime-edit-minute,
- ::-webkit-datetime-edit-hour-field,
- ::-webkit-datetime-edit-day-field,
- ::-webkit-datetime-edit-month-field,
- ::-webkit-datetime-edit-year-field {
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
     padding: 0;
 }
 
- ::-webkit-inner-spin-button {
+::-webkit-inner-spin-button {
     height: auto;
 }
 
@@ -506,19 +465,19 @@ legend+* {
     -webkit-appearance: textfield;
 }
 
- ::-webkit-search-decoration {
+::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
- ::-webkit-color-swatch-wrapper {
+::-webkit-color-swatch-wrapper {
     padding: 0;
 }
 
- ::file-selector-button {
+::file-selector-button {
     font: inherit;
 }
 
- ::-webkit-file-upload-button {
+::-webkit-file-upload-button {
     font: inherit;
     -webkit-appearance: button;
 }
@@ -13650,7 +13609,7 @@ strong {
     color: #333;
 }
 
- :not(pre)>code[class*="language-"],
+:not(pre)>code[class*="language-"],
 pre[class*="language-"] {
     background: transparent;
 }
@@ -13677,7 +13636,7 @@ pre[class*="language-"]:after {
     display: none;
 }
 
- :not(pre)>code[class*="language-"],
+:not(pre)>code[class*="language-"],
 pre[class*="language-"] {
     display: flex;
     margin: 0;

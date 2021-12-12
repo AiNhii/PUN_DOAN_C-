@@ -5,7 +5,7 @@
     }
     else
     {
-        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+        Layout = "/Areas/Admin/Views/Shared/_Layout.cshtml";
     }
 }
 
@@ -24,6 +24,7 @@
     </div>
 </div>
 
-@section Scripts {
-    @RenderSection("Scripts", required: false)
-}
+ @await RenderSectionAsync("Scripts", required: false)
+
+
+

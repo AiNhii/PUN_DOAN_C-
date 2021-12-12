@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using comestic_csharp.Areas.Identity.Data;
 
 #nullable disable
 
@@ -21,10 +22,10 @@ namespace comestic_csharp.Models
         public string Quote { get; set; }
         public string Photo { get; set; }
         public ulong? PostCatId { get; set; }
-        public ulong? AddedBy { get; set; }
+        public string AddedBy { get; set; }
         public string Status { get; set; }
 
-        public virtual User AddedByNavigation { get; set; }
+        public virtual ShopUser AddedByNavigation { get; set; }
         public virtual Postcategory PostCat { get; set; }
         public virtual ICollection<Postcomment> Postcomments { get; set; }
         public virtual ICollection<Postsandtag> Postsandtags { get; set; }

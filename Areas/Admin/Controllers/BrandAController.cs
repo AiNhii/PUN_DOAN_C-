@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
 using Microsoft.AspNetCore.Authorization;
+using comestic_csharp.Areas.Identity.Data;
 
 namespace comestic_csharp.Controllers
 {
@@ -15,9 +16,9 @@ namespace comestic_csharp.Controllers
     [Route("admin/brand")]
     public class BrandAController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public BrandAController(ShopContext context)
+        public BrandAController(ShopDbContext context)
         {
             _context = context;
         }

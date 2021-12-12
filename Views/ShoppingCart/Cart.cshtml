@@ -1,0 +1,149 @@
+@{
+  Layout = "/Views/Shared/_MainLayout.cshtml";
+}
+
+@model List<comestic_csharp.Models.CartItem>
+
+<link rel="stylesheet" href="~/shop/cart.css">
+
+	<h1></h1>
+
+<div class="container">
+
+    @if (Model.Count > 0) {
+        decimal total = 0;
+        int stt = 0;
+		
+	<!-- Shopping Cart -->
+	<div class="shopping-cart section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- Shopping Summery -->
+					<table class="table shopping-summery">
+						<thead>
+							<tr class="main-hading">
+								<th>PRODUCT</th>
+								<th>NAME</th>
+								<th class="text-center">UNIT PRICE</th>
+								<th class="text-center">QUANTITY</th>
+								<th class="text-center">TOTAL</th> 
+								<th class="text-center"></th>
+							</tr>
+						</thead>
+						<tbody>
+                        @foreach (var cartitem in Model)
+                    {
+                        var thanhtien = cartitem.Quantity * cartitem.Product.Price;
+                        total += thanhtien;
+						stt++;
+
+
+							<tr>
+								<td class="image" data-title="No"><img src="/storage/@cartitem.Product.Photo1" alt="#"></td>
+								<td class="product-des" data-title="Description">
+									<p class="product-name"><a href="#">@cartitem.Product.Title</a></p>
+								</td>
+								<td class="price" data-title="Price"><span>@(cartitem.Product.Price.ToString("n0"))</span></td>
+								<td class="qty" data-title="Qty"><!-- quantity -->
+									<div class="input-group">
+										<div class="button minus">
+											<button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[@stt]">
+												<i class="ti-minus"></i>
+											</button>
+										</div>
+										<input id="@($"quantity-{cartitem.Product.Id}")" type="text" name="quant[@stt]" class="input-number"  data-min="1" data-max="100" value="@cartitem.Quantity">
+										<div class="button plus">
+											<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[@stt]">
+												<i class="ti-plus"></i>
+											</button>
+										</div>
+									</div>
+									<!--/ End quantiy -->
+								</td>
+								<td class="total-amount" data-title="Total"><span><strong>@(thanhtien.ToString("n0"))</strong></span></td>
+                                <td>
+									<a data-id="@cartitem.Product.Id" class="text-danger updatecartitem">Update</a>
+									<a asp-action="RemoveCart" asp-route-id="@cartitem.Product.Id"><i class="ti-trash remove-icon"></i></a>
+                                </td>
+							</tr>
+                    }
+						</tbody>
+					</table>
+					<!--/ End Shopping Summery -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<!-- Total Amount -->
+					<div class="total-amount">
+						<div class="row">
+							<div class="col-lg-8 col-md-5 col-12">
+								<div class="left">
+									<div class="coupon">
+										<form action="#" target="_blank">
+											<input name="Coupon" placeholder="Enter Your Coupon">
+											<button class="btn">Apply</button>
+										</form>
+									</div>
+									<div class="checkbox">
+										<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10$)</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-7 col-12">
+								<div class="right">
+									<ul>
+										<li>Cart Subtotal<h4>@(total.ToString("n0"))</h4></li>
+										<li>Shipping<span>Free</span></li>
+										<li>You Save<span>$20.00</span></li>
+										<li class="last">You Pay<h4>@(total.ToString("n0"))</h4></li>
+									</ul>
+									<div class="button5">
+										<a asp-controller="ShoppingCart" asp-action="Checkout" class="btn">Checkout</a>
+										<a href="/" class="btn">Continue shopping</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/ End Total Amount -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Shopping Cart -->
+
+
+      @section Scripts {
+        <script>
+          $(document).ready(function () {
+              $(".updatecartitem").click(function (event) {
+                  event.preventDefault();
+                  var productid = $(this).attr("data-id");
+                  var quantity = $("#quantity-" + productid).val();
+                  $.ajax({
+                      type: "POST",
+                      url:"@Url.Action("UpdateCart")",
+                      data: {
+                          id: productid,
+                          quantity:quantity
+                      },
+                      success: function (result) {
+                          window.location.href = "@Url.Action("Cart")";
+                      }
+                  });
+              });
+          });
+        </script>
+      	}
+
+    }
+    else {
+    <p class="alert alert-danger">Giỏ hàng trống</p>
+    }
+</div>
+
+
+<partial name="/Views/Shared/_ScriptsLayout.cshtml"/>
+    
