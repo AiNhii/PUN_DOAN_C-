@@ -13566,6 +13566,82 @@
         }
       },
       {
+        "HashCode": -12663377,
+        "Kind": "ITagHelper",
+        "Name": "PagedList.Core.Mvc.PagerTagHelper",
+        "AssemblyName": "PagedList.Core.Mvc",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "pager"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "list",
+            "TypeName": "PagedList.Core.IPagedList",
+            "Metadata": {
+              "Common.PropertyName": "List"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-all-route-data",
+            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.String>",
+            "IndexerNamePrefix": "asp-route-",
+            "IndexerTypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "RouteValues"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-action",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "AspAction"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-controller",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "AspController"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-area",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "AspArea"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "options",
+            "TypeName": "PagedList.Core.Mvc.PagedListRenderOptions",
+            "Metadata": {
+              "Common.PropertyName": "Options"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "param-page-number",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ParamPageNumber"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "PagedList.Core.Mvc.PagerTagHelper"
+        }
+      },
+      {
         "HashCode": 141407075,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -16379,11 +16455,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\_IndexList.cshtml",
-      "TargetPath": "Views\\Shop\\_IndexList.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Coupon\\Details.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Coupon\\Details.cshtml",
       "FileKind": "mvc"
@@ -16511,11 +16582,6 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Productreview\\Details.cshtml",
       "TargetPath": "Views\\Productreview\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\o-Index.cshtml",
-      "TargetPath": "Views\\Shop\\o-Index.cshtml",
       "FileKind": "mvc"
     },
     {

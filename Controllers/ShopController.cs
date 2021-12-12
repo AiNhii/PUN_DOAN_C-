@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
 using Microsoft.AspNetCore.Authorization;
 using comestic_csharp.Areas.Identity.Data;
+using PagedList.Core;
 
 namespace comestic_csharp.Controllers
 {
@@ -20,22 +21,21 @@ namespace comestic_csharp.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+
+        public IActionResult Index(int? page)
         {
-            return View(await _context.Products.ToListAsync());
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 6;
+            var products = _context.Products.OrderByDescending(x => x.Price);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            return View(model);
         }
 
         public async Task<IActionResult> list()
         {
             return View(await _context.Products.ToListAsync());
         }
-
-        public async Task<IActionResult> grid()
-        {
-            return View(await _context.Products.ToListAsync());
-        }
-
-
 
         public async Task<IActionResult> Details(ulong? id)
         {

@@ -646,5 +646,5 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Cou
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Index.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\testSort.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\list.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\_IndexList.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\o-Index.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\PagedList.Core.dll
+N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\PagedList.Core.Mvc.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IqUZWKC7uwOgD7tnpxz6p/H7VFFsjDGY9Dvo1OITPVbVyNhLuXr5hFP9MnVOhctuWVgVC11sx4AAQpOwaZ7TwA==",
+  "dgSpecHash": "uUo1l2sL1AbVzflCL7b+HB/Yj9Qt82tFs/hmPXU6lAWMVd9Tsp5TftDUE3r40cNrF+4Cnw4RCwsION9LpVi2+A==",
   "success": true,
   "projectFilePath": "N:\\Framework\\WEBAPP\\comestic_csharp\\comestic_csharp.csproj",
   "expectedPackageFiles": [
@@ -87,6 +87,8 @@
     "C:\\Users\\kimngan\\.nuget\\packages\\mysqlconnector\\1.3.14\\mysqlconnector.1.3.14.nupkg.sha512",
     "C:\\Users\\kimngan\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\kimngan\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\kimngan\\.nuget\\packages\\pagedlist.core\\1.17.4\\pagedlist.core.1.17.4.nupkg.sha512",
+    "C:\\Users\\kimngan\\.nuget\\packages\\pagedlist.core.mvc\\3.0.0\\pagedlist.core.mvc.3.0.0.nupkg.sha512",
     "C:\\Users\\kimngan\\.nuget\\packages\\pagination.entityframeworkcore.extensions\\2.1.7\\pagination.entityframeworkcore.extensions.2.1.7.nupkg.sha512",
     "C:\\Users\\kimngan\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0-alpha.2\\pomelo.entityframeworkcore.mysql.5.0.0-alpha.2.nupkg.sha512",
     "C:\\Users\\kimngan\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
