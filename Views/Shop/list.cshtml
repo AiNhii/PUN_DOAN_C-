@@ -1,6 +1,12 @@
-@model IEnumerable<comestic_csharp.Models.Product>
+<link rel="stylesheet" href="/shop/grid.css">
+@using PagedList.Core.Mvc;
+@model PagedList.Core.IPagedList<comestic_csharp.Models.Product>;
+
 @{
-     Layout = "/Views/Shared/_MainLayout.cshtml";
+	ViewData["Title"] = "shop" + ViewBag.CurrentPage;
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+	int PageCurrent = ViewBag.CurrentPage;
+	int PageNext = PageCurrent +1;
 }
 
 <link rel="stylesheet" href="/shop/list-grid.css">
@@ -205,9 +211,9 @@
 								<!-- Start Single List -->
 								
 								<!-- End Single List -->
-								<div class="col-12">
+								
 									<!-- Pagination -->
-									<div class="pagination">
+									@* <div class="pagination">
 										<ul class="pagination-list">
 											<li><a href="#"><i class="ti-arrow-left"></i></a></li>
 											<li class="active"><a href="#">1</a></li>
@@ -215,7 +221,19 @@
 											<li><a href="#">3</a></li>
 											<li><a href="#"><i class="ti-arrow-right"></i></a></li>
 										</ul>
+									</div> *@
+
+									<div class="row">
+							       		<div class="col col-12"
+											<!-- Pagination -->
+										<div class="pagination">
+										<ul class="pagination-list">
+											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="list" asp-controller="Shop"/>
+										</ul>
 									</div>
+							
+									<!--/ End Pagination -->
+						</div>
 									<!--/ End Pagination -->
 								</div>
 							</div>

@@ -1014,3 +1014,5 @@ D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\comestic_csharp.pdb
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\comestic_csharp.genruntimeconfig.cache
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\o-Index.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\bin\Debug\net5.0\PagedList.Core.dll
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\bin\Debug\net5.0\PagedList.Core.Mvc.dll
