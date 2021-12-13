@@ -110,6 +110,18 @@ namespace comestic_csharp.Controllers
                 }, "Value" , "Text"
 
             );
+
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
+
+                }, "Value" , "Text"
+
+            );
             return View(model);
         }
 
@@ -128,6 +140,18 @@ namespace comestic_csharp.Controllers
                     new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
                     new SelectListItem { Text = "Order by Price Des", Value = "des"},
                     new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
 
                 }, "Value" , "Text"
 
@@ -154,6 +178,17 @@ namespace comestic_csharp.Controllers
                 }, "Value" , "Text"
 
             );
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
+
+                }, "Value" , "Text"
+
+            );
             return View(model);
         }
 
@@ -172,6 +207,18 @@ namespace comestic_csharp.Controllers
                     new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
                     new SelectListItem { Text = "Order by Price Des", Value = "des"},
                     new SelectListItem { Text = "name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+            
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
 
                 }, "Value" , "Text"
 
