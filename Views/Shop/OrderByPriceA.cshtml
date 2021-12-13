@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/shop/grid.css">
 @using PagedList.Core.Mvc;
 @using comestic_csharp.Areas.Identity.Data
 @model PagedList.Core.IPagedList<comestic_csharp.Models.Product>;
@@ -12,7 +11,10 @@
     var cat = context.Categories.ToList();
 }
 
-		<section class="product-area shop-sidebar shop section">
+<link rel="stylesheet" href="/shop/list-grid.css">
+   
+		<!-- Product Style 1 -->
+		<section class="product-area shop-sidebar shop-list shop section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-4 col-12">
@@ -27,6 +29,8 @@
 										}
 									</ul>
 								</div>
+								<!--/ End Single Widget -->
+								<!-- Shop By Price -->
 								<div class="single-widget range">
                                     <h3 class="title">Shop by Price</h3>
                                     <div class="price-filter">
@@ -46,12 +50,12 @@
                                 </div>
 									<!--/ End Shop By Price -->
 								<!-- Single Widget -->
-								@* <div class="single-widget recent-post">
+								<div class="single-widget recent-post">
 									<h3 class="title">Recent post</h3>
 									<!-- Single Post -->
 									<div class="single-post first">
 										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
+											<img src="images/single-shop-img1.png" alt="#">
 										</div>
 										<div class="content">
 											<h5><a href="#">Girls Dress</a></h5>
@@ -65,43 +69,6 @@
 											</ul>
 										</div>
 									</div>
-									<!-- End Single Post -->
-									<!-- Single Post -->
-									<div class="single-post first">
-										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
-										</div>
-										<div class="content">
-											<h5><a href="#">Women Clothings</a></h5>
-											<p class="price">$99.50</p>
-											<ul class="reviews">
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li><i class="ti-star"></i></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End Single Post -->
-									<!-- Single Post -->
-									<div class="single-post first">
-										<div class="image">
-											<img src="https://via.placeholder.com/75x75" alt="#">
-										</div>
-										<div class="content">
-											<h5><a href="#">Man Tshirt</a></h5>
-											<p class="price">$99.50</p>
-											<ul class="reviews">
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End Single Post -->
 								</div>
 								<!--/ End Single Widget -->
 								<!-- Single Widget -->
@@ -114,7 +81,7 @@
 										<li><a href="#">ecko united</a></li>
 										<li><a href="#">zara</a></li>
 									</ul>
-								</div> *@
+								</div>
 								<!--/ End Single Widget -->
 						</div>
 					</div>
@@ -135,56 +102,73 @@
 										</div>
 										<div class="single-shorter">
 											<label>Sort By :</label>
-											<select asp-items="ViewBag.SortBy" id="sort" name="sort">
-												<option>Choose</option>
-											</select>
+											<select asp-items="ViewBag.SortBy" id="sort">
+                                                <option>Choose</option>
+                                            </select>
 										</div>
 									</div>
 									<ul class="view-mode">
-										<li class="active"><a href="shop-grid.html"><i class="fa fa-th-large"></i></a></li>
-										<li><a asp-action="list" asp-controller="Shop"><i class="fa fa-th-list"></i></a></li>
+										<li><a asp-action="Index" asp-controller="Shop"><i class="fa fa-th-large"></i></a></li>
+										<li class="active"><a href="shop-list.html"><i class="fa fa-th-list"></i></a></li>
 									</ul>
 								</div>
 								<!--/ End Shop Top -->
 							</div>
 						</div>
-						 <div class="row">
-                            @foreach (var item in Model)
+						<div class="row">
+								<!-- Start Single List -->
+								<div class="col-12">
+									<div class="row">
+										@foreach (var item in Model)
                             {
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="card card-product mb-3">
-                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                        <img class="card-img-top" src="/storage/@item.Photo1" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title product-title">@item.Title</h5>
-										
-                                            <div class="card-text product-price">
-                                                <span class="del-price">@item.Price</span>
-                                                <span class="new-price">80.000 vnd</span>
-                                            </div>
-                                            @if(User.Identity.IsAuthenticated){
+										<div class="col-lg-4 col-md-6 col-sm-6">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+														<img class="card-img-top" src="/storage/@item.Photo1" alt="Card image cap">
+													</a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-6 col-12">
+											<div class="list-content">
+												<div class="product-content">
+													<div class="product-price">
+														<h5 class="card-title product-title">@item.Title</h5>
+                                                        <span class="new-price">80.000 vnd</span>
+													</div>
+													
+													<span class="del-price">@item.Price</span>
+													<h6 class="card-title product-title">@item.Summary</h6>
+												 @if(User.Identity.IsAuthenticated){
                                                 <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                             }
                                             else{
                                                 <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
                                             }
-                                            <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            }
-                        </div>
-						<div class="row">
-							<div class="col col-12"
-									<!-- Pagination -->
-									<div class="pagination">
+                                            <a class="btn btn-outline-success btn-detail" id="xem" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+											</div>
+										</div>
+									</div>
+							}
+								</div>
+
+									<div class="row">
+							       		<div class="col col-12"
+											<!-- Pagination -->
+										<div class="pagination">
 										<ul class="pagination-list">
-											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="Index" asp-controller="Shop"/>
+											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="OrderByPriceA" asp-controller="Shop"/>
 										</ul>
 									</div>
-							</div>
+							
 									<!--/ End Pagination -->
 						</div>
+									<!--/ End Pagination -->
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -220,4 +204,3 @@
 		});
 	</script>
 }
-

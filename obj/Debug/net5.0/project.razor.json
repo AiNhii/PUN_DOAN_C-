@@ -15955,6 +15955,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\OrderByName.cshtml",
+      "TargetPath": "Views\\Shop\\OrderByName.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Posttag\\Edit.cshtml",
       "TargetPath": "Views\\Posttag\\Edit.cshtml",
       "FileKind": "mvc"
@@ -16215,6 +16220,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\OrderByPriceA.cshtml",
+      "TargetPath": "Views\\Shop\\OrderByPriceA.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -16455,11 +16465,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\_IndexList.cshtml",
-      "TargetPath": "Views\\Shop\\_IndexList.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Coupon\\Details.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Coupon\\Details.cshtml",
       "FileKind": "mvc"
@@ -16555,6 +16560,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\OrderByPriceD.cshtml",
+      "TargetPath": "Views\\Shop\\OrderByPriceD.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\_Layout.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Product\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -16587,11 +16597,6 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Productreview\\Details.cshtml",
       "TargetPath": "Views\\Productreview\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\o-Index.cshtml",
-      "TargetPath": "Views\\Shop\\o-Index.cshtml",
       "FileKind": "mvc"
     },
     {

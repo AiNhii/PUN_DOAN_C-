@@ -26,19 +26,131 @@ namespace comestic_csharp.Controllers
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             var pagesize = 6;
-            var products = _context.Products.OrderByDescending(x => x.Price);
+            var products = _context.Products;
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
             return View(model);
         }
 
-        public IActionResult list(int? page)
+        public IActionResult List(int? page)
+        {
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 6;
+            var products = _context.Products;
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
+
+
+        public IActionResult SortBy(string sort){
+
+            var url = $"/Shop/";
+
+            if(sort == "asc"){
+
+                url = $"/Shop/OrderByPriceA";
+
+            }
+            if(sort == "des"){
+
+               url = $"/Shop/OrderByPriceD";
+
+            }
+
+            if(sort == "name"){
+                url = $"/Shop/OrderByName";
+            }
+
+            return Json( new { status = "success", redirectUrl = url});
+        }
+
+        public IActionResult OrderByPriceA(int? page)
+        {
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 6;
+            var products = _context.Products.OrderBy(x => x.Price);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
+
+        public IActionResult OrderByPriceD(int? page)
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             var pagesize = 6;
             var products = _context.Products.OrderByDescending(x => x.Price);
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
+
+        public IActionResult OrderByName(int? page)
+        {
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 6;
+            var products = _context.Products.OrderByDescending(x => x.Title);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
             return View(model);
         }
 

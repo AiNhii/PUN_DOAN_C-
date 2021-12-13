@@ -1146,54 +1146,67 @@ Start Shop Sidebar CSS
             color: #fff;
             border-color: transparent;
         }
-        /* Pagination CSS */
+
+
+
         
-        .pagination {
-            text-align: left;
-            margin: 50px 0 0 0;
-            display: block;
-        }
-        
-        .pagination.center {
-            text-align: center;
-        }
-        
-        .pagination .pagination-list li {
-            margin-right: 5px;
-            display: inline-block;
-        }
-        
-        .pagination .pagination-list li:last-child {
-            margin-right: 0px;
-        }
-        
-        .pagination .pagination-list li a {
-            background: #F6F7FB;
-            color: #666;
-            padding: 6px 18px;
-            font-weight: 400;
-            border: 1px solid #e1e1e1;
-            font-size: 16px;
-            border-radius: 0px;
-        }
-        
-        .pagination .pagination-list li.active a,
-        .pagination .pagination-list li:hover a {
-            background: #F7941D;
-            color: #fff;
-            border-color: transparent;
-        }
-        
-        .pagination .pagination-list li a i {
-            font-size: 13px;
-        }
-        
-        .pagination .pagination-list li a i {}
-        
-        .blog-grids.pagination {
-            margin-top: 50px;
-            text-align: center;
-        }
+/*page*/
+
+.pagination {
+    text-align: center;
+    margin: 25px 50px;
+    display: block;
+}
+
+.pagination.center {
+    text-align: center;
+}
+
+.pagination .pagination-list li {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.pagination .pagination-list li:last-child {
+    margin-right: 0px;
+}
+
+.pagination .pagination-list li a {
+    background: #F6F7FB;
+    color: #666;
+    padding: 6px 18px;
+    font-weight: 400;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    border-radius: 0px;
+}
+
+.pagination .pagination-list li.active span {
+    background: #70b19f;
+    color: rgb(255, 255, 255);
+    padding: 6px 18px;
+    font-weight: 400;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    border-radius: 0px;
+}
+
+.pagination .pagination-list li:hover a {
+    background: #70b19f;
+    color: #fff;
+    border-color: transparent;
+}
+
+.pagination .pagination-list li a i {
+    font-size: 13px;
+}
+
+.pagination .pagination-list li a i {}
+
+.blog-grids.pagination {
+    margin-top: 50px;
+    text-align: center;
+}
         /*======================================
    End Shop List CSS
 ========================================*/
