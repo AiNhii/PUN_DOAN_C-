@@ -15669,11 +15669,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_TopReview - Copy.cshtml",
-      "TargetPath": "Views\\Shared\\_TopReview - Copy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
       "FileKind": "mvc"
@@ -15696,11 +15691,6 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Cart\\Edit.cshtml",
       "TargetPath": "Views\\Cart\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Footer - Copy.cshtml",
-      "TargetPath": "Views\\Shared\\_Footer - Copy.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16466,11 +16456,6 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\User\\Delete.cshtml",
       "TargetPath": "Views\\User\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_TabProduct - Copy.cshtml",
-      "TargetPath": "Views\\Shared\\_TabProduct - Copy.cshtml",
       "FileKind": "mvc"
     },
     {
