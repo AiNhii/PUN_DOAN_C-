@@ -63,7 +63,7 @@
 								</td>
 								<td class="total-amount" data-title="Total"><span><strong>@(thanhtien.ToString("n0"))</strong></span></td>
                                 <td>
-									<a data-id="@cartitem.Product.Id" class="text-danger updatecartitem">Update</a>
+									<a data-id="@cartitem.Product.Id" class="text-danger updatecartitem"><i class="fa fa-pencil-square-o"></i></a>
 									<a asp-action="RemoveCart" asp-route-id="@cartitem.Product.Id"><i class="ti-trash remove-icon"></i></a>
                                 </td>
 							</tr>
@@ -94,10 +94,10 @@
 							<div class="col-lg-4 col-md-7 col-12">
 								<div class="right">
 									<ul>
-										<li>Cart Subtotal<h4>@(total.ToString("n0"))</h4></li>
+										<li>Cart Subtotal<span>@(total.ToString("n0"))</span></li>
 										<li>Shipping<span>Free</span></li>
 										<li>You Save<span>$20.00</span></li>
-										<li class="last">You Pay<h4>@(total.ToString("n0"))</h4></li>
+										<li class="last">You Pay<span>@(total.ToString("n0"))</span></li>
 									</ul>
 									<div class="button5">
 										<a asp-controller="ShoppingCart" asp-action="Checkout" class="btn">Checkout</a>
