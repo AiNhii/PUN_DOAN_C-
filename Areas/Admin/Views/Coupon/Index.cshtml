@@ -3,13 +3,34 @@
 @{
     ViewData["Title"] = "Index";
 }
+@await Html.PartialAsync("_StyleLayout")
+<div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">COUPON</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Coupon">Coupon</a></li>
+                            <li class="breadcrumb-item">Index</li>
+                    </ul>
+                    </div>
+                </div>
+        </div>
+</div>
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<div class="pcoded-content">
+    <div class="card">
+    <div class="flex-container">
+            <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">Coupon</h1></div>
+            <div></div>
+            <div><p>
+                <a asp-action="Create" class="add"><i data-feather ="plus"></i>  Add new</a>
+            </p></div> 
+            </div>
+           <table class="table" id="example1">
     <thead>
         <tr>
             <th>
@@ -40,7 +61,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Code)
@@ -66,12 +87,17 @@
             <td>
                 @Html.DisplayFor(modelItem => item.EndedAt)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            <td style="padding-right:0px">
+                <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit" style="color: #3EC9E6;"></i></a> 
+                        <a asp-action="Details" asp-route-id="@item.Id"><i data-feather ="eye"></i></a> 
+                        <a asp-action="Delete" asp-route-id="@item.Id"><i data-feather="trash" style="color: red; margin-right: 5px;"></i></a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
+    </div>    
+</div>
+
+
+@await Html.PartialAsync("_ScriptsLayout")

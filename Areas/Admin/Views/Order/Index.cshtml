@@ -10,11 +10,11 @@
             <div class="row align-items-center">
                 <div class="col-md-12">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">PRODUCT</h5>
+                        <h5 class="m-b-10">ORDER</h5>
                     </div>
                     <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
-                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Product">Product</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Order">Order</a></li>
                             <li class="breadcrumb-item">Index</li>
                     </ul>
                     </div>
@@ -25,7 +25,7 @@
 <div class="pcoded-content">
     <div class="card" style="width: fit-content;">
     <div class="flex-container">
-        <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">PRODUCT</h1>
+        <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">ORDER</h1>
         </div>
         <div></div>
         <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>Add new</a></p></div> 
@@ -85,7 +85,7 @@
                                             <td>
                                                 <a asp-action="Edit" asp-route-id="@item.Id" class="btn  btn-info btn-sm"><i data-feather="edit"></i></a>
                                                 <a asp-action="Details" asp-route-id="@item.Id" class="btn  btn-success btn-sm"><i data-feather="eye"></i></a>
-                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn  btn-danger btn-sm"><i data-feather="trash"></i></a>
+                                                
                                             </td>
                                         </tr>
                                     }

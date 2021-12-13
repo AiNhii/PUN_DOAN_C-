@@ -13,8 +13,8 @@
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
-                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="BrandA">CATEGORY</a></li>
-                            <li class="breadcrumb-item">Edit CATEGORY</li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="CategoryA">Category</a></li>
+                            <li class="breadcrumb-item">Edit Category</li>
                         </ul>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                     <form asp-action="Edit">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <input type="hidden" asp-for="Id" />
-                        <h3 class="card-header">EDIT CATEGORY</h3>
+                        <h3 class="card-header">EDIT Category</h3>
                         <div class="card-body">
                             <div class="form-group">
                                 <label asp-for="Title" class="control-label"></label>
@@ -48,6 +48,7 @@
                         <div class="card-footer">
                                 <input type="submit" value="Save" class="btn btn-primary" />
                                 <a asp-action="Index" class="btn btn-primary">Back to List</a>
+
                         </div>
                     </form>
                 </div>

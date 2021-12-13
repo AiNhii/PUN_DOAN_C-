@@ -29,7 +29,7 @@
         background: #fff;
         padding: 3px 14px;
         border-radius: 3px;
-        font-size: 13px;
+        font-size: 16px;
     }
     
     .nav-tabs li a :hover {
@@ -93,13 +93,12 @@
                                                     <span class="del-price">@pro[i].Price</span>
                                                     <span class="new-price">80.000 vnd</span>
                                                 </div>
-                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a>
+                                              @if(User.Identity.IsAuthenticated){
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
                                                 }
                                                 else{
-                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
                                                 }
-                                                @* <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a> *@
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                             </div>
@@ -127,13 +126,7 @@
                                                     <span class="del-price">@pro[i].Price</span>
                                                     <span class="new-price">80.000 vnd</span>
                                                 </div>
-                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a>
-                                                }
-                                                else{
-                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-shopping-cart"></i></a>
-                                                }
-                                                @* <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a> *@
+                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                             </div>
@@ -161,15 +154,9 @@
                                                     <span class="del-price">@pro[i].Price</span>
                                                     <span class="new-price">80.000 vnd</span>
                                                 </div>
-                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a>
-                                                }
-                                                else{
-                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-shopping-cart"></i></a>
-                                                }
-                                                @* <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a> *@
+                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                                <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -195,13 +182,29 @@
                                                     <span class="del-price">@pro[i].Price</span>
                                                     <span class="new-price">80.000 vnd</span>
                                                 </div>
-                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a>
-                                                }
-                                                else{
-                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-shopping-cart"></i></a>
-                                                }
-                                                @* <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fas fa-shopping-cart"></i></a> *@
+                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
+                                                <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    }
+                                </div>
+                                <div class="row product">
+                                    @for (var i = 0; i< 4; i++)
+                                    {  
+                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+
+                                        <div class="card card-product mb-3">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title product-title">@pro[i].Title</h5>
+                                                <div class="card-text product-price">
+                                                    <span class="del-price">@pro[i].Price</span>
+                                                    <span class="new-price">80.000 vnd</span>
+                                                </div>
+                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                             </div>

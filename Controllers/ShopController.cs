@@ -32,9 +32,14 @@ namespace comestic_csharp.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> list()
+        public IActionResult list(int? page)
         {
-            return View(await _context.Products.ToListAsync());
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 6;
+            var products = _context.Products.OrderByDescending(x => x.Price);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            return View(model);
         }
 
         public async Task<IActionResult> Details(ulong? id)

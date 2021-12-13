@@ -4,11 +4,74 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">COUPON</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Coupon">Coupon</a></li>
+                            <li class="breadcrumb-item">Create Coupon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <div class="pcoded-content">
 
-<h4>Coupon</h4>
-<hr />
-<div class="row">
+                <!-- [ form-element ] start -->
+                    <div class="card">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="card-header">
+                                <h3><mark>Create New Coupon</mark></h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                <label asp-for="Code" class="control-label"></label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Value" class="control-label"></label>
+                <input asp-for="Value" class="form-control" />
+                <span asp-validation-for="Value" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsVoucher" /> @Html.DisplayNameFor(model => model.IsVoucher)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartedAt" class="control-label"></label>
+                <input asp-for="StartedAt" class="form-control" />
+                <span asp-validation-for="StartedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EndedAt" class="control-label"></label>
+                <input asp-for="EndedAt" class="form-control" />
+                <span asp-validation-for="EndedAt" class="text-danger"></span>
+            </div>
+                            </div>
+                            <div class="card-footer">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                                <a asp-action="Index" class="btn btn-primary">Back to List</a>
+                            </div>
+                        </form>
+                    </div>
+                <!-- [ form-element ] end -->
+            <!-- [ Main Content ] end -->
+        </div>
+
+@* <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -51,7 +114,7 @@
 
 <div>
     <a asp-action="Index">Back to List</a>
-</div>
+</div> *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

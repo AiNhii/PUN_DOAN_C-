@@ -18,10 +18,12 @@
 
 /*xử lý menu*/
 
+
 /* .nav-link:hover {
     font-weight: bold;
     color: #3C7363 !important;
-} */
+}
+ */
 
 .dropdown {
     position: relative;
@@ -161,6 +163,7 @@
     background-color: #70b19f !important;
     border-color: #70b19f !important;
     border-radius: 2px !important;
+    margin-top: 15px;
 }
 
 .btn-add-to-cart i {
@@ -186,7 +189,7 @@
 
 .sale-sticky {
     color: white;
-    background-color: #70b19f;
+    background-color: #f90;
     display: block;
     text-align: center;
     width: 120px;
@@ -196,7 +199,8 @@
     transform: rotate(-45deg);
 }
 
-#new {
+#new,
+#hot {
     display: block;
     text-align: center;
     width: 53px;
@@ -209,8 +213,17 @@
 #new {
     background-color: #ed3535 !important;
     color: white;
-    margin: 1px 2px;
-    border-radius: 2px !important;
+    border-radius: 6px !important;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+#hot {
+    background-color: #ff9c24 !important;
+    color: white;
+    border-radius: 6px !important;
+    padding: 5px 10px;
+    font-size: 15px;
 }
 
 .carousel-control-next-icon {
@@ -720,13 +733,13 @@
 /*footer*/
 
 footer a {
-    color: #707070 !important;
+    color: #ffffff !important;
     font-size: 25px;
     padding-right: 5px;
 }
 
 footer a:hover {
-    color: #3C7363 !important;
+    color: #43c49f !important;
 }
 
 footer p {
@@ -742,4 +755,13 @@ footer .copy {
 
 .carousel-indicators sp {
     bottom: -35px !important;
+}
+
+.card-text product-price {
+    padding-bottom: 15px;
+}
+
+.btn-outline-success,
+.btn-success {
+    margin-top: 15px !important;
 }
