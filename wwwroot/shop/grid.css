@@ -495,7 +495,7 @@ button.ui-button::-moz-focus-inner {
 .pagination .pagination-list li a {
     background: #F6F7FB;
     color: #666;
-    padding: 6px 18px;
+    padding: 9px 16px;
     font-weight: 400;
     border: 1px solid #e1e1e1;
     font-size: 16px;

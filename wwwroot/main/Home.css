@@ -149,6 +149,7 @@
 
 .del-price {
     text-decoration: line-through;
+    font-size: 20px;
 }
 
 .new-price {
