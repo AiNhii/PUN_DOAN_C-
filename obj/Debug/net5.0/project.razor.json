@@ -16155,6 +16155,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\_SideBar.cshtml",
+      "TargetPath": "Views\\Shop\\_SideBar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\BrandA\\Index_goc.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\BrandA\\Index_goc.cshtml",
       "FileKind": "mvc"
@@ -16245,8 +16250,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\Range.cshtml",
+      "TargetPath": "Views\\Shop\\Range.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\Create.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Product\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\_TopBar.cshtml",
+      "TargetPath": "Views\\Shop\\_TopBar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16375,8 +16390,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\list.cshtml",
-      "TargetPath": "Views\\Shop\\list.cshtml",
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\List.cshtml",
+      "TargetPath": "Views\\Shop\\List.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -25,7 +25,7 @@ namespace comestic_csharp.Controllers
         public IActionResult Index(int? page)
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 6;
+            var pagesize = 9;
             var products = _context.Products;
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
@@ -41,14 +41,62 @@ namespace comestic_csharp.Controllers
                 }, "Value" , "Text"
 
             );
+
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
+
+                }, "Value" , "Text"
+
+            );
+
+
             return View(model);
         }
 
         public IActionResult List(int? page)
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 6;
+            var pagesize = 10;
             var products = _context.Products;
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
+
+                }, "Value" , "Text"
+
+            );
+
+            return View(model);
+        }
+
+        public IActionResult Range(int? page){
+
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products = _context.Products.Where(p => p.Price <= 200000 && p.Price >=0);
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
             ViewData["SortBy"] = new SelectList(
@@ -65,6 +113,71 @@ namespace comestic_csharp.Controllers
             return View(model);
         }
 
+        public IActionResult OrderByPriceA(int? page)
+        {
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 10;
+            var products = _context.Products.OrderBy(x => x.Price);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
+
+        public IActionResult OrderByPriceD(int? page)
+        {
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 10;
+            var products = _context.Products.OrderByDescending(x => x.Price);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
+
+        public IActionResult OrderByName(int? page)
+        {
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 10;
+            var products = _context.Products.OrderByDescending(x => x.Title);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
 
         public IActionResult SortBy(string sort){
 
@@ -87,73 +200,13 @@ namespace comestic_csharp.Controllers
 
             return Json( new { status = "success", redirectUrl = url});
         }
+        
+        public IActionResult Show(string show){
 
-        public IActionResult OrderByPriceA(int? page)
-        {
-            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 6;
-            var products = _context.Products.OrderBy(x => x.Price);
-            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
-            ViewBag.CurrentPage = pageNumber;
-
-            ViewData["SortBy"] = new SelectList(
-
-                 new List<SelectListItem>
-                {
-                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
-                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
-                    new SelectListItem { Text = "Name", Value = "name"},
-
-                }, "Value" , "Text"
-
-            );
-            return View(model);
+            var url = $"/Shop/Range";
+                        
+            return Json( new { status = "success", redirectUrl = url});
         }
-
-        public IActionResult OrderByPriceD(int? page)
-        {
-            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 6;
-            var products = _context.Products.OrderByDescending(x => x.Price);
-            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
-            ViewBag.CurrentPage = pageNumber;
-
-            ViewData["SortBy"] = new SelectList(
-
-                 new List<SelectListItem>
-                {
-                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
-                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
-                    new SelectListItem { Text = "Name", Value = "name"},
-
-                }, "Value" , "Text"
-
-            );
-            return View(model);
-        }
-
-        public IActionResult OrderByName(int? page)
-        {
-            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 6;
-            var products = _context.Products.OrderByDescending(x => x.Title);
-            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
-            ViewBag.CurrentPage = pageNumber;
-
-            ViewData["SortBy"] = new SelectList(
-
-                 new List<SelectListItem>
-                {
-                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
-                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
-                    new SelectListItem { Text = "name", Value = "name"},
-
-                }, "Value" , "Text"
-
-            );
-            return View(model);
-        }
-
         public async Task<IActionResult> Details(ulong? id)
         {
             if (id == null)

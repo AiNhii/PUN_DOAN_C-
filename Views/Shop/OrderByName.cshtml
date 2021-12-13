@@ -6,8 +6,6 @@
     Layout = "/Views/Shared/_MainLayout.cshtml";
 	int PageCurrent = ViewBag.CurrentPage;
 	int PageNext = PageCurrent +1;
-	ShopDbContext context = new ShopDbContext();
-    var cat = context.Categories.ToList();
 }
 
 <link rel="stylesheet" href="/shop/list-grid.css">
@@ -17,103 +15,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-4 col-12">
-						<div class="shop-sidebar">
-								<!-- Single Widget -->
-								<div class="single-widget category">
-									<h3 class="title">Categories</h3>
-									<ul class="categor-list">
-										@foreach (var item in cat)
-										{
-											<li><a href="#">@item.Title</a></li>
-										}
-									</ul>
-								</div>
-								<!--/ End Single Widget -->
-								<!-- Shop By Price -->
-								<div class="single-widget range">
-                                    <h3 class="title">Shop by Price</h3>
-                                    <div class="price-filter">
-                                        <div class="price-filter-inner">
-
-                                            <div id="slider-range" data-min="0" data-max="2000000"></div>
-                                            <div class="product_filter">
-                                                <button type="submit" class="filter_button">Filter</button>
-                                                <div class="label-input">
-                                                    <span>Range:</span>
-                                                    <input style="" type="text" id="amount" readonly/>
-                                                    <input type="hidden" name="price_range" id="price_range" value="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-									<!--/ End Shop By Price -->
-								<!-- Single Widget -->
-								<div class="single-widget recent-post">
-									<h3 class="title">Recent post</h3>
-									<!-- Single Post -->
-									<div class="single-post first">
-										<div class="image">
-											<img src="images/single-shop-img1.png" alt="#">
-										</div>
-										<div class="content">
-											<h5><a href="#">Girls Dress</a></h5>
-											<p class="price">$99.50</p>
-											<ul class="reviews">
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li class="yellow"><i class="ti-star"></i></li>
-												<li><i class="ti-star"></i></li>
-												<li><i class="ti-star"></i></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<!--/ End Single Widget -->
-								<!-- Single Widget -->
-								<div class="single-widget category">
-									<h3 class="title">Manufacturers</h3>
-									<ul class="categor-list">
-										<li><a href="#">Forever</a></li>
-										<li><a href="#">giordano</a></li>
-										<li><a href="#">abercrombie</a></li>
-										<li><a href="#">ecko united</a></li>
-										<li><a href="#">zara</a></li>
-									</ul>
-								</div>
-								<!--/ End Single Widget -->
-						</div>
+						@await Html.PartialAsync("_SideBar");
 					</div>
 					<div class="col-lg-9 col-md-8 col-12">
-						<div class="row">
-							<div class="col-12">
-								<!-- Shop Top -->
-								<div class="shop-top">
-									<div class="shop-shorter">
-										<div class="single-shorter">
-											<label>Show :</label>
-											<select>
-												<option selected="selected">09</option>
-												<option>15</option>
-												<option>25</option>
-												<option>30</option>
-											</select>
-										</div>
-										<div class="single-shorter">
-											<label>Sort By :</label>
-											<select asp-items="ViewBag.SortBy" id="sort">
-                                                <option>Choose</option>
-                                            </select>
-										</div>
-									</div>
-									<ul class="view-mode">
-										<li><a asp-action="Index" asp-controller="Shop"><i class="fa fa-th-large"></i></a></li>
-										<li class="active"><a href="shop-list.html"><i class="fa fa-th-list"></i></a></li>
-									</ul>
-								</div>
-								<!--/ End Shop Top -->
-							</div>
-						</div>
+						@await Html.PartialAsync("_TopBar");
 						<div class="row">
 								<!-- Start Single List -->
 								<div class="col-12">
@@ -141,13 +46,6 @@
 													
 													<span class="del-price">@item.Price</span>
 													<h6 class="card-title product-title">@item.Summary</h6>
-													
-													@* <h5 class="card-title product-title">Title</h5>
-                                            <div class="card-text product-price">
-												 <span class="del-price">100.100 vnd</span>
-                                                <span class="new-price">80.000 vnd</span>
-                                            </div>
-												</div>*@
 												 @if(User.Identity.IsAuthenticated){
                                                 <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                             }
@@ -206,6 +104,30 @@
                 	}
 				});
 			});
-		});
+
+			jQuery("#show").change(function(){
+
+				var show = jQuery(this).children(":selected").attr("value");
+				$("#show option").removeAttr("selected");
+				$("#show > [value =" + show + "]").attr("selected","true");
+
+				$.ajax({
+
+					type:"GET",
+					url: "@Url.Action("Show")",
+					dataType: "json",
+					data:{
+						show : show
+					},
+					success: function (result) {
+						if(result.status == "success")
+                          window.location.href = result.redirectUrl;
+                    },
+					error: function (result) {
+                    	alert("error");
+                	}
+				});
+			});			
+		});		
 	</script>
 }
