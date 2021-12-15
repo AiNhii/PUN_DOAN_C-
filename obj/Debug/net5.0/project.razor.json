@@ -16115,11 +16115,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\ShoppingCart\\Index.cshtml",
-      "TargetPath": "Views\\ShoppingCart\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Productattribute\\Create.cshtml",
       "TargetPath": "Views\\Productattribute\\Create.cshtml",
       "FileKind": "mvc"

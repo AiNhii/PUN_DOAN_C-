@@ -20,6 +20,9 @@ namespace comestic_csharp.Controllers
 
         public IActionResult Index()
         {
+            HttpContext.Session.Remove("save");
+            HttpContext.Session.Remove("final");
+            HttpContext.Session.Remove("couponId");
             return View();
         }
 

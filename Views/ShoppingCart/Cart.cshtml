@@ -36,6 +36,7 @@
                     {
                         var thanhtien = cartitem.Quantity * cartitem.Product.Price;
                         total += thanhtien;
+						
 						stt++;
 
 
@@ -81,10 +82,10 @@
 							<div class="col-lg-8 col-md-5 col-12">
 								<div class="left">
 									<div class="coupon">
-										<form action="#" target="_blank">
-											<input name="Coupon" placeholder="Enter Your Coupon">
-											<button class="btn">Apply</button>
-										</form>
+										@* <form asp-action="ApplyCoupon" asp-controller="ShoppingCart"> *@
+											<input id="coupon" name="coupon" placeholder="Enter Your Coupon">
+											<a class="btn" id="apply">Apply</a>
+										@* </form> *@
 									</div>
 									<div class="checkbox">
 										<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10$)</label>
@@ -96,8 +97,8 @@
 									<ul>
 										<li>Cart Subtotal<span>@(total.ToString("n0"))</span></li>
 										<li>Shipping<span>Free</span></li>
-										<li>You Save<span>$20.00</span></li>
-										<li class="last">You Pay<span>@(total.ToString("n0"))</span></li>
+										<li>You Save<span id="save">$0</span></li>
+										<li class="last">You Pay<span id="total">@(total.ToString("n0"))</span></li>
 									</ul>
 									<div class="button5">
 										<a asp-controller="ShoppingCart" asp-action="Checkout" class="btn">Checkout</a>
@@ -113,9 +114,14 @@
 		</div>
 	</div>
 	<!--/ End Shopping Cart -->
+    }
+    else {
+    <p class="alert alert-danger">Giỏ hàng trống</p>
+    }
+</div>
 
-
-      @section Scripts {
+<partial name="/Views/Shared/_ScriptsLayout.cshtml"/>
+@section Scripts{
         <script>
           $(document).ready(function () {
               $(".updatecartitem").click(function (event) {
@@ -134,15 +140,26 @@
                       }
                   });
               });
+
+
+			  $("#apply").click(function (event) {
+                  event.preventDefault();
+                  var coupon = $("#coupon").val();
+                  $.ajax({
+                      type: "POST",
+                      url:"@Url.Action("ApplyCoupon")",
+                      data: {
+                          coupon: coupon
+                      },
+                      success: function (result) {
+						  	alert("You save "+result.save);
+						  	$("#total").text(result.total);
+						  	$("#save").text(result.save);
+
+                      }
+                  });
+              });
           });
         </script>
-      	}
-    }
-    else {
-    <p class="alert alert-danger">Giỏ hàng trống</p>
-    }
-</div>
-
-
-<partial name="/Views/Shared/_ScriptsLayout.cshtml"/>
+}
     

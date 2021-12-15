@@ -618,7 +618,6 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_TabProd
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_HotProduct.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shared\_ListProduct.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Pagination.EntityFrameworkCore.Extensions.dll
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\ShoppingCart\Index.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
 N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll
 N:\Framework\WEBAPP\comestic_csharp\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
