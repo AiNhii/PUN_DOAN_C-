@@ -41,12 +41,31 @@
 										<div class="col-lg-8 col-md-6 col-12">
 											<div class="list-content">
 												<div class="product-content">
-													<div class="product-price">
+													@* <div class="product-price">
 														<h5 class="card-title product-title">@item.Title</h5>
                                                         <span class="new-price">80.000 vnd</span>
-													</div>
+													</div> *@
+													@if (@item.CouponId == 1)
+													{
+														<div class="product-price">
+														<h5 class="card-title product-title">@item.Title</h5>
+                                                        @* <span class="new-price">@item.Price</span> *@
+														</div>
+														<span class="price">@item.Price</span>
+													}
+													else{
+															ShopDbContext context = new ShopDbContext();
+															var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+															var delPrice = @item.Price /(1- giamGia.Value/100);
+
+															<div class="product-price">
+																<h5 class="card-title product-title">@item.Title</h5>
+																<span class="new-price">@item.Price</span>
+															</div>
+															<span class="del-price">@delPrice</span>
+													}
 													
-													<span class="del-price">@item.Price</span>
+													@* <span class="del-price">@item.Price</span> *@
 													<h6 class="card-title product-title">@item.Summary</h6>
 												 @if(User.Identity.IsAuthenticated){
                                                 <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>

@@ -15860,11 +15860,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\_SideBar.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\_SideBar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml",
       "FileKind": "mvc"
@@ -16572,11 +16567,6 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\OrderByPriceD.cshtml",
       "TargetPath": "Views\\Shop\\OrderByPriceD.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Product\\_Layout.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Product\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {

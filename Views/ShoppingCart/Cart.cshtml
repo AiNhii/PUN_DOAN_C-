@@ -1,3 +1,4 @@
+@using comestic_csharp.Areas.Identity.Data
 @{
   Layout = "/Views/Shared/_MainLayout.cshtml";
 }
@@ -34,12 +35,9 @@
 						<tbody>
                         @foreach (var cartitem in Model)
                     {
-                        var thanhtien = cartitem.Quantity * cartitem.Product.Price;
-                        total += thanhtien;
-						
-						stt++;
-
-
+							var thanhtien = cartitem.Quantity * cartitem.Product.Price;
+                        	total += thanhtien;
+							stt++;     
 							<tr>
 								<td class="image" data-title="No"><img src="/storage/@cartitem.Product.Photo1" alt="#"></td>
 								<td class="product-des" data-title="Description">

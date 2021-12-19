@@ -93,10 +93,56 @@ namespace comestic_csharp.Controllers
         [Route("create")]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        // public async Task<IActionResult> Create([Bind("Id,Title,Slug,Summary,Description,Photo1,Photo2,Photo3,Photo4,Stock,Condition,Status,Price,CouponId,CatId,ChildCatId,BrandId")] Product product)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         _context.Add(product);
+        //         await _context.SaveChangesAsync();
+        //         return RedirectToAction(nameof(Index));
+        //     }
+
+        //     ViewData["Status"] = new SelectList(
+
+        //          new List<SelectListItem>
+        //         {
+        //             new SelectListItem { Text = "active", Value = "active"},
+        //             new SelectListItem { Text = "inactive", Value = "inactive"},
+        //         }, "Value" , "Text",product.Status
+
+        //     );
+
+        //     ViewData["Condition"] = new SelectList(
+
+        //          new List<SelectListItem>
+        //         {
+        //             new SelectListItem { Text = "default", Value = "default"},
+        //             new SelectListItem { Text = "hot", Value = "hot"},
+        //             new SelectListItem { Text = "new", Value = "new"},
+
+        //         }, "Value" , "Text",product.Condition
+
+        //     );
+
+
+
+        //     ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Slug", product.BrandId);
+        //     ViewData["CatId"] = new SelectList(_context.Categories, "Id", "Slug", product.CatId);
+        //     ViewData["ChildCatId"] = new SelectList(_context.Categories, "Id", "Slug", product.ChildCatId);
+        //     ViewData["CouponId"] = new SelectList(_context.Coupons, "Id", "Code", product.CouponId);
+        //     return View(product);
+        // }
+
+
         public async Task<IActionResult> Create([Bind("Id,Title,Slug,Summary,Description,Photo1,Photo2,Photo3,Photo4,Stock,Condition,Status,Price,CouponId,CatId,ChildCatId,BrandId")] Product product)
         {
             if (ModelState.IsValid)
             {
+                if(product.CouponId != 1){
+                    var giamGia = _context.Coupons.SingleOrDefault(p => p.Id == product.CouponId);
+                    var newPrice = product.Price * ( 1 - giamGia.Value /100);
+                    product.Price = newPrice;
+                }
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -194,6 +240,12 @@ namespace comestic_csharp.Controllers
             {
                 try
                 {
+                    if(product.CouponId != 1){
+                        var giamGia = _context.Coupons.SingleOrDefault(p => p.Id == product.CouponId);
+                        var newPrice = product.Price * ( 1 - giamGia.Value /100);
+                        product.Price = newPrice;
+                    }
+
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }

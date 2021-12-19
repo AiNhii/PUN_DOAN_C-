@@ -63,6 +63,32 @@ namespace comestic_csharp.Controllers
         }
 
             // Lưu Cart (Danh sách CartItem) vào session
+        // public IActionResult AddToCart (ulong id) {        
+
+        //     var product = _context.Products
+        //         .Where (p => p.Id == id)
+        //         .FirstOrDefault ();
+        //     if (product == null)
+        //         return NotFound ("Không có sản phẩm");
+
+        //     // Xử lý đưa vào Cart ...
+        //     var cart = GetCartItems ();
+        //     var cartitem = cart.Find (p => p.Product.Id == id);
+        //     if (cartitem != null) {
+        //         // Đã tồn tại, tăng thêm 1
+        //         cartitem.Quantity++;
+        //     } else {
+        //         //  Thêm mới
+        //         cart.Add (new CartItem () { Quantity = 1, Product = product });
+        //     }
+
+        //     // Lưu cart vào Session
+        //     SaveCartSession (cart);
+        //     // Chuyển đến trang hiện thị Cart
+        //     return RedirectToAction ("Cart");
+        // }
+
+
         public IActionResult AddToCart (ulong id) {        
 
             var product = _context.Products
