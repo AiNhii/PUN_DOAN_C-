@@ -9,6 +9,7 @@ using comestic_csharp.Models;
 using Microsoft.AspNetCore.Authorization;
 using comestic_csharp.Areas.Identity.Data;
 using PagedList.Core;
+using Microsoft.AspNetCore.Http;
 
 namespace comestic_csharp.Controllers
 {
@@ -53,8 +54,6 @@ namespace comestic_csharp.Controllers
                 }, "Value" , "Text"
 
             );
-
-
             return View(model);
         }
 
@@ -286,6 +285,41 @@ namespace comestic_csharp.Controllers
             return View();
         }
 
+        public async Task<IActionResult> ListMakeUp(ulong? id){
+            var ShopDbContext = _context.Products.Where(p => p.CatId == id);
+            return View(await ShopDbContext.ToListAsync());
+        }
+
+        public IActionResult SkinCare()
+        {
+            return View();
+        }
+
+        public IActionResult BestSeller()
+        {
+            return View();
+        }
+
+        public IActionResult Profile()
+        {
+            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            return View(profile);
+        }
+
+        public IActionResult Order()
+        {
+            var id = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            var order = _context.Orders.Where(p => p.UserId == id.Id);
+            return View(order);
+        }
+
+        public IActionResult OrderDetails(ulong id)
+        {
+            var orderdetails = _context.Orderdetail.Where(p => p.OrderId == id);
+            var order = _context.Orders.First(p => p.Id == id);
+            ViewBag.Order = order;
+            return View(orderdetails);
+        }
 
     }
 }
