@@ -15985,6 +15985,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\_ProfileBar.cshtml",
+      "TargetPath": "Views\\Shop\\_ProfileBar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Category\\Delete.cshtml",
       "TargetPath": "Views\\Category\\Delete.cshtml",
       "FileKind": "mvc"
@@ -16172,6 +16177,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Setting\\Edit.cshtml",
       "TargetPath": "Views\\Setting\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\ChangePassword.cshtml",
+      "TargetPath": "Views\\Shop\\ChangePassword.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16412,6 +16422,11 @@
     {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Areas\\Admin\\Views\\Coupon\\Index.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Coupon\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\EditProfile.cshtml",
+      "TargetPath": "Views\\Shop\\EditProfile.cshtml",
       "FileKind": "mvc"
     },
     {

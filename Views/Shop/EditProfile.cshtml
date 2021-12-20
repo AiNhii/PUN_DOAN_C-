@@ -1,0 +1,45 @@
+@model comestic_csharp.Areas.Identity.Data.ShopUser
+@{
+    Layout= "/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="pcoded-content">
+    <div class="row">
+        @* <div class="col col-3">
+            <ul class="categor-list">
+					<li><a asp-action="Profile">MY PROFILE</a></li>
+                    <li>
+                        <ul>
+                            <li><a asp-action="Profile">MY PROFILE</a></li>
+                            <li><a asp-action="ChangePassword">Change Password</a></li>
+                        </ul>
+                    </li>
+                    <li><a asp-action="Order">MY ORDER</a></li>				
+			</ul>
+        </div> *@
+        @await Html.PartialAsync("_ProfileBar")
+        <div class="col col-9">
+                <div class="card">
+                    <h3 class="card-header">Details</h3>
+                       <form asp-action="UpdateProfile">
+                            @* <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+                            <input type="hidden" asp-for="Id" />
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label asp-for="Fullname" class="control-label"></label>
+                                    <input asp-for="Fullname" class="form-control" />
+                                    <span asp-validation-for="Fullname" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <input type="submit" value="UpdateProfile" class="btn btn-primary" />
+                                <a asp-action="Index" class="btn btn-primary">Back to List</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</div>
+ 

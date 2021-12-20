@@ -10,17 +10,23 @@ using Microsoft.AspNetCore.Authorization;
 using comestic_csharp.Areas.Identity.Data;
 using PagedList.Core;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.AspNetCore.Identity;
 namespace comestic_csharp.Controllers
 {
 
     public class ShopController : Controller
     {
         private readonly ShopDbContext _context;
+        private readonly UserManager<ShopUser> _userManager;
+        private readonly SignInManager<ShopUser> _signInManager;
 
-        public ShopController(ShopDbContext context)
+        public ShopController(ShopDbContext context, UserManager<ShopUser> userManager,
+            SignInManager<ShopUser> signInManager)
         {
+            _userManager = userManager;
+            _signInManager = signInManager;
             _context = context;
+
         }
 
         public IActionResult Index(int? page)
@@ -306,6 +312,20 @@ namespace comestic_csharp.Controllers
             return View(profile);
         }
 
+        public IActionResult EditProfile(string id)
+        {
+            return View();
+        }
+
+        public IActionResult UpdateProfile(string id, string Fullname)
+        {
+            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            profile.Fullname = Fullname;
+            _context.Update(profile);
+            _context.SaveChanges();
+            return RedirectToAction("Profile");
+        }
+
         public IActionResult Order()
         {
             var id = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
@@ -319,6 +339,19 @@ namespace comestic_csharp.Controllers
             var order = _context.Orders.First(p => p.Id == id);
             ViewBag.Order = order;
             return View(orderdetails);
+        }
+
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> UpdatePassword(string cp, string np)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            var changePasswordResult = await _userManager.ChangePasswordAsync(user, cp, np);
+            await _signInManager.RefreshSignInAsync(user);
+            return RedirectToAction("Index","Home");
         }
 
     }
