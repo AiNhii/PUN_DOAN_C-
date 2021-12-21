@@ -65,9 +65,11 @@ div.title-wrap {
     text-align: center;
     margin-top: 5px;
 }
-.fa{
+
+.fa {
     margin-right: 5px;
 }
+
 .h3 {
     color: #2c2d3f !important;
 }
@@ -504,11 +506,12 @@ hr.solid {
 .main-sidebar .side-tags .tag li a {
     background: #fff;
     color: #333;
-    padding: 8px 4px;
+    padding: 8px 8px;
     text-transform: capitalize;
-    border-radius: 0;
-    font-size: 18px;
+    border-radius: 6px !important;
+    font-size: 14px;
     background: #f6f7fb;
+    border: 1px solid #457a6a;
 }
 
 .main-sidebar .side-tags .tag a:hover {
@@ -582,7 +585,7 @@ hr.solid {
 
 .blog-single {
     background: #fff;
-    padding: 70px 0 100px;
+    padding: 0px 0 100px;
 }
 
 .blog-single .blog-single-main {
@@ -921,3 +924,15 @@ hr.solid {
 /*======================================
    End Shop Blog CSS
 ========================================*/
+
+.title-page {
+    background-image: url('/storage/blog.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.breadcrumbs {
+    padding: 17px 0px;
+    margin-bottom: 300px !important;
+    padding-bottom: 0px !important;
+}

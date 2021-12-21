@@ -68,7 +68,7 @@
                     <div class="nav-main">
                         <!-- Tab Nav -->
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="lip" role="tab">LIP</a></li>
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#lip" role="tab">LIP</a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#faces" role="tab">FACES</a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#eyes" role="tab">EYES</a></li>
                             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#skincare" role="tab">SKINCARE</a></li>
@@ -90,10 +90,19 @@
                                             <div class="card-body">
                                                 <h5 class="card-title product-title">@pro[i].Title</h5>
                                                 <div class="card-text product-price">
-                                                    <span class="del-price">@pro[i].Price</span>
-                                                    <span class="new-price">80.000 vnd</span>
+                                                    @if (@pro[i].CouponId == 1)
+                                                    {
+                                                        <span class="price">@pro[i].Price</span>
+                                                    }
+                                                    else{
+                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
+                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
+
+                                                            <span class="del-price">@delPrice</span>
+                                                            <span class="new-price">@pro[i].Price</span>
+                                                    }
                                                 </div>
-                                              @if(User.Identity.IsAuthenticated){
+                                                @if(User.Identity.IsAuthenticated){
                                                     <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
                                                 }
                                                 else{
@@ -123,10 +132,24 @@
                                             <div class="card-body">
                                                 <h5 class="card-title product-title">@pro[i].Title</h5>
                                                 <div class="card-text product-price">
-                                                    <span class="del-price">@pro[i].Price</span>
-                                                    <span class="new-price">80.000 vnd</span>
+                                                    @if (@pro[i].CouponId == 1)
+                                                    {
+                                                        <span class="price">@pro[i].Price</span>
+                                                    }
+                                                    else{
+                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
+                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
+
+                                                            <span class="del-price">@delPrice</span>
+                                                            <span class="new-price">@pro[i].Price</span>
+                                                    }
                                                 </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                                @if(User.Identity.IsAuthenticated){
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                }
+                                                else{
+                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
+                                                }
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                             </div>
@@ -151,10 +174,24 @@
                                             <div class="card-body">
                                                 <h5 class="card-title product-title">@pro[i].Title</h5>
                                                 <div class="card-text product-price">
-                                                    <span class="del-price">@pro[i].Price</span>
-                                                    <span class="new-price">80.000 vnd</span>
+                                                    @if (@pro[i].CouponId == 1)
+                                                    {
+                                                        <span class="price">@pro[i].Price</span>
+                                                    }
+                                                    else{
+                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
+                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
+
+                                                            <span class="del-price">@delPrice</span>
+                                                            <span class="new-price">@pro[i].Price</span>
+                                                    }
                                                 </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                                @if(User.Identity.IsAuthenticated){
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                }
+                                                else{
+                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
+                                                }
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
                                             </div>
@@ -179,10 +216,24 @@
                                             <div class="card-body">
                                                 <h5 class="card-title product-title">@pro[i].Title</h5>
                                                 <div class="card-text product-price">
-                                                    <span class="del-price">@pro[i].Price</span>
-                                                    <span class="new-price">80.000 vnd</span>
+                                                    @if (@pro[i].CouponId == 1)
+                                                    {
+                                                        <span class="price">@pro[i].Price</span>
+                                                    }
+                                                    else{
+                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
+                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
+
+                                                            <span class="del-price">@delPrice</span>
+                                                            <span class="new-price">@pro[i].Price</span>
+                                                    }
                                                 </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                                @if(User.Identity.IsAuthenticated){
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                }
+                                                else{
+                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
+                                                }
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
                                             </div>
@@ -201,10 +252,24 @@
                                             <div class="card-body">
                                                 <h5 class="card-title product-title">@pro[i].Title</h5>
                                                 <div class="card-text product-price">
-                                                    <span class="del-price">@pro[i].Price</span>
-                                                    <span class="new-price">80.000 vnd</span>
+                                                    @if (@pro[i].CouponId == 1)
+                                                    {
+                                                        <span class="price">@pro[i].Price</span>
+                                                    }
+                                                    else{
+                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
+                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
+
+                                                            <span class="del-price">@delPrice</span>
+                                                            <span class="new-price">@pro[i].Price</span>
+                                                    }
                                                 </div>
-                                                <a class="btn btn-success btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                                @if(User.Identity.IsAuthenticated){
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                }
+                                                else{
+                                                    <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
+                                                }
                                                 <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
                                             </div>

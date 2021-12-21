@@ -3,7 +3,7 @@
     <ul class="dropdown">
         @foreach (var item in Model)
         {
-            <li><a class="dropdown-item" asp-action="ListSP" asp-controller="Category" asp-route-id="@item.Id">@item.Title</a></li>
+            <li><a class="dropdown-item" asp-action="ListMakeUp" asp-controller="Shop" asp-route-id="@item.Id">@item.Title</a></li>
         }
     </ul>
 </li>

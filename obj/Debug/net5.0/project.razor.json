@@ -15755,6 +15755,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\OrderByName.cshtml",
+      "TargetPath": "Views\\Shop\\OrderByName.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\Order\\Delete.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Order\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15767,6 +15772,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Cart\\Edit.cshtml",
       "TargetPath": "Views\\Cart\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\Range3.cshtml",
+      "TargetPath": "Views\\Shop\\Range3.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15815,6 +15825,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\Range.cshtml",
+      "TargetPath": "Views\\Shop\\Range.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_MainLayout.cshtml",
       "TargetPath": "Views\\Shared\\_MainLayout.cshtml",
       "FileKind": "mvc"
@@ -15822,6 +15837,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Cart.cshtml",
       "TargetPath": "Views\\Shared\\_Cart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\OrderDetails.cshtml",
+      "TargetPath": "Views\\Shop\\OrderDetails.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15975,6 +15995,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\Order.cshtml",
+      "TargetPath": "Views\\Shop\\Order.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Post\\Delete.cshtml",
       "TargetPath": "Views\\Post\\Delete.cshtml",
       "FileKind": "mvc"
@@ -16100,6 +16125,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\ListMakeUp.cshtml",
+      "TargetPath": "Views\\Shop\\ListMakeUp.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Post\\Create.cshtml",
       "TargetPath": "Views\\Post\\Create.cshtml",
       "FileKind": "mvc"
@@ -16122,6 +16152,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Setting\\Delete.cshtml",
       "TargetPath": "Views\\Setting\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\OrderByPriceD.cshtml",
+      "TargetPath": "Views\\Shop\\OrderByPriceD.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16160,6 +16195,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\SkinCare.cshtml",
+      "TargetPath": "Views\\Shop\\SkinCare.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shared\\_Category.cshtml",
       "TargetPath": "Views\\Shared\\_Category.cshtml",
       "FileKind": "mvc"
@@ -16167,6 +16207,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productreview\\Create.cshtml",
       "TargetPath": "Views\\Productreview\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\Range2.cshtml",
+      "TargetPath": "Views\\Shop\\Range2.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16192,6 +16237,16 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\OrderByPriceA.cshtml",
+      "TargetPath": "Views\\Shop\\OrderByPriceA.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\_SideBar.cshtml",
+      "TargetPath": "Views\\Shop\\_SideBar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16435,6 +16490,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\_TopBar.cshtml",
+      "TargetPath": "Views\\Shop\\_TopBar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productreview\\Details.cshtml",
       "TargetPath": "Views\\Productreview\\Details.cshtml",
       "FileKind": "mvc"
@@ -16537,6 +16597,16 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Notification\\Delete.cshtml",
       "TargetPath": "Views\\Notification\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\BestSeller.cshtml",
+      "TargetPath": "Views\\Shop\\BestSeller.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\Profile.cshtml",
+      "TargetPath": "Views\\Shop\\Profile.cshtml",
       "FileKind": "mvc"
     },
     {

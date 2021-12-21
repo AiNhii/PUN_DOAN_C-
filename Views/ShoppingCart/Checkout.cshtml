@@ -6,6 +6,7 @@
 }
 
 @model List<comestic_csharp.Models.CartItem>
+@using Microsoft.AspNetCore.Http;
 
 <link rel="stylesheet" href="~/shop/checkout.css">
 
@@ -100,9 +101,18 @@
 								<div class="content">
 									<ul>
 										<li class="last" name="SubTotal">Sub Total<span>@(total.ToString("n0"))</span></li>
-										<li>(+) Shipping<span>$10.00</span></li>
-										<li class="last" name="Total" style="font-weight: bold;">
-											Total<span>@(total.ToString("n0"))</span></li>
+										@if(@Context.Session.GetInt32("save") != null){
+											<li>(-)Save<span>@Context.Session.GetInt32("save")</span></li>
+											<li class="last" name="Total" style="font-weight: bold;">
+											Total<span>@Context.Session.GetInt32("final")</span>
+										</li>
+										}
+										else{
+											<li>(-)Save<span>0</span></li>
+											<li class="last" name="Total" style="font-weight: bold;">
+											Total<span>@(total.ToString("n0"))</span>
+										</li>
+										}
 									</ul>
 								</div>
 							</div>

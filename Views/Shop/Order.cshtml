@@ -1,0 +1,63 @@
+@model IEnumerable<comestic_csharp.Models.Order>
+@{
+    Layout= "/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="pcoded-content">
+    <div class="row">
+        <div class="col col-3">
+            <ul class="categor-list">
+					<li><a asp-action="Profile">MY PROFILE</a></li>	
+                    <li><a asp-action="Order">MY ORDER</a></li>		
+			</ul>
+        </div>
+        <div class="col col-9">
+            <div class="card">
+                <h3 class="card-header">List Order</h3>
+                <div class="card-body">
+                        <table class="table" id="example1">
+                            <thead>
+                                <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.OrderNumber)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.CreatedAt)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Status)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.TotalAmount)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.OrderNumber)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.CreatedAt)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Status)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TotalAmount)
+                                            </td>
+                                            <th>
+                                                <a asp-action="OrderDetails" asp-route-id="@item.Id" class="btn  btn-success btn-sm">Details</a>
+                                            </th>
+                                        </tr>
+                                    }
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

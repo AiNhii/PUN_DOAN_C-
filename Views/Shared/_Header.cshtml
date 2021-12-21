@@ -1,60 +1,137 @@
 @using comestic_csharp.Areas.Identity.Data
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject IHttpContextAccessor HttpContextAccessor
 
-        <a class="navbar-brand" href="/"><img src="~/main/asset/img/logo.png" alt="" width="25%"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+@{
+    ShopDbContext  _shopContext = new ShopDbContext();
+}	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="~/shop/css/bootstrap.css">
+    <link rel="stylesheet" href="~/shop/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="~/shop/css/font-awesome.css">
+    <link rel="stylesheet" href="~/shop/css/themify-icons.css">
+	<link rel="stylesheet" href="~/shop/css/niceselect.css">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BEST SELLER</a>
-                </li>
-                @* <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown">MAKE UP</a>
-                    <div class="dropdown-content">
-                        <a class="dropdown-item" href="#">Face</a>
-                        <a class="dropdown-item" href="#">Eye</a>
-                        <a class="dropdown-item" href="#">Lip</a>
-                    </div>
-                </li> *@
-                @{
-                    ShopDbContext  _shopContext = new ShopDbContext();
-                }
-                @await Html.PartialAsync("_Category",_shopContext.Categories.ToList())
+   
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="~/shop/css/reset.css">
+	<link rel="stylesheet" href="~/shop/header.css">
+    <link rel="stylesheet" href="~/shop/css/responsive.css"> 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SKINCARE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-controller="Shop" asp-action="Index">ALL</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown">EXPLORE
-	                 </a>
-                    <div class="dropdown-content">
-                        <a class="dropdown-item" asp-controller="Shop" asp-action="About">About</a>
-                        <a class="dropdown-item" asp-controller="Shop" asp-action="Blog">Blog</a>
-                    </div>
-                </li>
-               
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <div class="others">
-                    @* <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-user" aria-hidden="true"></i></li> *@
-                    <partial name="_LoginPartial.cshtml">
-            </div>
-        </div>
-    </nav>
 
-    <script src="~/main/asset/js/jquery-3.3.1.min.js"></script>
-    <script src="~/main/bootstrap/js/bootstrap.min.js"></script>  
+	<link rel="stylesheet" href="~/shop/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/shop/css/jquery-ui.css">
+	
+    	<!-- Header -->
+		<header class="header shop">
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-12 col-12">
+							<!-- Top Left -->
+							<div class="top-left">
+								<ul class="list-main">
+									<li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
+									<li><i class="ti-email"></i> support@shophub.com</li>
+								</ul>
+							</div>
+							<!--/ End Top Left -->
+						</div>
+						<div class="col-lg-7 col-md-12 col-12">
+							<!-- Top Right -->
+							<div class="right-content">
+								<ul class="list-main">
+									<li><i class="ti-location-pin"></i> Store location</li>
+									<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
+									<partial name="_Login.cshtml">
+								</ul>
+							</div>
+							<!-- End Top Right -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<div class="middle-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-12">
+							<!-- Logo -->
+							<div class="logo">
+								<a><img src="/header.svg" /></a>
+							</div>
+							<!--/ End Search Form -->
+							<div class="mobile-nav"></div>
+						</div>
+						<div class="col-lg-8 col-md-7 col-12">
+							<div class="search-bar-top">
+								<div class="search-bar">
+									<form>
+										<input name="search" placeholder="Search Products Here....." type="search">
+										<button class="btnn"><i class="ti-search"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-12">
+							<div class="right-bar">
+								<!-- Search Form -->
+								<div class="sinlge-bar">
+									<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="sinlge-bar">
+									<a asp-action="Profile" asp-controller="Shop" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="sinlge-bar shopping">
+									@await Html.PartialAsync("_Cart.cshtml")
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="cat-nav-head">
+						<div class="row">
+							<div class="col-12">
+								<div class="menu-area">
+									<!-- Main Menu -->
+									<nav class="navbar navbar-expand-lg">
+										<div class="navbar-collapse">	
+											<div class="nav-inner">	
+												<ul class="nav main-menu menu navbar-nav">
+													<li><a href="/">Home</a></li>
+													<li><a asp-controller="Shop" asp-action="Index">Product</a></li>												
+													<li><a asp-controller="Shop" asp-action="BestSeller">Best Seller</a></li>
+                                                     @await Html.PartialAsync("_Makeup",_shopContext.Categories.ToList())
+													<li><a asp-controller="Shop" asp-action="SkinCare">Skin Care</a></li>									
+													<li><a asp-controller="Shop" asp-action="Blog">Blog</a></li>
+													<li><a asp-controller="Shop" asp-action="About">About Us</a></li>
+												</ul>
+											</div>
+										</div>
+									</nav>
+									<!--/ End Main Menu -->	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!--/ End Header -->
+ 
+	<!-- Jquery -->
+   <partial name="_ScriptsLayout.cshtml"/>
+
+   <script src="~/main/jquery-3.3.1.min.js"></script>
+    <script src="~/main/bootstrap.min.js"></script>  
     <script>
         $(document).ready(function() {
             $(".wish-icon i").click(function() {
@@ -62,3 +139,5 @@
             });
         });
     </script>
+
+    

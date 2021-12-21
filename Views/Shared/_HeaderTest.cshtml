@@ -23,15 +23,8 @@
 
 	<link rel="stylesheet" href="~/shop/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="~/shop/css/jquery-ui.css">
-	@* <link rel="stylesheet" href="~/_test/style.css"> *@
-    
 	
-
-
-
-
-		
-		<!-- Header -->
+    	<!-- Header -->
 		<header class="header shop">
 			<!-- Topbar -->
 			<div class="topbar">
@@ -90,41 +83,10 @@
 									<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 								</div>
 								<div class="sinlge-bar">
-									<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+									<a asp-action="Profile" asp-controller="Shop" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 								</div>
 								<div class="sinlge-bar shopping">
-
 									@await Html.PartialAsync("_Cart.cshtml")
-									@* <a asp-action="Index" asp-controller="ShoppingCart" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a> *@
-									<!-- Shopping Item -->
-									@* <div class="shopping-item">
-										<div class="dropdown-cart-header">
-											<span>2 Items</span>
-											<a asp-action="Cart" asp-controller="Shop">View Cart</a>
-										</div>
-										<ul class="shopping-list">
-											<li>
-												<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-												<h4><a href="#">Woman Ring</a></h4>
-												<p class="quantity">1x - <span class="amount">$99.00</span></p>
-											</li>
-											<li>
-												<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-												<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-												<h4><a href="#">Woman Necklace</a></h4>
-												<p class="quantity">1x - <span class="amount">$35.00</span></p>
-											</li>
-										</ul>
-										<div class="bottom">
-											<div class="total">
-												<span>Total</span>
-												<span class="total-amount">$134.00</span>
-											</div>
-											<a href="checkout.html" class="btn animate">Checkout</a>
-										</div>
-									</div>  *@
-									<!--/ End Shopping Item -->
 								</div>
 							</div>
 						</div>
@@ -145,17 +107,10 @@
 												<ul class="nav main-menu menu navbar-nav">
 													<li><a href="/">Home</a></li>
 													<li><a asp-controller="Shop" asp-action="Index">Product</a></li>												
-													<li><a href="#">Best Seller</a></li>
-													@* <li><a href="#">Make up<i class="ti-angle-down"></i><span class="new">New</span></a>
-														<ul class="dropdown">
-															<li><a href="cart.html">Cart</a></li>
-															<li><a href="checkout.html">Checkout</a></li>
-														</ul>
-													</li> *@
+													<li><a asp-controller="Shop" asp-action="BestSeller">Best Seller</a></li>
                                                      @await Html.PartialAsync("_Makeup",_shopContext.Categories.ToList())
-													<li><a href="#">Skin Care</a></li>									
-													<li><a asp-controller="Shop" asp-action="Blog">Blog</a>
-													</li>
+													<li><a asp-controller="Shop" asp-action="SkinCare">Skin Care</a></li>									
+													<li><a asp-controller="Shop" asp-action="Blog">Blog</a></li>
 													<li><a asp-controller="Shop" asp-action="About">About Us</a></li>
 												</ul>
 											</div>

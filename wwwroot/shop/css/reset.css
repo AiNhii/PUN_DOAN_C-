@@ -765,8 +765,8 @@ input[type="color"],
 textarea {
     color: #666;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 3px;
+    border-radius: 6px !important;
+    padding: 7px;
 }
 
 input[type="text"]:focus,
