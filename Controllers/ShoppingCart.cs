@@ -254,7 +254,6 @@ namespace comestic_csharp.Controllers
                              _orderDetail.Total =  item.Product.Price * item.Quantity;
                              _context.Add(_orderDetail);
                         }
-                         
                          _context.SaveChanges();
 
                 HttpContext.Session.Remove("save");

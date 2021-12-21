@@ -296,14 +296,24 @@ namespace comestic_csharp.Controllers
             return View(await ShopDbContext.ToListAsync());
         }
 
-        public IActionResult SkinCare()
+        public IActionResult SkinCare(int? page)
         {
-            return View();
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products = _context.Products;
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            return View(model);
         }
 
-        public IActionResult BestSeller()
+        public IActionResult BestSeller(int? page)
         {
-            return View();
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products = _context.Products;
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            return View(model);
         }
 
         public IActionResult Profile()
