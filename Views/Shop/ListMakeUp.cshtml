@@ -134,8 +134,18 @@
                                 <div class="card-body">
                                     <h5 class="card-title product-title">@item.Title</h5>
                                     <div class="card-text product-price">
-                                        <span class="del-price">@item.Price</span>
-                                        <span class="new-price">80.000 vnd</span>
+                                        @if (@item.CouponId == 1)
+                                            {
+                                                <span class="price">@item.Price</span>
+                                            }
+                                            else{
+													ShopDbContext context = new ShopDbContext();
+                                                    var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                    var delPrice = @item.Price /(1- giamGia.Value/100);
+
+                                                    <span class="del-price">@delPrice</span>
+                                                    <span class="new-price">@item.Price</span>
+                                            }
                                     </div>
                                     <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                     <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>

@@ -10,17 +10,23 @@ using Microsoft.AspNetCore.Authorization;
 using comestic_csharp.Areas.Identity.Data;
 using PagedList.Core;
 using Microsoft.AspNetCore.Http;
-
+using Microsoft.AspNetCore.Identity;
 namespace comestic_csharp.Controllers
 {
 
     public class ShopController : Controller
     {
         private readonly ShopDbContext _context;
+        private readonly UserManager<ShopUser> _userManager;
+        private readonly SignInManager<ShopUser> _signInManager;
 
-        public ShopController(ShopDbContext context)
+        public ShopController(ShopDbContext context, UserManager<ShopUser> userManager,
+            SignInManager<ShopUser> signInManager)
         {
+            _userManager = userManager;
+            _signInManager = signInManager;
             _context = context;
+
         }
 
         public IActionResult Index(int? page)
@@ -123,7 +129,6 @@ namespace comestic_csharp.Controllers
             );
             return View(model);
         }
-
          public IActionResult Range2(int? page){
 
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
@@ -156,7 +161,9 @@ namespace comestic_csharp.Controllers
             );
             return View(model);
         }
-         public IActionResult Range3(int? page){
+
+
+        public IActionResult Range3(int? page){
 
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             var pagesize = 9;
@@ -412,6 +419,26 @@ namespace comestic_csharp.Controllers
             return View(profile);
         }
 
+        public IActionResult EditProfile(string id)
+        {
+            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            return View(profile);
+        }
+
+        public IActionResult UpdateProfile(ShopUser user)
+        {
+            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            profile.Fullname = user.Fullname;
+            profile.Email = user.Email;
+            profile.PhoneNumber = user.PhoneNumber;
+            if(user.Photo != null){
+                profile.Photo = user.Photo;
+            }
+            _context.Update(profile);
+            _context.SaveChanges();
+            return RedirectToAction("Profile");
+        }
+
         public IActionResult Order()
         {
             var id = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
@@ -425,6 +452,19 @@ namespace comestic_csharp.Controllers
             var order = _context.Orders.First(p => p.Id == id);
             ViewBag.Order = order;
             return View(orderdetails);
+        }
+
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> UpdatePassword(string cp, string np)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            var changePasswordResult = await _userManager.ChangePasswordAsync(user, cp, np);
+            await _signInManager.RefreshSignInAsync(user);
+            return RedirectToAction("Index","Home");
         }
 
     }

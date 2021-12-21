@@ -16450,6 +16450,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\_ProfileBar.cshtml",
+      "TargetPath": "Views\\Shop\\_ProfileBar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Areas\\Admin\\Views\\Coupon\\Details.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Coupon\\Details.cshtml",
       "FileKind": "mvc"
@@ -16457,6 +16462,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Productattribute\\Edit.cshtml",
       "TargetPath": "Views\\Productattribute\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\ChangePassword.cshtml",
+      "TargetPath": "Views\\Shop\\ChangePassword.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16522,6 +16532,11 @@
     {
       "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Postcategory\\Delete.cshtml",
       "TargetPath": "Views\\Postcategory\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\Views\\Shop\\EditProfile.cshtml",
+      "TargetPath": "Views\\Shop\\EditProfile.cshtml",
       "FileKind": "mvc"
     },
     {

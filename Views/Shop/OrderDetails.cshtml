@@ -6,12 +6,7 @@
 
 <div class="pcoded-content">
     <div class="row">
-        <div class="col col-3">
-            <ul class="categor-list">
-					<li><a asp-action="Profile">MY PROFILE</a></li>	
-                    <li><a asp-action="Order">MY ORDER</a></li>				
-			</ul>
-        </div>
+        @await Html.PartialAsync("_ProfileBar")
         <div class="col col-9">
             <div class="card">
                 <h3 class="card-header">Order Detail</h3>

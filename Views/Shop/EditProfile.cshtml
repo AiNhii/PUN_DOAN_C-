@@ -1,0 +1,53 @@
+@model comestic_csharp.Areas.Identity.Data.ShopUser
+@{
+    Layout= "/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="pcoded-content">
+    <div class="row">
+        @await Html.PartialAsync("_ProfileBar")
+        <div class="col col-10">
+                <div class="card">
+                    <h3 class="card-header">Edit profile</h3>
+                       <form asp-action="UpdateProfile">
+                            @* <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+                            <input type="hidden" asp-for="Id" />
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="form-group">
+                                            <label asp-for="Fullname" class="control-label"></label>
+                                            <input asp-for="Fullname" class="form-control" value="@Model.Fullname" />
+                                            <span asp-validation-for="Fullname" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Email" class="control-label"></label>
+                                            <input asp-for="Email" class="form-control" value="@Model.Email"/>
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="PhoneNumber" class="control-label"></label>
+                                            <input asp-for="PhoneNumber" class="form-control" value="@Model.PhoneNumber" />
+                                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-file mb-3">
+                                            <label asp-for="Photo" class="form-file-label"></label>
+                                            <input asp-for="Photo" type="file" class="form-file-input">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <img src="/storage/@Model.Photo" class="content-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <input type="submit" value="Update Profile" class="btn btn-danger" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</div>
+ 

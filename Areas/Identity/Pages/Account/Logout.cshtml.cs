@@ -32,6 +32,8 @@ namespace comestic_csharp.Areas.Identity.Pages.Account
             await _signInManager.SignOutAsync();
 
             HttpContext.Session.Remove("cart");
+            HttpContext.Session.Remove("username");
+
 
             _logger.LogInformation("User logged out.");
             if (returnUrl != null)
