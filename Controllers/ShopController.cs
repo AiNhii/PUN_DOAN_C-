@@ -314,13 +314,19 @@ namespace comestic_csharp.Controllers
 
         public IActionResult EditProfile(string id)
         {
-            return View();
+            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            return View(profile);
         }
 
-        public IActionResult UpdateProfile(string id, string Fullname)
+        public IActionResult UpdateProfile(ShopUser user)
         {
             var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
-            profile.Fullname = Fullname;
+            profile.Fullname = user.Fullname;
+            profile.Email = user.Email;
+            profile.PhoneNumber = user.PhoneNumber;
+            if(user.Photo != null){
+                profile.Photo = user.Photo;
+            }
             _context.Update(profile);
             _context.SaveChanges();
             return RedirectToAction("Profile");
