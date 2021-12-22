@@ -1,3 +1,4 @@
+@using comestic_csharp.Areas.Identity.Data
 @model IEnumerable<comestic_csharp.Models.Orderdetail>
 @{
     Layout= "/Views/Shared/_MainLayout.cshtml";
@@ -54,7 +55,11 @@
                                     {
                                         <tr>
                                             <td>
-                                                @item.ProductId
+                                                @{
+                                                    ShopDbContext context = new ShopDbContext();
+                                                    var title = context.Products.SingleOrDefault(t => t.Id == item.ProductId).Title;
+                                                }
+                                                @title
                                             </td>
                                             <td>
                                                 @item.Quantity
