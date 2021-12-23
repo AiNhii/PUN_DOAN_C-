@@ -1,14 +1,9 @@
 <link rel="stylesheet" href="/shop/grid.css">
-@using PagedList.Core.Mvc;
 @using comestic_csharp.Areas.Identity.Data
-@model PagedList.Core.IPagedList<comestic_csharp.Models.Product>;
-
+@model List<comestic_csharp.Models.Product>
 @{
-	ViewData["Title"] = "shop" + ViewBag.CurrentPage;
     Layout = "/Views/Shared/_MainLayout.cshtml";
-	int PageCurrent = ViewBag.CurrentPage;
-	int PageNext = PageCurrent +1;
-}
+}                 
 <div class="container">
                         <div class="row">
                             @foreach (var item in Model)
@@ -51,11 +46,10 @@
 									<!-- Pagination -->
 									<div class="pagination">
 										<ul class="pagination-list">
-											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="BestSeller" asp-controller="Shop"/>
+											@* <pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="BestSeller" asp-controller="Shop"/> *@
 										</ul>
 									</div>
 							</div>			<!--/ End Pagination -->
 						</div>
-
 </div>
 						

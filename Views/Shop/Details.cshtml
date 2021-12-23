@@ -327,7 +327,12 @@ var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id);
                                        var photo = test.Users.Find(item.UserId).Photo;
                                        var name = test.Users.Find(item.UserId).Fullname;
                                     }
-                                    <img src="/storage/@photo" alt="" />
+                                    @if(  photo != null){
+                                                <img src="/storage/@photo" class="content-center">
+                                            }
+                                            else{
+                                                <img src="/storage/null.jpg" class="content-center">
+                                            }
                                   </div>
                                   <div class="rating-des">
                                     <h6>@name</h6>

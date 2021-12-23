@@ -300,20 +300,27 @@ namespace comestic_csharp.Controllers
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             var pagesize = 9;
-            var products = _context.Products;
+            var products = _context.Products.Where(p=>p.CatId==4);
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
             return View(model);
         }
 
-        public IActionResult BestSeller(int? page)
+        public IActionResult BestSeller()
         {
-            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 9;
-            var products = _context.Products;
-            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
-            ViewBag.CurrentPage = pageNumber;
-            return View(model);
+            var query2 = from re in _context.Productreviews
+                group re by re.ProductId into reg  
+                where reg.Count(x => x.Rating == 5) >2
+                select new { NAME = reg.Key};
+
+            List<Product> list = new List<Product>();
+                foreach (var id in query2)
+                {   
+                    ShopDbContext context = new ShopDbContext();
+                    var product = context.Products.SingleOrDefault(p => p.Id == id.NAME);
+                    list.Add(product);
+                }              
+            return View(list);
         }
 
         public IActionResult Profile()

@@ -16135,11 +16135,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Shop\\testSort.cshtml",
-      "TargetPath": "Views\\Shop\\testSort.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "n:\\Framework\\WEBAPP\\comestic_csharp\\Views\\Setting\\Details.cshtml",
       "TargetPath": "Views\\Setting\\Details.cshtml",
       "FileKind": "mvc"
