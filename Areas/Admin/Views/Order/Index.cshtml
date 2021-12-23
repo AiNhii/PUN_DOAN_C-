@@ -34,22 +34,13 @@
                             <thead>
                                 <tr>
                                         <th>
-                                                @Html.DisplayNameFor(model => model.OrderNumber)
+                                            @Html.DisplayNameFor(model => model.OrderNumber)
                                         </th>
                                         <th>
-                                            @Html.DisplayNameFor(model => model.LastName)
-                                        </th>
-                                        <th >
-                                            @Html.DisplayNameFor(model => model.FirstName)
+                                            @Html.DisplayNameFor(model => model.CreatedAt)
                                         </th>
                                         <th>
-                                            @Html.DisplayNameFor(model => model.Email)
-                                        </th>
-                                        <th>
-                                            @Html.DisplayNameFor(model => model.Address)
-                                        </th>
-                                        <th>
-                                            @Html.DisplayNameFor(model => model.Phone)
+                                            @Html.DisplayNameFor(model => model.Status)
                                         </th>
                                         <th>
                                             @Html.DisplayNameFor(model => model.TotalAmount)
@@ -65,27 +56,17 @@
                                                 @Html.DisplayFor(modelItem => item.OrderNumber)
                                             </td>
                                             <td>
-                                                @Html.DisplayFor(modelItem => item.LastName)
+                                                @Html.DisplayFor(modelItem => item.CreatedAt)
                                             </td>
                                             <td>
-                                                @Html.DisplayFor(modelItem => item.FirstName)
-                                            </td>
-                                            <td>
-                                                @Html.DisplayFor(modelItem => item.Email)
-                                            </td>
-                                            <td>
-                                                @Html.DisplayFor(modelItem => item.Address)
-                                            </td>
-                                            <td>
-                                                @Html.DisplayFor(modelItem => item.Phone)
+                                                @Html.DisplayFor(modelItem => item.Status)
                                             </td>
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.TotalAmount)
                                             </td>
                                             <td>
                                                 <a asp-action="Edit" asp-route-id="@item.Id" class="btn  btn-info btn-sm"><i data-feather="edit"></i></a>
-                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn  btn-success btn-sm"><i data-feather="eye"></i></a>
-                                                
+                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn  btn-success btn-sm"><i data-feather="eye"></i></a>                                              
                                             </td>
                                         </tr>
                                     }

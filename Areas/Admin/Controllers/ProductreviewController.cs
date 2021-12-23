@@ -6,19 +6,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using comestic_csharp.Areas.Identity.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace comestic_csharp.Controllers
 {
+
+    [Authorize(Roles ="admin")]
+    [Area("admin")]
+    [Route("admin/productreview")]
     public class ProductreviewController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public ProductreviewController(ShopContext context)
+        public ProductreviewController(ShopDbContext context)
         {
             _context = context;
         }
 
         // GET: Productreview
+        [Route("index")]
         public async Task<IActionResult> Index()
         {
             var shopContext = _context.Productreviews.Include(p => p.Product).Include(p => p.User);
@@ -46,32 +53,14 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Productreview/Create
-        public IActionResult Create()
-        {
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Condition");
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Fullname");
-            return View();
-        }
+       
 
         // POST: Productreview/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserId,ProductId,Rating,Review,Status")] Productreview productreview)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(productreview);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Condition", productreview.ProductId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Fullname", productreview.UserId);
-            return View(productreview);
-        }
 
         // GET: Productreview/Edit/5
+        [Route("edit")]
         public async Task<IActionResult> Edit(ulong? id)
         {
             if (id == null)
@@ -84,7 +73,17 @@ namespace comestic_csharp.Controllers
             {
                 return NotFound();
             }
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Condition", productreview.ProductId);
+            
+           ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",productreview.Status
+
+            );
+
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Fullname", productreview.UserId);
             return View(productreview);
         }
@@ -92,7 +91,7 @@ namespace comestic_csharp.Controllers
         // POST: Productreview/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ulong id, [Bind("Id,UserId,ProductId,Rating,Review,Status")] Productreview productreview)
         {
@@ -121,12 +120,13 @@ namespace comestic_csharp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Condition", productreview.ProductId);
+            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Title", productreview.ProductId);
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Fullname", productreview.UserId);
             return View(productreview);
         }
 
         // GET: Productreview/Delete/5
+         [Route("delete")]
         public async Task<IActionResult> Delete(ulong? id)
         {
             if (id == null)
@@ -147,6 +147,7 @@ namespace comestic_csharp.Controllers
         }
 
         // POST: Productreview/Delete/5
+         [Route("delete")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(ulong id)

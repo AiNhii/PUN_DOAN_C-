@@ -206,11 +206,6 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Postcomment\Del
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Postcomment\Details.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Postcomment\Edit.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Postcomment\Index.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productreview\Create.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productreview\Delete.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productreview\Details.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productreview\Edit.cshtml.g.cs
-N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productreview\Index.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productattribute\Create.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productattribute\Delete.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productattribute\Details.cshtml.g.cs
@@ -657,3 +652,8 @@ N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\ChangePass
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\EditProfile.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\_ProfileBar.cshtml.g.cs
 N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Shop\Search.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Delete.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Details.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Index.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Edit.cshtml.g.cs
+N:\Framework\WEBAPP\comestic_csharp\obj\Debug\net5.0\Razor\Views\Productreview\Edit.cshtml.g.cs
