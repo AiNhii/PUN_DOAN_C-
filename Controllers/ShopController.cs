@@ -379,5 +379,18 @@ namespace comestic_csharp.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Review(ulong id, string review,int rate){
+
+            Productreview _review = new Productreview();
+            _review.ProductId = id;
+            _review.UserId = _context.Users.SingleOrDefault(p => p.UserName == HttpContext.Session.GetString("username")).Id;
+            _review.Rating = (sbyte)rate;
+            _review.Review = review;
+            _context.Add(_review);
+            _context.SaveChanges();
+            return RedirectToAction("Details", new { id = id });
+        }
     }
 }
