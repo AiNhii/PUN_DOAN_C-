@@ -153,7 +153,7 @@
         line-height: 50px;
         border-radius: 0px;
         background: transparent;
-        color: #282828;
+        color: #282828 !important;
         border: none;
         font-size: 12px;
     }

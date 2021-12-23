@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="/shop/grid.css">
+@* <link rel="stylesheet" href="/shop/grid.css"> *@
+<link rel="stylesheet" href="/shop/bestseller.css">
 @using PagedList.Core.Mvc;
 @using comestic_csharp.Areas.Identity.Data
 @model PagedList.Core.IPagedList<comestic_csharp.Models.Product>;
@@ -9,11 +10,88 @@
 	int PageCurrent = ViewBag.CurrentPage;
 	int PageNext = PageCurrent +1;
 }
+
+<div class="title-page">
+	<div class="title-page" style="background-image: url('https://cdn.no-toxic.com/q_auto:best,f_auto,fl_lossy,w_auto,c_limit,dpr_auto/v55//Collection-Banner/CP-Home-Goods');background-position: center center;background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 inner-title-page">
+                
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="margin-bottom: 26px; background-color: #fafbf8;">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">BestSeller</li>
+                        </ol>
+                </nav>
+                  <div class="section-title" style="padding-bottom: 0px; padding-top: 15px; padding-left: 60px;">
+                    <h2>Best Selling Natural Makeup Skin Care Products Of Pun Shop</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: -81px; margin-bottom: -100px;">
+    <div class="row introduce-homepage">
+        <div class="introduce-left">
+            <div class="row introduce-homepage-left">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 img-introduce">
+                    <img src="https://i.pinimg.com/564x/b5/3d/52/b53d521a306afb8ca5c7e84683fe8d92.jpg" alt="">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 introduce-homepage-content">
+                    <h2>0.1</h2>
+                    <h5>Organic Cream</h5>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum.
+                    </p>
+                    <button class="btn">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="introduce-right">
+            <div class="row introduce-homepage-right">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 introduce-homepage-content">
+                    <h2>0.2</h2>
+                    <h5>Quality Assurance</h5>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum.
+                    </p>
+                    <button class="btn">VIEW MORE</button>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 img-introduce">
+                    <img src="https://i.pinimg.com/736x/8e/c2/ad/8ec2ad4fce7d2765b45bcedc72ec1ad4.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="introduce-left">
+            <div class="row introduce-homepage-left">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 img-introduce">
+                    <img src="https://i.pinimg.com/564x/98/40/3d/98403dc4f74f5828a86049058c5ecea4.jpg" alt="">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 introduce-homepage-content">
+                    <h2>0.3</h2>
+                    <h5>Quality Assurance</h5>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum.
+                    </p>
+                    <button class="btn">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-12">
+                <div class="section-title" style="padding-top: 25px;">
+                    <h2>Best Seller</h2>
+                </div>
+            </div>
 <div class="container">
                         <div class="row">
                             @foreach (var item in Model)
                             {
-                                <div class="col-lg-4 col-md-6 col-12">
+                                <div class="col-lg-3 col-md-6 col-12">
                                     <div class="card card-product mb-3">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <img class="card-img-top" src="/storage/@item.Photo1" alt="Card image cap">

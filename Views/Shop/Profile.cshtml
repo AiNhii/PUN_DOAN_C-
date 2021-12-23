@@ -75,7 +75,17 @@
         </div>
     </div>
 </div> *@
-
+<style>
+    .form-group{
+        text-align: left;
+        border: 1px solid #e1d4d4;
+    border-radius: 5px !important;
+    }
+    .input-group .input-group-addon{
+        padding-left: 27px !important;
+    padding-right: 27px;
+    }
+</style>
 <body>
     <div class="container">
     </div>
@@ -379,8 +389,8 @@
                                                     class="img-circle img-thumbnail"> *@
                                                 <br /> <br />
 
-                                                <h3>HitendraZ</h2>
-                                                    <h4 style="color:#A9ABA6">{ Web Designer }</h4>
+                                                <h3>  @Html.DisplayFor(model => model.Fullname)</h3>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -466,11 +476,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card-footer">
+                                                <div class="">
                                                 <a asp-action="EditProfile" asp-route-id="@Model.Id"
-                                                    class="btn btn-warning">Edit</a>
+                                                    class="btn btn-warning" style="background: #4a947f;">Edit</a>
                                             </div>
+                                            </div>
+                                            @* <div class="">
+                                                <a asp-action="EditProfile" asp-route-id="@Model.Id"
+                                                    class="btn btn-warning" style="background: #4a947f;">Edit</a>
+                                            </div> *@
 
                                         </div>
                                     </div>
