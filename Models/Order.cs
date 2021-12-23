@@ -27,7 +27,7 @@ namespace comestic_csharp.Models
         public string Phone { get; set; }
         public string Address { get; set; }
 
-        public DateTime? CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
 
         public virtual Coupon Coupon { get; set; }
         public virtual Shipping Shipping { get; set; }

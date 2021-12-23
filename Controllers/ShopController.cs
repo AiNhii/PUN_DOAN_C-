@@ -370,5 +370,14 @@ namespace comestic_csharp.Controllers
             return RedirectToAction("Index","Home");
         }
 
+        public IActionResult Search(string search, int? page){
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products =  _context.Products.Where(p => p.Title.StartsWith(search));
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            return View(model);
+        }
+
     }
 }

@@ -508,7 +508,8 @@ namespace comestic_csharp.Areas.Identity.Data
                     .HasColumnName("user_id");
 
                 entity.Property(e => e.CreatedAt)
-                    .HasColumnType("timestamp")
+                    // .HasColumnType("timestamp")
+                    .HasColumnType("date")
                     .HasColumnName("created_at");
 
                 entity.HasOne(d => d.Coupon)
@@ -1162,8 +1163,6 @@ namespace comestic_csharp.Areas.Identity.Data
                 entity.Property(e => e.ProductId)
                     .HasColumnType("bigint(20) unsigned")
                     .HasColumnName("product_id");
-
-                
 
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.Orderdetail)
