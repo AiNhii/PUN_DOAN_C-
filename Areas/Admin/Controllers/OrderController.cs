@@ -132,6 +132,9 @@ namespace comestic_csharp.Controllers
             {
                 try
                 {
+                    if (order.Status =="delivered"){
+                        order.PaymentStatus = "paid";
+                    }
                     _context.Update(order);
                     await _context.SaveChangesAsync();
                 }

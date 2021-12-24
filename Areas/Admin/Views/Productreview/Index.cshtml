@@ -61,7 +61,12 @@
                                             @Html.DisplayFor(modelItem => item.Review)
                                         </td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Status)
+                                            @if( item.Status =="active"){
+                                                <button class="btn btn-danger">@item.Status</button>
+                                            }
+                                            else{
+                                                <button class="btn btn-info">@item.Status</button>
+                                            }
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Product.Title)
