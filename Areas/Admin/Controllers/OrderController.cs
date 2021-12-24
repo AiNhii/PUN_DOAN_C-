@@ -32,25 +32,25 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: Order/Details/5
-        public async Task<IActionResult> Details(ulong? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        // public async Task<IActionResult> Details(ulong? id)
+        // {
+        //     if (id == null)
+        //     {
+        //         return NotFound();
+        //     }
 
-            var order = await _context.Orders
-                .Include(o => o.Coupon)
-                .Include(o => o.Shipping)
-                .Include(o => o.User)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (order == null)
-            {
-                return NotFound();
-            }
+        //     var order = await _context.Orders
+        //         .Include(o => o.Coupon)
+        //         .Include(o => o.Shipping)
+        //         .Include(o => o.User)
+        //         .FirstOrDefaultAsync(m => m.Id == id);
+        //     if (order == null)
+        //     {
+        //         return NotFound();
+        //     }
 
-            return View(order);
-        }
+        //     return View(order);
+        // }
 
         // GET: Order/Create
         [Route("create")]// 
@@ -178,6 +178,14 @@ namespace comestic_csharp.Controllers
         private bool OrderExists(ulong id)
         {
             return _context.Orders.Any(e => e.Id == id);
+        }
+
+        public IActionResult Details(ulong? id)
+        {
+            var orderdetails = _context.Orderdetail.Where(p => p.OrderId == id);
+            var order = _context.Orders.First(p => p.Id == id);
+            ViewBag.Order = order;
+            return View(orderdetails);
         }
     }
 }

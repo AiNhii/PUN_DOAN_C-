@@ -300,7 +300,7 @@
     
     .shopping-cart .total-amount .right ul li span {
         display: inline-block;
-        float: right;
+        float: left;
     }
     
     .shopping-cart .total-amount .right .button5 .btn {

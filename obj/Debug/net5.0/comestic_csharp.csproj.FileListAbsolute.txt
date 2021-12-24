@@ -947,11 +947,6 @@ D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productattri
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productattribute\Details.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productattribute\Edit.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productattribute\Index.cshtml.g.cs
-D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productreview\Create.cshtml.g.cs
-D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productreview\Delete.cshtml.g.cs
-D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productreview\Details.cshtml.g.cs
-D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productreview\Edit.cshtml.g.cs
-D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Productreview\Index.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Setting\Create.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Setting\Delete.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Setting\Details.cshtml.g.cs
@@ -1033,3 +1028,9 @@ D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\Range3.
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\ChangePassword.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\EditProfile.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\_ProfileBar.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Create.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Delete.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Details.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Edit.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\Productreview\Index.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shop\Search.cshtml.g.cs

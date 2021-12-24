@@ -413,14 +413,21 @@ namespace comestic_csharp.Controllers
             return View(model);
         }
 
-        public IActionResult BestSeller(int? page)
+        public IActionResult BestSeller()
         {
-            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 9;
-            var products = _context.Products;
-            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
-            ViewBag.CurrentPage = pageNumber;
-            return View(model);
+            var query2 = from re in _context.Productreviews
+                group re by re.ProductId into reg  
+                where reg.Count(x => x.Rating == 5) >2
+                select new { NAME = reg.Key};
+
+            List<Product> list = new List<Product>();
+                foreach (var id in query2)
+                {   
+                    ShopDbContext context = new ShopDbContext();
+                    var product = context.Products.SingleOrDefault(p => p.Id == id.NAME);
+                    list.Add(product);
+                }              
+            return View(list);
         }
 
 
@@ -476,6 +483,27 @@ namespace comestic_csharp.Controllers
             var changePasswordResult = await _userManager.ChangePasswordAsync(user, cp, np);
             await _signInManager.RefreshSignInAsync(user);
             return RedirectToAction("Index","Home");
+        }
+        public IActionResult Search(string search, int? page){
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products =  _context.Products.Where(p => p.Title.StartsWith(search));
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            return View(model);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Review(ulong id, string review,int rate){
+
+            Productreview _review = new Productreview();
+            _review.ProductId = id;
+            _review.UserId = _context.Users.SingleOrDefault(p => p.UserName == HttpContext.Session.GetString("username")).Id;
+            _review.Rating = (sbyte)rate;
+            _review.Review = review;
+            _context.Add(_review);
+            _context.SaveChanges();
+            return RedirectToAction("Details", new { id = id });
         }
 
     }

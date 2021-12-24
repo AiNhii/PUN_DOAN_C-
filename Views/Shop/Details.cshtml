@@ -1,14 +1,11 @@
+@using comestic_csharp.Areas.Identity.Data
 @model comestic_csharp.Models.Product
 
 @{
-
-
-
-  ViewData["Title"] = "Details";
-
-
-
-  Layout = "/Views/Shared/_MainLayout.cshtml";
+ViewData["Title"] = "Details";
+Layout = "/Views/Shared/_MainLayout.cshtml";
+ShopDbContext context = new ShopDbContext();
+var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id && p.Status=="active");
 }
 <link rel="stylesheet" href="/shop/details.css" />
 
@@ -57,6 +54,7 @@
 <!-- End Breadcrumbs -->
 
 <!-- Shop Single -->
+
 <section class="shop single section">
   <div class="container">
     <div class="row">
@@ -110,7 +108,7 @@
                 <h4>@Html.DisplayFor(model => model.Title)</h4>
                 <div class="rating-main text-left">
 
-                  <a href="#" class="total-review">(<span> 0 </span>) Review</a>
+                  <a href="#" class="total-review">(<span> @comment.Count() </span>) Review</a>
                 </div>
                 <p class="price">
                   <s> @Html.DisplayFor(model => model.Price)</s><span class="discount">750 000</span>
@@ -259,38 +257,38 @@
                           </h4>
                           <div class="review-inner">
                             <!-- Form -->
-                            <form class="form" method="post" action="{{route('review.store',$product_detail->slug)}}">
+                            <form class="form" asp-action="Review" asp-controller="Shop" asp-route-id="@Model.Id">
                               <div class="row">
                                 <div class="col-lg-12 col-12">
                                   <div class="rating_box">
                                     <div class="star-rating">
                                       <div class="star-rating__wrap">
                                         <input class="star-rating__input" id="star-rating-5" type="radio" name="rate"
-                                          value="5" />
+                                          value=5 />
                                         <label class="
                                                 star-rating__ico
                                                 fa fa-star-o
                                               " for="star-rating-5" title="5 out of 5 stars"></label>
                                         <input class="star-rating__input" id="star-rating-4" type="radio" name="rate"
-                                          value="4" />
+                                          value=4 />
                                         <label class="
                                                 star-rating__ico
                                                 fa fa-star-o
                                               " for="star-rating-4" title="4 out of 5 stars"></label>
                                         <input class="star-rating__input" id="star-rating-3" type="radio" name="rate"
-                                          value="3" />
+                                          value=3 />
                                         <label class="
                                                 star-rating__ico
                                                 fa fa-star-o
                                               " for="star-rating-3" title="3 out of 5 stars"></label>
                                         <input class="star-rating__input" id="star-rating-2" type="radio" name="rate"
-                                          value="2" />
+                                          value=2 />
                                         <label class="
                                                 star-rating__ico
                                                 fa fa-star-o
                                               " for="star-rating-2" title="2 out of 5 stars"></label>
                                         <input class="star-rating__input" id="star-rating-1" type="radio" name="rate"
-                                          value="1" />
+                                          value=1 />
                                         <label class="
                                                 star-rating__ico
                                                 fa fa-star-o
@@ -329,40 +327,99 @@
                           <a href="#" style="color: rgb(54, 54, 204)">Login</a>
                           OR
                           <a style="color: blue" href="#">Register</a>
-                          </p> *@
+                          </p> *@                       
                         <div class="ratting-main">
                           <div class="avg-ratting">
                             <h4>
                               <span>4 (Overall)</span>
                             </h4>
-                            <span>Based on 1 Comments</span>
+                            <span>Based on @comment.Count() Comments</span>
                           </div>
                           <!-- Single Rating -->
-                          <div class="single-rating">
-                            <div class="rating-author">
-                              <img src="/frontend/product_details/storage/photo/chitietsanpham/chitietsp5.png" alt="" />
-                            </div>
-                            <div class="rating-des">
-                              <h6>Emily Valdez</h6>
-                              <div class="ratings">
-                                <ul class="rating">
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star"></i></li>
-                                  <li><i class="fa fa-star-o"></i></li>
-                                </ul>
-                                <div class="rate-count">
-                                  (<span>4</span>)
+                              @foreach (var item in comment)
+                              {
+                                <div class="single-rating">
+                                  <div class="rating-author">
+                                    @{
+                                      ShopDbContext test= new ShopDbContext();
+                                       var photo = test.Users.Find(item.UserId).Photo;
+                                       var name = test.Users.Find(item.UserId).Fullname;
+                                    }
+                                    @if(  photo != null){
+                                                <img src="/storage/@photo" class="content-center">
+                                            }
+                                            else{
+                                                <img src="/storage/null.jpg" class="content-center">
+                                            }
+                                  </div>
+                                  <div class="rating-des">
+                                    <h6>@name</h6>
+                                    <div class="ratings">
+                                      <ul class="rating">
+                                        @if (item.Rating == 1)
+                                        {
+                                          @for (var i = 0; i <@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star"></i></li>
+                                          }
+                                          @for (var i = 0; i <5-@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star-o"></i></li>
+                                          }
+                                        }
+                                        @if (item.Rating == 2)
+                                        {
+                                          @for (var i = 0; i <@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star"></i></li>
+                                          }
+                                          @for (var i = 0; i <5-@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star-o"></i></li>
+                                          }
+                                        }
+                                        @if (item.Rating == 3)
+                                        {
+                                          @for (var i = 0; i <@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star"></i></li>
+                                          }
+                                          @for (var i = 0; i <5-@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star-o"></i></li>
+                                          }
+                                        }
+                                        @if (item.Rating == 4)
+                                        {
+                                           @for (var i = 0; i <@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star"></i></li>
+                                          }
+                                          @for (var i = 0; i <5-@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star-o"></i></li>
+                                          }
+                                        }
+                                        @if (item.Rating == 5)
+                                        {
+                                          @for (var i = 0; i <@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star"></i></li>
+                                          }
+                                          @for (var i = 0; i <5-@item.Rating; i++)
+                                          {
+                                          <li><i class="fa fa-star-o"></i></li>
+                                          }
+                                        }
+                                      </ul>
+                                      <div class="rate-count">
+                                        (<span>@item.Rating</span>)
+                                      </div>
+                                    </div>
+                                    <p>@item.Review</p>
+                                  </div>
                                 </div>
-                              </div>
-                              <p>
-                                But I must explain to you how all this
-                                mistaken idea of denouncing pleasure and
-                                praising pain was.
-                              </p>
-                            </div>
-                          </div>
+                              }
                           <!--/ End Single Rating -->
                         </div>
 

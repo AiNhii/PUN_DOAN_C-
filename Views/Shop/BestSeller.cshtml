@@ -1,15 +1,12 @@
 @* <link rel="stylesheet" href="/shop/grid.css"> *@
 <link rel="stylesheet" href="/shop/bestseller.css">
-@using PagedList.Core.Mvc;
 @using comestic_csharp.Areas.Identity.Data
-@model PagedList.Core.IPagedList<comestic_csharp.Models.Product>;
-
+@model List<comestic_csharp.Models.Product>
 @{
-	ViewData["Title"] = "shop" + ViewBag.CurrentPage;
     Layout = "/Views/Shared/_MainLayout.cshtml";
-	int PageCurrent = ViewBag.CurrentPage;
-	int PageNext = PageCurrent +1;
-}
+}  
+
+
 
 <div class="title-page">
 	<div class="title-page" style="background-image: url('https://cdn.no-toxic.com/q_auto:best,f_auto,fl_lossy,w_auto,c_limit,dpr_auto/v55//Collection-Banner/CP-Home-Goods');background-position: center center;background-size: cover;">
@@ -88,10 +85,10 @@
                 </div>
             </div>
 <div class="container">
-                        <div class="row">
+                     <div class="row">
                             @foreach (var item in Model)
                             {
-                                <div class="col-lg-3 col-md-6 col-12">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="card card-product mb-3">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <img class="card-img-top" src="/storage/@item.Photo1" alt="Card image cap">
@@ -124,7 +121,7 @@
                                 </div>
                             }
                         </div>
-						<div class="row">
+						@* <div class="row">
 							<div class="col col-12"
 									<!-- Pagination -->
 									<div class="pagination">
@@ -133,7 +130,7 @@
 										</ul>
 									</div>
 							</div>			<!--/ End Pagination -->
-						</div>
+						</div> *@
 
 </div>
 						
