@@ -5,7 +5,8 @@
 }
 
 @await Html.PartialAsync("_StyleLayout")
-
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 <div class="page-header">
         <div class="page-block">
             <div class="row align-items-center">
@@ -24,7 +25,7 @@
 </div>
 
 <div class="pcoded-content">
-    <div class="card" style="width: fit-content;">
+    <div class="card" style="width: 100%;">
     <div class="flex-container">
         <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">REVIEW</h1>
         </div>
@@ -55,13 +56,20 @@
                                     {
                                     <tr>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Rating) <i class="fa fa-star"></i>
+                                            @Html.DisplayFor(modelItem => item.Rating) <i class="fa fa-star" style="color: #ffd40d; margin-left: 5px;"></i>
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Review)
                                         </td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Status)
+                                          @if( item.Status =="active") {
+                                              
+                                                <input type="checkbox"  checked data-toggle="toggle" data-size="sm" data-on="Active" data-off="Inactive" data-onstyle="outline-success" data-offstyle="outline-danger" style="padding-left: 8px !important;">
+                                           }
+                                           else{
+                                                <input type="checkbox"  data-toggle="toggle" data-size="sm" data-on="Active" data-off="Inactive" data-onstyle="outline-success" data-offstyle="outline-danger" style="padding-left: 8px !important;">
+                                           }
+                                           
                                         </td>
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Product.Title)

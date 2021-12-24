@@ -5,6 +5,9 @@
 }
 
 @await Html.PartialAsync("_StyleLayout")
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
 <div class="page-header">
         <div class="page-block">
             <div class="row align-items-center">
@@ -65,7 +68,13 @@
                                             @Html.DisplayFor(modelItem => item.Slug)
                                         </td>
                                         <td>
-                                            @Html.DisplayFor(modelItem => item.Status)
+                                             @if( item.Status =="active") {
+                                              
+                                                <input type="checkbox"  checked data-toggle="toggle" data-size="sm" data-on="Active" data-off="Inactive" data-onstyle="outline-success" data-offstyle="outline-danger" style="padding-left: 8px !important;">
+                                           }
+                                           else{
+                                                <input type="checkbox"  data-toggle="toggle" data-size="sm" data-on="Active" data-off="Inactive" data-onstyle="outline-success" data-offstyle="outline-danger" style="padding-left: 8px !important;">
+                                           }
                                         </td>
                                         <td>
                                             <a asp-action="Edit" asp-route-id="@item.Id"><i data-feather ="edit" style="color: #3EC9E6;"></i></a> 
