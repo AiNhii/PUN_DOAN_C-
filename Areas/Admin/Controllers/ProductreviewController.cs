@@ -91,6 +91,7 @@ namespace comestic_csharp.Controllers
         // POST: Productreview/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Route("edit")]
          [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(ulong id, [Bind("Id,UserId,ProductId,Rating,Review,Status")] Productreview productreview)
