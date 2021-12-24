@@ -320,7 +320,7 @@ namespace comestic_csharp.Migrations.ShopDb
 
                     b.Property<decimal>("Amount")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("amount");
 
                     b.Property<ulong?>("OrderId")
@@ -329,7 +329,7 @@ namespace comestic_csharp.Migrations.ShopDb
 
                     b.Property<decimal>("Price")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("price");
 
                     b.Property<ulong>("ProductId")
@@ -682,12 +682,12 @@ namespace comestic_csharp.Migrations.ShopDb
 
                     b.Property<decimal>("SubTotal")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("sub_total");
 
                     b.Property<decimal>("TotalAmount")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("total_amount");
 
                     b.Property<string>("UserId")
@@ -1030,7 +1030,7 @@ namespace comestic_csharp.Migrations.ShopDb
 
                     b.Property<decimal>("Price")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("price");
 
                     b.Property<string>("Slug")
@@ -1101,7 +1101,7 @@ namespace comestic_csharp.Migrations.ShopDb
 
                     b.Property<decimal>("Price")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("price");
 
                     b.Property<ulong?>("ProductId")
@@ -1267,7 +1267,7 @@ namespace comestic_csharp.Migrations.ShopDb
 
                     b.Property<decimal>("Amount")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("amount");
 
                     b.Property<ulong?>("CartId")
@@ -1283,7 +1283,7 @@ namespace comestic_csharp.Migrations.ShopDb
 
                     b.Property<decimal>("Price")
                         .HasPrecision(10)
-                        .HasColumnType("decimal(10,30)")
+                        .HasColumnType("decimal(10)")
                         .HasColumnName("price");
 
                     b.Property<ulong>("ProductId")

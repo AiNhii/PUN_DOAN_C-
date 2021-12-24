@@ -14,7 +14,7 @@
     var sumProduct = context.Orderdetail.Sum(p => p.Quantity);
     var avgPrice = context.Orders.Average(p => p.TotalAmount);
 
-    var sanpham = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt).Select(b => b);
+    var sanpham = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.ToShortDateString()).Select(b => b).Distinct();
 }
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
@@ -546,7 +546,7 @@
                                             var key = item.Key; 
                                             List<Order> list = item.ToList();
                                             <tr>
-                                            <td>@key.ToString("d")</td>
+                                            <td>@key.ToString()</td>
                                             <td>@list.Count()</td>
                                             </tr>
                                         }

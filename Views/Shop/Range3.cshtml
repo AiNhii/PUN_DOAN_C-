@@ -1,0 +1,148 @@
+@using PagedList.Core.Mvc;
+@using comestic_csharp.Areas.Identity.Data
+@model PagedList.Core.IPagedList<comestic_csharp.Models.Product>;
+
+@{
+	ViewData["Title"] = "shop" + ViewBag.CurrentPage;
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+	int PageCurrent = ViewBag.CurrentPage;
+	int PageNext = PageCurrent +1;
+}
+
+<link rel="stylesheet" href="/shop/list-grid.css">
+   
+		<!-- Product Style 1 -->
+		<section class="product-area shop-sidebar shop-list shop section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-12">
+						@await Html.PartialAsync("_SideBar");
+					</div>
+					<div class="col-lg-9 col-md-8 col-12">
+						@await Html.PartialAsync("_TopBar");
+						<div class="row">
+								<!-- Start Single List -->
+								<div class="col-12">
+									<div class="row">
+										@foreach (var item in Model)
+                            {
+										<div class="col-lg-4 col-md-6 col-sm-6">
+											<div class="single-product">
+												<div class="product-img">
+													<a href="product-details.html">
+														 <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+														<img class="card-img-top" src="/storage/@item.Photo1" alt="Card image cap">
+													</a>
+													
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-8 col-md-6 col-12">
+											<div class="list-content">
+												<div class="product-content">
+													@if (@item.CouponId == 1)
+													{
+														<div class="product-price">
+														<h5 class="card-title product-title">@item.Title</h5>
+                                                        @* <span class="new-price">@item.Price</span> *@
+														</div>
+														<span class="price">@item.Price</span>
+													}
+													else{
+															ShopDbContext context = new ShopDbContext();
+															var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+															var delPrice = @item.Price /(1- giamGia.Value/100);
+
+															<div class="product-price">
+																<h5 class="card-title product-title">@item.Title</h5>
+																<span class="new-price">@item.Price</span>
+															</div>
+															<span class="del-price">@delPrice</span>
+													}
+													<h6 class="card-title product-title">@item.Summary</h6>
+												 @if(User.Identity.IsAuthenticated){
+                                                	<a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
+													}
+													else{
+														<a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
+													}
+                                            	<a class="btn btn-outline-success btn-detail" id="xem" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+											</div>
+										</div>
+									</div>
+							}
+								</div>
+
+									<div class="row">
+							       		<div class="col col-12"
+											<!-- Pagination -->
+										<div class="pagination">
+										<ul class="pagination-list">
+											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="Range3" asp-controller="Shop"/>
+										</ul>
+									</div>
+							
+									<!--/ End Pagination -->
+						</div>
+									<!--/ End Pagination -->
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+@section Scripts{
+	<script>
+		$(document).ready(function(){
+
+			jQuery("#sort").change(function(){
+
+				var sort = jQuery(this).children(":selected").attr("value");
+				$("#sort option").removeAttr("selected");
+				$("#sort > [value =" + sort + "]").attr("selected","true");
+
+				$.ajax({
+
+					type:"GET",
+					url: "@Url.Action("SortBy")",
+					dataType: "json",
+					data:{
+						sort : sort
+					},
+					success: function (result) {
+						if(result.status == "success")
+                          window.location.href = result.redirectUrl;
+                    },
+					error: function (result) {
+                    	alert("error");
+                	}
+				});
+			});
+
+			jQuery("#show").change(function(){
+
+				var show = jQuery(this).children(":selected").attr("value");
+				$("#show option").removeAttr("selected");
+				$("#show > [value =" + show + "]").attr("selected","true");
+
+				$.ajax({
+
+					type:"GET",
+					url: "@Url.Action("Show")",
+					dataType: "json",
+					data:{
+						show : show
+					},
+					success: function (result) {
+						if(result.status == "success")
+                          window.location.href = result.redirectUrl;
+                    },
+					error: function (result) {
+                    	alert("error");
+                	}
+				});
+			});			
+		});		
+	</script>
+}

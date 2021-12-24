@@ -129,7 +129,72 @@ namespace comestic_csharp.Controllers
             );
             return View(model);
         }
+         public IActionResult Range2(int? page){
 
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products = _context.Products.Where(p => p.Price <= 500000 && p.Price >=200000);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
+
+
+        public IActionResult Range3(int? page){
+
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products = _context.Products.Where(p =>  p.Price >=500000);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
+        }
         public IActionResult OrderByPriceA(int? page)
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
@@ -256,7 +321,20 @@ namespace comestic_csharp.Controllers
         public IActionResult Show(string show){
 
             var url = $"/Shop/Range";
-                        
+            if(show == "1"){
+
+                url = $"/Shop/Range";
+
+            }
+            if(show == "2"){
+
+               url = $"/Shop/Range2";
+
+            }
+
+            if(show == "3"){
+                url = $"/Shop/Range3";
+            }
             return Json( new { status = "success", redirectUrl = url});
         }
         public async Task<IActionResult> Details(ulong? id)
@@ -291,16 +369,45 @@ namespace comestic_csharp.Controllers
             return View();
         }
 
-        public async Task<IActionResult> ListMakeUp(ulong? id){
-            var ShopDbContext = _context.Products.Where(p => p.CatId == id);
-            return View(await ShopDbContext.ToListAsync());
+        public async Task<IActionResult> ListMakeUp(ulong? id, int? page) {
+            // var ShopDbContext = _context.Products.Where(p => p.CatId == id);
+            var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+            var pagesize = 9;
+            var products = _context.Products.Where(p => p.CatId == id);
+            PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+            ViewBag.CurrentPage = pageNumber;
+
+            ViewData["SortBy"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Order by Price Asc", Value = "asc"},
+                    new SelectListItem { Text = "Order by Price Des", Value = "des"},
+                    new SelectListItem { Text = "Name", Value = "name"},
+
+                }, "Value" , "Text"
+
+            );
+
+            ViewData["Show"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Dưới 200000", Value = "1"},
+                    new SelectListItem { Text = "Từ 200000 - 500000", Value = "2"},
+                    new SelectListItem { Text = "Trên 500000", Value = "3"},
+
+                }, "Value" , "Text"
+
+            );
+            return View(model);
         }
 
         public IActionResult SkinCare(int? page)
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             var pagesize = 9;
-            var products = _context.Products.Where(p=>p.CatId==4);
+            var products = _context.Products;
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
             return View(model);
@@ -322,6 +429,7 @@ namespace comestic_csharp.Controllers
                 }              
             return View(list);
         }
+
 
         public IActionResult Profile()
         {
@@ -376,7 +484,6 @@ namespace comestic_csharp.Controllers
             await _signInManager.RefreshSignInAsync(user);
             return RedirectToAction("Index","Home");
         }
-
         public IActionResult Search(string search, int? page){
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
             var pagesize = 9;
@@ -385,7 +492,6 @@ namespace comestic_csharp.Controllers
             ViewBag.CurrentPage = pageNumber;
             return View(model);
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Review(ulong id, string review,int rate){
@@ -399,5 +505,6 @@ namespace comestic_csharp.Controllers
             _context.SaveChanges();
             return RedirectToAction("Details", new { id = id });
         }
+
     }
 }

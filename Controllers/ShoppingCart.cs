@@ -197,7 +197,7 @@ namespace comestic_csharp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult testCheckout(string FirstName, string LastName, string Address, string Email, string Phone, int payment)
+        public IActionResult testCheckout(string FirstName, string LastName, string Address, string Email, string Phone)
         {
             
             List<CartItem> cart = GetCartItems();
@@ -238,16 +238,8 @@ namespace comestic_csharp.Controllers
                 donhang.Phone = Phone;
                 donhang.TotalAmount = total - save ;
                 donhang.SubTotal = total;
-                donhang.CreatedAt = DateTime.Now;
-                if( payment != 1 ){
-                    donhang.PaymentMethod ="paypal";
-                    donhang.PaymentStatus ="paid";
-                }
-                else{
-                    donhang.PaymentMethod ="cod";
-                    donhang.PaymentStatus ="unpaid";
-                }
-                
+                donhang.PaymentMethod ="cod";
+                donhang.PaymentStatus ="unpaid";
                 donhang.Status ="new";
 
                 _context.Add(donhang);
@@ -262,6 +254,7 @@ namespace comestic_csharp.Controllers
                              _orderDetail.Total =  item.Product.Price * item.Quantity;
                              _context.Add(_orderDetail);
                         }
+                         
                          _context.SaveChanges();
 
                 HttpContext.Session.Remove("save");

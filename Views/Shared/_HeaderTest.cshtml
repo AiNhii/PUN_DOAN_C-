@@ -1,0 +1,143 @@
+@using comestic_csharp.Areas.Identity.Data
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ShopDbContext  _shopContext = new ShopDbContext();
+}	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="~/shop/css/bootstrap.css">
+    <link rel="stylesheet" href="~/shop/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="~/shop/css/font-awesome.css">
+    <link rel="stylesheet" href="~/shop/css/themify-icons.css">
+	<link rel="stylesheet" href="~/shop/css/niceselect.css">
+
+   
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="~/shop/css/reset.css">
+	<link rel="stylesheet" href="~/shop/header.css">
+    <link rel="stylesheet" href="~/shop/css/responsive.css"> 
+
+
+
+	<link rel="stylesheet" href="~/shop/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/shop/css/jquery-ui.css">
+	
+    	<!-- Header -->
+		<header class="header shop">
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-12 col-12">
+							<!-- Top Left -->
+							<div class="top-left">
+								<ul class="list-main">
+									<li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
+									<li><i class="ti-email"></i> support@shophub.com</li>
+								</ul>
+							</div>
+							<!--/ End Top Left -->
+						</div>
+						<div class="col-lg-7 col-md-12 col-12">
+							<!-- Top Right -->
+							<div class="right-content">
+								<ul class="list-main">
+									<li><i class="ti-location-pin"></i> Store location</li>
+									<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
+									<partial name="_Login.cshtml">
+								</ul>
+							</div>
+							<!-- End Top Right -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<div class="middle-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-12">
+							<!-- Logo -->
+							<div class="logo">
+								<a><img src="/header.svg" /></a>
+							</div>
+							<!--/ End Search Form -->
+							<div class="mobile-nav"></div>
+						</div>
+						<div class="col-lg-8 col-md-7 col-12">
+							<div class="search-bar-top">
+								<div class="search-bar">
+									<form asp-action="Search" asp-controller="Shop">
+										<input name="search" placeholder="Search Products Here....." type="search">
+										<button class="btnn" type="submit"><i class="ti-search"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-12">
+							<div class="right-bar">
+								<!-- Search Form -->
+								<div class="sinlge-bar">
+									<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="sinlge-bar">
+									<a asp-action="Profile" asp-controller="Shop" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="sinlge-bar shopping">
+									@await Html.PartialAsync("_Cart.cshtml")
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="cat-nav-head">
+						<div class="row">
+							<div class="col-12">
+								<div class="menu-area">
+									<!-- Main Menu -->
+									<nav class="navbar navbar-expand-lg">
+										<div class="navbar-collapse">	
+											<div class="nav-inner">	
+												<ul class="nav main-menu menu navbar-nav">
+													<li><a href="/">Home</a></li>
+													<li><a asp-controller="Shop" asp-action="Index">Product</a></li>												
+													<li><a asp-controller="Shop" asp-action="BestSeller">Best Seller</a></li>
+                                                     @await Html.PartialAsync("_Makeup",_shopContext.Categories.ToList())
+													<li><a asp-controller="Shop" asp-action="SkinCare">Skin Care</a></li>									
+													<li><a asp-controller="Shop" asp-action="Blog">Blog</a></li>
+													<li><a asp-controller="Shop" asp-action="About">About Us</a></li>
+												</ul>
+											</div>
+										</div>
+									</nav>
+									<!--/ End Main Menu -->	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!--/ End Header -->
+ 
+	<!-- Jquery -->
+   <partial name="_ScriptsLayout.cshtml"/>
+
+   <script src="~/main/jquery-3.3.1.min.js"></script>
+    <script src="~/main/bootstrap.min.js"></script>  
+    <script>
+        $(document).ready(function() {
+            $(".wish-icon i").click(function() {
+                $(this).toggleClass("fa-heart fa-heart-o");
+            });
+        });
+    </script>
+
+    

@@ -1,26 +1,8 @@
-@model IEnumerable<comestic_csharp.Models.Product>
-@{
-    Layout= "/Views/Shared/_MainLayout.cshtml";
-}
 
-<div class="container">
-<div class="title-page" style="background-image: url('/storage/photo/banner/Shop_3Columns-title.jpg');background-position: center center;background-size: cover;">
-    <div class="container">
-        <div class="row">
-            <div class=" col-md-6 inner-title-page">
-                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Make Up</li>
-                        </ol>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="container">EYES</div>
-<div class="container">
+
+
+
+@* <div class="container">
                 <div class="row">
                     @foreach (var item in Model)
                     {
@@ -41,4 +23,205 @@
                         </div>
                     }
                 </div>
+</div> *@
+
+
+<link rel="stylesheet" href="/shop/grid.css"> 
+ @using PagedList.Core.Mvc; 
+ @using comestic_csharp.Areas.Identity.Data
+ @model PagedList.Core.IPagedList<comestic_csharp.Models.Product>; 
+
+@{
+	ViewData["Title"] = "shop" + ViewBag.CurrentPage;
+    Layout = "/Views/Shared/_MainLayout.cshtml";
+	 int PageCurrent = ViewBag.CurrentPage;
+	int PageNext = PageCurrent +1; 
+}
+
+<div class="title-page">
+	<div class="title-page" style="background-image: url('/storage/photo/banner/Shop_3Columns-title.jpg');background-position: center center;background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-6 inner-title-page">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="margin-bottom: 230px; background-color: #fbfbfb;">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Make Up</li>
+                        </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+		<section class="product-area shop-sidebar shop section" style="margin-top: 25px"> 
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-12">
+						@await Html.PartialAsync("_SideBar");
+					</div>
+					<div class="col-lg-9 col-md-8 col-12">
+						<div class="row">
+							<div class="col-12">
+								<!-- Shop Top -->
+								<div class="shop-top">
+									<div class="shop-shorter">
+										<div class="single-shorter">
+											<label>Show :</label>
+											<select asp-items="ViewBag.Show" id="show" name="show">
+												<option>Choose</option>
+											</select>
+										</div>
+										<div class="single-shorter">
+											<label>Sort By :</label>
+											<select asp-items="ViewBag.SortBy" id="sort" name="sort">
+												<option>Choose</option>
+											</select>
+										</div>
+									</div>
+									<ul class="view-mode">
+										<li class="active"><a asp-action="Index" asp-controller="Shop"><i class="fa fa-th-large"></i></a></li>
+										<li><a asp-action="list" asp-controller="Shop"><i class="fa fa-th-list"></i></a></li>
+									</ul>
+								</div>
+								<!--/ End Shop Top -->
+							</div>
+						</div>
+						@* <div class="row">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="card card-product mb-3">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <img class="card-img-top" src="/storage/@item.Photo1" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title product-title">@item.Title</h5>
+										
+                                            <div class="card-text product-price">
+                                            @if (@item.CouponId == 1)
+                                            {
+                                                <span class="price">@item.Price</span>
+                                            }
+                                            else{
+													ShopDbContext context = new ShopDbContext();
+                                                    var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                    var delPrice = @item.Price /(1- giamGia.Value/100);
+
+                                                    <span class="del-price">@delPrice</span>
+                                                    <span class="new-price">@item.Price</span>
+                                            }
+                                            </div>
+                                            @if(User.Identity.IsAuthenticated){
+                                                <a class="btn btn-info btn-add-to-cart" asp-route-id="@item.Id" asp-action="AddToCart" asp-controller="ShoppingCart" ><i class="fa fa-shopping-cart"></i></a>
+                                            }
+                                            else{
+                                                <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
+                                            }
+                                            <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div> *@
+                        <div class="container">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card card-product mb-3">
+                                <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                <img class="card-img-top" src="~/storage/@item.Photo1" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title product-title">@item.Title</h5>
+                                    <div class="card-text product-price">
+                                        @if (@item.CouponId == 1)
+                                            {
+                                                <span class="price">@item.Price</span>
+                                            }
+                                            else{
+													ShopDbContext context = new ShopDbContext();
+                                                    var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                    var delPrice = @item.Price /(1- giamGia.Value/100);
+
+                                                    <span class="del-price">@delPrice</span>
+                                                    <span class="new-price">@item.Price</span>
+                                            }
+                                    </div>
+                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
+                                    <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+</div>
+						 <div class="row">
+							<div class="col col-12"
+									<!-- Pagination -->
+									<div class="pagination">
+										<ul class="pagination-list">
+											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="ListMakeUp" asp-controller="Shop"/>
+										</ul>
+									</div>
+							</div>
+									<!--/ End Pagination -->
+						</div> 
+					</div>
+				</div>
+			</div>
+		</section>
+
+@section Scripts{
+	<script>
+		$(document).ready(function(){
+
+			jQuery("#sort").change(function(){
+
+				var sort = jQuery(this).children(":selected").attr("value");
+				$("#sort option").removeAttr("selected");
+				$("#sort > [value =" + sort + "]").attr("selected","true");
+
+				$.ajax({
+
+					type:"GET",
+					url: "@Url.Action("SortBy")",
+					dataType: "json",
+					data:{
+						sort : sort
+					},
+					success: function (result) {
+						if(result.status == "success")
+                          window.location.href = result.redirectUrl;
+                    },
+					error: function (result) {
+                    	alert("error");
+                	}
+				});
+			});
+
+			jQuery("#show").change(function(){
+
+				var show = jQuery(this).children(":selected").attr("value");
+				$("#show option").removeAttr("selected");
+				$("#show > [value =" + show + "]").attr("selected","true");
+
+				$.ajax({
+
+					type:"GET",
+					url: "@Url.Action("Show")",
+					dataType: "json",
+					data:{
+						show : show
+					},
+					success: function (result) {
+						if(result.status == "success")
+                          window.location.href = result.redirectUrl;
+                    },
+					error: function (result) {
+                    	alert("error");
+                	}
+				});
+			});			
+		});		
+	</script>
+}

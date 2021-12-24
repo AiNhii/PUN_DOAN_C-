@@ -26,9 +26,7 @@
     <link rel="stylesheet" href="/backend/dashboard/asset/fonts/material.css">
 
     <!-- vendor css -->
-    <link rel="stylesheet" href="/backend/dashboard/asset/css/stylecopy.css" id="main-style-link">
-	@* <link rel="stylesheet" href="/backend/dashboard/asset/css/style_Admin.css" id="main-style-link"> *@
-
+    <link rel="stylesheet" href="/backend/dashboard/asset/css/style_Admin.css" id="main-style-link">
 </head>
 
 <body class="">
@@ -67,13 +65,13 @@
 
 	<!-- [ Header ] end -->
     <div class="pc-container">
-        <main role="main" class="pb-2">
+        <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
 
-    @* <script src="/backend/dashboard/asset/js/pages/dashboard-sale.js"></script> *@
+    <script src="/backend/dashboard/asset/js/pages/dashboard-sale.js"></script>
 	<script>
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

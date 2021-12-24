@@ -43,7 +43,10 @@ Start Shop Sidebar CSS
     margin-bottom: 25px;
     display: block;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 15px;
+    color: #70b19f;
 }
 
 
@@ -246,6 +249,7 @@ Start Shop Sidebar CSS
     clear: both;
     background: #f6f7fb;
     padding: 18px 20px 50px 20px;
+    margin-bottom: 15px;
 }
 
 .shop .shop-shorter {
@@ -317,15 +321,19 @@ Start Shop Sidebar CSS
 }
 
 .shop .view-mode li a {
-    width: 43px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
     background: transparent;
     border: 1px solid #77777775;
     text-align: center;
     display: block;
-    line-height: 32px;
+    line-height: 40px;
     color: #888;
     border-radius: 0px;
+}
+
+.breadcrumb {
+    margin-top: 10px;
 }
 
 .shop .view-mode li.active a,
@@ -495,21 +503,21 @@ button.ui-button::-moz-focus-inner {
 .pagination .pagination-list li a {
     background: #F6F7FB;
     color: #666;
-    padding: 6px 18px;
+    padding: 10px 18px;
     font-weight: 400;
     border: 1px solid #e1e1e1;
-    font-size: 16px;
-    border-radius: 0px;
+    font-size: 17px;
+    border-radius: 100% !important;
 }
 
 .pagination .pagination-list li.active span {
     background: #70b19f;
     color: rgb(255, 255, 255);
-    padding: 6px 18px;
+    padding: 10px 18px;
     font-weight: 400;
     border: 1px solid #e1e1e1;
-    font-size: 16px;
-    border-radius: 0px;
+    font-size: 17px;
+    border-radius: 100% !important;
 }
 
 .pagination .pagination-list li:hover a {
@@ -527,4 +535,52 @@ button.ui-button::-moz-focus-inner {
 .blog-grids.pagination {
     margin-top: 50px;
     text-align: center;
+}
+
+.side-tags {}
+
+.side-tags .tag {
+    margin-top: 40px;
+}
+
+.side-tags .tag li {
+    display: inline-block;
+    margin-right: 7px;
+    margin-bottom: 20px;
+}
+
+.side-tags .tag li a {
+    background: #fff;
+    color: #333;
+    padding: 8px 8px;
+    text-transform: capitalize;
+    border-radius: 6px !important;
+    font-size: 14px;
+    background: #f6f7fb;
+    border: 1px solid #457a6a;
+}
+
+.side-tags .tag a:hover {
+    color: #fff;
+    background: #457a6a;
+    border-color: transparent;
+}
+
+.shop-sidebar .single-widget .title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 3px;
+    background: #70b19f;
+}
+
+
+/*make up*/
+
+.title-page {
+    background-image: url('/storage/cte.png');
+    background-position: center center;
+    background-size: cover;
 }

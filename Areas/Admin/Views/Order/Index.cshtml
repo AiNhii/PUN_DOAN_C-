@@ -28,19 +28,28 @@
         <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">ORDER</h1>
         </div>
         <div></div>
-        @* <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>Add new</a></p></div>  *@
+        <div><p><a asp-action="Create" class="add"><i data-feather ="plus"></i>Add new</a></p></div> 
     </div>
     <table class="table" id="example1">
                             <thead>
                                 <tr>
                                         <th>
-                                            @Html.DisplayNameFor(model => model.OrderNumber)
+                                                @Html.DisplayNameFor(model => model.OrderNumber)
                                         </th>
                                         <th>
-                                            @Html.DisplayNameFor(model => model.CreatedAt)
+                                            @Html.DisplayNameFor(model => model.LastName)
+                                        </th>
+                                        <th >
+                                            @Html.DisplayNameFor(model => model.FirstName)
                                         </th>
                                         <th>
-                                            @Html.DisplayNameFor(model => model.Status)
+                                            @Html.DisplayNameFor(model => model.Email)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Address)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Phone)
                                         </th>
                                         <th>
                                             @Html.DisplayNameFor(model => model.TotalAmount)
@@ -56,17 +65,27 @@
                                                 @Html.DisplayFor(modelItem => item.OrderNumber)
                                             </td>
                                             <td>
-                                                @Html.DisplayFor(modelItem => item.CreatedAt)
+                                                @Html.DisplayFor(modelItem => item.LastName)
                                             </td>
                                             <td>
-                                                @Html.DisplayFor(modelItem => item.Status)
+                                                @Html.DisplayFor(modelItem => item.FirstName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Email)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Address)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Phone)
                                             </td>
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.TotalAmount)
                                             </td>
                                             <td>
                                                 <a asp-action="Edit" asp-route-id="@item.Id" class="btn  btn-info btn-sm"><i data-feather="edit"></i></a>
-                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn  btn-success btn-sm"><i data-feather="eye"></i></a>                                              
+                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn  btn-success btn-sm"><i data-feather="eye"></i></a>
+                                                
                                             </td>
                                         </tr>
                                     }

@@ -149,6 +149,7 @@
 
 .del-price {
     text-decoration: line-through;
+    font-size: 20px;
 }
 
 .new-price {
@@ -157,6 +158,10 @@
     right: 0.5rem;
     font-size: 20px;
     padding-bottom: 3px;
+}
+
+.pric {
+    font-size: 20px;
 }
 
 .btn-add-to-cart {
@@ -373,6 +378,7 @@
     font-size: 25px;
     margin-bottom: 20px;
     line-height: 1;
+    margin-top: 10px;
 }
 
 .cosmetic .inner-cosmetic h4 {
@@ -764,4 +770,12 @@ footer .copy {
 .btn-outline-success,
 .btn-success {
     margin-top: 15px !important;
+}
+
+btn-success {
+    margin-top: 15px !important;
+}
+
+.price {
+    font-size: 20px;
 }

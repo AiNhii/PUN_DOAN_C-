@@ -36,9 +36,24 @@
                                         <th>
                                                 @Html.DisplayNameFor(model => model.Title)
                                         </th>
+                                        @* <th>
+                                                @Html.DisplayNameFor(model => model.Summary)
+                                        </th>
+                                        <th>
+                                                @Html.DisplayNameFor(model => model.Description)
+                                        </th> *@
                                         <th>
                                                 @Html.DisplayNameFor(model => model.Photo1)
                                         </th>
+                                        @* <th>
+                                                @Html.DisplayNameFor(model => model.Photo2)
+                                        </th>
+                                        <th>
+                                                @Html.DisplayNameFor(model => model.Photo3)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Photo4)
+                                        </th> *@
                                         <th>
                                             @Html.DisplayNameFor(model => model.Stock)
                                         </th>
@@ -67,9 +82,24 @@
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.Title)
                                             </td>
+                                            @* <td>
+                                                @Html.DisplayFor(modelItem => item.Summary)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Description)
+                                            </td> *@
                                             <td>
                                                 <image src="/storage/@item.Photo1"></image>
                                             </td>
+                                            @* <td>
+                                                <image src="/storage/@item.Photo2"></image>
+                                            </td>
+                                            <td>
+                                                <image src="/storage/@item.Photo3"></image>
+                                            </td>
+                                            <td>
+                                                <image src="/storage/@item.Photo4"></image>
+                                            </td> *@
                                             <td>
                                                 @Html.DisplayFor(modelItem => item.Stock)
                                             </td>
