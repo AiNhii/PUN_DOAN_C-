@@ -32,6 +32,11 @@
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="UserId" />
+                <input type="hidden" asp-for="CouponId" />
+                <input type="hidden" asp-for="SubTotal" />
+                <input type="hidden" asp-for="PaymentMethod" />
+                <input type="hidden" asp-for="PaymentStatus" />
                 <h3 class="card-header">EDIT Order</h3>
                 <div class="card-body">
                     <div class="form-group">
