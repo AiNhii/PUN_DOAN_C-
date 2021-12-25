@@ -5,12 +5,9 @@ img, svg{
 width: 100% !important;
 }
 </style>
-
-
- @* <link rel="stylesheet" href="../../backend/dashboard/asset/css/stylecopy.css" id="main-style-link"> *@
 @{
     ShopDbContext context = new ShopDbContext();
-    var sumUser = context.Users.Count();
+    var sumUser = context.Users.Where(p => p.Id != "a10262c6-e721-4dce-8037-5640304d890d").Count();
     var sumTotal = context.Orders.Sum(p =>p.TotalAmount);
     var countSkinCare = context.Products.Count(p => p.CatId == 4);
     var countLip =  context.Products.Count(p => p.CatId == 3);
@@ -32,14 +29,21 @@ width: 100% !important;
     var rate1 = context.Productreviews.Count( r => r.Rating == 1);
 
 
-
-
-
-
     var sumProduct = context.Orderdetail.Sum(p => p.Quantity);
     var avgPrice = context.Orders.Average(p => p.TotalAmount);
 
-    var sanpham = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.ToShortDateString()).Select(b => b).Distinct();
+    var orderDate = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.ToShortDateString()).Select(b => b).Distinct();
+    var orderYear= context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.Year);
+    var orderMY= context.Orders.AsEnumerable()
+                .GroupBy(x=> new { x.CreatedAt.Value.Month, x.CreatedAt.Value.Year}, (key, group) => new 
+                { 
+                Key1 = key.Month,
+                Key2 = key.Year,
+                Result = group.ToList() 
+                })
+                .OrderByDescending(p => p.Key2);
+
+    var top5 = context.Orders.AsEnumerable().GroupBy(p => p.UserId);
 }
         <!-- [ breadcrumb ] start -->
         <div class="page-header">
@@ -371,7 +375,7 @@ width: 100% !important;
                 <div class="col-md-6">
                     <div class="card table-card">
                         <div class="card-header">
-                            <h5>Order Date</h5>
+                            <h5>Order by Date</h5>
                         </div>
                         <div class="pro-scroll" style="height:255px;position:relative;">
                             <div class="card-body p-0">
@@ -385,7 +389,7 @@ width: 100% !important;
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach (var item in sanpham)
+                                            @foreach (var item in orderDate)
                                             {
                                                 var key = item.Key; 
                                                 List<Order> list = item.ToList();
@@ -407,7 +411,130 @@ width: 100% !important;
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="card table-card">
+                        <div class="card-header">
+                            <h5>Order by Month of Year</h5>
+                        </div>
+                        <div class="pro-scroll" style="height:255px;position:relative;">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover m-b-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Month</th>
+                                                <th>Year</th>
+                                                <th>Total Order</th>
+                                                <th>Total Money</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in orderMY)
+                                            {
+                                                var key1 = item.Key1;
+                                                var key2= item.Key2;
+                                                List<Order> list = item.Result.ToList();
+                                                decimal doanhthu = 0;
+                                                foreach (var item1 in list)
+                                                {
+                                                    doanhthu += item1.TotalAmount;
+                                                }
+                                                <tr>
+                                                <td>@key1.ToString()</td>
+                                                <td>@key2.ToString()</td>
+                                                <td>@list.Count()</td>
+                                                <td>@doanhthu</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card table-card">
+                        <div class="card-header">
+                            <h5>Order by Year</h5>
+                        </div>
+                        <div class="pro-scroll" style="height:255px;position:relative;">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover m-b-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Year</th>
+                                                <th>Total Order</th>
+                                                <th>Total Money</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in orderYear)
+                                            {
+                                                var key1 = item.Key;
+                                                List<Order> list = item.ToList();
+                                                decimal doanhthu = 0;
+                                                foreach (var item1 in list)
+                                                {
+                                                    doanhthu += item1.TotalAmount;
+                                                }
+                                                <tr>
+                                                <td>@key1.ToString()</td>
+                                                <td>@list.Count()</td>
+                                                <td>@doanhthu</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card table-card">
+                        <div class="card-header">
+                            <h5>Top 5 Customer</h5>
+                        </div>
+                        <div class="pro-scroll" style="height:255px;position:relative;">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover m-b-0">
+                                        <thead>
+                                            <tr>
+                                                <th>User</th>
+                                                <th>Total Order</th>
+                                                <th>Total Money</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in top5)
+                                            {
+                                                var key1 = item.Key;
+                                                List<Order> list = item.ToList();
+                                                decimal doanhthu = 0;
+                                                foreach (var item1 in list)
+                                                {
+                                                    doanhthu += item1.TotalAmount;
+                                                }
+                                                <tr>
+                                                <td>@key1.ToString()</td>
+                                                <td>@list.Count()</td>
+                                                <td>@doanhthu</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="col-xl-12 col-md-12">
+           
         </div>
         
         

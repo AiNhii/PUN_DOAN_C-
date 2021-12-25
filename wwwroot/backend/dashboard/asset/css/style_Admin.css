@@ -23234,9 +23234,9 @@ new-task label input[type=checkbox] {
 }
 
 .sw-theme-arrows>ul.step-anchor>li.done>a {
-    border-color: #7f75f0 !important;
+    border-color: #45c090 !important;
     color: #45c090 !important;
-    background: #7f75f0 !important;
+    background: #45c090 !important;
 }
 
 .sw-theme-arrows>ul.step-anchor>li.done>a h6,
@@ -23245,7 +23245,7 @@ new-task label input[type=checkbox] {
 }
 
 .sw-theme-arrows>ul.step-anchor>li.done>a:after {
-    border-left: 30px solid #7f75f0;
+    border-left: 30px solid #45c090;
 }
 
 .sw-theme-arrows>ul.step-anchor>li.danger>a {
@@ -24292,7 +24292,7 @@ new-task label input[type=checkbox] {
 }
 
 .select2-container--classic .select2-results__option--highlighted[aria-selected] {
-    background-color: #3875d7;
+    background-color: #45c090;
     color: #fff;
 }
 
