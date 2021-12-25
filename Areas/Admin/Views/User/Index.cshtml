@@ -1,0 +1,89 @@
+@model IEnumerable<comestic_csharp.Areas.Identity.Data.ShopUser>
+@{
+    ViewData["Title"] = "Index";
+}
+
+@await Html.PartialAsync("_StyleLayout")
+
+<div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">User</h5>
+                    </div>
+                    <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="Dashboard">Home</a></li>
+                            <li class="breadcrumb-item"><a class="pc-link" asp-action="index" asp-controller="User">User</a></li>
+                            <li class="breadcrumb-item">Index</li>
+                    </ul>
+                    </div>
+                </div>
+        </div>
+</div>
+
+<div class="pcoded-content">
+    <div class="card" style="width: fit-content;">
+    <div class="flex-container">
+        <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">User</h1>
+        </div>
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Photo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fullname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td style="width: 20%;">
+                @if (item.Photo != null)
+                {
+                    <img src="/storage/@item.Photo">
+                }
+                else{
+                    <img src="/storage/null.jpg">
+                }
+            </td>
+            <td>
+                @item.UserName
+            </td>
+            <td>
+                @item.Fullname
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.PhoneNumber
+            </td>
+            <td>
+                @* <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> | *@
+                 <a asp-action="Details" asp-route-id="@item.Id" class="btn  btn-success btn-sm"><i data-feather="eye"></i></a>
+                @* <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+    </div>
+</div>
+
+@await Html.PartialAsync("_ScriptsLayout")

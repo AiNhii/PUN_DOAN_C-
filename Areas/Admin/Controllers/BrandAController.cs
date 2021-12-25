@@ -86,7 +86,17 @@ namespace comestic_csharp.Controllers
             {
                 return NotFound();
             }
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",brand.Status
+
+            );
             return View(brand);
+            
         }
 
         // POST: Brand/Edit/5
@@ -120,8 +130,18 @@ namespace comestic_csharp.Controllers
                         throw;
                     }
                 }
+                
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",brand.Status
+
+            );
             return View(brand);
         }
 

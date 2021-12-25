@@ -6,26 +6,35 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using comestic_csharp.Models;
+using comestic_csharp.Areas.Identity.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace comestic_csharp.Controllers
 {
+
+    [Authorize(Roles ="admin")]
+    [Area("admin")]
+    [Route("admin/users")]
     public class UserController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly ShopDbContext _context;
 
-        public UserController(ShopContext context)
+        public UserController(ShopDbContext context)
         {
             _context = context;
         }
 
         // GET: User
+        [Route("index")]
         public async Task<IActionResult> Index()
-        {
-            return View(await _context.Users.ToListAsync());
+        {   
+            var user = _context.Users.Where(p=> p.Id != "a10262c6-e721-4dce-8037-5640304d890d");
+            return View(await user.ToListAsync());
         }
 
         // GET: User/Details/5
-        public async Task<IActionResult> Details(ulong? id)
+
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -43,29 +52,30 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: User/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        // public IActionResult Create()
+        // {
+        //     return View();
+        // }
 
         // POST: User/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Fullname,UserName,Email,Password,Photo,Phone,Address,Role,Status")] User user)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(user);
-        }
+        // [HttpPost]
+        // [ValidateAntiForgeryToken]
+        // public async Task<IActionResult> Create( ShopUser user)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         _context.Add(user);
+        //         await _context.SaveChangesAsync();
+        //         return RedirectToAction(nameof(Index));
+        //     }
+        //     return View(user);
+        // }
 
         // GET: User/Edit/5
-        public async Task<IActionResult> Edit(ulong? id)
+         [Route("edit")]
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -83,9 +93,10 @@ namespace comestic_csharp.Controllers
         // POST: User/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Route("edit")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(ulong id, [Bind("Id,Fullname,UserName,Email,Password,Photo,Phone,Address,Role,Status")] User user)
+        public async Task<IActionResult> Edit(string id, ShopUser user)
         {
             if (id != user.Id)
             {
@@ -116,7 +127,8 @@ namespace comestic_csharp.Controllers
         }
 
         // GET: User/Delete/5
-        public async Task<IActionResult> Delete(ulong? id)
+         [Route("delete")]
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -134,6 +146,7 @@ namespace comestic_csharp.Controllers
         }
 
         // POST: User/Delete/5
+         [Route("delete")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(ulong id)
@@ -144,7 +157,7 @@ namespace comestic_csharp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UserExists(ulong id)
+        private bool UserExists(string id)
         {
             return _context.Users.Any(e => e.Id == id);
         }

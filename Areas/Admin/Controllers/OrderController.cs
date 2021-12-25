@@ -96,6 +96,19 @@ namespace comestic_csharp.Controllers
             {
                 return NotFound();
             }
+
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "new", Value = "new"},
+                    new SelectListItem { Text = "process", Value = "process"},
+                    new SelectListItem { Text = "delivered", Value = "delivered"},
+                    new SelectListItem { Text = "cancel", Value = "cancel"},
+
+                }, "Value" , "Text",order.Status
+            );
+
             ViewData["CouponId"] = new SelectList(_context.Coupons, "Id", "Code", order.CouponId);
             ViewData["ShippingId"] = new SelectList(_context.Shippings, "Id", "Status", order.ShippingId);
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Fullname", order.UserId);
@@ -119,6 +132,9 @@ namespace comestic_csharp.Controllers
             {
                 try
                 {
+                    if (order.Status =="delivered"){
+                        order.PaymentStatus = "paid";
+                    }
                     _context.Update(order);
                     await _context.SaveChangesAsync();
                 }
@@ -135,6 +151,18 @@ namespace comestic_csharp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "new", Value = "new"},
+                    new SelectListItem { Text = "process", Value = "process"},
+                    new SelectListItem { Text = "delivered", Value = "delivered"},
+                    new SelectListItem { Text = "cancel", Value = "cancel"},
+
+                }, "Value" , "Text",order.Status
+            );
             ViewData["CouponId"] = new SelectList(_context.Coupons, "Id", "Code", order.CouponId);
             ViewData["ShippingId"] = new SelectList(_context.Shippings, "Id", "Status", order.ShippingId);
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Fullname", order.UserId);

@@ -4,7 +4,44 @@
 } *@
 
 @await Html.PartialAsync("_StyleLayout")
-
+<<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+<style>
+    #new,
+#delivered, #cancel, #process {
+    display: block;
+    text-align: center;
+    width: 74px;
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    border-radius: 6px !important;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-left: -6px;
+    
+}
+#process{
+    padding: 5px 8px !important;
+}
+#delivered{
+    width: 77px !important;
+    padding: 5px 0px !important;
+    margin-left: -7px !important;
+}
+#new {
+    background-color: #ed3535 !important;
+}
+#process {
+    background-color: #ff9c24 !important;
+}
+#delivered {
+    background-color: #28a745 !important;
+}
+#cancel{
+    background-color: #afaba6 !important;
+}
+</style>
 <div class="page-header">
         <div class="page-block">
             <div class="row align-items-center">
@@ -23,7 +60,7 @@
 </div>
 
 <div class="pcoded-content">
-    <div class="card" style="width: fit-content;">
+    <div class="card" style="width: 100%;">
     <div class="flex-container">
         <div><h1 style="text-align: center; color: #095a3c; padding-top: 30px; padding-left: 40px">ORDER</h1>
         </div>
@@ -43,7 +80,7 @@
                                             @Html.DisplayNameFor(model => model.FirstName)
                                         </th>
                                         <th>
-                                            @Html.DisplayNameFor(model => model.Email)
+                                            @Html.DisplayNameFor(model => model.Status)
                                         </th>
                                         @* <th>
                                             @Html.DisplayNameFor(model => model.Address)
@@ -71,7 +108,19 @@
                                                 @Html.DisplayFor(modelItem => item.FirstName)
                                             </td>
                                             <td>
-                                                @Html.DisplayFor(modelItem => item.Email)
+                                               
+                                                @if( item.Status =="new"){
+                                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                                }
+                                                @if( item.Status =="process"){
+                                                <h3 class="badge rounded-pill bg-danger" id="process">Process</h3>
+                                                }
+                                                @if( item.Status =="delivered"){
+                                                     <h3 class="badge rounded-pill bg-danger" id="delivered">Delivered</h3>
+                                                }
+                                                @if( item.Status =="cancel"){
+                                                     <h3 class="badge rounded-pill bg-danger" id="cancel">Cancel</h3>
+                                                }
                                             </td>
                                             @* <td>
                                                 @Html.DisplayFor(modelItem => item.Address)

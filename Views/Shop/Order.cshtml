@@ -101,6 +101,32 @@
     .table>thead>tr>th{
         padding-bottom: 15px !important;
     }
+     #new2,
+#hot2, #default2 {
+    display: block;
+    text-align: center;
+    width: 57px;
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    border-radius: 6px !important;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-left: 10px !important;
+    margin-top: -1px;
+    
+}
+
+#new2 {
+    background-color: #ed3535 !important;
+}
+#hot2 {
+    background-color: #ff9c24 !important;
+}
+#default2{
+    background-color: #afaba6 !important;
+}
+
 </style>
 
 <body>
@@ -447,7 +473,18 @@
                                                                         @Html.DisplayFor(modelItem => item.CreatedAt)
                                                                     </td>
                                                                     <td style="padding-top: 20px ; padding-bottom: 0px ;">
-                                                                        @Html.DisplayFor(modelItem => item.Status)
+                                                                             @if( item.Status =="new"){
+                                                                                <h3 class="badge rounded-pill bg-danger" id="new2">New</h3>
+                                                                            }
+                                                                            @if( item.Status =="process"){
+                                                                            <h3 class="badge rounded-pill bg-danger" id="process2">Process</h3>
+                                                                            }
+                                                                            @if( item.Status =="delivered"){
+                                                                                <h3 class="badge rounded-pill bg-danger" id="delivered2">Delivered</h3>
+                                                                            }
+                                                                            @if( item.Status =="cancel"){
+                                                                                <h3 class="badge rounded-pill bg-danger" id="cancel2">Cancel</h3>
+                                                                            }
                                                                     </td>
                                                                     <td style="padding-top: 20px ; padding-bottom: 0px ;">
                                                                         @Html.DisplayFor(modelItem => item.TotalAmount)

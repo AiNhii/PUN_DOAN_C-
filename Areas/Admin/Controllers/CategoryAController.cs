@@ -95,6 +95,17 @@ namespace comestic_csharp.Controllers
             }
             ViewData["AddedBy"] = new SelectList(_context.Users, "Id", "Fullname", category.AddedBy);
             ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Slug", category.ParentId);
+            
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",category.Status
+
+            );
+
             return View(category);
         }
 
@@ -133,6 +144,15 @@ namespace comestic_csharp.Controllers
             }
             ViewData["AddedBy"] = new SelectList(_context.Users, "Id", "Fullname", category.AddedBy);
             ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Slug", category.ParentId);
+            ViewData["Status"] = new SelectList(
+
+                 new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "active", Value = "active"},
+                    new SelectListItem { Text = "inactive", Value = "inactive"},
+                }, "Value" , "Text",category.Status
+
+            );
             return View(category);
         }
 

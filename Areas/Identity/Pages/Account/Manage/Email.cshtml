@@ -5,10 +5,18 @@
     ViewData["Title"] = "Manage Email";
     ViewData["ActivePage"] = ManageNavPages.Email;
 }
-
-<h4>@ViewData["Title"]</h4>
+<style>
+    .form-group label{
+        padding-bottom: 10px;
+       
+    }
+    .form-group{
+        margin-top: -15px;
+    }
+</style>
+<h4 style="    padding-left: 15px;">@ViewData["Title"]</h4>
 <partial name="_StatusMessage" model="Model.StatusMessage" />
-<div class="row">
+<div class="row" style="padding-bottom: 30px;     padding-left: 15px;">
     <div class="col-md-6">
         <form id="email-form" method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
