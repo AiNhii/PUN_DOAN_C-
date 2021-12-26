@@ -131,8 +131,16 @@
                                                 @Html.DisplayFor(modelItem => item.Stock)
                                             </td>
                                             <td>
+                                                 @if( item.Condition =="new"){
+                                                    <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                                }
+                                                @if( item.Condition =="hot"){
+                                                <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
+                                                }
+                                                @if( item.Condition =="default"){
+                                                     <h3 class="badge rounded-pill bg-danger" id="default">Default</h3>
+                                                }
                                                 
-                                                c
                                             </td>
                                             <td>
                                                @if( item.Status =="active") {
