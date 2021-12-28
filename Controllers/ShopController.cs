@@ -376,7 +376,7 @@ namespace comestic_csharp.Controllers
             var products = _context.Products.Where(p => p.CatId == id);
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
-
+            ViewBag.Id = id;
             ViewData["SortBy"] = new SelectList(
 
                  new List<SelectListItem>
@@ -406,8 +406,8 @@ namespace comestic_csharp.Controllers
         public IActionResult SkinCare(int? page)
         {
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 9;
-            var products = _context.Products;
+            var pagesize = 8;
+            var products = _context.Products.Where(p => p.CatId== 4);
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
             return View(model);
@@ -484,12 +484,22 @@ namespace comestic_csharp.Controllers
             await _signInManager.RefreshSignInAsync(user);
             return RedirectToAction("Index","Home");
         }
+        // public IActionResult Search(string search, int? page){
+        //     var pageNumber = page == null || page <= 0 ? 1 : page.Value;
+        //     var pagesize = 8;
+        //     var products =  _context.Products.Where(p => p.Title.StartsWith(search));
+        //     PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
+        //     ViewBag.CurrentPage = pageNumber;
+            
+        //     return View(model);
+        // }
         public IActionResult Search(string search, int? page){
             var pageNumber = page == null || page <= 0 ? 1 : page.Value;
-            var pagesize = 9;
+            var pagesize = 8;
             var products =  _context.Products.Where(p => p.Title.StartsWith(search));
             PagedList<Product> model = new PagedList<Product>(products,pageNumber,pagesize);
             ViewBag.CurrentPage = pageNumber;
+            ViewBag.Search = search;
             return View(model);
         }
         [HttpPost]

@@ -1,5 +1,11 @@
+@using comestic_csharp.Areas.Identity.Data
 @model IEnumerable<comestic_csharp.Models.Product>
-
+@{
+	ShopDbContext context = new ShopDbContext();
+	var OnTop = context.Products.Where(p => p.CatId==1).Take(3);
+        var BestSeller = context.Products.Where(p => p.CatId==2).Take(3);
+        var TopReview = context.Products.Where(p => p.CatId==3).Take(3);
+}
 <link rel="stylesheet" href="/shop/list.css">
 
 
@@ -15,7 +21,7 @@
 						</div>
 					</div>
 
-					@foreach (var item in Model)
+					@foreach (var item in OnTop)
 					{
 						<div class="single-list">
 							<div class="row">
@@ -44,7 +50,7 @@
 						</div>
 					</div>
 					<!-- Start Single List  -->
-					@foreach (var item in Model)
+					@foreach (var item in BestSeller)
 					{
 						<div class="single-list">
 							<div class="row">
@@ -73,7 +79,7 @@
 						</div>
 					</div>
 					<!-- Start Single List  -->
-					@foreach (var item in Model)
+					@foreach (var item in TopReview)
 					{
 						<div class="single-list">
 							<div class="row">

@@ -36,6 +36,7 @@
 </div>
 
 @await Html.PartialAsync("_TabProduct");
+@await Html.PartialAsync("_Sale",_shopContext.Coupons.Take(4).ToList());
 <!--gioithieu-section-->
 <div class="gioithieu-section">
         <div class="content-section">

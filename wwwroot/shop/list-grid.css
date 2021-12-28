@@ -1233,57 +1233,6 @@ Start Shop Sidebar CSS
         }
         /*page*/
         
-        .pagination {
-            text-align: center;
-            margin: 25px 50px;
-            display: block;
-        }
-        
-        .pagination.center {
-            text-align: center;
-        }
-        
-        .pagination .pagination-list li {
-            margin-right: 5px;
-            display: inline-block;
-        }
-        
-        .pagination .pagination-list li:last-child {
-            margin-right: 0px;
-        }
-        
-        .pagination .pagination-list li a {
-            background: #F6F7FB;
-            color: #666;
-            padding: 10px 18px;
-            font-weight: 400;
-            border: 1px solid #e1e1e1;
-            font-size: 17px;
-            border-radius: 0px;
-        }
-        
-        .pagination .pagination-list li.active span {
-            background: #70b19f;
-            color: rgb(255, 255, 255);
-            padding: 10px 18px;
-            font-weight: 400;
-            border: 1px solid #e1e1e1;
-            font-size: 17px;
-            border-radius: 0px;
-        }
-        
-        .pagination .pagination-list li:hover a {
-            background: #70b19f;
-            color: #fff;
-            border-color: transparent;
-        }
-        
-        .pagination .pagination-list li a i {
-            font-size: 13px;
-        }
-        
-        .pagination .pagination-list li a i {}
-        
         .blog-grids.pagination {
             margin-top: 50px;
             text-align: center;

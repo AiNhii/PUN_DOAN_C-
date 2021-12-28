@@ -36,6 +36,7 @@
     Layout = "/Views/Shared/_MainLayout.cshtml";
 	 int PageCurrent = ViewBag.CurrentPage;
 	int PageNext = PageCurrent +1; 
+    ulong id = ViewBag.Id;
 }
 
 <div class="title-page">
@@ -160,7 +161,7 @@
 									<!-- Pagination -->
 									<div class="pagination">
 										<ul class="pagination-list">
-											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="ListMakeUp" asp-controller="Shop"/>
+											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="ListMakeUp" asp-controller="Shop" asp-route-id="@id"/>
 										</ul>
 									</div>
 							</div>

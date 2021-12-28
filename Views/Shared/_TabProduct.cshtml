@@ -3,6 +3,12 @@
 @{
         ShopDbContext context = new ShopDbContext();
         var pro = context.Products.Take(8).ToArray();
+        var lip = context.Products.Where(p => p.CatId==3 && p.Condition=="Hot").Take(8);
+        var face = context.Products.Where(p => p.CatId==1 && p.Condition=="Hot").Take(8);
+        var eyes = context.Products.Where(p => p.CatId==2 && p.Condition=="Hot").Take(8);
+        var skincare = context.Products.Where(p => p.CatId==4 && p.Condition=="Hot").Take(4);
+
+
 }
 
 <style>
@@ -80,36 +86,34 @@
                         <div class="tab-pane fade show active" id="lip" role="tabpanel">
                             <div class="tab-single">
                                 <div class="row product">
-                                    @for (var i = 4; i< 8; i++)
-                                    {  
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                                   @foreach (var item in lip)
+                                    {
+                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
 
                                         <div class="card card-product mb-3">
                                             <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                            <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                            <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
                                             <div class="card-body">
-                                                <h5 class="card-title product-title">@pro[i].Title</h5>
+                                                <h5 class="card-title product-title">@item.Title</h5>
                                                 <div class="card-text product-price">
-                                                    @if (@pro[i].CouponId == 1)
+                                                    @if (@item.CouponId == 1)
                                                     {
-                                                        <span class="price">@pro[i].Price</span>
+                                                        <span class="price">@item.Price đ</span>
                                                     }
                                                     else{
-                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
-                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
-
-                                                            <span class="del-price">@delPrice</span>
-                                                            <span class="new-price">@pro[i].Price</span>
+                                                            ShopDbContext _context = new ShopDbContext();
+                                                            var giamGia = _context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                            var delPrice = @item.Price /(1- giamGia.Value/100);
                                                     }
                                                 </div>
                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                                 }
                                                 else{
                                                     <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
                                                 }
-                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+                                                <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -122,36 +126,34 @@
                         <div class="tab-pane fade" id="faces" role="tabpanel">
                             <div class="tab-single">
                                 <div class="row product">
-                                    @for (var i = 0; i< 4; i++)
-                                    {  
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                                     @foreach (var item in face)
+                                    {
+                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
 
                                         <div class="card card-product mb-3">
                                             <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                            <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                            <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
                                             <div class="card-body">
-                                                <h5 class="card-title product-title">@pro[i].Title</h5>
+                                                <h5 class="card-title product-title">@item.Title</h5>
                                                 <div class="card-text product-price">
-                                                    @if (@pro[i].CouponId == 1)
+                                                    @if (@item.CouponId == 1)
                                                     {
-                                                        <span class="price">@pro[i].Price</span>
+                                                        <span class="price">@item.Price</span>
                                                     }
                                                     else{
-                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
-                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
-
-                                                            <span class="del-price">@delPrice</span>
-                                                            <span class="new-price">@pro[i].Price</span>
+                                                            ShopDbContext _context = new ShopDbContext();
+                                                            var giamGia = _context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                            var delPrice = @item.Price /(1- giamGia.Value/100);
                                                     }
                                                 </div>
                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                                 }
                                                 else{
                                                     <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
                                                 }
-                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
-                                                <h3 class="badge rounded-pill bg-danger" id="new">New</h3>
+                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
+                                                <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -164,35 +166,33 @@
                         <div class="tab-pane fade" id="eyes" role="tabpanel">
                             <div class="tab-single">
                                 <div class="row product">
-                                    @for (var i = 0; i< 8; i++)
-                                    {  
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                                      @foreach (var item in eyes)
+                                    {
+                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
 
                                         <div class="card card-product mb-3">
                                             <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                            <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                            <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
                                             <div class="card-body">
-                                                <h5 class="card-title product-title">@pro[i].Title</h5>
+                                                <h5 class="card-title product-title">@item.Title</h5>
                                                 <div class="card-text product-price">
-                                                    @if (@pro[i].CouponId == 1)
+                                                    @if (@item.CouponId == 1)
                                                     {
-                                                        <span class="price">@pro[i].Price</span>
+                                                        <span class="price">@item.Price</span>
                                                     }
                                                     else{
-                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
-                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
-
-                                                            <span class="del-price">@delPrice</span>
-                                                            <span class="new-price">@pro[i].Price</span>
+                                                            ShopDbContext _context = new ShopDbContext();
+                                                            var giamGia = _context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                            var delPrice = @item.Price /(1- giamGia.Value/100);
                                                     }
                                                 </div>
                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                                 }
                                                 else{
                                                     <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
                                                 }
-                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
+                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
                                             </div>
                                         </div>
@@ -206,42 +206,40 @@
                         <div class="tab-pane fade" id="skincare" role="tabpanel">
                             <div class="tab-single">
                                 <div class="row product">
-                                    @for (var i = 0; i< 4; i++)
-                                    {  
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                                  @foreach (var item in skincare)
+                                    {
+                                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
 
                                         <div class="card card-product mb-3">
                                             <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                            <img class="card-img-top" src="./storage/@pro[i].Photo1" alt="Card image cap">
+                                            <img class="card-img-top" src="./storage/@item.Photo1" alt="Card image cap">
                                             <div class="card-body">
-                                                <h5 class="card-title product-title">@pro[i].Title</h5>
+                                                <h5 class="card-title product-title">@item.Title</h5>
                                                 <div class="card-text product-price">
-                                                    @if (@pro[i].CouponId == 1)
+                                                    @if (@item.CouponId == 1)
                                                     {
-                                                        <span class="price">@pro[i].Price</span>
+                                                        <span class="price">@item.Price</span>
                                                     }
                                                     else{
-                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
-                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
-
-                                                            <span class="del-price">@delPrice</span>
-                                                            <span class="new-price">@pro[i].Price</span>
+                                                            ShopDbContext _context = new ShopDbContext();
+                                                            var giamGia = _context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                            var delPrice = @item.Price /(1- giamGia.Value/100);
                                                     }
                                                 </div>
                                                 @if(User.Identity.IsAuthenticated){
-                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@pro[i].Id"><i class="fa fa-shopping-cart"></i></a>
+                                                    <a class="btn btn-info btn-add-to-cart" asp-action="AddToCart" asp-controller="ShoppingCart" asp-route-id="@item.Id"><i class="fa fa-shopping-cart"></i></a>
                                                 }
                                                 else{
                                                     <a class="btn btn-info btn-add-to-cart" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-shopping-cart"></i></a>
                                                 }
-                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@pro[i].Id">Xem chi tiết</a>
+                                                <a class="btn btn-outline-success btn-detail" asp-action="Details" asp-controller="Shop" asp-route-id="@item.Id">Xem chi tiết</a>
                                                 <h3 class="badge rounded-pill bg-danger" id="hot">Hot</h3>
                                             </div>
                                         </div>
                                     </div>
                                     }
                                 </div>
-                                <div class="row product">
+                                @* <div class="row product">
                                     @for (var i = 0; i< 4; i++)
                                     {  
                                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
@@ -257,11 +255,9 @@
                                                         <span class="price">@pro[i].Price</span>
                                                     }
                                                     else{
-                                                            var giamGia = context.Coupons.SingleOrDefault(p => p.Id == @pro[i].CouponId);
-                                                            var delPrice = @pro[i].Price /(1- giamGia.Value/100);
-
-                                                            <span class="del-price">@delPrice</span>
-                                                            <span class="new-price">@pro[i].Price</span>
+                                                          ShopDbContext _context = new ShopDbContext();
+                                                            var giamGia = _context.Coupons.SingleOrDefault(p => p.Id == @item.CouponId);
+                                                            var delPrice = @item.Price /(1- giamGia.Value/100);
                                                     }
                                                 </div>
                                                 @if(User.Identity.IsAuthenticated){
@@ -276,7 +272,7 @@
                                         </div>
                                     </div>
                                     }
-                                </div>
+                                </div> *@
                             </div>
                         </div>
                         <!--/ End Single Tab -->

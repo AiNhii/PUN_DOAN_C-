@@ -1,0 +1,63 @@
+@using comestic_csharp.Areas.Identity.Data
+@model IEnumerable<comestic_csharp.Models.Coupon>
+	 
+    <link rel="stylesheet" href="/shop/owl-carousel.css">
+    <link rel="stylesheet" href="/shop/slicknav.min.css">
+	<link rel="stylesheet" href="/shop/hot.css">
+  <style>
+	  .owl-carousel .owl-stage {
+    margin-top: -40px;
+	  }
+      .price{
+          font-size: 15px !important;
+      }
+  </style>
+			
+	<!-- Start Most Popular -->
+	<div class="product-area most-popular section">
+        <div class="container">
+            <div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>Coupon</h2>
+					</div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel popular-slider">
+						<!-- Start Single Product -->
+						@foreach (var item in Model)
+						{
+							<div class="single-product">
+							
+
+                                <div class="card card-product mb-3">
+                                  
+                                    <img class="card-img-top" src="./storage/sale.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title product-title">@item.Code</h5>
+                                        <div class="card-text product-price" style="margin-bottom: 10px;">
+                                            
+                                                    <span class="new-price">@item.Value</span>
+                                                    <br>
+                                                      <span class="price">From: @item.StartedAt</span>
+                                                      <br>
+                                                       <span class="price">To: @item.EndedAt</span>
+                                            
+                                        </div>
+                                        
+                                        <h3 class="badge rounded-pill bg-danger" id="hot" style="background-color: #70b19f !important;">Sale </h3>
+                                    </div>
+                                </div>
+                            </div>
+						
+						}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<script src="/shop/owl-carousel.js"></script>
