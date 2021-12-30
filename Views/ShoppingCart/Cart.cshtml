@@ -150,10 +150,18 @@
                           coupon: coupon
                       },
                       success: function (result) {
-						  	alert("You save "+result.save);
+						  if(result.id != 0){
+							alert("You save "+result.save);
 						  	$("#total").text(result.total);
 						  	$("#save").text(result.save);
+						  }
+						  else{
+							alert("Invalid");
+							$("#total").text(result.total);
+						  	$("#save").text(result.save);
 
+						  }
+						  	
                       }
                   });
               });

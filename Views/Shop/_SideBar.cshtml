@@ -10,7 +10,7 @@
 									<ul class="categor-list">
 										@foreach (var item in cat)
 										{
-											<li><a href="#">@item.Title</a></li>
+											<li><a asp-action="ListMakeUp" asp-route-id="@item.Id">@item.Title</a></li>
 										}
 									</ul>
 								</div>

@@ -8,6 +8,7 @@
     Layout = "/Views/Shared/_MainLayout.cshtml";
 	int PageCurrent = ViewBag.CurrentPage;
 	int PageNext = PageCurrent +1;
+    string id = ViewBag.Search;
 }
 <div class="container">
                         <div class="row">
@@ -51,7 +52,7 @@
 									<!-- Pagination -->
 									<div class="pagination">
 										<ul class="pagination-list">
-											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="Search" asp-controller="Shop"/>
+											<pager class="pager-container" list="@Model" options="@PagedListRenderOptions.Full" asp-action="Search" asp-controller="Shop" asp-route-search="@id"/>
 										</ul>
 									</div>
 							</div>			<!--/ End Pagination -->

@@ -143,6 +143,25 @@ var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id && p.St
                   <div class="quantity">
                     <h6 style="font-weight: bold">Quantity :</h6>
                     <!-- Input Order -->
+
+                  <div class="qty" data-title="Qty"><!-- quantity -->
+                    <div class="input-group">
+                      <div class="button minus">
+                        <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant">
+                          <i class="ti-minus"></i>
+                        </button>
+                      </div>
+                      <input id="@($"quantity-{Model.Id}")" type="text" name="quant" class="input-number"  data-min="1" data-max="100" value="">
+                      <div class="button plus">
+                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant">
+                          <i class="ti-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+									<!--/ End quantiy -->
+								  </div>
+
+
                     <div class="input-group">
                       <div class="button minus">
                         <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus"
@@ -439,7 +458,7 @@ var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id && p.St
   </div>
 </section>
 <!--/ End Shop Single -->
-
+<partial name="/Views/Shared/_ScriptsLayout.cshtml"/>
 <script>
   function changeImage(element) {
     var main_prodcut_image = document.getElementById("main_product_image");
