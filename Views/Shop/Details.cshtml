@@ -276,6 +276,7 @@ var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id && p.St
                           </h4>
                           <div class="review-inner">
                             <!-- Form -->
+                          @if(User.Identity.IsAuthenticated){
                             <form class="form" asp-action="Review" asp-controller="Shop" asp-route-id="@Model.Id">
                               <div class="row">
                                 <div class="col-lg-12 col-12">
@@ -337,16 +338,18 @@ var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id && p.St
                                 </div>
                               </div>
                             </form>
+                          }
+                          else{
+                            <div>
+                            <p class="text-center p-5">
+                              You need to
+                              <a asp-area="Identity" asp-page="/Account/Login" style="color: rgb(54, 54, 204)">Login</a>
+                              OR
+                              <a style="color: blue" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                              </p>
+                            </div> 
+                          }
 
-                            <!--/ End Form -->
-                          </div>
-                        </div>
-                        @* <p class="text-center p-5">
-                          You need to
-                          <a href="#" style="color: rgb(54, 54, 204)">Login</a>
-                          OR
-                          <a style="color: blue" href="#">Register</a>
-                          </p> *@                       
                         <div class="ratting-main">
                           <div class="avg-ratting">
                             <h4>

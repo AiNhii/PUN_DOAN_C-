@@ -92,6 +92,33 @@ namespace comestic_csharp.Controllers
         // }
 
 
+        // public IActionResult AddToCart (ulong id) {        
+
+        //     var product = _context.Products
+        //         .Where (p => p.Id == id)
+        //         .FirstOrDefault ();
+        //     if (product == null)
+        //         return NotFound ("Không có sản phẩm");
+
+        //     // Xử lý đưa vào Cart ...
+        //     var cart = GetCartItems ();
+        //     var cartitem = cart.Find (p => p.Product.Id == id);
+        //     if (cartitem != null) {
+        //         // Đã tồn tại, tăng thêm 1
+        //         cartitem.Quantity++;
+        //     } else {
+        //         //  Thêm mới
+        //         cart.Add (new CartItem () { Quantity = 1, Product = product });
+        //     }
+
+        //     // Lưu cart vào Session
+        //     SaveCartSession (cart);
+        //     // Chuyển đến trang hiện thị Cart
+        //     return RedirectToAction ("Cart");
+        // }
+
+
+        
         public IActionResult AddToCart (ulong id) {        
 
             var product = _context.Products
@@ -163,40 +190,6 @@ namespace comestic_csharp.Controllers
                 return  Numrd_str;
             }  
 
-
-        [HttpPost]
-        // public IActionResult ApplyCoupon (string coupon) {
-        //     var cart = GetCartItems ();
-        //     decimal discount = 0;
-        //     ulong couponId = 0;
-        //     decimal save =0;
-        //     decimal total = 0;
-        //     decimal final =0;
-        //     var _coupon = _context.Coupons.Where(p => p.Code == coupon).Select(p => p.Value);
-        //     var _couponId = _context.Coupons.Where(p => p.Code == coupon).Select(p =>p.Id);
-        //     foreach ( var cp in _coupon){
-        //         discount = cp;
-        //     }
-        //     foreach ( var cpId in _couponId){
-        //         couponId = cpId;
-        //     }
-        //     if (coupon != null){
-        //         foreach(var item in cart){
-        //             var thanhtien = item.Quantity * item.Product.Price;
-		// 		    total += thanhtien;	
-        //         }
-        //     }
-        //     save = total * discount/ 100;
-        //     HttpContext.Session.SetInt32("save", (int)save);
-
-        //     final = total*(1- discount /100);
-        //     HttpContext.Session.SetInt32("final", (int)final);
-
-        //     HttpContext.Session.SetInt32("couponId", (int)couponId);
-        //     // return RedirectToAction("Cart");
-        //     return Json( new { status = "success", total = final, save = save});
-        // }
-
         [HttpPost]
         public IActionResult ApplyCoupon (string coupon){
             var cart = GetCartItems ();
@@ -229,8 +222,6 @@ namespace comestic_csharp.Controllers
             HttpContext.Session.SetInt32("final", (int)final);
             HttpContext.Session.SetInt32("couponId", (int)id);
             
-            Console.WriteLine(id);
-
             return Json( new { status = "success", total = final, save = save, id = id});
         }
 
