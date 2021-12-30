@@ -30,13 +30,13 @@
         <span class="sr-only">Next</span>
     </a>
     <div class="btn-shop">
-        <a href="#" id="btn-shop">SHOP NOW</a>
+        <a asp-controller="Shop" asp-action="Index" id="btn-shop" >SHOP NOW</a>
 
     </div>
 </div>
 
 @await Html.PartialAsync("_TabProduct");
-@await Html.PartialAsync("_Sale",_shopContext.Coupons.Take(4).ToList());
+@await Html.PartialAsync("_Sale",_shopContext.Coupons.ToList());
 <!--gioithieu-section-->
 <div class="gioithieu-section">
         <div class="content-section">

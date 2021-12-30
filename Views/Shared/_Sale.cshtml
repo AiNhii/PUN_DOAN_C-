@@ -29,12 +29,12 @@
 						<!-- Start Single Product -->
 						@foreach (var item in Model)
 						{
-							<div class="single-product">
+                            @if(item.Value  > 0 && item.EndedAt >DateTime.Now){
+                                <div class="single-product">
 							
-
                                 <div class="card card-product mb-3">
                                   
-                                    <img class="card-img-top" src="./storage/sale.png" alt="Card image cap">
+                                    <img class="card-img-top" src="/storage/magg.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title product-title">@item.Code</h5>
                                         <div class="card-text product-price" style="margin-bottom: 10px;">
@@ -51,6 +51,8 @@
                                     </div>
                                 </div>
                             </div>
+                            }
+							
 						
 						}
                     </div>

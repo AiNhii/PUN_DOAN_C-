@@ -8,6 +8,11 @@ width: 100% !important;
     margin-right: calc(var(--bs-gutter-x) / 0);
     margin-left: calc(var(--bs-gutter-x) / 0);
 }
+.table-responsive{
+    height: 256px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 </style>
 @{
     ShopDbContext context = new ShopDbContext();
@@ -36,7 +41,7 @@ width: 100% !important;
     var sumProduct = context.Orderdetail.Sum(p => p.Quantity);
     var avgPrice = context.Orders.Average(p => p.TotalAmount);
 
-    var orderDate = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.ToShortDateString()).Select(b => b).Distinct();
+    var orderDate = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.ToShortDateString()).Select(b => b).Distinct().Take(7);
     var orderYear = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.Year);
     var orderMonth   = context.Orders.AsEnumerable()
                 .GroupBy(x=> new { x.CreatedAt.Value.Month, x.CreatedAt.Value.Year}, (key, group) => new 
@@ -114,7 +119,7 @@ width: 100% !important;
                                 <div class="row align-items-center m-b-0">
                                     <div class="col">
                                         <h6 class="m-b-5 text-white">Average Price</h6>
-                                        <h3 class="m-b-0 text-white">@avgPrice</h3>
+                                        <h3 class="m-b-0 text-white">@avgPrice.ToString("0.00")</h3>
                                     </div>
                                     <div class="col-auto">
                                         <i class="material-icons-two-tone text-white">monetization_on</i>
@@ -270,7 +275,29 @@ width: 100% !important;
                     </div>
                 </div> *@
             </div>
-
+            <div class="row">
+                 <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Pie Charts</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="pie-chart-1" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Pie Charts donut</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="pie-chart-2" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+           
             <div class="col-xl-12 col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -521,7 +548,7 @@ width: 100% !important;
                     </div>
                 </div> *@
 
-                <div class="col-md-6">
+                @* <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
                             <h5>Pie Charts</h5>
@@ -540,7 +567,7 @@ width: 100% !important;
                             <div id="pie-chart-2" style="width:100%"></div>
                         </div>
                     </div>
-                </div>
+                </div> *@
                 <!-- [ variant-chart ] end -->
             </div>
         </div>
@@ -749,6 +776,14 @@ width: 100% !important;
         setTimeout(function() {
             floatchart()
         }, 700);
+
+        var px = new PerfectScrollbar('.pro-scroll', {
+            wheelSpeed: .5,
+            swipeEasing: 0,
+            wheelPropagation: 1,
+            minScrollbarLength: 40,
+        });
+
         // [ campaign-scroll ] start
         var px = new PerfectScrollbar('.feed-scroll', {
             wheelSpeed: .5,
@@ -756,12 +791,7 @@ width: 100% !important;
             wheelPropagation: 1,
             minScrollbarLength: 40,
         });
-        var px = new PerfectScrollbar('.pro-scroll', {
-            wheelSpeed: .5,
-            swipeEasing: 0,
-            wheelPropagation: 1,
-            minScrollbarLength: 40,
-        });
+        
         // [ campaign-scroll ] end
     });
 

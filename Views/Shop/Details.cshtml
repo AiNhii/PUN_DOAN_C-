@@ -131,16 +131,16 @@ var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id && p.St
                 <p class="cat mt-1" style="font-weight: bold">
                   Sub Category :<a href="#">sub_category</a>
                 </p>
-                <p class="availability" style="font-weight: bold">
+                @* <p class="availability" style="font-weight: bold">
                   Stock : <span class="badge badge-success"> @Html.DisplayFor(model => model.Stock) </span>
-                </p>
+                </p> *@
                 <form action="#" method="POST" class="
                   d-flex
                   flex-row
                   align-items-center
                   justify-center-between
                   ">
-                  <div class="quantity">
+                  @* <div class="quantity">
                     <h6 style="font-weight: bold">Quantity :</h6>
                     <!-- Input Order -->
                     <div class="input-group">
@@ -160,7 +160,7 @@ var comment = context.Productreviews.Where(p => p.ProductId == @Model.Id && p.St
                       </div>
                     </div>
                     <!--/ End Input Order -->
-                  </div>
+                  </div> *@
                   <div class="add-to-cart d-flex flex-row">
 
                     <button type="submit" class="btn" asp-action="AddToCart" asp-controller="ShoppingCart"

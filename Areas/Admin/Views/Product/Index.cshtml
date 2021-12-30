@@ -81,9 +81,9 @@
                                         <th>
                                             @Html.DisplayNameFor(model => model.Photo4)
                                         </th> *@
-                                        <th>
+                                        @* <th>
                                             @Html.DisplayNameFor(model => model.Stock)
-                                        </th>
+                                        </th> *@
                                         <th >
                                             @Html.DisplayNameFor(model => model.Condition)
                                         </th>
@@ -127,9 +127,9 @@
                                             <td>
                                                 <image src="/storage/@item.Photo4"></image>
                                             </td> *@
-                                            <td>
+                                            @* <td>
                                                 @Html.DisplayFor(modelItem => item.Stock)
-                                            </td>
+                                            </td> *@
                                             <td>
                                                  @if( item.Condition =="new"){
                                                     <h3 class="badge rounded-pill bg-danger" id="new">New</h3>

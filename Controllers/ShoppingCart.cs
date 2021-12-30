@@ -164,36 +164,30 @@ namespace comestic_csharp.Controllers
         [HttpPost]
         public IActionResult ApplyCoupon (string coupon) {
             var cart = GetCartItems ();
-            decimal discount = 0;
-            ulong couponId = 0;
+            // decimal discount = 0;
+            // ulong couponId = 0;
             decimal save =0;
             decimal total = 0;
             decimal final =0;
-            var _coupon = _context.Coupons.Where(p => p.Code == coupon).Select(p => p.Value);
-            var _couponId = _context.Coupons.Where(p => p.Code == coupon).Select(p => p.Id);
-            foreach ( var cp in _coupon){
-                discount = cp;
-            }
-            foreach ( var cpId in _couponId){
-                couponId = cpId;
-            }
+            var value = _context.Coupons.SingleOrDefault(p => p.Code == coupon && p.EndedAt > DateTime.Now).Value;
+            var couponId = _context.Coupons.SingleOrDefault(p => p.Code == coupon && p.EndedAt > DateTime.Now).Id;
+ 
             if (coupon != null){
                 foreach(var item in cart){
                     var thanhtien = item.Quantity * item.Product.Price;
-				    total += thanhtien;	
+                    total += thanhtien; 
                 }
             }
-            save = total * discount/ 100;
+            save = total * value/ 100;
             HttpContext.Session.SetInt32("save", (int)save);
-
-            final = total*(1- discount /100);
+ 
+            final = total*(1- value /100);
             HttpContext.Session.SetInt32("final", (int)final);
-
+ 
             HttpContext.Session.SetInt32("couponId", (int)couponId);
             // return RedirectToAction("Cart");
             return Json( new { status = "success", total = final, save = save});
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
