@@ -16,11 +16,14 @@ namespace comestic_csharp.Controllers
 {
     public class ShoppingCartController : Controller
     {
-        private readonly ShopDbContext _context;
+       private readonly ShopDbContext _context;
+        private readonly UserManager<ShopUser> _userManager;
 
-        public ShoppingCartController(ShopDbContext context)
+
+        public ShoppingCartController(ShopDbContext context,UserManager<ShopUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // [Route ("/cart", Name = "cart")]
@@ -162,31 +165,38 @@ namespace comestic_csharp.Controllers
 
 
         [HttpPost]
-        public IActionResult ApplyCoupon (string coupon) {
+        public IActionResult ApplyCoupon (string coupon){
             var cart = GetCartItems ();
-            // decimal discount = 0;
-            // ulong couponId = 0;
+            ulong id = 0;
             decimal save =0;
             decimal total = 0;
             decimal final =0;
-            var value = _context.Coupons.SingleOrDefault(p => p.Code == coupon && p.EndedAt > DateTime.Now).Value;
-            var couponId = _context.Coupons.SingleOrDefault(p => p.Code == coupon && p.EndedAt > DateTime.Now).Id;
- 
+            var cp = _context.Coupons.SingleOrDefault(p => p.Code == coupon);
+        
             if (coupon != null){
                 foreach(var item in cart){
                     var thanhtien = item.Quantity * item.Product.Price;
-                    total += thanhtien; 
+				    total += thanhtien;	
                 }
             }
-            save = total * value/ 100;
+
+            if (cp.EndedAt < DateTime.Now)
+            {
+                id = 0;
+                final = total;
+            }
+            else
+            {
+                save = total * cp.Value/ 100;
+                final = total*(1- cp.Value /100);
+                id = cp.Id;
+            }
+
             HttpContext.Session.SetInt32("save", (int)save);
- 
-            final = total*(1- value /100);
             HttpContext.Session.SetInt32("final", (int)final);
- 
-            HttpContext.Session.SetInt32("couponId", (int)couponId);
-            // return RedirectToAction("Cart");
-            return Json( new { status = "success", total = final, save = save});
+            HttpContext.Session.SetInt32("couponId", (int)id);
+
+            return Json( new { status = "success", total = final, save = save, id = id});
         }
 
         [HttpPost]
@@ -195,22 +205,14 @@ namespace comestic_csharp.Controllers
         {
             
             List<CartItem> cart = GetCartItems();
-
-            var ID = _context.Users.Where(p=> p.UserName == HttpContext.Session.GetString("username")).Select(p=>p.Id);
-            string userID= null;
             decimal save =0;
-            
-            foreach( var model in ID){
-                    userID = model;
-            }
-
             decimal total = 0;
+
             if(HttpContext.Session.GetInt32("save") != null)
                     save = (int)HttpContext.Session.GetInt32("save");
             
 
             foreach( var item in cart){
-
                 var thanhtien = item.Quantity * item.Product.Price;
 				total += thanhtien;	
             }
@@ -219,12 +221,12 @@ namespace comestic_csharp.Controllers
             {
                 Order donhang = new Order();
                 donhang.OrderNumber= "ORDER"+ RandomString();
-                donhang.UserId = userID;
-
+                if (User.Identity.IsAuthenticated){
+                    donhang.UserId = _userManager.GetUserId(User);
+                }
                 if(HttpContext.Session.GetInt32("couponId") != 0){
                     donhang.CouponId = (ulong?)HttpContext.Session.GetInt32("couponId");
                 }
-
                 donhang.FirstName = FirstName;
                 donhang.LastName = LastName;
                 donhang.Email = Email;

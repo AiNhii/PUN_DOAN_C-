@@ -83,7 +83,13 @@
 									<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 								</div>
 								<div class="sinlge-bar">
-									<a asp-action="Profile" asp-controller="Shop" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+									@if(User.Identity.IsAuthenticated){
+										<a asp-action="Profile" asp-controller="Shop" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+									}
+									else{
+										<a asp-area="Identity" asp-page="/Account/Login" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+									}
+									@* <a asp-action="Profile" asp-controller="Shop" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a> *@
 								</div>
 								<div class="sinlge-bar shopping">
 									@await Html.PartialAsync("_Cart.cshtml")

@@ -433,19 +433,19 @@ namespace comestic_csharp.Controllers
 
         public IActionResult Profile()
         {
-            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            var profile = _context.Users.Find(_userManager.GetUserId(User));
             return View(profile);
         }
 
         public IActionResult EditProfile(string id)
         {
-            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            var profile = _context.Users.Find(_userManager.GetUserId(User));
             return View(profile);
         }
 
         public IActionResult UpdateProfile(ShopUser user)
         {
-            var profile = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            var profile = _context.Users.Find(_userManager.GetUserId(User));
             profile.Fullname = user.Fullname;
             profile.Email = user.Email;
             profile.PhoneNumber = user.PhoneNumber;
@@ -459,7 +459,7 @@ namespace comestic_csharp.Controllers
 
         public IActionResult Order()
         {
-            var id = _context.Users.First(p => p.UserName == HttpContext.Session.GetString("username"));
+            var id = _context.Users.Find(_userManager.GetUserId(User));
             var order = _context.Orders.Where(p => p.UserId == id.Id);
             return View(order);
         }
@@ -508,7 +508,7 @@ namespace comestic_csharp.Controllers
 
             Productreview _review = new Productreview();
             _review.ProductId = id;
-            _review.UserId = _context.Users.SingleOrDefault(p => p.UserName == HttpContext.Session.GetString("username")).Id;
+            _review.UserId = _context.Users.Find(_userManager.GetUserId(User)).Id;
             _review.Rating = (sbyte)rate;
             _review.Review = review;
             _context.Add(_review);
