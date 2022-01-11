@@ -133,9 +133,11 @@
     table {
         margin-top: 35px;
     }
-    .form-group{
+
+    .form-group {
         padding-bottom: 0px;
     }
+
     .input-group {
         text-align: left;
     }
@@ -259,12 +261,13 @@
         float: right;
         margin-right: -76px;
     }
-    #sta{
+
+    #sta {
         background: #ffa21d;
-    text-align: center;
-    color: white;
-    border-radius: 8px !important;
-    padding-bottom: 3px;
+        text-align: center;
+        color: white;
+        border-radius: 8px !important;
+        padding-bottom: 3px;
     }
 </style>
 
@@ -708,7 +711,14 @@
                                                         <div class="column" id="column2" style="background-color:#fff;">
                                                             <h3 id="invoice">@order.OrderNumber</h3>
                                                             <p> Date: @order.CreatedAt</p>
-                                                            <p>Payment Method:</p>
+                                                            @if (@order.PaymentMethod == "cod")
+                                                            {
+                                                                <p>Payment Method: Cash on delivery</p>
+                                                            }
+                                                            else
+                                                            {
+                                                                <p>Payment Method: Paypal</p>
+                                                            }
                                                         </div>
                                                     </div>
                                                     <hr>
@@ -798,14 +808,49 @@
                                                                                         @order.SubTotal</span>
                                                                                 </p>
 
-                                                                                <p id="total">
+                                                                                @* <p id="total">
                                                                                     <strong>Shipping Cost</strong>:
-                                                                                </p>
+                                                                                    </p> *@
                                                                                 <p id="total">
-                                                                                    <strong>Coupon ID</strong> <span
+                                                                                    @if (@order.CouponId != null)
+                                                                                    {
+
+                                                                                        ShopDbContext ct = new
+                                                                                        ShopDbContext();
+
+                                                                                        var value =
+                                                                                        ct.Coupons.Find(@order.CouponId).Value;
+
+                                                                                        var tienGiam = @order.SubTotal *
+                                                                                        value / 100;
+                                                                                        <strong>Discount</strong> <span
                                                                                         class="tt">
-                                                                                        @order.CouponId</span>
+                                                                                            @tienGiam.ToString("0")</span>
+                                                                                        @* <li class="col-sm-10">
+                                                                                            Discount: @tienGiam
+                                                                                            </li> *@
+
+                                                                                    }
+
+                                                                                    else
+                                                                                    {
+                                                                                        <strong>Discount</strong> <span
+                                                                                        class="tt"> 0</span>
+                                                                                        @* <li class="col-sm-10">
+                                                                                            Discount: 0;
+                                                                                            </li> *@
+
+                                                                                    }
+                                                                                    @* <strong>Coupon ID</strong> <span
+                                                                                        class="tt"> @order.CouponId</span>
+                                                                                    *@
                                                                                 </p>
+
+                                                                                @* <p id="total">
+                                                                                    <strong>Coupon ID</strong> <span
+                                                                                    class="tt">
+                                                                                    @order.CouponId</span>
+                                                                                    </p> *@
 
                                                                                 <p style="font-weight: bold;"
                                                                                     id="total">

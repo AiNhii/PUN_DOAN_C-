@@ -1142,7 +1142,7 @@ Start Shop Sidebar CSS
         }
         
         .shop-list .list-content .btn:hover {
-            background: #F7941D;
+            background: #70B19F !important;
             color: #fff;
             border-color: transparent;
         }
@@ -1179,7 +1179,7 @@ Start Shop Sidebar CSS
         
         .pagination .pagination-list li.active a,
         .pagination .pagination-list li:hover a {
-            background: #F7941D;
+            background: #70B19F !important;
             color: #fff;
             border-color: transparent;
         }

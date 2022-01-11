@@ -1035,3 +1035,5 @@ D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Edit.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
 D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\obj\Debug\net5.0\Razor\Views\Shared\_Sale.cshtml.g.cs
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\bin\Debug\net5.0\BraintreeHttp-Dotnet.dll
+D:\Năm3_hk1\DoAn\C#\WEB_C#\PUN_DOAN_C\bin\Debug\net5.0\Source.dll

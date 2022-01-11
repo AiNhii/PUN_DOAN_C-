@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "necTAkJll3sEYljT6d/0DdlRRBOxY4e1aCMMDti1XrVSXdrmKCGv1Zu9wN9oLBstxZD41cejq1Klf3RDHZ0Xng==",
+  "dgSpecHash": "bWDoCG0KHiDW4r9ENUUdMOZP8YxOK3s/NWzOABMQCtfWN5UYVmYaK5WODmmOaYB4PGjjT9UGyZGAQg23HS4HHg==",
   "success": true,
   "projectFilePath": "D:\\Năm3_hk1\\DoAn\\C#\\WEB_C#\\PUN_DOAN_C\\comestic_csharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Le Nhi\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
+    "C:\\Users\\Le Nhi\\.nuget\\packages\\braintreehttp-dotnet\\0.3.0\\braintreehttp-dotnet.0.3.0.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -90,6 +91,7 @@
     "C:\\Users\\Le Nhi\\.nuget\\packages\\pagedlist.core\\1.17.4\\pagedlist.core.1.17.4.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\pagedlist.core.mvc\\3.0.0\\pagedlist.core.mvc.3.0.0.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\pagination.entityframeworkcore.extensions\\2.1.7\\pagination.entityframeworkcore.extensions.2.1.7.nupkg.sha512",
+    "C:\\Users\\Le Nhi\\.nuget\\packages\\paypal\\2.0.0-rc2\\paypal.2.0.0-rc2.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0-alpha.2\\pomelo.entityframeworkcore.mysql.5.0.0-alpha.2.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Le Nhi\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
