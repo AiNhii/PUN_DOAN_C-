@@ -115,7 +115,19 @@
                   <a href="#" class="total-review">(<span> @comment.Count() </span>) Review</a>
                 </div>
                 <p class="price">
-                  <s> @Html.DisplayFor(model => model.Price)</s><span class="discount">750 000</span>
+                  @* <p> @Html.DisplayFor(model => model.Price)</p> *@
+                   @if (@Model.CouponId == 1)
+                                            {
+                                                <span class="price">@Model.Price</span>
+                                            }
+                                            else{
+													                        ShopDbContext context2 = new ShopDbContext();
+                                                    var giamGia = context2.Coupons.SingleOrDefault(p => p.Id == @Model.CouponId);
+                                                    var delPrice = @Model.Price /(1- giamGia.Value/100);
+
+                                                    <span class="del-price">@delPrice</span>
+                                                    <span style="color: red;">@Model.Price</span>
+                                            }
                 </p>
 
                 <p>
@@ -130,11 +142,11 @@
               <!-- Product Buy -->
               <div class="product-buy">
                 <p class="cat" style="font-weight: bold">
-                  Category :<a href="#">Category</a>
+                  Category :<a href="#">@{var loai = context.Categories.Find(Model.CatId).Title;} @loai</a>
                 </p>
-                <p class="cat mt-1" style="font-weight: bold">
-                  Sub Category :<a href="#">sub_category</a>
-                </p>
+                @* <p class="cat mt-1" style="font-weight: bold">
+                  Sub Category :<a href="#">@Model.</a>
+                </p> *@
                 @* <p class="availability" style="font-weight: bold">
                   Stock : <span class="badge badge-success"> @Html.DisplayFor(model => model.Stock) </span>
                   </p> *@

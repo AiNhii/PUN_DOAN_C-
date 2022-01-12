@@ -41,7 +41,7 @@ width: 100% !important;
     var sumProduct = context.Orderdetail.Sum(p => p.Quantity);
     var avgPrice = context.Orders.Average(p => p.TotalAmount);
 
-    var orderDate = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.ToShortDateString()).Select(b => b).Distinct().Take(7);
+    var orderDate = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.ToShortDateString()).Select(b => b).Distinct().OrderBy(p => p.Key).Take(7);
     var orderYear = context.Orders.AsEnumerable().GroupBy(pro => pro.CreatedAt.Value.Year);
     var orderMonth   = context.Orders.AsEnumerable()
                 .GroupBy(x=> new { x.CreatedAt.Value.Month, x.CreatedAt.Value.Year}, (key, group) => new 
